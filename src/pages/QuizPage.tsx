@@ -112,7 +112,8 @@ const QuizPage = () => {
             <ResultScreen
               score={normalizedScore}
               level={resultLevel}
-              userName={userData.name.split(" ")[0]}
+              userName={userData.name}
+              answers={answers}
               onRestart={handleRestart}
             />
           )}
