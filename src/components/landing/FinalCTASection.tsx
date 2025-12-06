@@ -27,7 +27,7 @@ export function FinalCTASection() {
             
             <p className="text-lg text-muted-foreground mb-8 max-w-xl mx-auto">
               Faça o quiz agora e receba um diagnóstico completo da sua vivência católica. 
-              É rápido, gratuito e transformador.
+              É rápido e transformador.
             </p>
 
             {/* Trust badges */}
