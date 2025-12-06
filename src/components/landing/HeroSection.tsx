@@ -17,7 +17,7 @@ export function HeroSection() {
           {/* Badge */}
           <div className="inline-flex items-center gap-2 bg-secondary/80 backdrop-blur-sm px-4 py-2 rounded-full mb-8 animate-fade-in">
             <Sparkles className="w-4 h-4 text-accent" />
-            <span className="text-sm font-medium text-foreground">Quiz Católico 2024</span>
+            <span className="text-sm font-medium text-foreground">Quiz Católico</span>
           </div>
 
           {/* Icons */}
