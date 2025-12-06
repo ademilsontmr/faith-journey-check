@@ -79,6 +79,10 @@ export function HeroSection() {
               <div className="w-2 h-2 rounded-full bg-primary" />
               <span>Resultado Imediato</span>
             </div>
+            <div className="flex items-center gap-2">
+              <div className="w-2 h-2 rounded-full bg-emerald-500" />
+              <span>Sem Cadastro</span>
+            </div>
           </div>
         </div>
       </div>
