@@ -38,7 +38,7 @@ export function HeroSection() {
 
           {/* Subheadline */}
           <p className="text-lg md:text-xl text-muted-foreground mb-10 max-w-2xl mx-auto animate-slide-up" style={{ animationDelay: "0.1s" }}>
-            Faça o quiz gratuito e receba um diagnóstico completo da sua vivência católica. 
+            Faça o quiz e receba um diagnóstico completo da sua vivência católica. 
             Mais de <strong className="text-foreground">10.000 católicos</strong> já descobriram seu nível de prática da fé.
           </p>
 
@@ -49,7 +49,7 @@ export function HeroSection() {
                 size="lg"
                 className="h-14 px-8 bg-gold-gradient hover:opacity-90 text-accent-foreground font-semibold text-lg shadow-gold-glow transition-all duration-300 group"
               >
-                Começar o Quiz Gratuito
+                Começar o Quiz Agora
                 <ChevronRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
               </Button>
             </Link>
@@ -65,7 +65,7 @@ export function HeroSection() {
           <div className="mt-12 flex flex-wrap items-center justify-center gap-8 text-sm text-muted-foreground animate-fade-in" style={{ animationDelay: "0.4s" }}>
             <div className="flex items-center gap-2">
               <div className="w-2 h-2 rounded-full bg-green-500" />
-              <span>100% Gratuito</span>
+              <span>Rápido e Fácil</span>
             </div>
             <div className="flex items-center gap-2">
               <div className="w-2 h-2 rounded-full bg-accent" />
