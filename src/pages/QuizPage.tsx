@@ -8,7 +8,6 @@ import { PaymentScreen } from "@/components/quiz/PaymentScreen";
 import { ResultScreen } from "@/components/quiz/ResultScreen";
 import {
   questions,
-  answerOptions,
   calculateNormalizedScore,
   getResultLevel,
 } from "@/data/quizQuestions";
@@ -97,7 +96,6 @@ const QuizPage = () => {
               <QuestionCard
                 key={currentQuestion}
                 question={questions[currentQuestion]}
-                options={answerOptions}
                 selectedAnswer={answers[currentQuestion] ?? null}
                 onSelectAnswer={handleSelectAnswer}
               />
