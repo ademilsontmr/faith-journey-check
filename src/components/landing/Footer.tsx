@@ -12,7 +12,7 @@ export function Footer() {
               <div className="w-10 h-10 rounded-full bg-accent flex items-center justify-center">
                 <Cross className="w-5 h-5 text-accent-foreground" />
               </div>
-              <span className="font-display text-2xl font-bold">Bom Cristão</span>
+              <span className="font-display text-2xl font-bold">Bom Católico</span>
             </div>
             <p className="text-primary-foreground/70 max-w-md mb-6">
               Ajudando católicos a viverem sua fé de forma mais profunda e consciente. 
@@ -86,7 +86,7 @@ export function Footer() {
         </div>
 
         <div className="border-t border-primary-foreground/20 mt-12 pt-8 text-center text-sm text-primary-foreground/60">
-          <p>© 2024 Bom Cristão. Todos os direitos reservados.</p>
+          <p>© 2024 Bom Católico. Todos os direitos reservados.</p>
           <p className="mt-2">
             Feito com ❤️ para a glória de Deus
           </p>
