@@ -1,16 +1,14 @@
-import { QuizQuestion, AnswerOption } from "@/data/quizQuestions";
+import { QuizQuestion } from "@/data/quizQuestions";
 import { cn } from "@/lib/utils";
 
 interface QuestionCardProps {
   question: QuizQuestion;
-  options: AnswerOption[];
   selectedAnswer: number | null;
   onSelectAnswer: (points: number) => void;
 }
 
 export function QuestionCard({
   question,
-  options,
   selectedAnswer,
   onSelectAnswer,
 }: QuestionCardProps) {
@@ -29,7 +27,7 @@ export function QuestionCard({
         </h2>
 
         <div className="space-y-3">
-          {options.map((option, index) => (
+          {question.options.map((option, index) => (
             <button
               key={index}
               onClick={() => onSelectAnswer(option.points)}
