@@ -23,7 +23,7 @@ export function Navbar() {
             <div className="w-8 h-8 rounded-full bg-gold-gradient flex items-center justify-center">
               <Cross className="w-4 h-4 text-accent-foreground" />
             </div>
-            <span className="font-display text-xl font-bold text-primary">Bom Cristão</span>
+            <span className="font-display text-xl font-bold text-primary">Bom Católico</span>
           </Link>
 
           {/* Desktop Navigation */}

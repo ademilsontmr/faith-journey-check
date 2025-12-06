@@ -120,7 +120,7 @@ const QuizPage = () => {
 
         <footer className="py-6 text-center">
           <p className="text-sm text-muted-foreground">
-            © 2024 Bom Cristão · Todos os direitos reservados
+            © 2024 Bom Católico · Todos os direitos reservados
           </p>
         </footer>
       </div>
