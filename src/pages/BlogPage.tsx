@@ -1,10 +1,22 @@
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
-import { Cross, Calendar, Clock, ArrowRight } from "lucide-react";
+import { Cross, Calendar, Clock, ArrowRight, Heart, BookOpen, Church, Users, Flame, Sun, type LucideIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Footer } from "@/components/landing/Footer";
 
-const blogPosts = [
+interface BlogPost {
+  id: number;
+  title: string;
+  excerpt: string;
+  date: string;
+  readTime: string;
+  category: string;
+  icon: LucideIcon;
+  bgColor: string;
+  iconColor: string;
+}
+
+const blogPosts: BlogPost[] = [
   {
     id: 1,
     title: "Como Rezar o Santo Rosário: Guia Completo para Iniciantes",
@@ -12,7 +24,9 @@ const blogPosts = [
     date: "2024-12-05",
     readTime: "8 min",
     category: "Orações",
-    image: "https://images.unsplash.com/photo-1445633883498-7f9922d37a3f?w=600&h=400&fit=crop"
+    icon: Heart,
+    bgColor: "bg-rose-100",
+    iconColor: "text-rose-400"
   },
   {
     id: 2,
@@ -21,7 +35,9 @@ const blogPosts = [
     date: "2024-12-03",
     readTime: "12 min",
     category: "Formação",
-    image: "https://images.unsplash.com/photo-1548625149-fc4a29cf7092?w=600&h=400&fit=crop"
+    icon: BookOpen,
+    bgColor: "bg-blue-100",
+    iconColor: "text-blue-400"
   },
   {
     id: 3,
@@ -30,7 +46,9 @@ const blogPosts = [
     date: "2024-11-28",
     readTime: "6 min",
     category: "Sacramentos",
-    image: "https://images.unsplash.com/photo-1507692049790-de58290a4334?w=600&h=400&fit=crop"
+    icon: Church,
+    bgColor: "bg-violet-100",
+    iconColor: "text-violet-400"
   },
   {
     id: 4,
@@ -39,7 +57,9 @@ const blogPosts = [
     date: "2024-11-25",
     readTime: "7 min",
     category: "Devoções",
-    image: "https://images.unsplash.com/photo-1544967082-d9d25d867d66?w=600&h=400&fit=crop"
+    icon: Users,
+    bgColor: "bg-amber-100",
+    iconColor: "text-amber-400"
   },
   {
     id: 5,
@@ -48,7 +68,9 @@ const blogPosts = [
     date: "2024-11-20",
     readTime: "5 min",
     category: "Espiritualidade",
-    image: "https://images.unsplash.com/photo-1499209974431-9dddcece7f88?w=600&h=400&fit=crop"
+    icon: Flame,
+    bgColor: "bg-orange-100",
+    iconColor: "text-orange-400"
   },
   {
     id: 6,
@@ -57,7 +79,9 @@ const blogPosts = [
     date: "2024-11-15",
     readTime: "9 min",
     category: "Liturgia",
-    image: "https://images.unsplash.com/photo-1438032005730-c779502df39b?w=600&h=400&fit=crop"
+    icon: Sun,
+    bgColor: "bg-yellow-100",
+    iconColor: "text-yellow-400"
   }
 ];
 
@@ -109,12 +133,8 @@ export default function BlogPage() {
                   key={post.id}
                   className="bg-card rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow group"
                 >
-                  <div className="aspect-video overflow-hidden">
-                    <img 
-                      src={post.image} 
-                      alt={post.title}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                    />
+                  <div className={`aspect-video flex items-center justify-center ${post.bgColor}`}>
+                    <post.icon className={`w-16 h-16 ${post.iconColor} group-hover:scale-110 transition-transform duration-300`} strokeWidth={1.5} />
                   </div>
                   <div className="p-6">
                     <div className="flex items-center gap-4 text-sm text-muted-foreground mb-3">
