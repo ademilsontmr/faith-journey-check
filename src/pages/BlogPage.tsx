@@ -6,6 +6,7 @@ import { Footer } from "@/components/landing/Footer";
 
 interface BlogPost {
   id: number;
+  slug: string;
   title: string;
   excerpt: string;
   date: string;
@@ -19,6 +20,7 @@ interface BlogPost {
 const blogPosts: BlogPost[] = [
   {
     id: 1,
+    slug: "como-rezar-rosario",
     title: "Como Rezar o Santo Rosário: Guia Completo para Iniciantes",
     excerpt: "Aprenda passo a passo como rezar o Santo Rosário e fortalecer sua devoção mariana com este guia prático e espiritual.",
     date: "2024-12-05",
@@ -30,6 +32,7 @@ const blogPosts: BlogPost[] = [
   },
   {
     id: 2,
+    slug: "sete-sacramentos",
     title: "Os 7 Sacramentos da Igreja Católica Explicados",
     excerpt: "Entenda a importância e o significado de cada um dos sete sacramentos instituídos por Cristo para nossa salvação.",
     date: "2024-12-03",
@@ -41,6 +44,7 @@ const blogPosts: BlogPost[] = [
   },
   {
     id: 3,
+    slug: "importancia-confissao",
     title: "A Importância da Confissão: Por Que Confessar Regularmente?",
     excerpt: "Descubra os benefícios espirituais da confissão frequente e como ela transforma nossa vida cristã.",
     date: "2024-11-28",
@@ -52,6 +56,7 @@ const blogPosts: BlogPost[] = [
   },
   {
     id: 4,
+    slug: "santos-padroeiros",
     title: "Santos Padroeiros: Como Escolher e Honrar o Seu",
     excerpt: "Conheça a tradição dos santos padroeiros e como eles podem interceder por você em sua jornada de fé.",
     date: "2024-11-25",
@@ -63,6 +68,7 @@ const blogPosts: BlogPost[] = [
   },
   {
     id: 5,
+    slug: "jejum-abstinencia",
     title: "Jejum e Abstinência: Práticas Que Fortalecem a Alma",
     excerpt: "Aprenda sobre as práticas de jejum e abstinência na Igreja Católica e como elas nos aproximam de Deus.",
     date: "2024-11-20",
@@ -74,6 +80,7 @@ const blogPosts: BlogPost[] = [
   },
   {
     id: 6,
+    slug: "missa-dominical",
     title: "A Missa Dominical: Centro da Vida Cristã",
     excerpt: "Por que a participação na Missa aos domingos é essencial para todo católico e como aproveitá-la melhor.",
     date: "2024-11-15",
@@ -129,38 +136,37 @@ export default function BlogPage() {
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {blogPosts.map((post) => (
-                <article 
-                  key={post.id}
-                  className="bg-card rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow group"
-                >
-                  <div className={`aspect-video flex items-center justify-center ${post.bgColor}`}>
-                    <post.icon className={`w-16 h-16 ${post.iconColor} group-hover:scale-110 transition-transform duration-300`} strokeWidth={1.5} />
-                  </div>
-                  <div className="p-6">
-                    <div className="flex items-center gap-4 text-sm text-muted-foreground mb-3">
-                      <span className="bg-primary/10 text-primary px-3 py-1 rounded-full text-xs font-medium">
-                        {post.category}
-                      </span>
-                      <span className="flex items-center gap-1">
-                        <Calendar className="w-4 h-4" />
-                        {new Date(post.date).toLocaleDateString('pt-BR', { day: '2-digit', month: 'short' })}
-                      </span>
-                      <span className="flex items-center gap-1">
-                        <Clock className="w-4 h-4" />
-                        {post.readTime}
+                <Link to={`/blog/${post.slug}`} key={post.id}>
+                  <article className="bg-card rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow group h-full">
+                    <div className={`aspect-video flex items-center justify-center ${post.bgColor}`}>
+                      <post.icon className={`w-16 h-16 ${post.iconColor} group-hover:scale-110 transition-transform duration-300`} strokeWidth={1.5} />
+                    </div>
+                    <div className="p-6">
+                      <div className="flex items-center gap-4 text-sm text-muted-foreground mb-3">
+                        <span className="bg-primary/10 text-primary px-3 py-1 rounded-full text-xs font-medium">
+                          {post.category}
+                        </span>
+                        <span className="flex items-center gap-1">
+                          <Calendar className="w-4 h-4" />
+                          {new Date(post.date).toLocaleDateString('pt-BR', { day: '2-digit', month: 'short' })}
+                        </span>
+                        <span className="flex items-center gap-1">
+                          <Clock className="w-4 h-4" />
+                          {post.readTime}
+                        </span>
+                      </div>
+                      <h2 className="font-display text-xl font-semibold text-foreground mb-2 line-clamp-2 group-hover:text-primary transition-colors">
+                        {post.title}
+                      </h2>
+                      <p className="text-muted-foreground text-sm line-clamp-3 mb-4">
+                        {post.excerpt}
+                      </p>
+                      <span className="inline-flex items-center text-primary hover:text-primary/80">
+                        Ler mais <ArrowRight className="w-4 h-4 ml-1" />
                       </span>
                     </div>
-                    <h2 className="font-display text-xl font-semibold text-foreground mb-2 line-clamp-2 group-hover:text-primary transition-colors">
-                      {post.title}
-                    </h2>
-                    <p className="text-muted-foreground text-sm line-clamp-3 mb-4">
-                      {post.excerpt}
-                    </p>
-                    <Button variant="ghost" className="p-0 h-auto text-primary hover:text-primary/80">
-                      Ler mais <ArrowRight className="w-4 h-4 ml-1" />
-                    </Button>
-                  </div>
-                </article>
+                  </article>
+                </Link>
               ))}
             </div>
           </div>
