@@ -59,6 +59,11 @@ export function Footer() {
                   Depoimentos
                 </a>
               </li>
+              <li>
+                <Link to="/blog" className="hover:text-primary-foreground transition-colors">
+                  Blog
+                </Link>
+              </li>
             </ul>
           </div>
 
