@@ -2,7 +2,7 @@ import { ResultLevel } from "@/data/quizQuestions";
 import { Button } from "@/components/ui/button";
 import { Download, Share2, RotateCcw, Trophy, Target, BookOpen, Cross, Heart, Star, Church, HandHeart, Sparkles } from "lucide-react";
 import { toast } from "sonner";
-
+import { generateCatholicGuidePDF } from "@/utils/generateCatholicGuidePDF";
 interface ResultScreenProps {
   score: number;
   level: ResultLevel;
@@ -159,7 +159,17 @@ export function ResultScreen({ score, level, userName, answers, onRestart }: Res
   const oracoes = getOracoesSugeridas(score);
 
   const handleDownloadGuide = () => {
-    toast.success("Download iniciado! Verifique seu WhatsApp para receber o guia.");
+    try {
+      generateCatholicGuidePDF({
+        userName,
+        score,
+        levelTitle: level.title,
+      });
+      toast.success("PDF gerado com sucesso! Verifique seus downloads.");
+    } catch (error) {
+      console.error("Error generating PDF:", error);
+      toast.error("Erro ao gerar o PDF. Tente novamente.");
+    }
   };
 
   const handleShare = async () => {
