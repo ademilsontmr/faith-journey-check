@@ -6,6 +6,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
 import Index from "./pages/Index";
 import QuizPage from "./pages/QuizPage";
+import DadosPage from "./pages/DadosPage";
+import PagamentoPage from "./pages/PagamentoPage";
+import ResultadoPage from "./pages/ResultadoPage";
 import BlogPage from "./pages/BlogPage";
 import ComoRezarRosario from "./pages/blog/ComoRezarRosario";
 import SeteSacramentos from "./pages/blog/SeteSacramentos";
@@ -27,6 +30,9 @@ const App = () => (
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/quiz" element={<QuizPage />} />
+            <Route path="/dados" element={<DadosPage />} />
+            <Route path="/pagamento" element={<PagamentoPage />} />
+            <Route path="/resultado" element={<ResultadoPage />} />
             <Route path="/blog" element={<BlogPage />} />
             <Route path="/blog/como-rezar-rosario" element={<ComoRezarRosario />} />
             <Route path="/blog/sete-sacramentos" element={<SeteSacramentos />} />
