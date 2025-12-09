@@ -58,7 +58,10 @@ export const generateCatholicGuidePDF = ({ userName, score, levelTitle }: GuideD
   const addFooter = () => {
     doc.setFontSize(8);
     doc.setTextColor(128, 128, 128);
-    centerText("Guia da Vida Católica | Bom Católico", pageHeight - 15, 8);
+    centerText("Guia da Vida Católica | Bom Católico", pageHeight - 18, 8);
+    doc.setFontSize(9);
+    doc.setTextColor(12, 75, 148);
+    centerText("www.bomcatolico.com.br", pageHeight - 10, 9);
     doc.setTextColor(0, 0, 0);
   };
 
