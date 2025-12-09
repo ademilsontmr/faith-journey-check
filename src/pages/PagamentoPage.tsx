@@ -1,14 +1,19 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useCallback } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import { QuizHeader } from "@/components/quiz/QuizHeader";
 import { Button } from "@/components/ui/button";
-import { QrCode, Copy, CheckCircle2, Gift, BookOpen, Heart, Star } from "lucide-react";
+import { QrCode, Copy, CheckCircle2, Gift, BookOpen, Heart, Star, Loader2 } from "lucide-react";
 import { toast } from "sonner";
+import { supabase } from "@/integrations/supabase/client";
 
 interface UserData {
   name: string;
   whatsapp: string;
 }
+
+const generatePaymentId = () => {
+  return `pmt_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
+};
 
 const PagamentoPage = () => {
   const navigate = useNavigate();
@@ -16,6 +21,9 @@ const PagamentoPage = () => {
   const answers = location.state?.answers as number[] | undefined;
   const userData = location.state?.userData as UserData | undefined;
   const [copied, setCopied] = useState(false);
+  const [paymentId, setPaymentId] = useState<string | null>(null);
+  const [isPolling, setIsPolling] = useState(false);
+  const [isCreatingPayment, setIsCreatingPayment] = useState(false);
 
   const pixCode = "00020126580014br.gov.bcb.pix0136a629532e-7693-4846-b028-ejemplo520400005303986540510.905802BR5925GUIA DA VIDA CATOLICA6009SAO PAULO62070503***6304E2CA";
 
@@ -24,6 +32,51 @@ const PagamentoPage = () => {
       navigate("/quiz");
     }
   }, [answers, userData, navigate]);
+
+  const createPayment = useCallback(async () => {
+    if (!answers || !userData || isCreatingPayment) return;
+    
+    setIsCreatingPayment(true);
+    const newPaymentId = generatePaymentId();
+    
+    try {
+      // Save data to localStorage
+      const quizData = {
+        answers,
+        userData,
+        paymentId: newPaymentId,
+        createdAt: new Date().toISOString()
+      };
+      localStorage.setItem(`quiz_${newPaymentId}`, JSON.stringify(quizData));
+      
+      // Create pending payment in Supabase
+      const { error } = await supabase
+        .from('payment_confirmations')
+        .insert({ 
+          payment_id: newPaymentId, 
+          status: 'pending' 
+        });
+      
+      if (error) {
+        console.error('Error creating payment:', error);
+        toast.error("Erro ao criar pagamento. Tente novamente.");
+        return;
+      }
+      
+      setPaymentId(newPaymentId);
+    } catch (err) {
+      console.error('Error:', err);
+      toast.error("Erro ao processar. Tente novamente.");
+    } finally {
+      setIsCreatingPayment(false);
+    }
+  }, [answers, userData, isCreatingPayment]);
+
+  useEffect(() => {
+    if (answers && userData && !paymentId && !isCreatingPayment) {
+      createPayment();
+    }
+  }, [answers, userData, paymentId, isCreatingPayment, createPayment]);
 
   const handleCopyPix = async () => {
     try {
@@ -36,8 +89,84 @@ const PagamentoPage = () => {
     }
   };
 
-  const handlePaymentComplete = () => {
-    navigate("/resultado", { state: { answers, userData } });
+  const checkPaymentStatus = useCallback(async () => {
+    if (!paymentId) return false;
+    
+    try {
+      const { data, error } = await supabase
+        .from('payment_confirmations')
+        .select('status')
+        .eq('payment_id', paymentId)
+        .maybeSingle();
+      
+      if (error) {
+        console.error('Error checking payment:', error);
+        return false;
+      }
+      
+      return data?.status === 'confirmed';
+    } catch (err) {
+      console.error('Error:', err);
+      return false;
+    }
+  }, [paymentId]);
+
+  const handlePaymentComplete = async () => {
+    if (!paymentId) {
+      toast.error("Erro: ID de pagamento não encontrado");
+      return;
+    }
+    
+    setIsPolling(true);
+    
+    // Check immediately
+    const isConfirmed = await checkPaymentStatus();
+    
+    if (isConfirmed) {
+      navigate(`/resultado/${paymentId}`);
+      return;
+    }
+    
+    // Poll every 3 seconds for up to 60 seconds
+    let attempts = 0;
+    const maxAttempts = 20;
+    
+    const pollInterval = setInterval(async () => {
+      attempts++;
+      const confirmed = await checkPaymentStatus();
+      
+      if (confirmed) {
+        clearInterval(pollInterval);
+        setIsPolling(false);
+        navigate(`/resultado/${paymentId}`);
+      } else if (attempts >= maxAttempts) {
+        clearInterval(pollInterval);
+        setIsPolling(false);
+        toast.error("Pagamento não confirmado. Verifique se completou o PIX e tente novamente.");
+      }
+    }, 3000);
+  };
+
+  // For testing: simulate payment confirmation
+  const handleSimulatePayment = async () => {
+    if (!paymentId) return;
+    
+    try {
+      const { error } = await supabase
+        .from('payment_confirmations')
+        .update({ status: 'confirmed', confirmed_at: new Date().toISOString() })
+        .eq('payment_id', paymentId);
+      
+      if (error) {
+        console.error('Error confirming payment:', error);
+        return;
+      }
+      
+      toast.success("Pagamento confirmado!");
+      navigate(`/resultado/${paymentId}`);
+    } catch (err) {
+      console.error('Error:', err);
+    }
   };
 
   if (!answers || !userData) return null;
@@ -120,14 +249,38 @@ const PagamentoPage = () => {
 
               <Button
                 onClick={handlePaymentComplete}
+                disabled={isPolling || !paymentId}
                 className="w-full h-12 bg-gold-gradient hover:opacity-90 text-accent-foreground font-semibold text-lg shadow-gold-glow transition-all duration-300"
               >
-                Já Fiz o Pagamento
+                {isPolling ? (
+                  <>
+                    <Loader2 className="w-5 h-5 mr-2 animate-spin" />
+                    Verificando pagamento...
+                  </>
+                ) : (
+                  "Já Fiz o Pagamento"
+                )}
+              </Button>
+
+              {/* Temporary: Simulate payment for testing */}
+              <Button
+                onClick={handleSimulatePayment}
+                variant="ghost"
+                className="w-full h-10 mt-2 text-xs text-muted-foreground hover:text-foreground"
+                disabled={!paymentId}
+              >
+                [Dev] Simular Confirmação de Pagamento
               </Button>
 
               <p className="text-xs text-muted-foreground text-center mt-4">
                 Após o pagamento, clique no botão acima para liberar seu resultado.
               </p>
+
+              {paymentId && (
+                <p className="text-xs text-muted-foreground text-center mt-2">
+                  ID do pagamento: {paymentId}
+                </p>
+              )}
             </div>
           </div>
         </main>
