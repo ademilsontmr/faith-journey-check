@@ -151,6 +151,8 @@ const PagamentoPage = () => {
   const handleSimulatePayment = async () => {
     if (!paymentId) return;
     
+    setIsPolling(false); // Stop any active polling
+    
     try {
       const { error } = await supabase
         .from('payment_confirmations')
@@ -159,13 +161,16 @@ const PagamentoPage = () => {
       
       if (error) {
         console.error('Error confirming payment:', error);
+        toast.error("Erro ao confirmar pagamento");
         return;
       }
       
       toast.success("Pagamento confirmado!");
+      // Navigate immediately without checking
       navigate(`/resultado/${paymentId}`);
     } catch (err) {
       console.error('Error:', err);
+      toast.error("Erro ao processar");
     }
   };
 
