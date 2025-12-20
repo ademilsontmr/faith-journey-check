@@ -14,7 +14,42 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      quiz_sessions: {
+        Row: {
+          answers: number[] | null
+          completed_at: string | null
+          created_at: string
+          id: string
+          paid: boolean | null
+          payment_id: string | null
+          updated_at: string
+          user_name: string | null
+          user_whatsapp: string | null
+        }
+        Insert: {
+          answers?: number[] | null
+          completed_at?: string | null
+          created_at?: string
+          id?: string
+          paid?: boolean | null
+          payment_id?: string | null
+          updated_at?: string
+          user_name?: string | null
+          user_whatsapp?: string | null
+        }
+        Update: {
+          answers?: number[] | null
+          completed_at?: string | null
+          created_at?: string
+          id?: string
+          paid?: boolean | null
+          payment_id?: string | null
+          updated_at?: string
+          user_name?: string | null
+          user_whatsapp?: string | null
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
