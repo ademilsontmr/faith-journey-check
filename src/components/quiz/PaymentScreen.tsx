@@ -26,19 +26,19 @@ export function PaymentScreen({ onPaymentComplete }: PaymentScreenProps) {
 
   return (
     <div className="w-full max-w-md mx-auto px-4 animate-slide-up">
-      <div className="bg-card rounded-2xl shadow-sacred p-6 md:p-8 border border-border/50">
+      <div className="bg-surface rounded-2xl shadow-soft p-6 md:p-8 border border-border/50">
         <div className="text-center mb-6">
-          <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-blue-gradient mb-4">
-            <QrCode className="w-8 h-8 text-primary-foreground" />
+          <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gradient-primary mb-4">
+            <QrCode className="w-8 h-8 text-button-text" />
           </div>
           <h2 className="font-display text-2xl md:text-3xl text-primary mb-2">
             Desbloqueie seu Resultado
           </h2>
-          <p className="text-muted-foreground mb-4">
+          <p className="text-text-muted mb-4">
             Acesse seu resultado completo + Guia Exclusivo da Vida Católica
           </p>
           
-          <div className="bg-gold-gradient text-accent-foreground rounded-xl p-4 mb-6">
+          <div className="bg-gradient-accent text-accent-foreground rounded-xl p-4 mb-6">
             <span className="text-sm font-medium">Valor único</span>
             <p className="text-4xl font-bold">R$ 9,90</p>
           </div>
@@ -46,19 +46,19 @@ export function PaymentScreen({ onPaymentComplete }: PaymentScreenProps) {
 
         {/* Benefits */}
         <div className="space-y-3 mb-6">
-          <div className="flex items-center gap-3 text-foreground">
+          <div className="flex items-center gap-3 text-text">
             <Star className="w-5 h-5 text-accent" />
             <span>Resultado detalhado da sua vivência católica</span>
           </div>
-          <div className="flex items-center gap-3 text-foreground">
+          <div className="flex items-center gap-3 text-text">
             <BookOpen className="w-5 h-5 text-accent" />
             <span>Guia completo com orações e devoções</span>
           </div>
-          <div className="flex items-center gap-3 text-foreground">
+          <div className="flex items-center gap-3 text-text">
             <Heart className="w-5 h-5 text-accent" />
             <span>Dicas para crescer na fé católica</span>
           </div>
-          <div className="flex items-center gap-3 text-foreground">
+          <div className="flex items-center gap-3 text-text">
             <Gift className="w-5 h-5 text-accent" />
             <span>Conteúdos exclusivos por WhatsApp</span>
           </div>
@@ -69,7 +69,7 @@ export function PaymentScreen({ onPaymentComplete }: PaymentScreenProps) {
           <div className="w-48 h-48 mx-auto bg-background rounded-lg flex items-center justify-center border-2 border-dashed border-border mb-4">
             <QrCode className="w-24 h-24 text-primary" />
           </div>
-          <p className="text-sm text-muted-foreground text-center">
+          <p className="text-sm text-text-muted text-center">
             Escaneie o QR Code ou copie o código PIX abaixo
           </p>
         </div>
@@ -96,12 +96,12 @@ export function PaymentScreen({ onPaymentComplete }: PaymentScreenProps) {
         {/* Confirm payment button */}
         <Button
           onClick={onPaymentComplete}
-          className="w-full h-12 bg-gold-gradient hover:opacity-90 text-accent-foreground font-semibold text-lg shadow-gold-glow transition-all duration-300"
+          className="w-full h-12 bg-gradient-accent hover:opacity-90 text-accent-foreground font-semibold text-lg shadow-glow transition-all duration-300"
         >
           Já Fiz o Pagamento
         </Button>
 
-        <p className="text-xs text-muted-foreground text-center mt-4">
+        <p className="text-xs text-text-muted text-center mt-4">
           Após o pagamento, clique no botão acima para liberar seu resultado.
         </p>
       </div>

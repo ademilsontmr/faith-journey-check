@@ -108,7 +108,7 @@ const ResultadoPage = () => {
       <div className="min-h-screen bg-background flex items-center justify-center">
         <div className="text-center">
           <Loader2 className="w-8 h-8 animate-spin text-primary mx-auto mb-4" />
-          <p className="text-muted-foreground">Carregando resultado...</p>
+          <p className="text-text-muted">Carregando resultado...</p>
         </div>
       </div>
     );
@@ -118,9 +118,9 @@ const ResultadoPage = () => {
   if (paymentError && !session) {
     return (
       <div className="min-h-screen bg-background flex items-center justify-center p-4">
-        <div className="bg-card rounded-2xl shadow-sacred p-8 md:p-12 border border-border/50 max-w-md text-center">
-          <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-muted mb-6">
-            <Lock className="w-10 h-10 text-muted-foreground" />
+        <div className="bg-surface rounded-2xl shadow-soft p-8 md:p-12 border border-border/50 max-w-md text-center">
+          <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-background-muted mb-6">
+            <Lock className="w-10 h-10 text-text-muted" />
           </div>
           <h2 className="font-display text-2xl md:text-3xl text-primary mb-4">
             {paymentError}
@@ -148,16 +148,16 @@ const ResultadoPage = () => {
         </div>
 
         <div className="relative min-h-screen flex flex-col items-center justify-center p-4">
-          <div className="bg-card rounded-2xl shadow-sacred p-8 md:p-12 border border-border/50 max-w-md text-center">
-            <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-muted mb-6">
-              <Lock className="w-10 h-10 text-muted-foreground" />
+          <div className="bg-surface rounded-2xl shadow-soft p-8 md:p-12 border border-border/50 max-w-md text-center">
+            <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-background-muted mb-6">
+              <Lock className="w-10 h-10 text-text-muted" />
             </div>
             
             <h2 className="font-display text-2xl md:text-3xl text-primary mb-4">
               Resultado Bloqueado
             </h2>
             
-            <p className="text-muted-foreground mb-6">
+            <p className="text-text-muted mb-6">
               Para acessar seu resultado personalizado e o Guia da Vida Católica, é necessário concluir o pagamento.
             </p>
 
@@ -173,7 +173,7 @@ const ResultadoPage = () => {
 
             <Button
               onClick={handleGoToPayment}
-              className="w-full h-12 bg-gold-gradient hover:opacity-90 text-accent-foreground font-semibold text-lg shadow-gold-glow transition-all duration-300 mb-4"
+              className="w-full h-12 bg-gradient-accent hover:opacity-90 text-accent-foreground font-semibold text-lg shadow-glow transition-all duration-300 mb-4"
             >
               Ir para Pagamento
             </Button>
@@ -181,7 +181,7 @@ const ResultadoPage = () => {
             <Button
               onClick={handleRestart}
               variant="ghost"
-              className="text-muted-foreground"
+              className="text-text-muted"
             >
               Refazer Quiz
             </Button>
@@ -215,7 +215,7 @@ const ResultadoPage = () => {
         </main>
 
         <footer className="py-6 text-center">
-          <p className="text-sm text-muted-foreground">
+          <p className="text-sm text-text-muted">
             © 2024 Bom Católico · Todos os direitos reservados
           </p>
         </footer>
