@@ -8,9 +8,3 @@ verify_jwt = false
 
 [functions.payment-webhook]
 verify_jwt = false
-
-[functions.create-billing]
-verify_jwt = false
-
-[functions.abacate-webhook]
-verify_jwt = false

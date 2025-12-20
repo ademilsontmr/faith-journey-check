@@ -41,24 +41,35 @@ const PagamentoPage = () => {
 
     setIsCreatingBilling(true);
     try {
-      const { data, error } = await supabase.functions.invoke("create-billing", {
+      const { data, error } = await supabase.functions.invoke("create-pix-charge", {
         body: {
-          sessionId,
-          userName: session.user_name,
-          userWhatsapp: session.user_whatsapp,
+          testType: "spiritual_gifts",
+          customerEmail: session.user_whatsapp ? `${session.user_whatsapp}@placeholder.com` : "cliente@placeholder.com",
+          customerName: session.user_name || "Cliente",
+          baseUrl: window.location.origin,
+          quizAnswers: session.answers,
+          score: session.answers?.reduce((a: number, b: number) => a + b, 0) || 0,
         },
       });
 
       if (error) throw error;
 
-      console.log("Billing created:", data);
-      setBillingUrl(data.billingUrl);
+      console.log("PIX charge created:", data);
       
-      if (data.pixQrCode?.brCode) {
-        setPixCode(data.pixQrCode.brCode);
+      if (data.checkoutUrl) {
+        setBillingUrl(data.checkoutUrl);
+      }
+      
+      if (data.pix?.copyPaste) {
+        setPixCode(data.pix.copyPaste);
+      }
+      
+      // Store payment ID for checking status
+      if (data.paymentId) {
+        localStorage.setItem("payment_id", data.paymentId);
       }
     } catch (error) {
-      console.error("Error creating billing:", error);
+      console.error("Error creating PIX charge:", error);
       toast.error("Erro ao criar cobrança. Tente novamente.");
     } finally {
       setIsCreatingBilling(false);
@@ -86,16 +97,39 @@ const PagamentoPage = () => {
 
   const handleCheckPayment = async () => {
     setIsCheckingPayment(true);
-    await refreshSession();
     
-    setTimeout(() => {
-      setIsCheckingPayment(false);
-      if (session?.paid) {
-        navigate("/resultado");
-      } else {
-        toast.info("Pagamento ainda não confirmado. Aguarde alguns segundos e tente novamente.");
+    try {
+      const paymentId = localStorage.getItem("payment_id");
+      
+      if (paymentId) {
+        // Check payment status with new edge function
+        const { data, error } = await supabase.functions.invoke("check-payment-status", {
+          body: { paymentId },
+        });
+        
+        if (!error && (data?.status === "approved" || data?.status === "paid")) {
+          toast.success("Pagamento confirmado!");
+          navigate("/resultado");
+          return;
+        }
       }
-    }, 1000);
+      
+      // Fallback: refresh session to check paid status
+      await refreshSession();
+      
+      setTimeout(() => {
+        setIsCheckingPayment(false);
+        if (session?.paid) {
+          navigate("/resultado");
+        } else {
+          toast.info("Pagamento ainda não confirmado. Aguarde alguns segundos e tente novamente.");
+        }
+      }, 1000);
+    } catch (error) {
+      console.error("Error checking payment:", error);
+      setIsCheckingPayment(false);
+      toast.info("Pagamento ainda não confirmado. Aguarde alguns segundos e tente novamente.");
+    }
   };
 
   if (loading || !session) {
