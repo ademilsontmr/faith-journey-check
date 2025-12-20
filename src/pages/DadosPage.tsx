@@ -1,9 +1,11 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { QuizHeader } from "@/components/quiz/QuizHeader";
-import { LeadForm } from "@/components/quiz/LeadForm";
+import { LeadForm, CustomerData } from "@/components/quiz/LeadForm";
 import { useQuizSession } from "@/hooks/useQuizSession";
 import { Loader2 } from "lucide-react";
+
+const CUSTOMER_DATA_KEY = "checkout_customer_data";
 
 const DadosPage = () => {
   const navigate = useNavigate();
@@ -16,9 +18,15 @@ const DadosPage = () => {
     }
   }, [sessionId, session, loading, navigate]);
 
-  const handleLeadSubmit = async (name: string, whatsapp: string) => {
+  const handleLeadSubmit = async (data: CustomerData) => {
     setIsSubmitting(true);
-    const success = await updateUserData(name, whatsapp);
+    
+    // Save customer data to localStorage for payment page
+    localStorage.setItem(CUSTOMER_DATA_KEY, JSON.stringify(data));
+    
+    // Update session with user name and phone
+    const success = await updateUserData(data.name, data.phone);
+    
     if (success) {
       navigate("/pagamento");
     } else {

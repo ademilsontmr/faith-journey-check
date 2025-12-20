@@ -2,38 +2,56 @@ import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { QuizHeader } from "@/components/quiz/QuizHeader";
 import { Button } from "@/components/ui/button";
-import { QrCode, Copy, CheckCircle2, Gift, BookOpen, Heart, Star, Loader2, ExternalLink } from "lucide-react";
+import { QrCode, Copy, CheckCircle2, Gift, BookOpen, Heart, Star, Loader2 } from "lucide-react";
 import { toast } from "sonner";
 import { useQuizSession } from "@/hooks/useQuizSession";
 import { supabase } from "@/integrations/supabase/client";
+import { CustomerData } from "@/components/quiz/LeadForm";
+
+const CUSTOMER_DATA_KEY = "checkout_customer_data";
 
 const PagamentoPage = () => {
   const navigate = useNavigate();
-  const { sessionId, session, loading, refreshSession } = useQuizSession();
+  const { sessionId, session, loading } = useQuizSession();
   const [copied, setCopied] = useState(false);
   const [isCreatingBilling, setIsCreatingBilling] = useState(false);
-  const [billingUrl, setBillingUrl] = useState<string | null>(null);
   const [pixCode, setPixCode] = useState<string | null>(null);
   const [isCheckingPayment, setIsCheckingPayment] = useState(false);
   const [paymentId, setPaymentId] = useState<string | null>(null);
   const [accessToken, setAccessToken] = useState<string | null>(null);
+  const [paymentError, setPaymentError] = useState<string | null>(null);
+  const [customerData, setCustomerData] = useState<CustomerData | null>(null);
 
-  // Restore payment data from localStorage on mount
+  // Restore payment data and customer data from localStorage on mount
   useEffect(() => {
     const storedPaymentId = localStorage.getItem("payment_id");
     const storedAccessToken = localStorage.getItem("payment_access_token");
-    const storedBillingUrl = localStorage.getItem("billing_url");
     const storedPixCode = localStorage.getItem("pix_code");
+    const storedCustomerData = localStorage.getItem(CUSTOMER_DATA_KEY);
     
     if (storedPaymentId) setPaymentId(storedPaymentId);
     if (storedAccessToken) setAccessToken(storedAccessToken);
-    if (storedBillingUrl) setBillingUrl(storedBillingUrl);
     if (storedPixCode) setPixCode(storedPixCode);
+    if (storedCustomerData) {
+      try {
+        setCustomerData(JSON.parse(storedCustomerData));
+      } catch {
+        // Invalid JSON, ignore
+      }
+    }
   }, []);
 
+  // Redirect if no session or no customer data
   useEffect(() => {
     if (!loading && (!sessionId || !session?.user_name)) {
       navigate("/quiz");
+      return;
+    }
+    
+    // Check if customer data exists
+    const storedCustomerData = localStorage.getItem(CUSTOMER_DATA_KEY);
+    if (!loading && session && !storedCustomerData) {
+      navigate("/dados");
     }
   }, [sessionId, session, loading, navigate]);
 
@@ -59,63 +77,79 @@ const PagamentoPage = () => {
     }
   }, [loading, session, navigate]);
 
-  // Create billing only if no existing payment
+  // Create billing only if no existing payment and customer data exists
   useEffect(() => {
-    if (sessionId && session?.user_name && !billingUrl && !isCreatingBilling && !paymentId) {
-      createBilling();
+    const storedCustomerData = localStorage.getItem(CUSTOMER_DATA_KEY);
+    if (
+      sessionId && 
+      session?.user_name && 
+      !pixCode && 
+      !isCreatingBilling && 
+      !paymentId && 
+      storedCustomerData
+    ) {
+      try {
+        const parsedData = JSON.parse(storedCustomerData);
+        setCustomerData(parsedData);
+        createBilling(parsedData);
+      } catch {
+        navigate("/dados");
+      }
     }
-  }, [sessionId, session?.user_name, paymentId]);
+  }, [sessionId, session?.user_name, paymentId, pixCode]);
 
-  const createBilling = async () => {
+  const createBilling = async (data: CustomerData) => {
     if (!sessionId || !session) return;
 
     setIsCreatingBilling(true);
+    setPaymentError(null);
+    
     try {
-      const { data, error } = await supabase.functions.invoke("create-payment", {
+      const { data: responseData, error } = await supabase.functions.invoke("create-payment", {
         body: {
+          amount: 9.90,
           testType: "spiritual_gifts",
-          customerEmail: session.user_whatsapp ? `${session.user_whatsapp}@placeholder.com` : "cliente@placeholder.com",
-          customerName: session.user_name || "Cliente",
-          baseUrl: window.location.origin,
+          customerEmail: data.email,
+          customerName: data.name,
+          customerPhone: data.phone,
+          customerTaxId: data.taxId,
           quizAnswers: session.answers,
           score: session.answers?.reduce((a: number, b: number) => a + b, 0) || 0,
+          maxScore: session.answers?.length ? session.answers.length * 3 : 0,
         },
       });
 
       if (error) throw error;
 
-      console.log("PIX charge created:", data);
+      console.log("PIX charge created:", responseData);
       
-      // Store all payment data
-      if (data.paymentId) {
-        setPaymentId(data.paymentId);
-        localStorage.setItem("payment_id", data.paymentId);
+      // Store payment data - brCode comes directly from response
+      if (responseData.paymentId) {
+        setPaymentId(responseData.paymentId);
+        localStorage.setItem("payment_id", responseData.paymentId);
       }
       
-      if (data.accessToken) {
-        setAccessToken(data.accessToken);
-        localStorage.setItem("payment_access_token", data.accessToken);
+      if (responseData.accessToken) {
+        setAccessToken(responseData.accessToken);
+        localStorage.setItem("payment_access_token", responseData.accessToken);
       }
       
-      if (data.checkoutUrl) {
-        setBillingUrl(data.checkoutUrl);
-        localStorage.setItem("billing_url", data.checkoutUrl);
-      }
-      
-      if (data.pix?.copyPaste) {
-        setPixCode(data.pix.copyPaste);
-        localStorage.setItem("pix_code", data.pix.copyPaste);
+      // brCode is the PIX copy-paste code
+      if (responseData.brCode) {
+        setPixCode(responseData.brCode);
+        localStorage.setItem("pix_code", responseData.brCode);
       }
       
       // Link payment to quiz session
-      if (data.paymentId && sessionId) {
+      if (responseData.paymentId && sessionId) {
         await supabase
           .from("quiz_sessions")
-          .update({ payment_id: data.paymentId })
+          .update({ payment_id: responseData.paymentId })
           .eq("id", sessionId);
       }
     } catch (error) {
       console.error("Error creating PIX charge:", error);
+      setPaymentError("Erro ao criar cobrança. Tente novamente.");
       toast.error("Erro ao criar cobrança. Tente novamente.");
     } finally {
       setIsCreatingBilling(false);
@@ -135,9 +169,11 @@ const PagamentoPage = () => {
     }
   };
 
-  const handleOpenPayment = () => {
-    if (billingUrl) {
-      window.open(billingUrl, "_blank");
+  const handleRetry = () => {
+    if (customerData) {
+      createBilling(customerData);
+    } else {
+      navigate("/dados");
     }
   };
 
@@ -222,10 +258,10 @@ const PagamentoPage = () => {
                   <QrCode className="w-8 h-8 text-button-text" />
                 </div>
                 <h2 className="font-display text-2xl md:text-3xl text-primary mb-2">
-                  Desbloqueie seu Resultado
+                  Pague com PIX
                 </h2>
                 <p className="text-text-muted mb-4">
-                  Acesse seu resultado completo + Guia Exclusivo da Vida Católica
+                  Copie o código abaixo e pague no app do seu banco
                 </p>
                 
                 <div className="bg-gradient-accent text-accent-foreground rounded-xl p-4 mb-6">
@@ -256,54 +292,50 @@ const PagamentoPage = () => {
               {isCreatingBilling ? (
                 <div className="bg-secondary/50 rounded-xl p-6 mb-4 text-center">
                   <Loader2 className="w-12 h-12 animate-spin text-primary mx-auto mb-4" />
-                  <p className="text-text-muted">Gerando pagamento...</p>
+                  <p className="text-text-muted">Gerando código PIX...</p>
                 </div>
-              ) : billingUrl ? (
+              ) : pixCode ? (
                 <>
+                  {/* PIX Code Display */}
+                  <div className="bg-background-muted rounded-xl p-4 mb-4">
+                    <p className="text-xs text-text-muted mb-2 text-center">Código PIX Copia e Cola:</p>
+                    <div className="bg-background rounded-lg p-3 break-all text-xs text-text font-mono max-h-24 overflow-y-auto">
+                      {pixCode}
+                    </div>
+                  </div>
+
                   <Button
-                    onClick={handleOpenPayment}
+                    onClick={handleCopyPix}
                     className="w-full h-12 mb-4 bg-button hover:bg-button-hover text-button-text font-semibold text-lg transition-all duration-300"
                   >
-                    <ExternalLink className="w-5 h-5 mr-2" />
-                    Pagar com PIX
+                    {copied ? (
+                      <>
+                        <CheckCircle2 className="w-5 h-5 mr-2" />
+                        Código Copiado!
+                      </>
+                    ) : (
+                      <>
+                        <Copy className="w-5 h-5 mr-2" />
+                        Copiar Código PIX
+                      </>
+                    )}
                   </Button>
-
-                  {pixCode && (
-                    <Button
-                      onClick={handleCopyPix}
-                      variant="outline"
-                      className="w-full h-12 mb-4 border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300"
-                    >
-                      {copied ? (
-                        <>
-                          <CheckCircle2 className="w-5 h-5 mr-2" />
-                          Código Copiado!
-                        </>
-                      ) : (
-                        <>
-                          <Copy className="w-5 h-5 mr-2" />
-                          Copiar Código PIX
-                        </>
-                      )}
-                    </Button>
-                  )}
                 </>
-              ) : (
+              ) : paymentError ? (
                 <div className="bg-secondary/50 rounded-xl p-6 mb-4 text-center">
-                  <p className="text-error">Erro ao gerar pagamento.</p>
+                  <p className="text-error mb-4">{paymentError}</p>
                   <Button
-                    onClick={createBilling}
+                    onClick={handleRetry}
                     variant="outline"
-                    className="mt-4"
                   >
                     Tentar novamente
                   </Button>
                 </div>
-              )}
+              ) : null}
 
               <Button
                 onClick={handleCheckPayment}
-                disabled={isCheckingPayment}
+                disabled={isCheckingPayment || !pixCode}
                 className="w-full h-12 bg-gradient-accent hover:opacity-90 text-accent-foreground font-semibold text-lg shadow-glow transition-all duration-300"
               >
                 {isCheckingPayment ? (
