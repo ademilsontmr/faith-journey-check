@@ -20,34 +20,34 @@ export function Navbar() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-full bg-gold-gradient flex items-center justify-center">
-              <Cross className="w-4 h-4 text-accent-foreground" />
+            <div className="w-8 h-8 rounded-full bg-gradient-accent flex items-center justify-center">
+              <Cross className="w-4 h-4 text-button-text" />
             </div>
-            <span className="font-display text-xl font-bold text-primary">Bom Católico</span>
+            <span className="font-display text-xl font-bold text-accent">Bom Católico</span>
           </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
             <button
               onClick={() => scrollToSection("beneficios")}
-              className="text-muted-foreground hover:text-foreground transition-colors"
+              className="text-text-muted hover:text-text transition-colors"
             >
               Benefícios
             </button>
             <button
               onClick={() => scrollToSection("como-funciona")}
-              className="text-muted-foreground hover:text-foreground transition-colors"
+              className="text-text-muted hover:text-text transition-colors"
             >
               Como Funciona
             </button>
             <button
               onClick={() => scrollToSection("depoimentos")}
-              className="text-muted-foreground hover:text-foreground transition-colors"
+              className="text-text-muted hover:text-text transition-colors"
             >
               Depoimentos
             </button>
             <Link to="/quiz">
-              <Button className="bg-gold-gradient hover:opacity-90 text-accent-foreground font-semibold">
+              <Button className="bg-gradient-accent hover:opacity-90 text-button-text font-semibold">
                 Fazer o Quiz
               </Button>
             </Link>
@@ -59,9 +59,9 @@ export function Navbar() {
             onClick={() => setIsOpen(!isOpen)}
           >
             {isOpen ? (
-              <X className="w-6 h-6 text-foreground" />
+              <X className="w-6 h-6 text-text" />
             ) : (
-              <Menu className="w-6 h-6 text-foreground" />
+              <Menu className="w-6 h-6 text-text" />
             )}
           </button>
         </div>
@@ -72,24 +72,24 @@ export function Navbar() {
             <div className="flex flex-col gap-4">
               <button
                 onClick={() => scrollToSection("beneficios")}
-                className="text-left py-2 text-muted-foreground hover:text-foreground transition-colors"
+                className="text-left py-2 text-text-muted hover:text-text transition-colors"
               >
                 Benefícios
               </button>
               <button
                 onClick={() => scrollToSection("como-funciona")}
-                className="text-left py-2 text-muted-foreground hover:text-foreground transition-colors"
+                className="text-left py-2 text-text-muted hover:text-text transition-colors"
               >
                 Como Funciona
               </button>
               <button
                 onClick={() => scrollToSection("depoimentos")}
-                className="text-left py-2 text-muted-foreground hover:text-foreground transition-colors"
+                className="text-left py-2 text-text-muted hover:text-text transition-colors"
               >
                 Depoimentos
               </button>
               <Link to="/quiz" onClick={() => setIsOpen(false)}>
-                <Button className="w-full bg-gold-gradient hover:opacity-90 text-accent-foreground font-semibold">
+                <Button className="w-full bg-gradient-accent hover:opacity-90 text-button-text font-semibold">
                   Fazer o Quiz
                 </Button>
               </Link>

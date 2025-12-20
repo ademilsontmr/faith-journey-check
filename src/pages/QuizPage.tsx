@@ -85,8 +85,8 @@ const QuizPage = () => {
     return (
       <div className="min-h-screen bg-background flex items-center justify-center">
         <div className="text-center">
-          <Loader2 className="w-8 h-8 animate-spin text-primary mx-auto mb-4" />
-          <p className="text-muted-foreground">Carregando quiz...</p>
+          <Loader2 className="w-8 h-8 animate-spin text-accent mx-auto mb-4" />
+          <p className="text-text-muted">Carregando quiz...</p>
         </div>
       </div>
     );
@@ -105,7 +105,7 @@ const QuizPage = () => {
             variant="ghost"
             size="sm"
             onClick={() => navigate("/")}
-            className="text-muted-foreground hover:text-foreground"
+            className="text-text-muted hover:text-text"
           >
             <ArrowLeft className="w-4 h-4 mr-2" />
             Voltar
@@ -125,7 +125,7 @@ const QuizPage = () => {
         </main>
 
         <footer className="py-6 text-center">
-          <p className="text-sm text-muted-foreground">
+          <p className="text-sm text-text-muted">
             © 2024 Bom Católico · Todos os direitos reservados
           </p>
         </footer>
