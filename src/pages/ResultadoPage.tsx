@@ -7,61 +7,86 @@ import { Loader2, Lock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { supabase } from "@/integrations/supabase/client";
 
+interface PaymentData {
+  id: string;
+  status: string;
+  customer_name: string;
+  quiz_answers: number[] | null;
+  score: number | null;
+  access_token: string;
+}
+
 const ResultadoPage = () => {
   const navigate = useNavigate();
   const [searchParams] = useSearchParams();
-  const { sessionId, session, loading, refreshSession, clearSession } = useQuizSession();
-  const [isLoadingFromUrl, setIsLoadingFromUrl] = useState(false);
-  const [urlSession, setUrlSession] = useState<any>(null);
+  const { sessionId, session, loading, clearSession } = useQuizSession();
+  const [isLoadingPayment, setIsLoadingPayment] = useState(false);
+  const [payment, setPayment] = useState<PaymentData | null>(null);
+  const [paymentError, setPaymentError] = useState<string | null>(null);
 
-  // Check for session ID in URL (for redirect from Abacate Pay)
+  // Check for access token in URL or localStorage
   useEffect(() => {
-    const urlSessionId = searchParams.get("session");
-    if (urlSessionId && urlSessionId !== sessionId) {
-      loadSessionFromUrl(urlSessionId);
-    }
-  }, [searchParams, sessionId]);
+    const tokenFromUrl = searchParams.get("token");
+    const tokenFromStorage = localStorage.getItem("payment_access_token");
+    const token = tokenFromUrl || tokenFromStorage;
 
-  const loadSessionFromUrl = async (id: string) => {
-    setIsLoadingFromUrl(true);
+    if (token) {
+      loadPaymentByToken(token);
+    }
+  }, [searchParams]);
+
+  const loadPaymentByToken = async (token: string) => {
+    setIsLoadingPayment(true);
+    setPaymentError(null);
+    
     try {
       const { data, error } = await supabase
-        .from("quiz_sessions")
-        .select("*")
-        .eq("id", id)
+        .from("payments")
+        .select("id, status, customer_name, quiz_answers, score, access_token")
+        .eq("access_token", token)
         .maybeSingle();
 
-      if (error) throw error;
+      if (error) {
+        console.error("Error loading payment:", error);
+        setPaymentError("Erro ao carregar pagamento.");
+        return;
+      }
+      
       if (data) {
-        setUrlSession(data);
-        // Store in localStorage for future visits
-        localStorage.setItem("quiz_session_id", id);
+        setPayment(data as PaymentData);
+        // Store token for future visits
+        localStorage.setItem("payment_access_token", token);
+      } else {
+        setPaymentError("Pagamento não encontrado.");
       }
     } catch (err) {
-      console.error("Error loading session from URL:", err);
+      console.error("Error loading payment:", err);
+      setPaymentError("Erro ao carregar pagamento.");
     } finally {
-      setIsLoadingFromUrl(false);
+      setIsLoadingPayment(false);
     }
   };
 
-  // Determine which session to use
-  const activeSession = urlSession || session;
+  // Determine if user has access (payment is paid)
+  const isPaid = payment?.status === "paid";
+  
+  // Get answers from payment or session
+  const answers = payment?.quiz_answers || session?.answers || [];
+  const userName = payment?.customer_name || session?.user_name || "Católico";
 
-  // Refresh session on mount to get latest payment status
+  // Redirect if no data source
   useEffect(() => {
-    if (sessionId && !urlSession) {
-      refreshSession();
-    }
-  }, [sessionId, refreshSession, urlSession]);
-
-  // Redirect if no session
-  useEffect(() => {
-    if (!loading && !isLoadingFromUrl && !activeSession) {
+    if (!loading && !isLoadingPayment && !payment && !session && !searchParams.get("token")) {
       navigate("/quiz");
     }
-  }, [loading, isLoadingFromUrl, activeSession, navigate]);
+  }, [loading, isLoadingPayment, payment, session, searchParams, navigate]);
 
   const handleRestart = () => {
+    // Clear all payment data
+    localStorage.removeItem("payment_id");
+    localStorage.removeItem("payment_access_token");
+    localStorage.removeItem("billing_url");
+    localStorage.removeItem("pix_code");
     clearSession();
     navigate("/quiz");
   };
@@ -70,7 +95,15 @@ const ResultadoPage = () => {
     navigate("/pagamento");
   };
 
-  if (loading || isLoadingFromUrl) {
+  const handleCheckPayment = async () => {
+    const token = searchParams.get("token") || localStorage.getItem("payment_access_token");
+    if (token) {
+      await loadPaymentByToken(token);
+    }
+  };
+
+  // Loading state
+  if (loading || isLoadingPayment) {
     return (
       <div className="min-h-screen bg-background flex items-center justify-center">
         <div className="text-center">
@@ -81,12 +114,32 @@ const ResultadoPage = () => {
     );
   }
 
-  if (!activeSession) {
+  // Error state
+  if (paymentError && !session) {
+    return (
+      <div className="min-h-screen bg-background flex items-center justify-center p-4">
+        <div className="bg-card rounded-2xl shadow-sacred p-8 md:p-12 border border-border/50 max-w-md text-center">
+          <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-muted mb-6">
+            <Lock className="w-10 h-10 text-muted-foreground" />
+          </div>
+          <h2 className="font-display text-2xl md:text-3xl text-primary mb-4">
+            {paymentError}
+          </h2>
+          <Button onClick={() => navigate("/quiz")} className="w-full">
+            Fazer o Quiz
+          </Button>
+        </div>
+      </div>
+    );
+  }
+
+  // No data
+  if (!payment && !session) {
     return null;
   }
 
   // Block access if not paid
-  if (!activeSession.paid) {
+  if (!isPaid) {
     return (
       <div className="min-h-screen bg-background">
         <div className="fixed inset-0 overflow-hidden pointer-events-none">
@@ -108,6 +161,16 @@ const ResultadoPage = () => {
               Para acessar seu resultado personalizado e o Guia da Vida Católica, é necessário concluir o pagamento.
             </p>
 
+            {payment && payment.status === "processing" && (
+              <Button
+                onClick={handleCheckPayment}
+                variant="outline"
+                className="w-full h-12 mb-4"
+              >
+                Verificar Pagamento
+              </Button>
+            )}
+
             <Button
               onClick={handleGoToPayment}
               className="w-full h-12 bg-gold-gradient hover:opacity-90 text-accent-foreground font-semibold text-lg shadow-gold-glow transition-all duration-300 mb-4"
@@ -128,8 +191,7 @@ const ResultadoPage = () => {
     );
   }
 
-  // Calculate results from session data
-  const answers = activeSession.answers || [];
+  // Calculate results
   const totalPoints = answers.reduce((sum: number, points: number) => sum + (points || 0), 0);
   const normalizedScore = calculateNormalizedScore(totalPoints);
   const resultLevel = getResultLevel(normalizedScore);
@@ -146,7 +208,7 @@ const ResultadoPage = () => {
           <ResultScreen
             score={normalizedScore}
             level={resultLevel}
-            userName={activeSession.user_name || "Católico"}
+            userName={userName}
             answers={answers}
             onRestart={handleRestart}
           />
