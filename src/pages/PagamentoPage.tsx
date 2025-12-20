@@ -1,31 +1,73 @@
 import { useEffect, useState } from "react";
-import { useNavigate, useLocation } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { QuizHeader } from "@/components/quiz/QuizHeader";
 import { Button } from "@/components/ui/button";
-import { QrCode, Copy, CheckCircle2, Gift, BookOpen, Heart, Star } from "lucide-react";
+import { QrCode, Copy, CheckCircle2, Gift, BookOpen, Heart, Star, Loader2, ExternalLink } from "lucide-react";
 import { toast } from "sonner";
-
-interface UserData {
-  name: string;
-  whatsapp: string;
-}
+import { useQuizSession } from "@/hooks/useQuizSession";
+import { supabase } from "@/integrations/supabase/client";
 
 const PagamentoPage = () => {
   const navigate = useNavigate();
-  const location = useLocation();
-  const answers = location.state?.answers as number[] | undefined;
-  const userData = location.state?.userData as UserData | undefined;
+  const { sessionId, session, loading, refreshSession } = useQuizSession();
   const [copied, setCopied] = useState(false);
-
-  const pixCode = "00020126580014br.gov.bcb.pix0136a629532e-7693-4846-b028-ejemplo520400005303986540510.905802BR5925GUIA DA VIDA CATOLICA6009SAO PAULO62070503***6304E2CA";
+  const [isCreatingBilling, setIsCreatingBilling] = useState(false);
+  const [billingUrl, setBillingUrl] = useState<string | null>(null);
+  const [pixCode, setPixCode] = useState<string | null>(null);
+  const [isCheckingPayment, setIsCheckingPayment] = useState(false);
 
   useEffect(() => {
-    if (!answers || !userData) {
+    if (!loading && (!sessionId || !session?.user_name)) {
       navigate("/quiz");
     }
-  }, [answers, userData, navigate]);
+  }, [sessionId, session, loading, navigate]);
+
+  // Redirect if already paid
+  useEffect(() => {
+    if (session?.paid) {
+      navigate("/resultado");
+    }
+  }, [session?.paid, navigate]);
+
+  // Create billing on mount
+  useEffect(() => {
+    if (sessionId && session?.user_name && !billingUrl && !isCreatingBilling) {
+      createBilling();
+    }
+  }, [sessionId, session?.user_name]);
+
+  const createBilling = async () => {
+    if (!sessionId || !session) return;
+
+    setIsCreatingBilling(true);
+    try {
+      const { data, error } = await supabase.functions.invoke("create-billing", {
+        body: {
+          sessionId,
+          userName: session.user_name,
+          userWhatsapp: session.user_whatsapp,
+        },
+      });
+
+      if (error) throw error;
+
+      console.log("Billing created:", data);
+      setBillingUrl(data.billingUrl);
+      
+      if (data.pixQrCode?.brCode) {
+        setPixCode(data.pixQrCode.brCode);
+      }
+    } catch (error) {
+      console.error("Error creating billing:", error);
+      toast.error("Erro ao criar cobrança. Tente novamente.");
+    } finally {
+      setIsCreatingBilling(false);
+    }
+  };
 
   const handleCopyPix = async () => {
+    if (!pixCode) return;
+    
     try {
       await navigator.clipboard.writeText(pixCode);
       setCopied(true);
@@ -36,11 +78,36 @@ const PagamentoPage = () => {
     }
   };
 
-  const handlePaymentComplete = () => {
-    navigate("/resultado", { state: { answers, userData } });
+  const handleOpenPayment = () => {
+    if (billingUrl) {
+      window.open(billingUrl, "_blank");
+    }
   };
 
-  if (!answers || !userData) return null;
+  const handleCheckPayment = async () => {
+    setIsCheckingPayment(true);
+    await refreshSession();
+    
+    setTimeout(() => {
+      setIsCheckingPayment(false);
+      if (session?.paid) {
+        navigate("/resultado");
+      } else {
+        toast.info("Pagamento ainda não confirmado. Aguarde alguns segundos e tente novamente.");
+      }
+    }, 1000);
+  };
+
+  if (loading || !session) {
+    return (
+      <div className="min-h-screen bg-background flex items-center justify-center">
+        <div className="text-center">
+          <Loader2 className="w-8 h-8 animate-spin text-primary mx-auto mb-4" />
+          <p className="text-muted-foreground">Carregando...</p>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="min-h-screen bg-background">
@@ -91,38 +158,67 @@ const PagamentoPage = () => {
                 </div>
               </div>
 
-              <div className="bg-secondary/50 rounded-xl p-6 mb-4">
-                <div className="w-48 h-48 mx-auto bg-background rounded-lg flex items-center justify-center border-2 border-dashed border-border mb-4">
-                  <QrCode className="w-24 h-24 text-primary" />
+              {isCreatingBilling ? (
+                <div className="bg-secondary/50 rounded-xl p-6 mb-4 text-center">
+                  <Loader2 className="w-12 h-12 animate-spin text-primary mx-auto mb-4" />
+                  <p className="text-muted-foreground">Gerando pagamento...</p>
                 </div>
-                <p className="text-sm text-muted-foreground text-center">
-                  Escaneie o QR Code ou copie o código PIX abaixo
-                </p>
-              </div>
+              ) : billingUrl ? (
+                <>
+                  <Button
+                    onClick={handleOpenPayment}
+                    className="w-full h-12 mb-4 bg-primary hover:bg-primary/90 text-primary-foreground font-semibold text-lg transition-all duration-300"
+                  >
+                    <ExternalLink className="w-5 h-5 mr-2" />
+                    Pagar com PIX
+                  </Button>
+
+                  {pixCode && (
+                    <Button
+                      onClick={handleCopyPix}
+                      variant="outline"
+                      className="w-full h-12 mb-4 border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300"
+                    >
+                      {copied ? (
+                        <>
+                          <CheckCircle2 className="w-5 h-5 mr-2" />
+                          Código Copiado!
+                        </>
+                      ) : (
+                        <>
+                          <Copy className="w-5 h-5 mr-2" />
+                          Copiar Código PIX
+                        </>
+                      )}
+                    </Button>
+                  )}
+                </>
+              ) : (
+                <div className="bg-secondary/50 rounded-xl p-6 mb-4 text-center">
+                  <p className="text-destructive">Erro ao gerar pagamento.</p>
+                  <Button
+                    onClick={createBilling}
+                    variant="outline"
+                    className="mt-4"
+                  >
+                    Tentar novamente
+                  </Button>
+                </div>
+              )}
 
               <Button
-                onClick={handleCopyPix}
-                variant="outline"
-                className="w-full h-12 mb-4 border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300"
-              >
-                {copied ? (
-                  <>
-                    <CheckCircle2 className="w-5 h-5 mr-2" />
-                    Código Copiado!
-                  </>
-                ) : (
-                  <>
-                    <Copy className="w-5 h-5 mr-2" />
-                    Copiar Código PIX
-                  </>
-                )}
-              </Button>
-
-              <Button
-                onClick={handlePaymentComplete}
+                onClick={handleCheckPayment}
+                disabled={isCheckingPayment}
                 className="w-full h-12 bg-gold-gradient hover:opacity-90 text-accent-foreground font-semibold text-lg shadow-gold-glow transition-all duration-300"
               >
-                Já Fiz o Pagamento
+                {isCheckingPayment ? (
+                  <>
+                    <Loader2 className="w-5 h-5 mr-2 animate-spin" />
+                    Verificando...
+                  </>
+                ) : (
+                  "Já Fiz o Pagamento"
+                )}
               </Button>
 
               <p className="text-xs text-muted-foreground text-center mt-4">

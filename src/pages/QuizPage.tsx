@@ -1,30 +1,73 @@
-import { useState, useCallback } from "react";
+import { useState, useCallback, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { QuizHeader } from "@/components/quiz/QuizHeader";
 import { ProgressBar } from "@/components/quiz/ProgressBar";
 import { QuestionCard } from "@/components/quiz/QuestionCard";
 import { questions } from "@/data/quizQuestions";
-import { ArrowLeft } from "lucide-react";
+import { ArrowLeft, Loader2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useQuizSession } from "@/hooks/useQuizSession";
 
 const QuizPage = () => {
   const navigate = useNavigate();
+  const { sessionId, session, loading, createSession, updateAnswers, clearSession } = useQuizSession();
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [answers, setAnswers] = useState<number[]>([]);
+  const [isInitializing, setIsInitializing] = useState(true);
 
-  const handleSelectAnswer = useCallback((points: number) => {
+  // Initialize session on mount
+  useEffect(() => {
+    const initSession = async () => {
+      if (!sessionId) {
+        await createSession();
+      } else if (session) {
+        // Restore progress from existing session
+        if (session.answers && session.answers.length > 0) {
+          setAnswers(session.answers);
+          // If quiz was completed, restart fresh
+          if (session.completed_at) {
+            clearSession();
+            await createSession();
+          } else {
+            setCurrentQuestion(session.answers.length);
+          }
+        }
+      }
+      setIsInitializing(false);
+    };
+
+    if (!loading) {
+      initSession();
+    }
+  }, [sessionId, session, loading, createSession, clearSession]);
+
+  const handleSelectAnswer = useCallback(async (points: number) => {
     const newAnswers = [...answers];
     newAnswers[currentQuestion] = points;
     setAnswers(newAnswers);
+
+    // Save to Supabase
+    await updateAnswers(newAnswers);
 
     setTimeout(() => {
       if (currentQuestion < questions.length - 1) {
         setCurrentQuestion((prev) => prev + 1);
       } else {
-        navigate("/dados", { state: { answers: newAnswers } });
+        navigate("/dados");
       }
     }, 300);
-  }, [answers, currentQuestion, navigate]);
+  }, [answers, currentQuestion, navigate, updateAnswers]);
+
+  if (loading || isInitializing) {
+    return (
+      <div className="min-h-screen bg-background flex items-center justify-center">
+        <div className="text-center">
+          <Loader2 className="w-8 h-8 animate-spin text-primary mx-auto mb-4" />
+          <p className="text-muted-foreground">Carregando quiz...</p>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="min-h-screen bg-background">
