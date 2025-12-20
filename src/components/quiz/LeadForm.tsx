@@ -51,26 +51,26 @@ export function LeadForm({ onSubmit, isSubmitting = false }: LeadFormProps) {
 
   return (
     <div className="w-full max-w-md mx-auto px-4 animate-slide-up">
-      <div className="bg-card rounded-2xl shadow-sacred p-6 md:p-8 border border-border/50">
+      <div className="bg-surface rounded-2xl shadow-soft p-6 md:p-8 border border-border/50">
         <div className="text-center mb-8">
-          <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gold-gradient mb-4">
+          <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gradient-accent mb-4">
             <Gift className="w-8 h-8 text-accent-foreground" />
           </div>
           <h2 className="font-display text-2xl md:text-3xl text-primary mb-2">
             Seu resultado está pronto!
           </h2>
-          <p className="text-muted-foreground">
+          <p className="text-text-muted">
             Informe seus dados para ver seu resultado e receber conteúdos exclusivos.
           </p>
         </div>
 
         <form onSubmit={handleSubmit} className="space-y-5">
           <div className="space-y-2">
-            <Label htmlFor="name" className="text-foreground font-medium">
+            <Label htmlFor="name" className="text-text font-medium">
               Seu Nome
             </Label>
             <div className="relative">
-              <User className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-muted-foreground" />
+              <User className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-text-muted" />
               <Input
                 id="name"
                 type="text"
@@ -81,16 +81,16 @@ export function LeadForm({ onSubmit, isSubmitting = false }: LeadFormProps) {
               />
             </div>
             {errors.name && (
-              <p className="text-destructive text-sm">{errors.name}</p>
+              <p className="text-error text-sm">{errors.name}</p>
             )}
           </div>
 
           <div className="space-y-2">
-            <Label htmlFor="whatsapp" className="text-foreground font-medium">
+            <Label htmlFor="whatsapp" className="text-text font-medium">
               WhatsApp
             </Label>
             <div className="relative">
-              <Phone className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-muted-foreground" />
+              <Phone className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-text-muted" />
               <Input
                 id="whatsapp"
                 type="tel"
@@ -102,11 +102,11 @@ export function LeadForm({ onSubmit, isSubmitting = false }: LeadFormProps) {
               />
             </div>
             {errors.whatsapp && (
-              <p className="text-destructive text-sm">{errors.whatsapp}</p>
+              <p className="text-error text-sm">{errors.whatsapp}</p>
             )}
           </div>
 
-          <div className="flex items-center gap-2 text-sm text-muted-foreground bg-secondary/50 p-3 rounded-lg">
+          <div className="flex items-center gap-2 text-sm text-text-muted bg-secondary/50 p-3 rounded-lg">
             <Lock className="w-4 h-4 flex-shrink-0" />
             <span>Seus dados estão seguros e não serão compartilhados.</span>
           </div>
@@ -114,7 +114,7 @@ export function LeadForm({ onSubmit, isSubmitting = false }: LeadFormProps) {
           <Button
             type="submit"
             disabled={isSubmitting}
-            className="w-full h-12 bg-gold-gradient hover:opacity-90 text-accent-foreground font-semibold text-lg shadow-gold-glow transition-all duration-300 disabled:opacity-50"
+            className="w-full h-12 bg-gradient-accent hover:opacity-90 text-accent-foreground font-semibold text-lg shadow-glow transition-all duration-300 disabled:opacity-50"
           >
             {isSubmitting ? (
               <>

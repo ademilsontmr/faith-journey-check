@@ -45,7 +45,7 @@ export function BenefitsSection() {
           <h2 className="font-display text-3xl md:text-4xl font-bold text-primary mt-3 mb-4">
             Conheça os Benefícios
           </h2>
-          <p className="text-muted-foreground text-lg">
+          <p className="text-text-muted text-lg">
             Mais do que um quiz, uma oportunidade de refletir e crescer na sua vida cristã.
           </p>
         </div>
@@ -55,15 +55,15 @@ export function BenefitsSection() {
           {benefits.map((benefit, index) => (
             <div
               key={index}
-              className="bg-card rounded-2xl p-6 border border-border/50 shadow-sacred hover:shadow-lg transition-all duration-300 hover:-translate-y-1 group"
+              className="bg-surface rounded-2xl p-6 border border-border/50 shadow-soft hover:shadow-lg transition-all duration-300 hover:-translate-y-1 group"
             >
-              <div className="w-14 h-14 rounded-xl bg-gold-gradient flex items-center justify-center mb-5 group-hover:shadow-gold-glow transition-shadow">
+              <div className="w-14 h-14 rounded-xl bg-gradient-accent flex items-center justify-center mb-5 group-hover:shadow-glow transition-shadow">
                 <benefit.icon className="w-7 h-7 text-accent-foreground" />
               </div>
-              <h3 className="font-display text-xl font-semibold text-foreground mb-3">
+              <h3 className="font-display text-xl font-semibold text-text mb-3">
                 {benefit.title}
               </h3>
-              <p className="text-muted-foreground leading-relaxed">
+              <p className="text-text-muted leading-relaxed">
                 {benefit.description}
               </p>
             </div>

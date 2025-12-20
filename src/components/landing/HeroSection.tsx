@@ -17,33 +17,33 @@ export function HeroSection() {
           {/* Badge */}
           <div className="inline-flex items-center gap-2 bg-secondary/80 backdrop-blur-sm px-4 py-2 rounded-full mb-8 animate-fade-in">
             <Sparkles className="w-4 h-4 text-accent" />
-            <span className="text-sm font-medium text-foreground">Quiz Católico</span>
+            <span className="text-sm font-medium text-text">Quiz Católico</span>
           </div>
 
           {/* Icons */}
           <div className="flex items-center justify-center gap-4 mb-8">
-            <div className="w-16 h-16 rounded-2xl bg-gold-gradient flex items-center justify-center shadow-gold-glow animate-float">
+            <div className="w-16 h-16 rounded-2xl bg-gradient-accent flex items-center justify-center shadow-glow animate-float">
               <Cross className="w-8 h-8 text-accent-foreground" />
             </div>
-            <div className="w-16 h-16 rounded-2xl bg-blue-gradient flex items-center justify-center shadow-sacred animate-float" style={{
+            <div className="w-16 h-16 rounded-2xl bg-gradient-primary flex items-center justify-center shadow-soft animate-float" style={{
             animationDelay: "0.5s"
           }}>
-              <BookOpen className="w-8 h-8 text-primary-foreground" />
+              <BookOpen className="w-8 h-8 text-button-text" />
             </div>
           </div>
 
           {/* Headline */}
           <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-primary mb-6 leading-tight animate-slide-up">
             Descubra como está sua{" "}
-            <span className="text-gradient-gold">caminhada de fé</span>
+            <span className="text-gradient-accent">caminhada de fé</span>
           </h1>
 
           {/* Subheadline */}
-          <p className="text-lg md:text-xl text-muted-foreground mb-10 max-w-2xl mx-auto animate-slide-up" style={{
+          <p className="text-lg md:text-xl text-text-muted mb-10 max-w-2xl mx-auto animate-slide-up" style={{
           animationDelay: "0.1s"
         }}>
             Faça o quiz e receba um diagnóstico completo da sua vivência católica. 
-            Mais de <strong className="text-foreground">10.000 católicos</strong> já descobriram seu nível de prática da fé.
+            Mais de <strong className="text-text">10.000 católicos</strong> já descobriram seu nível de prática da fé.
           </p>
 
           {/* CTA Buttons */}
@@ -51,7 +51,7 @@ export function HeroSection() {
           animationDelay: "0.2s"
         }}>
             <Link to="/quiz">
-              <Button size="lg" className="h-14 px-8 bg-gold-gradient hover:opacity-90 text-accent-foreground font-semibold text-lg shadow-gold-glow transition-all duration-300 group">
+              <Button size="lg" className="h-14 px-8 bg-gradient-accent hover:opacity-90 text-accent-foreground font-semibold text-lg shadow-glow transition-all duration-300 group">
                 Começar o Quiz Agora
                 <ChevronRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
               </Button>
@@ -64,7 +64,7 @@ export function HeroSection() {
           </div>
 
           {/* Trust Indicators */}
-          <div className="mt-12 flex flex-wrap items-center justify-center gap-8 text-sm text-muted-foreground animate-fade-in" style={{
+          <div className="mt-12 flex flex-wrap items-center justify-center gap-8 text-sm text-text-muted animate-fade-in" style={{
           animationDelay: "0.4s"
         }}>
             <div className="flex items-center gap-2">

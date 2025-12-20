@@ -130,14 +130,14 @@ const PaymentSuccessPage = () => {
         <div className="absolute bottom-0 left-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl transform -translate-x-1/2 translate-y-1/2" />
       </div>
 
-      <div className="relative bg-card rounded-2xl shadow-sacred p-8 md:p-12 border border-border/50 max-w-md text-center">
+      <div className="relative bg-surface rounded-2xl shadow-soft p-8 md:p-12 border border-border/50 max-w-md text-center">
         {status === "loading" && (
           <>
             <Loader2 className="w-16 h-16 animate-spin text-primary mx-auto mb-6" />
             <h2 className="font-display text-2xl md:text-3xl text-primary mb-4">
               Verificando Pagamento
             </h2>
-            <p className="text-muted-foreground">
+            <p className="text-text-muted">
               Aguarde enquanto verificamos seu pagamento...
             </p>
           </>
@@ -145,16 +145,16 @@ const PaymentSuccessPage = () => {
 
         {status === "success" && (
           <>
-            <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-green-100 dark:bg-green-900/30 mb-6">
-              <CheckCircle2 className="w-10 h-10 text-green-600 dark:text-green-400" />
+            <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-success/20 mb-6">
+              <CheckCircle2 className="w-10 h-10 text-success" />
             </div>
             <h2 className="font-display text-2xl md:text-3xl text-primary mb-4">
               Pagamento Confirmado!
             </h2>
-            <p className="text-muted-foreground mb-6">{message}</p>
+            <p className="text-text-muted mb-6">{message}</p>
             <Button
               onClick={handleGoToResult}
-              className="w-full h-12 bg-gold-gradient hover:opacity-90 text-accent-foreground font-semibold text-lg"
+              className="w-full h-12 bg-gradient-accent hover:opacity-90 text-accent-foreground font-semibold text-lg"
             >
               Ver Meu Resultado
             </Button>
@@ -167,7 +167,7 @@ const PaymentSuccessPage = () => {
             <h2 className="font-display text-2xl md:text-3xl text-primary mb-4">
               Aguardando Pagamento
             </h2>
-            <p className="text-muted-foreground mb-6">{message}</p>
+            <p className="text-text-muted mb-6">{message}</p>
             <Button
               onClick={() => checkPaymentStatus(searchParams.get("token")!)}
               variant="outline"
@@ -178,7 +178,7 @@ const PaymentSuccessPage = () => {
             <Button
               onClick={handleGoToPayment}
               variant="ghost"
-              className="text-muted-foreground"
+              className="text-text-muted"
             >
               Voltar ao Pagamento
             </Button>
@@ -187,16 +187,16 @@ const PaymentSuccessPage = () => {
 
         {status === "error" && (
           <>
-            <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-red-100 dark:bg-red-900/30 mb-6">
-              <XCircle className="w-10 h-10 text-red-600 dark:text-red-400" />
+            <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-error/20 mb-6">
+              <XCircle className="w-10 h-10 text-error" />
             </div>
             <h2 className="font-display text-2xl md:text-3xl text-primary mb-4">
               Erro no Pagamento
             </h2>
-            <p className="text-muted-foreground mb-6">{message}</p>
+            <p className="text-text-muted mb-6">{message}</p>
             <Button
               onClick={handleGoToPayment}
-              className="w-full h-12 bg-primary hover:bg-primary/90 text-primary-foreground font-semibold"
+              className="w-full h-12 bg-button hover:bg-button-hover text-button-text font-semibold"
             >
               Tentar Novamente
             </Button>

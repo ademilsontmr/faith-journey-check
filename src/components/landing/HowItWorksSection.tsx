@@ -35,7 +35,7 @@ export function HowItWorksSection() {
           <h2 className="font-display text-3xl md:text-4xl font-bold text-primary mt-3 mb-4">
             Como Funciona?
           </h2>
-          <p className="text-muted-foreground text-lg">
+          <p className="text-text-muted text-lg">
             Em apenas 5 minutos você terá uma visão clara da sua vida espiritual.
           </p>
         </div>
@@ -49,9 +49,9 @@ export function HowItWorksSection() {
                 <div className="hidden md:block absolute top-14 left-1/2 w-full h-0.5 bg-gradient-to-r from-accent/50 to-transparent" />
               )}
               
-              <div className="relative bg-card rounded-2xl p-8 border border-border/50 text-center">
+              <div className="relative bg-surface rounded-2xl p-8 border border-border/50 text-center">
                 {/* Step Number */}
-                <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary text-primary-foreground px-4 py-1 rounded-full text-sm font-bold">
+                <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-button text-button-text px-4 py-1 rounded-full text-sm font-bold">
                   {step.number}
                 </div>
                 
@@ -60,10 +60,10 @@ export function HowItWorksSection() {
                   <step.icon className="w-10 h-10 text-primary" />
                 </div>
                 
-                <h3 className="font-display text-xl font-semibold text-foreground mb-3">
+                <h3 className="font-display text-xl font-semibold text-text mb-3">
                   {step.title}
                 </h3>
-                <p className="text-muted-foreground">
+                <p className="text-text-muted">
                   {step.description}
                 </p>
               </div>
@@ -76,7 +76,7 @@ export function HowItWorksSection() {
           <Link to="/quiz">
             <Button
               size="lg"
-              className="h-14 px-10 bg-gold-gradient hover:opacity-90 text-accent-foreground font-semibold text-lg shadow-gold-glow transition-all duration-300 group"
+              className="h-14 px-10 bg-gradient-accent hover:opacity-90 text-accent-foreground font-semibold text-lg shadow-glow transition-all duration-300 group"
             >
               Começar Agora
               <ChevronRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
