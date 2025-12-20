@@ -37,7 +37,7 @@ const testimonials = [{
   level: "Católico Praticante Exemplar"
 }];
 export function TestimonialsSection() {
-  return <section id="depoimentos" className="py-20 md:py-32 bg-primary text-primary-foreground">
+  return <section id="depoimentos" className="py-20 md:py-32 bg-primary text-button-text">
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-16">
@@ -47,14 +47,14 @@ export function TestimonialsSection() {
           <h2 className="font-display text-3xl md:text-4xl font-bold mt-3 mb-4">
             O Que Dizem os Participantes
           </h2>
-          <p className="text-primary-foreground/80 text-lg">
+          <p className="text-button-text/80 text-lg">
             Milhares de católicos já fizeram o quiz e estão crescendo na fé.
           </p>
         </div>
 
         {/* Testimonials Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {testimonials.map((testimonial, index) => <div key={index} className="bg-primary-foreground/10 backdrop-blur-sm rounded-2xl p-6 border border-primary-foreground/20">
+          {testimonials.map((testimonial, index) => <div key={index} className="bg-button-text/10 backdrop-blur-sm rounded-2xl p-6 border border-button-text/20">
               {/* Quote Icon */}
               <Quote className="w-8 h-8 text-accent mb-4" />
               
@@ -64,7 +64,7 @@ export function TestimonialsSection() {
               </div>
               
               {/* Text */}
-              <p className="text-primary-foreground/90 mb-6 leading-relaxed">
+              <p className="text-button-text/90 mb-6 leading-relaxed">
                 "{testimonial.text}"
               </p>
               
@@ -72,7 +72,7 @@ export function TestimonialsSection() {
               <div className="flex items-center justify-between">
                 <div>
                   <p className="font-semibold">{testimonial.name}</p>
-                  <p className="text-sm text-primary-foreground/60">{testimonial.location}</p>
+                  <p className="text-sm text-button-text/60">{testimonial.location}</p>
                 </div>
                 <span className="text-xs bg-accent/20 text-accent px-3 py-1 rounded-full">
                   {testimonial.level.split(" ").slice(-1)}

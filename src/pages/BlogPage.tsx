@@ -102,11 +102,11 @@ export default function BlogPage() {
 
       <div className="min-h-screen bg-background">
         {/* Header */}
-        <header className="bg-primary text-primary-foreground py-4">
+        <header className="bg-primary text-button-text py-4">
           <div className="container mx-auto px-4 flex items-center justify-between">
             <Link to="/" className="flex items-center gap-2">
               <div className="w-10 h-10 rounded-full bg-accent flex items-center justify-center">
-                <Cross className="w-5 h-5 text-accent-foreground" />
+                <Cross className="w-5 h-5 text-button-text" />
               </div>
               <span className="font-display text-xl font-bold">Bom Católico</span>
             </Link>
@@ -119,12 +119,12 @@ export default function BlogPage() {
         </header>
 
         {/* Hero */}
-        <section className="bg-gradient-to-b from-primary/10 to-background py-16">
+        <section className="bg-gradient-to-b from-accent/10 to-background py-16">
           <div className="container mx-auto px-4 text-center">
-            <h1 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-4">
+            <h1 className="font-display text-4xl md:text-5xl font-bold text-text mb-4">
               Blog Bom Católico
             </h1>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-lg text-text-muted max-w-2xl mx-auto">
               Artigos, reflexões e ensinamentos para fortalecer sua fé e 
               aprofundar seu conhecimento da doutrina católica.
             </p>
@@ -137,13 +137,13 @@ export default function BlogPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {blogPosts.map((post) => (
                 <Link to={`/blog/${post.slug}`} key={post.id}>
-                  <article className="bg-card rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow group h-full">
+                  <article className="bg-surface rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow group h-full">
                     <div className={`aspect-video flex items-center justify-center ${post.bgColor}`}>
                       <post.icon className={`w-16 h-16 ${post.iconColor} group-hover:scale-110 transition-transform duration-300`} strokeWidth={1.5} />
                     </div>
                     <div className="p-6">
-                      <div className="flex items-center gap-4 text-sm text-muted-foreground mb-3">
-                        <span className="bg-primary/10 text-primary px-3 py-1 rounded-full text-xs font-medium">
+                      <div className="flex items-center gap-4 text-sm text-text-muted mb-3">
+                        <span className="bg-accent/10 text-accent px-3 py-1 rounded-full text-xs font-medium">
                           {post.category}
                         </span>
                         <span className="flex items-center gap-1">
@@ -155,13 +155,13 @@ export default function BlogPage() {
                           {post.readTime}
                         </span>
                       </div>
-                      <h2 className="font-display text-xl font-semibold text-foreground mb-2 line-clamp-2 group-hover:text-primary transition-colors">
+                      <h2 className="font-display text-xl font-semibold text-text mb-2 line-clamp-2 group-hover:text-accent transition-colors">
                         {post.title}
                       </h2>
-                      <p className="text-muted-foreground text-sm line-clamp-3 mb-4">
+                      <p className="text-text-muted text-sm line-clamp-3 mb-4">
                         {post.excerpt}
                       </p>
-                      <span className="inline-flex items-center text-primary hover:text-primary/80">
+                      <span className="inline-flex items-center text-accent hover:text-accent/80">
                         Ler mais <ArrowRight className="w-4 h-4 ml-1" />
                       </span>
                     </div>

@@ -30,8 +30,8 @@ const DadosPage = () => {
     return (
       <div className="min-h-screen bg-background flex items-center justify-center">
         <div className="text-center">
-          <Loader2 className="w-8 h-8 animate-spin text-primary mx-auto mb-4" />
-          <p className="text-muted-foreground">Carregando...</p>
+          <Loader2 className="w-8 h-8 animate-spin text-accent mx-auto mb-4" />
+          <p className="text-text-muted">Carregando...</p>
         </div>
       </div>
     );
@@ -52,7 +52,7 @@ const DadosPage = () => {
         </main>
 
         <footer className="py-6 text-center">
-          <p className="text-sm text-muted-foreground">
+          <p className="text-sm text-text-muted">
             © 2024 Bom Católico · Todos os direitos reservados
           </p>
         </footer>
