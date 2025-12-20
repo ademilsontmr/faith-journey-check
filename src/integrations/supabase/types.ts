@@ -14,6 +14,102 @@ export type Database = {
   }
   public: {
     Tables: {
+      payments: {
+        Row: {
+          abacate_pay_id: string | null
+          access_token: string | null
+          amount: number
+          created_at: string
+          customer_email: string
+          customer_name: string
+          id: string
+          max_score: number | null
+          paid_at: string | null
+          pix_copy_paste: string | null
+          pix_qr_code: string | null
+          pix_qr_code_base64: string | null
+          quiz_answers: Json | null
+          quiz_questions: Json | null
+          score: number | null
+          status: Database["public"]["Enums"]["payment_status"]
+          test_type: string
+          updated_at: string
+        }
+        Insert: {
+          abacate_pay_id?: string | null
+          access_token?: string | null
+          amount: number
+          created_at?: string
+          customer_email: string
+          customer_name: string
+          id?: string
+          max_score?: number | null
+          paid_at?: string | null
+          pix_copy_paste?: string | null
+          pix_qr_code?: string | null
+          pix_qr_code_base64?: string | null
+          quiz_answers?: Json | null
+          quiz_questions?: Json | null
+          score?: number | null
+          status?: Database["public"]["Enums"]["payment_status"]
+          test_type: string
+          updated_at?: string
+        }
+        Update: {
+          abacate_pay_id?: string | null
+          access_token?: string | null
+          amount?: number
+          created_at?: string
+          customer_email?: string
+          customer_name?: string
+          id?: string
+          max_score?: number | null
+          paid_at?: string | null
+          pix_copy_paste?: string | null
+          pix_qr_code?: string | null
+          pix_qr_code_base64?: string | null
+          quiz_answers?: Json | null
+          quiz_questions?: Json | null
+          score?: number | null
+          status?: Database["public"]["Enums"]["payment_status"]
+          test_type?: string
+          updated_at?: string
+        }
+        Relationships: []
+      }
+      products: {
+        Row: {
+          active: boolean | null
+          created_at: string
+          description: string | null
+          id: string
+          key: string
+          name: string
+          price: number
+          updated_at: string
+        }
+        Insert: {
+          active?: boolean | null
+          created_at?: string
+          description?: string | null
+          id?: string
+          key: string
+          name: string
+          price: number
+          updated_at?: string
+        }
+        Update: {
+          active?: boolean | null
+          created_at?: string
+          description?: string | null
+          id?: string
+          key?: string
+          name?: string
+          price?: number
+          updated_at?: string
+        }
+        Relationships: []
+      }
       quiz_sessions: {
         Row: {
           answers: number[] | null
@@ -58,7 +154,7 @@ export type Database = {
       [_ in never]: never
     }
     Enums: {
-      [_ in never]: never
+      payment_status: "processing" | "paid" | "expired" | "cancelled" | "failed"
     }
     CompositeTypes: {
       [_ in never]: never
@@ -185,6 +281,8 @@ export type CompositeTypes<
 
 export const Constants = {
   public: {
-    Enums: {},
+    Enums: {
+      payment_status: ["processing", "paid", "expired", "cancelled", "failed"],
+    },
   },
 } as const
