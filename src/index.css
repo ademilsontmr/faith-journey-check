@@ -6,51 +6,67 @@
 
 @layer base {
   :root {
-    /* Marian Blue - Primary */
-    --primary: 212 84% 31%;
-    --primary-foreground: 45 100% 97%;
+    /* ===== SEMANTIC COLOR TOKENS ===== */
     
-    /* Liturgical Gold - Accent */
-    --accent: 43 82% 46%;
-    --accent-foreground: 212 84% 15%;
-    
-    /* Warm cream background */
+    /* Background layers */
     --background: 45 40% 97%;
-    --foreground: 212 60% 15%;
+    --background-muted: 45 30% 94%;
+    --surface: 45 50% 99%;
+    --surface-elevated: 0 0% 100%;
     
-    /* Card - slightly warmer */
-    --card: 45 50% 99%;
-    --card-foreground: 212 60% 15%;
+    /* Text hierarchy */
+    --text: 212 60% 15%;
+    --text-muted: 212 30% 45%;
+    --heading: 212 60% 15%;
     
-    /* Popover */
-    --popover: 45 50% 99%;
-    --popover-foreground: 212 60% 15%;
-    
-    /* Secondary - soft blue */
-    --secondary: 212 30% 92%;
-    --secondary-foreground: 212 84% 25%;
-    
-    /* Muted */
-    --muted: 212 20% 90%;
-    --muted-foreground: 212 30% 45%;
-    
-    /* Destructive */
-    --destructive: 0 84% 60%;
-    --destructive-foreground: 0 0% 100%;
-    
-    /* Border & Input */
+    /* Borders & Dividers */
     --border: 212 30% 85%;
+    --divider: 212 20% 88%;
     --input: 212 30% 85%;
     --ring: 43 82% 46%;
     
+    /* Button tokens */
+    --button: 212 84% 31%;
+    --button-hover: 212 84% 25%;
+    --button-text: 45 100% 97%;
+    
+    /* Accent colors */
+    --accent: 43 82% 46%;
+    --accent-muted: 43 60% 60%;
+    --accent-foreground: 212 84% 15%;
+    
+    /* Status colors */
+    --success: 142 71% 45%;
+    --success-foreground: 0 0% 100%;
+    --warning: 38 92% 50%;
+    --warning-foreground: 38 92% 10%;
+    --error: 0 84% 60%;
+    --error-foreground: 0 0% 100%;
+    
+    /* ===== SHADCN COMPATIBLE MAPPINGS ===== */
+    --foreground: var(--text);
+    --primary: var(--button);
+    --primary-foreground: var(--button-text);
+    --secondary: 212 30% 92%;
+    --secondary-foreground: 212 84% 25%;
+    --muted: var(--background-muted);
+    --muted-foreground: var(--text-muted);
+    --destructive: var(--error);
+    --destructive-foreground: var(--error-foreground);
+    --card: var(--surface);
+    --card-foreground: var(--text);
+    --popover: var(--surface);
+    --popover-foreground: var(--text);
+    
     --radius: 0.75rem;
     
-    /* Custom tokens */
-    --gold-gradient: linear-gradient(135deg, hsl(43 82% 46%), hsl(38 90% 55%));
-    --blue-gradient: linear-gradient(135deg, hsl(212 84% 31%), hsl(220 70% 40%));
-    --sacred-shadow: 0 10px 40px -10px hsl(212 84% 31% / 0.2);
-    --gold-glow: 0 0 30px hsl(43 82% 46% / 0.3);
+    /* Gradients & Shadows */
+    --gradient-accent: linear-gradient(135deg, hsl(43 82% 46%), hsl(38 90% 55%));
+    --gradient-primary: linear-gradient(135deg, hsl(212 84% 31%), hsl(220 70% 40%));
+    --shadow-soft: 0 10px 40px -10px hsl(212 84% 31% / 0.2);
+    --shadow-glow: 0 0 30px hsl(43 82% 46% / 0.3);
 
+    /* Sidebar */
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
     --sidebar-primary: 240 5.9% 10%;
@@ -62,34 +78,57 @@
   }
 
   .dark {
-    --primary: 212 70% 50%;
-    --primary-foreground: 212 84% 10%;
-    
-    --accent: 43 82% 55%;
-    --accent-foreground: 43 82% 10%;
-    
+    /* Background layers */
     --background: 212 50% 8%;
-    --foreground: 45 30% 95%;
+    --background-muted: 212 45% 12%;
+    --surface: 212 45% 12%;
+    --surface-elevated: 212 40% 16%;
     
-    --card: 212 45% 12%;
-    --card-foreground: 45 30% 95%;
+    /* Text hierarchy */
+    --text: 45 30% 95%;
+    --text-muted: 212 20% 60%;
+    --heading: 45 30% 95%;
     
-    --popover: 212 45% 12%;
-    --popover-foreground: 45 30% 95%;
-    
-    --secondary: 212 40% 18%;
-    --secondary-foreground: 45 30% 90%;
-    
-    --muted: 212 35% 20%;
-    --muted-foreground: 212 20% 60%;
-    
-    --destructive: 0 62% 50%;
-    --destructive-foreground: 0 0% 100%;
-    
+    /* Borders & Dividers */
     --border: 212 35% 20%;
+    --divider: 212 30% 18%;
     --input: 212 35% 20%;
     --ring: 43 82% 55%;
+    
+    /* Button tokens */
+    --button: 212 70% 50%;
+    --button-hover: 212 70% 45%;
+    --button-text: 212 84% 10%;
+    
+    /* Accent colors */
+    --accent: 43 82% 55%;
+    --accent-muted: 43 60% 45%;
+    --accent-foreground: 43 82% 10%;
+    
+    /* Status colors */
+    --success: 142 71% 40%;
+    --success-foreground: 0 0% 100%;
+    --warning: 38 92% 45%;
+    --warning-foreground: 38 92% 10%;
+    --error: 0 62% 50%;
+    --error-foreground: 0 0% 100%;
+    
+    /* Shadcn mappings */
+    --foreground: var(--text);
+    --primary: var(--button);
+    --primary-foreground: var(--button-text);
+    --secondary: 212 40% 18%;
+    --secondary-foreground: 45 30% 90%;
+    --muted: var(--background-muted);
+    --muted-foreground: var(--text-muted);
+    --destructive: var(--error);
+    --destructive-foreground: var(--error-foreground);
+    --card: var(--surface);
+    --card-foreground: var(--text);
+    --popover: var(--surface);
+    --popover-foreground: var(--text);
 
+    /* Sidebar */
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
@@ -125,24 +164,26 @@
     font-family: 'Source Sans 3', sans-serif;
   }
 
-  .bg-gold-gradient {
-    background: var(--gold-gradient);
+  /* Gradient utilities */
+  .bg-gradient-accent {
+    background: var(--gradient-accent);
   }
 
-  .bg-blue-gradient {
-    background: var(--blue-gradient);
+  .bg-gradient-primary {
+    background: var(--gradient-primary);
   }
 
-  .shadow-sacred {
-    box-shadow: var(--sacred-shadow);
+  /* Shadow utilities */
+  .shadow-soft {
+    box-shadow: var(--shadow-soft);
   }
 
-  .shadow-gold-glow {
-    box-shadow: var(--gold-glow);
+  .shadow-glow {
+    box-shadow: var(--shadow-glow);
   }
 
-  .text-gradient-gold {
-    background: var(--gold-gradient);
+  .text-gradient-accent {
+    background: var(--gradient-accent);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;

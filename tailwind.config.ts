@@ -18,10 +18,58 @@ export default {
         sans: ["Source Sans 3", "sans-serif"],
       },
       colors: {
+        /* Semantic background tokens */
+        background: {
+          DEFAULT: "hsl(var(--background))",
+          muted: "hsl(var(--background-muted))",
+        },
+        surface: {
+          DEFAULT: "hsl(var(--surface))",
+          elevated: "hsl(var(--surface-elevated))",
+        },
+        
+        /* Semantic text tokens */
+        text: {
+          DEFAULT: "hsl(var(--text))",
+          muted: "hsl(var(--text-muted))",
+        },
+        heading: "hsl(var(--heading))",
+        
+        /* Border & divider tokens */
         border: "hsl(var(--border))",
+        divider: "hsl(var(--divider))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
-        background: "hsl(var(--background))",
+        
+        /* Button tokens */
+        button: {
+          DEFAULT: "hsl(var(--button))",
+          hover: "hsl(var(--button-hover))",
+          text: "hsl(var(--button-text))",
+        },
+        
+        /* Accent tokens */
+        accent: {
+          DEFAULT: "hsl(var(--accent))",
+          muted: "hsl(var(--accent-muted))",
+          foreground: "hsl(var(--accent-foreground))",
+        },
+        
+        /* Status tokens */
+        success: {
+          DEFAULT: "hsl(var(--success))",
+          foreground: "hsl(var(--success-foreground))",
+        },
+        warning: {
+          DEFAULT: "hsl(var(--warning))",
+          foreground: "hsl(var(--warning-foreground))",
+        },
+        error: {
+          DEFAULT: "hsl(var(--error))",
+          foreground: "hsl(var(--error-foreground))",
+        },
+        
+        /* Shadcn compatibility layer */
         foreground: "hsl(var(--foreground))",
         primary: {
           DEFAULT: "hsl(var(--primary))",
@@ -38,10 +86,6 @@ export default {
         muted: {
           DEFAULT: "hsl(var(--muted))",
           foreground: "hsl(var(--muted-foreground))",
-        },
-        accent: {
-          DEFAULT: "hsl(var(--accent))",
-          foreground: "hsl(var(--accent-foreground))",
         },
         popover: {
           DEFAULT: "hsl(var(--popover))",
