@@ -2,13 +2,14 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { User, Phone, Lock, Gift } from "lucide-react";
+import { User, Phone, Lock, Gift, Loader2 } from "lucide-react";
 
 interface LeadFormProps {
   onSubmit: (name: string, whatsapp: string) => void;
+  isSubmitting?: boolean;
 }
 
-export function LeadForm({ onSubmit }: LeadFormProps) {
+export function LeadForm({ onSubmit, isSubmitting = false }: LeadFormProps) {
   const [name, setName] = useState("");
   const [whatsapp, setWhatsapp] = useState("");
   const [errors, setErrors] = useState<{ name?: string; whatsapp?: string }>({});
@@ -112,9 +113,17 @@ export function LeadForm({ onSubmit }: LeadFormProps) {
 
           <Button
             type="submit"
-            className="w-full h-12 bg-gold-gradient hover:opacity-90 text-accent-foreground font-semibold text-lg shadow-gold-glow transition-all duration-300"
+            disabled={isSubmitting}
+            className="w-full h-12 bg-gold-gradient hover:opacity-90 text-accent-foreground font-semibold text-lg shadow-gold-glow transition-all duration-300 disabled:opacity-50"
           >
-            Continuar para o Resultado
+            {isSubmitting ? (
+              <>
+                <Loader2 className="w-5 h-5 mr-2 animate-spin" />
+                Salvando...
+              </>
+            ) : (
+              "Continuar para o Resultado"
+            )}
           </Button>
         </form>
       </div>
