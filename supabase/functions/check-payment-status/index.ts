@@ -56,23 +56,30 @@ serve(async (req) => {
     const status = abacateData.data.status; // "PENDING", "PAID", "EXPIRED"?
     console.log(`Payment ${paymentId} status: ${status}`);
 
-    // 3. Update Supabase if status changed to approved
-    // Mapping Abacate status to our status
-    // Assuming "PAID" or "COMPLETED" means approved. 
-    // The user only showed "PENDING". 
-    // Common statuses: PENDING, PAID, EXPIRED.
+    // 3. Update Supabase if status changed
+    // Map Abacate status to our database enum: processing, paid, expired, cancelled, failed
+    let newStatus: "processing" | "paid" | "expired" | "cancelled" | "failed" = payment.status;
+    const statusUpper = (status || "").toUpperCase();
     
-    let newStatus = payment.status;
-    if (status === "PAID" || status === "COMPLETED" || status === "APPROVED") {
-      newStatus = "approved";
-    } else if (status === "EXPIRED") {
+    if (statusUpper === "PAID" || statusUpper === "COMPLETED" || statusUpper === "APPROVED") {
+      newStatus = "paid";
+    } else if (statusUpper === "EXPIRED") {
       newStatus = "expired";
+    } else if (statusUpper === "CANCELLED" || statusUpper === "CANCELED") {
+      newStatus = "cancelled";
+    } else if (statusUpper === "FAILED" || statusUpper === "REJECTED") {
+      newStatus = "failed";
     }
 
     if (newStatus !== payment.status) {
+      const updateData: Record<string, any> = { status: newStatus };
+      if (newStatus === "paid") {
+        updateData.paid_at = new Date().toISOString();
+      }
+      
       const { error: updateError } = await supabase
         .from("payments")
-        .update({ status: newStatus })
+        .update(updateData)
         .eq("id", paymentId);
 
       if (updateError) {

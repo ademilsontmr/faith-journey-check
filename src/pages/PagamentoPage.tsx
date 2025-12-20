@@ -15,6 +15,21 @@ const PagamentoPage = () => {
   const [billingUrl, setBillingUrl] = useState<string | null>(null);
   const [pixCode, setPixCode] = useState<string | null>(null);
   const [isCheckingPayment, setIsCheckingPayment] = useState(false);
+  const [paymentId, setPaymentId] = useState<string | null>(null);
+  const [accessToken, setAccessToken] = useState<string | null>(null);
+
+  // Restore payment data from localStorage on mount
+  useEffect(() => {
+    const storedPaymentId = localStorage.getItem("payment_id");
+    const storedAccessToken = localStorage.getItem("payment_access_token");
+    const storedBillingUrl = localStorage.getItem("billing_url");
+    const storedPixCode = localStorage.getItem("pix_code");
+    
+    if (storedPaymentId) setPaymentId(storedPaymentId);
+    if (storedAccessToken) setAccessToken(storedAccessToken);
+    if (storedBillingUrl) setBillingUrl(storedBillingUrl);
+    if (storedPixCode) setPixCode(storedPixCode);
+  }, []);
 
   useEffect(() => {
     if (!loading && (!sessionId || !session?.user_name)) {
@@ -22,19 +37,34 @@ const PagamentoPage = () => {
     }
   }, [sessionId, session, loading, navigate]);
 
-  // Redirect if already paid
+  // Check if already paid via access token
   useEffect(() => {
-    if (session?.paid) {
-      navigate("/resultado");
+    const checkExistingPayment = async () => {
+      const token = localStorage.getItem("payment_access_token");
+      if (token) {
+        const { data: payment } = await supabase
+          .from("payments")
+          .select("status")
+          .eq("access_token", token)
+          .maybeSingle();
+        
+        if (payment?.status === "paid") {
+          navigate(`/resultado?token=${token}`);
+        }
+      }
+    };
+    
+    if (!loading && session) {
+      checkExistingPayment();
     }
-  }, [session?.paid, navigate]);
+  }, [loading, session, navigate]);
 
-  // Create billing on mount
+  // Create billing only if no existing payment
   useEffect(() => {
-    if (sessionId && session?.user_name && !billingUrl && !isCreatingBilling) {
+    if (sessionId && session?.user_name && !billingUrl && !isCreatingBilling && !paymentId) {
       createBilling();
     }
-  }, [sessionId, session?.user_name]);
+  }, [sessionId, session?.user_name, paymentId]);
 
   const createBilling = async () => {
     if (!sessionId || !session) return;
@@ -56,17 +86,33 @@ const PagamentoPage = () => {
 
       console.log("PIX charge created:", data);
       
+      // Store all payment data
+      if (data.paymentId) {
+        setPaymentId(data.paymentId);
+        localStorage.setItem("payment_id", data.paymentId);
+      }
+      
+      if (data.accessToken) {
+        setAccessToken(data.accessToken);
+        localStorage.setItem("payment_access_token", data.accessToken);
+      }
+      
       if (data.checkoutUrl) {
         setBillingUrl(data.checkoutUrl);
+        localStorage.setItem("billing_url", data.checkoutUrl);
       }
       
       if (data.pix?.copyPaste) {
         setPixCode(data.pix.copyPaste);
+        localStorage.setItem("pix_code", data.pix.copyPaste);
       }
       
-      // Store payment ID for checking status
-      if (data.paymentId) {
-        localStorage.setItem("payment_id", data.paymentId);
+      // Link payment to quiz session
+      if (data.paymentId && sessionId) {
+        await supabase
+          .from("quiz_sessions")
+          .update({ payment_id: data.paymentId })
+          .eq("id", sessionId);
       }
     } catch (error) {
       console.error("Error creating PIX charge:", error);
@@ -99,36 +145,51 @@ const PagamentoPage = () => {
     setIsCheckingPayment(true);
     
     try {
-      const paymentId = localStorage.getItem("payment_id");
+      const currentPaymentId = paymentId || localStorage.getItem("payment_id");
+      const currentAccessToken = accessToken || localStorage.getItem("payment_access_token");
       
-      if (paymentId) {
-        // Check payment status with new edge function
+      if (currentPaymentId) {
         const { data, error } = await supabase.functions.invoke("check-payment-status", {
-          body: { paymentId },
+          body: { paymentId: currentPaymentId },
         });
         
-        if (!error && (data?.status === "approved" || data?.status === "paid")) {
+        if (!error && data?.status === "paid") {
           toast.success("Pagamento confirmado!");
-          navigate("/resultado");
+          
+          // Also mark quiz session as paid
+          if (sessionId) {
+            await supabase
+              .from("quiz_sessions")
+              .update({ paid: true })
+              .eq("id", sessionId);
+          }
+          
+          navigate(currentAccessToken ? `/resultado?token=${currentAccessToken}` : "/resultado");
           return;
         }
       }
       
-      // Fallback: refresh session to check paid status
-      await refreshSession();
-      
-      setTimeout(() => {
-        setIsCheckingPayment(false);
-        if (session?.paid) {
-          navigate("/resultado");
-        } else {
-          toast.info("Pagamento ainda não confirmado. Aguarde alguns segundos e tente novamente.");
+      // Fallback: check by access token directly
+      if (currentAccessToken) {
+        const { data: payment } = await supabase
+          .from("payments")
+          .select("status")
+          .eq("access_token", currentAccessToken)
+          .maybeSingle();
+        
+        if (payment?.status === "paid") {
+          toast.success("Pagamento confirmado!");
+          navigate(`/resultado?token=${currentAccessToken}`);
+          return;
         }
-      }, 1000);
+      }
+      
+      toast.info("Pagamento ainda não confirmado. Aguarde alguns segundos e tente novamente.");
     } catch (error) {
       console.error("Error checking payment:", error);
-      setIsCheckingPayment(false);
       toast.info("Pagamento ainda não confirmado. Aguarde alguns segundos e tente novamente.");
+    } finally {
+      setIsCheckingPayment(false);
     }
   };
 
