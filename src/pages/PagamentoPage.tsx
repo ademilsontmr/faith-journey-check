@@ -71,7 +71,7 @@ const PagamentoPage = () => {
 
     setIsCreatingBilling(true);
     try {
-      const { data, error } = await supabase.functions.invoke("create-pix-charge", {
+      const { data, error } = await supabase.functions.invoke("create-payment", {
         body: {
           testType: "spiritual_gifts",
           customerEmail: session.user_whatsapp ? `${session.user_whatsapp}@placeholder.com` : "cliente@placeholder.com",

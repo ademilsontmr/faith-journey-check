@@ -1,6 +1,6 @@
 project_id = "soeimcfkcikyalhjiaru"
 
-[functions.create-pix-charge]
+[functions.create-payment]
 verify_jwt = false
 
 [functions.check-payment-status]
