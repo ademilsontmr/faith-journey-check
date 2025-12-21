@@ -1,130 +1,177 @@
 import { useEffect, useState } from "react";
 import { useNavigate, useSearchParams } from "react-router-dom";
-import { Loader2, CheckCircle2, XCircle } from "lucide-react";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { CheckCircle2, Loader2, XCircle } from "lucide-react";
 import { supabase } from "@/integrations/supabase/client";
 
-type PaymentStatus = "loading" | "success" | "pending" | "error";
+type PaymentStatus = "loading" | "success" | "processing" | "expired" | "cancelled" | "failed" | "error";
+
+interface PaymentData {
+  id: string;
+  test_type: string;
+  status: string;
+  score: number | null;
+  max_score: number | null;
+  quiz_answers: unknown;
+  quiz_questions: unknown;
+  customer_name: string;
+  customer_email: string;
+  access_token: string | null;
+  paid_at: string | null;
+}
 
 const PaymentSuccessPage = () => {
   const navigate = useNavigate();
   const [searchParams] = useSearchParams();
+  
+  const token = searchParams.get("token");
+  const testType = searchParams.get("test_type");
+  
   const [status, setStatus] = useState<PaymentStatus>("loading");
-  const [message, setMessage] = useState("");
+  const [paymentData, setPaymentData] = useState<PaymentData | null>(null);
 
   useEffect(() => {
-    const token = searchParams.get("token");
-    const testType = searchParams.get("test_type");
-
-    if (!token) {
-      setStatus("error");
-      setMessage("Token de pagamento não encontrado.");
-      return;
-    }
-
-    // Store accessToken for result page access
-    localStorage.setItem("payment_access_token", token);
-    if (testType) {
-      localStorage.setItem("payment_test_type", testType);
-    }
-
-    checkPaymentStatus(token);
-  }, [searchParams]);
-
-  const normalizePaymentStatus = (value: unknown) => {
-    const status = typeof value === "string" ? value : "";
-    // Compat: alguns backends gravam "paid" como aprovado
-    return status === "paid" ? "approved" : status;
-  };
-
-  const checkPaymentStatus = async (token: string) => {
-    try {
-      // Fetch payment by access_token (fonte da verdade)
-      const { data: payment, error } = await supabase
-        .from("payments")
-        .select("*")
-        .eq("access_token", token)
-        .maybeSingle();
-
-      if (error || !payment) {
-        console.error("Payment not found:", error);
+    const checkPayment = async () => {
+      if (!token) {
         setStatus("error");
-        setMessage("Pagamento não encontrado.");
         return;
       }
 
-      const normalizedStatus = normalizePaymentStatus(payment.status);
+      try {
+        // Fetch payment by access_token
+        const { data: payment, error } = await supabase
+          .from("payments")
+          .select("*")
+          .eq("access_token", token)
+          .maybeSingle();
 
-      if (normalizedStatus === "approved") {
-        setStatus("success");
-        setMessage("Pagamento aprovado! Você já pode acessar seu resultado premium.");
-        return;
+        if (error || !payment) {
+          console.error("Error fetching payment:", error);
+          setStatus("error");
+          return;
+        }
+
+        setPaymentData(payment as PaymentData);
+
+        if (payment.status === "paid") {
+          // Redireciona imediatamente para o resultado premium
+          const premiumRoute = payment.test_type === "relationship" 
+            ? "/premium-result-relationship" 
+            : "/premium-result-gifts";
+          
+          navigate(premiumRoute, {
+            state: {
+              token,
+              testType: payment.test_type,
+              paymentId: payment.id,
+              score: payment.score || 0,
+              maxScore: payment.max_score || 150,
+              answers: payment.quiz_answers || {},
+              questions: payment.quiz_questions || [],
+            },
+          });
+          return;
+        }
+
+        if (payment.status === "processing") {
+          setStatus("processing");
+          // Poll for status updates using edge function
+          pollPaymentStatus(payment.id);
+        } else {
+          setStatus(payment.status as PaymentStatus);
+        }
+      } catch (error) {
+        console.error("Error checking payment:", error);
+        setStatus("error");
       }
+    };
 
-      if (normalizedStatus === "processing") {
-        setStatus("pending");
-        setMessage("Pagamento pendente. Aguardando confirmação...");
-        // Poll for status updates (fallback)
-        pollPaymentStatus(payment.id, token);
-        return;
-      }
+    checkPayment();
+  }, [token, navigate]);
 
-      setStatus("error");
-      setMessage("Pagamento não aprovado. Finalize o pagamento para acessar.\n\nStatus: " + normalizedStatus);
-    } catch (err) {
-      console.error("Error checking payment:", err);
-      setStatus("error");
-      setMessage("Erro ao verificar pagamento.");
-    }
-  };
-
-  const pollPaymentStatus = async (paymentId: string, token: string) => {
-    let attempts = 0;
-    const maxAttempts = 30; // Poll por até 30s
-
-    const poll = async () => {
-      if (attempts >= maxAttempts) {
-        setStatus("pending");
-        setMessage("O pagamento ainda está pendente. Você pode verificar novamente em alguns minutos.");
-        return;
-      }
-
-      attempts++;
-
+  const pollPaymentStatus = async (paymentId: string) => {
+    const interval = setInterval(async () => {
       try {
         const { data, error } = await supabase.functions.invoke("check-payment-status", {
           body: { paymentId },
         });
 
-        const normalizedStatus = normalizePaymentStatus(data?.status);
-
-        if (!error && normalizedStatus === "approved") {
+        if (!error && data?.status === "paid") {
           setStatus("success");
-          setMessage("Pagamento aprovado! Você já pode acessar seu resultado premium.");
-          return;
+          clearInterval(interval);
+          
+          // Fetch updated payment data and redirect
+          const { data: updatedPayment } = await supabase
+            .from("payments")
+            .select("*")
+            .eq("id", paymentId)
+            .maybeSingle();
+
+          if (updatedPayment) {
+            const premiumRoute = updatedPayment.test_type === "relationship" 
+              ? "/premium-result-relationship" 
+              : "/premium-result-gifts";
+            
+            navigate(premiumRoute, {
+              state: {
+                token,
+                testType: updatedPayment.test_type,
+                paymentId: updatedPayment.id,
+                score: updatedPayment.score || 0,
+                maxScore: updatedPayment.max_score || 150,
+                answers: updatedPayment.quiz_answers || {},
+                questions: updatedPayment.quiz_questions || [],
+              },
+            });
+          }
+        } else if (data?.status && ["failed", "cancelled", "expired"].includes(data.status)) {
+          setStatus(data.status as PaymentStatus);
+          clearInterval(interval);
         }
-
-        // Continue polling
-        setTimeout(poll, 1000);
-      } catch {
-        setTimeout(poll, 1000);
+      } catch (err) {
+        console.error("Poll error:", err);
       }
-    };
+    }, 5000);
 
-    poll();
+    // Clear interval after 5 minutes
+    setTimeout(() => clearInterval(interval), 300000);
   };
 
-  const handleGoToResult = () => {
-    const token = searchParams.get("token");
-    if (token) {
-      navigate(`/resultado?token=${token}`);
-    } else {
-      navigate("/resultado");
+  const handleAccessPremium = () => {
+    if (paymentData && token) {
+      const premiumRoute = paymentData.test_type === "relationship" 
+        ? "/premium-result-relationship" 
+        : "/premium-result-gifts";
+      
+      navigate(premiumRoute, {
+        state: {
+          token,
+          testType: paymentData.test_type,
+          paymentId: paymentData.id,
+          score: paymentData.score || 0,
+          maxScore: paymentData.max_score || 150,
+          answers: paymentData.quiz_answers || {},
+          questions: paymentData.quiz_questions || [],
+        },
+      });
     }
   };
 
-  const handleGoToPayment = () => {
-    navigate("/pagamento");
+  const handleBackToCheckout = () => {
+    if (paymentData) {
+      navigate("/checkout", {
+        state: {
+          testType: paymentData.test_type,
+          score: paymentData.score,
+          maxScore: paymentData.max_score,
+          answers: paymentData.quiz_answers,
+          questions: paymentData.quiz_questions,
+        }
+      });
+    } else {
+      navigate("/checkout");
+    }
   };
 
   return (
@@ -134,79 +181,90 @@ const PaymentSuccessPage = () => {
         <div className="absolute bottom-0 left-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl transform -translate-x-1/2 translate-y-1/2" />
       </div>
 
-      <div className="relative bg-surface rounded-2xl shadow-soft p-8 md:p-12 border border-border/50 max-w-md text-center">
-        {status === "loading" && (
-          <>
-            <Loader2 className="w-16 h-16 animate-spin text-primary mx-auto mb-6" />
-            <h2 className="font-display text-2xl md:text-3xl text-primary mb-4">
-              Verificando Pagamento
-            </h2>
-            <p className="text-text-muted">
-              Aguarde enquanto verificamos seu pagamento...
+      <Card className="relative max-w-md w-full">
+        <CardHeader className="text-center">
+          {status === "loading" && (
+            <>
+              <Loader2 className="w-12 h-12 animate-spin text-primary mx-auto mb-4" />
+              <CardTitle>Verificando pagamento...</CardTitle>
+            </>
+          )}
+
+          {status === "processing" && (
+            <>
+              <Loader2 className="w-12 h-12 animate-spin text-primary mx-auto mb-4" />
+              <CardTitle>Aguardando pagamento</CardTitle>
+            </>
+          )}
+
+          {status === "success" && (
+            <>
+              <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-green-100 mx-auto mb-4">
+                <CheckCircle2 className="w-8 h-8 text-green-600" />
+              </div>
+              <CardTitle>Pagamento confirmado!</CardTitle>
+            </>
+          )}
+
+          {(status === "error" || status === "expired" || status === "cancelled" || status === "failed") && (
+            <>
+              <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-red-100 mx-auto mb-4">
+                <XCircle className="w-8 h-8 text-red-600" />
+              </div>
+              <CardTitle>
+                {status === "expired" && "Pagamento expirado"}
+                {status === "cancelled" && "Pagamento cancelado"}
+                {status === "failed" && "Pagamento falhou"}
+                {status === "error" && "Pagamento não encontrado"}
+              </CardTitle>
+            </>
+          )}
+        </CardHeader>
+
+        <CardContent className="text-center space-y-4">
+          {status === "loading" && (
+            <p className="text-muted-foreground">
+              Aguarde enquanto confirmamos seu pagamento.
             </p>
-          </>
-        )}
+          )}
 
-        {status === "success" && (
-          <>
-            <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-success/20 mb-6">
-              <CheckCircle2 className="w-10 h-10 text-success" />
-            </div>
-            <h2 className="font-display text-2xl md:text-3xl text-primary mb-4">
-              Pagamento Confirmado!
-            </h2>
-            <p className="text-text-muted mb-6">{message}</p>
-            <Button
-              onClick={handleGoToResult}
-              className="w-full h-12 bg-gradient-accent hover:opacity-90 text-accent-foreground font-semibold text-lg"
-            >
-              Ver Meu Resultado
-            </Button>
-          </>
-        )}
+          {status === "processing" && (
+            <>
+              <p className="text-muted-foreground">
+                Seu pagamento está sendo processado. Assim que for confirmado, você será redirecionado automaticamente.
+              </p>
+              <p className="text-sm text-muted-foreground">
+                Verifique se você concluiu o pagamento via Pix no seu aplicativo bancário.
+              </p>
+              <Button variant="outline" onClick={handleBackToCheckout} className="w-full">
+                Voltar para o Checkout
+              </Button>
+            </>
+          )}
 
-        {status === "pending" && (
-          <>
-            <Loader2 className="w-16 h-16 animate-spin text-primary mx-auto mb-6" />
-            <h2 className="font-display text-2xl md:text-3xl text-primary mb-4">
-              Aguardando Pagamento
-            </h2>
-            <p className="text-text-muted mb-6">{message}</p>
-            <Button
-              onClick={() => checkPaymentStatus(searchParams.get("token")!)}
-              variant="outline"
-              className="w-full h-12 mb-4"
-            >
-              Verificar Novamente
-            </Button>
-            <Button
-              onClick={handleGoToPayment}
-              variant="ghost"
-              className="text-text-muted"
-            >
-              Voltar ao Pagamento
-            </Button>
-          </>
-        )}
+          {status === "success" && (
+            <>
+              <p className="text-muted-foreground">
+                Redirecionando para seu resultado premium...
+              </p>
+              <Button onClick={handleAccessPremium} className="w-full">
+                Acessar Resultado Premium
+              </Button>
+            </>
+          )}
 
-        {status === "error" && (
-          <>
-            <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-error/20 mb-6">
-              <XCircle className="w-10 h-10 text-error" />
-            </div>
-            <h2 className="font-display text-2xl md:text-3xl text-primary mb-4">
-              Erro no Pagamento
-            </h2>
-            <p className="text-text-muted mb-6">{message}</p>
-            <Button
-              onClick={handleGoToPayment}
-              className="w-full h-12 bg-button hover:bg-button-hover text-button-text font-semibold"
-            >
-              Tentar Novamente
-            </Button>
-          </>
-        )}
-      </div>
+          {(status === "error" || status === "expired" || status === "cancelled" || status === "failed") && (
+            <>
+              <p className="text-muted-foreground">
+                Não foi possível verificar seu pagamento. Se você realizou o pagamento, entre em contato conosco.
+              </p>
+              <Button onClick={handleBackToCheckout} className="w-full">
+                Voltar ao Checkout
+              </Button>
+            </>
+          )}
+        </CardContent>
+      </Card>
     </div>
   );
 };
