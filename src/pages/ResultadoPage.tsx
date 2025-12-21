@@ -7,7 +7,7 @@ import { Loader2, Lock, Clock, AlertTriangle, XCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { supabase } from "@/integrations/supabase/client";
 
-type PaymentStatus = "processing" | "paid" | "expired" | "cancelled" | "failed";
+type PaymentStatus = "processing" | "approved" | "paid" | "expired" | "cancelled" | "failed";
 
 interface PaymentData {
   id: string;
@@ -43,7 +43,7 @@ const ResultadoPage = () => {
   const loadPaymentByToken = async (token: string) => {
     setIsLoadingPayment(true);
     setPaymentError(null);
-    
+
     try {
       const { data, error } = await supabase
         .from("payments")
@@ -56,7 +56,7 @@ const ResultadoPage = () => {
         setPaymentError("Erro ao carregar pagamento.");
         return;
       }
-      
+
       if (data) {
         setPayment(data as PaymentData);
         // Store token for future visits
@@ -125,9 +125,7 @@ const ResultadoPage = () => {
           <h2 className="font-display text-2xl md:text-3xl text-primary mb-4">
             {paymentError}
           </h2>
-          <p className="text-text-muted mb-6">
-            Não encontramos um pagamento associado a este link.
-          </p>
+          <p className="text-text-muted mb-6">Não encontramos um pagamento associado a este link.</p>
           <Button onClick={() => navigate("/quiz")} className="w-full">
             Fazer o Quiz
           </Button>
@@ -144,12 +142,8 @@ const ResultadoPage = () => {
           <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-background-muted mb-6">
             <Lock className="w-10 h-10 text-text-muted" />
           </div>
-          <h2 className="font-display text-2xl md:text-3xl text-primary mb-4">
-            Acesso Restrito
-          </h2>
-          <p className="text-text-muted mb-6">
-            Este resultado é premium. Finalize o pagamento para acessar.
-          </p>
+          <h2 className="font-display text-2xl md:text-3xl text-primary mb-4">Acesso Restrito</h2>
+          <p className="text-text-muted mb-6">Este resultado é premium. Finalize o pagamento para acessar.</p>
           <Button onClick={() => navigate("/quiz")} className="w-full">
             Fazer o Quiz
           </Button>
@@ -158,17 +152,20 @@ const ResultadoPage = () => {
     );
   }
 
-  // CRITICAL: Block access if payment is NOT "paid"
-  // Only status === "paid" grants access to premium content
-  if (payment.status !== "paid") {
+  // CRITICAL: Block access if payment is NOT "approved"
+  // Fonte da verdade: status no Supabase (atualizado pelo webhook)
+  const normalizedStatus: PaymentStatus = payment.status === "paid" ? "approved" : payment.status;
+
+  if (normalizedStatus !== "approved") {
     // Determine the appropriate UI based on payment status
     const getStatusUI = () => {
-      switch (payment.status) {
+      switch (normalizedStatus) {
         case "processing":
           return {
             icon: <Clock className="w-10 h-10 text-accent" />,
-            title: "Aguardando Pagamento",
-            message: "Seu pagamento ainda está sendo processado. Assim que o pagamento for confirmado, seu resultado será liberado automaticamente.",
+            title: "Pagamento Pendente",
+            message:
+              "Seu pagamento ainda não foi aprovado. Assim que for confirmado, seu resultado premium será liberado.",
             showCheckButton: true,
             showPaymentButton: true,
           };
@@ -176,7 +173,8 @@ const ResultadoPage = () => {
           return {
             icon: <AlertTriangle className="w-10 h-10 text-warning" />,
             title: "Pagamento Expirado",
-            message: "O prazo para pagamento expirou. Por favor, gere um novo pagamento para acessar seu resultado.",
+            message:
+              "O prazo para pagamento expirou. Por favor, gere um novo pagamento para acessar seu resultado.",
             showCheckButton: false,
             showPaymentButton: true,
           };
@@ -184,7 +182,8 @@ const ResultadoPage = () => {
           return {
             icon: <XCircle className="w-10 h-10 text-error" />,
             title: "Pagamento Cancelado",
-            message: "Este pagamento foi cancelado. Por favor, gere um novo pagamento para acessar seu resultado.",
+            message:
+              "Este pagamento foi cancelado. Por favor, gere um novo pagamento para acessar seu resultado.",
             showCheckButton: false,
             showPaymentButton: true,
           };
@@ -192,7 +191,8 @@ const ResultadoPage = () => {
           return {
             icon: <XCircle className="w-10 h-10 text-error" />,
             title: "Pagamento Falhou",
-            message: "Houve um problema com o pagamento. Por favor, tente novamente com um novo pagamento.",
+            message:
+              "Houve um problema com o pagamento. Por favor, tente novamente com um novo pagamento.",
             showCheckButton: false,
             showPaymentButton: true,
           };
@@ -221,21 +221,13 @@ const ResultadoPage = () => {
             <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-background-muted mb-6">
               {statusUI.icon}
             </div>
-            
-            <h2 className="font-display text-2xl md:text-3xl text-primary mb-4">
-              {statusUI.title}
-            </h2>
-            
-            <p className="text-text-muted mb-6">
-              {statusUI.message}
-            </p>
+
+            <h2 className="font-display text-2xl md:text-3xl text-primary mb-4">{statusUI.title}</h2>
+
+            <p className="text-text-muted mb-6">{statusUI.message}</p>
 
             {statusUI.showCheckButton && (
-              <Button
-                onClick={handleCheckPayment}
-                variant="outline"
-                className="w-full h-12 mb-4"
-              >
+              <Button onClick={handleCheckPayment} variant="outline" className="w-full h-12 mb-4">
                 Verificar Pagamento
               </Button>
             )}
@@ -245,15 +237,11 @@ const ResultadoPage = () => {
                 onClick={handleGoToPayment}
                 className="w-full h-12 bg-gradient-accent hover:opacity-90 text-accent-foreground font-semibold text-lg shadow-glow transition-all duration-300 mb-4"
               >
-                {payment.status === "processing" ? "Ir para Pagamento" : "Gerar Novo Pagamento"}
+                {normalizedStatus === "processing" ? "Voltar ao Checkout" : "Gerar Novo Pagamento"}
               </Button>
             )}
 
-            <Button
-              onClick={handleRestart}
-              variant="ghost"
-              className="text-text-muted"
-            >
+            <Button onClick={handleRestart} variant="ghost" className="text-text-muted">
               Refazer Quiz
             </Button>
           </div>
@@ -262,7 +250,7 @@ const ResultadoPage = () => {
     );
   }
 
-  // PAID - Show the result
+  // APPROVED - Show the result
   // Get answers from payment data (source of truth from backend)
   const answers = payment.quiz_answers || [];
   const userName = payment.customer_name || "Católico";

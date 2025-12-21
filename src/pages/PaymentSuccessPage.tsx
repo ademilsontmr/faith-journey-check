@@ -31,9 +31,15 @@ const PaymentSuccessPage = () => {
     checkPaymentStatus(token);
   }, [searchParams]);
 
+  const normalizePaymentStatus = (value: unknown) => {
+    const status = typeof value === "string" ? value : "";
+    // Compat: alguns backends gravam "paid" como aprovado
+    return status === "paid" ? "approved" : status;
+  };
+
   const checkPaymentStatus = async (token: string) => {
     try {
-      // Fetch payment by access_token
+      // Fetch payment by access_token (fonte da verdade)
       const { data: payment, error } = await supabase
         .from("payments")
         .select("*")
@@ -47,24 +53,24 @@ const PaymentSuccessPage = () => {
         return;
       }
 
-      if (payment.status === "paid") {
+      const normalizedStatus = normalizePaymentStatus(payment.status);
+
+      if (normalizedStatus === "approved") {
         setStatus("success");
-        setMessage("Pagamento confirmado! Redirecionando para seu resultado...");
-        
-        // Redirect to result page with accessToken
-        setTimeout(() => {
-          navigate(`/resultado?token=${token}`);
-        }, 2000);
-      } else if (payment.status === "processing") {
-        setStatus("pending");
-        setMessage("Aguardando confirmação do pagamento...");
-        
-        // Poll for status updates
-        pollPaymentStatus(payment.id, token);
-      } else {
-        setStatus("error");
-        setMessage(`Status do pagamento: ${payment.status}`);
+        setMessage("Pagamento aprovado! Você já pode acessar seu resultado premium.");
+        return;
       }
+
+      if (normalizedStatus === "processing") {
+        setStatus("pending");
+        setMessage("Pagamento pendente. Aguardando confirmação...");
+        // Poll for status updates (fallback)
+        pollPaymentStatus(payment.id, token);
+        return;
+      }
+
+      setStatus("error");
+      setMessage("Pagamento não aprovado. Finalize o pagamento para acessar.\n\nStatus: " + normalizedStatus);
     } catch (err) {
       console.error("Error checking payment:", err);
       setStatus("error");
@@ -74,12 +80,12 @@ const PaymentSuccessPage = () => {
 
   const pollPaymentStatus = async (paymentId: string, token: string) => {
     let attempts = 0;
-    const maxAttempts = 30; // Poll for up to 30 seconds
+    const maxAttempts = 30; // Poll por até 30s
 
     const poll = async () => {
       if (attempts >= maxAttempts) {
         setStatus("pending");
-        setMessage("O pagamento ainda está sendo processado. Você pode verificar novamente em alguns minutos.");
+        setMessage("O pagamento ainda está pendente. Você pode verificar novamente em alguns minutos.");
         return;
       }
 
@@ -90,13 +96,11 @@ const PaymentSuccessPage = () => {
           body: { paymentId },
         });
 
-        if (!error && data?.status === "paid") {
+        const normalizedStatus = normalizePaymentStatus(data?.status);
+
+        if (!error && normalizedStatus === "approved") {
           setStatus("success");
-          setMessage("Pagamento confirmado! Redirecionando para seu resultado...");
-          
-          setTimeout(() => {
-            navigate(`/resultado?token=${token}`);
-          }, 2000);
+          setMessage("Pagamento aprovado! Você já pode acessar seu resultado premium.");
           return;
         }
 
