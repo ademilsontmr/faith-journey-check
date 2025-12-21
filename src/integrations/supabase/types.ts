@@ -22,6 +22,7 @@ export type Database = {
           created_at: string
           customer_email: string
           customer_name: string
+          customer_phone: string | null
           id: string
           max_score: number | null
           paid_at: string | null
@@ -42,6 +43,7 @@ export type Database = {
           created_at?: string
           customer_email: string
           customer_name: string
+          customer_phone?: string | null
           id?: string
           max_score?: number | null
           paid_at?: string | null
@@ -62,6 +64,7 @@ export type Database = {
           created_at?: string
           customer_email?: string
           customer_name?: string
+          customer_phone?: string | null
           id?: string
           max_score?: number | null
           paid_at?: string | null
