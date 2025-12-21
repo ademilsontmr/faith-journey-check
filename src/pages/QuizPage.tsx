@@ -75,8 +75,16 @@ const QuizPage = () => {
         console.log("Moving to next question:", currentQuestion + 1);
         setCurrentQuestion((prev) => prev + 1);
       } else {
-        console.log("Quiz completed! Navigating to /dados");
-        navigate("/dados");
+        console.log("Quiz completed! Navigating to /checkout");
+        // Navigate to checkout with test data via state
+        navigate("/checkout", {
+          state: {
+            testType: "spiritual_gifts",
+            answers: newAnswers,
+            score: newAnswers.reduce((a, b) => a + b, 0),
+            maxScore: newAnswers.length * 3,
+          }
+        });
       }
     }, 300);
   }, [answers, currentQuestion, navigate, updateAnswers]);
