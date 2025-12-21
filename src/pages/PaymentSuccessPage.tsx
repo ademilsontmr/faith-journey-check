@@ -31,6 +31,24 @@ const PaymentSuccessPage = () => {
   const [status, setStatus] = useState<PaymentStatus>("loading");
   const [paymentData, setPaymentData] = useState<PaymentData | null>(null);
 
+  const navigateToPremiumResult = (payment: PaymentData, accessToken: string) => {
+    const premiumRoute = payment.test_type === "relationship" 
+      ? "/premium-result-relationship" 
+      : "/premium-result-gifts";
+    
+    navigate(premiumRoute, {
+      state: {
+        token: accessToken,
+        testType: payment.test_type,
+        paymentId: payment.id,
+        score: payment.score || 0,
+        maxScore: payment.max_score || 150,
+        answers: payment.quiz_answers || {},
+        questions: payment.quiz_questions || [],
+      },
+    });
+  };
+
   useEffect(() => {
     const checkPayment = async () => {
       if (!token) {
@@ -54,23 +72,10 @@ const PaymentSuccessPage = () => {
 
         setPaymentData(payment as PaymentData);
 
+        // REGRA DE OURO: Só libera se status === "paid"
         if (payment.status === "paid") {
           // Redireciona imediatamente para o resultado premium
-          const premiumRoute = payment.test_type === "relationship" 
-            ? "/premium-result-relationship" 
-            : "/premium-result-gifts";
-          
-          navigate(premiumRoute, {
-            state: {
-              token,
-              testType: payment.test_type,
-              paymentId: payment.id,
-              score: payment.score || 0,
-              maxScore: payment.max_score || 150,
-              answers: payment.quiz_answers || {},
-              questions: payment.quiz_questions || [],
-            },
-          });
+          navigateToPremiumResult(payment as PaymentData, token);
           return;
         }
 
@@ -79,6 +84,7 @@ const PaymentSuccessPage = () => {
           // Poll for status updates using edge function
           pollPaymentStatus(payment.id);
         } else {
+          // expired, cancelled, failed
           setStatus(payment.status as PaymentStatus);
         }
       } catch (error) {
@@ -97,6 +103,7 @@ const PaymentSuccessPage = () => {
           body: { paymentId },
         });
 
+        // REGRA DE OURO: Só libera se status === "paid"
         if (!error && data?.status === "paid") {
           setStatus("success");
           clearInterval(interval);
@@ -108,22 +115,8 @@ const PaymentSuccessPage = () => {
             .eq("id", paymentId)
             .maybeSingle();
 
-          if (updatedPayment) {
-            const premiumRoute = updatedPayment.test_type === "relationship" 
-              ? "/premium-result-relationship" 
-              : "/premium-result-gifts";
-            
-            navigate(premiumRoute, {
-              state: {
-                token,
-                testType: updatedPayment.test_type,
-                paymentId: updatedPayment.id,
-                score: updatedPayment.score || 0,
-                maxScore: updatedPayment.max_score || 150,
-                answers: updatedPayment.quiz_answers || {},
-                questions: updatedPayment.quiz_questions || [],
-              },
-            });
+          if (updatedPayment && token) {
+            navigateToPremiumResult(updatedPayment as PaymentData, token);
           }
         } else if (data?.status && ["failed", "cancelled", "expired"].includes(data.status)) {
           setStatus(data.status as PaymentStatus);
@@ -140,21 +133,7 @@ const PaymentSuccessPage = () => {
 
   const handleAccessPremium = () => {
     if (paymentData && token) {
-      const premiumRoute = paymentData.test_type === "relationship" 
-        ? "/premium-result-relationship" 
-        : "/premium-result-gifts";
-      
-      navigate(premiumRoute, {
-        state: {
-          token,
-          testType: paymentData.test_type,
-          paymentId: paymentData.id,
-          score: paymentData.score || 0,
-          maxScore: paymentData.max_score || 150,
-          answers: paymentData.quiz_answers || {},
-          questions: paymentData.quiz_questions || [],
-        },
-      });
+      navigateToPremiumResult(paymentData, token);
     }
   };
 

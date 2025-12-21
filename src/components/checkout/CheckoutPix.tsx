@@ -34,11 +34,6 @@ export function CheckoutPix({
   const [accessToken, setAccessToken] = useState<string | null>(null);
   const [paymentError, setPaymentError] = useState<string | null>(null);
 
-  // Normalize payment status to "approved"
-  const normalizePaymentStatus = (status: string) => {
-    return status === "paid" ? "approved" : status;
-  };
-
   // Create billing on mount
   useEffect(() => {
     if (!pixCode && !isCreatingBilling && !paymentId) {
@@ -51,17 +46,15 @@ export function CheckoutPix({
     setPaymentError(null);
 
     try {
-      const { data: responseData, error } = await supabase.functions.invoke("create-payment", {
+      const { data: responseData, error } = await supabase.functions.invoke("create-pix-charge", {
         body: {
-          amount: 9.90,
           testType,
           customerEmail: customerData.email,
           customerName: customerData.name,
-          customerPhone: customerData.phone,
-          customerTaxId: customerData.taxId,
           quizAnswers,
           score,
           maxScore,
+          baseUrl: window.location.origin,
         },
       });
 
@@ -80,10 +73,10 @@ export function CheckoutPix({
         localStorage.setItem("payment_access_token", responseData.accessToken);
       }
 
-      // brCode is the PIX copy-paste code
-      if (responseData.brCode) {
-        setPixCode(responseData.brCode);
-        localStorage.setItem("pix_code", responseData.brCode);
+      // pix.copyPaste is the PIX copy-paste code
+      if (responseData.pix?.copyPaste) {
+        setPixCode(responseData.pix.copyPaste);
+        localStorage.setItem("pix_code", responseData.pix.copyPaste);
       }
     } catch (error) {
       console.error("Error creating PIX charge:", error);
@@ -123,9 +116,8 @@ export function CheckoutPix({
           body: { paymentId: currentPaymentId },
         });
 
-        const normalizedStatus = normalizePaymentStatus(data?.status || "");
-
-        if (!error && normalizedStatus === "approved") {
+        // Check for "paid" status (the canonical status in the database enum)
+        if (!error && data?.status === "paid") {
           toast.success("Pagamento aprovado!");
           
           if (currentAccessToken) {
@@ -143,9 +135,8 @@ export function CheckoutPix({
           .eq("access_token", currentAccessToken)
           .maybeSingle();
 
-        const normalizedStatus = normalizePaymentStatus(payment?.status || "");
-
-        if (normalizedStatus === "approved") {
+        // Check for "paid" status (the canonical status in the database enum)
+        if (payment?.status === "paid") {
           toast.success("Pagamento aprovado!");
           onSuccess(currentAccessToken);
           return;
