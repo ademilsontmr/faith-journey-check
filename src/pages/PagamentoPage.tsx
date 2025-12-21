@@ -55,27 +55,8 @@ const PagamentoPage = () => {
     }
   }, [sessionId, session, loading, navigate]);
 
-  // Check if already paid via access token
-  useEffect(() => {
-    const checkExistingPayment = async () => {
-      const token = localStorage.getItem("payment_access_token");
-      if (token) {
-        const { data: payment } = await supabase
-          .from("payments")
-          .select("status")
-          .eq("access_token", token)
-          .maybeSingle();
-        
-        if (payment?.status === "paid") {
-          navigate(`/resultado?token=${token}`);
-        }
-      }
-    };
-    
-    if (!loading && session) {
-      checkExistingPayment();
-    }
-  }, [loading, session, navigate]);
+  // NOTE: Removed auto-redirect to /resultado
+  // User must always confirm payment via PaymentSuccess page
 
   // Create billing only if no existing payment and customer data exists
   useEffect(() => {
@@ -189,8 +170,11 @@ const PagamentoPage = () => {
           body: { paymentId: currentPaymentId },
         });
         
-        if (!error && data?.status === "paid") {
-          toast.success("Pagamento confirmado!");
+        // Normalize status: "paid" -> "approved"
+        const normalizedStatus = data?.status === "paid" ? "approved" : data?.status;
+        
+        if (!error && normalizedStatus === "approved") {
+          toast.success("Pagamento aprovado!");
           
           // Also mark quiz session as paid
           if (sessionId) {
@@ -200,12 +184,13 @@ const PagamentoPage = () => {
               .eq("id", sessionId);
           }
           
-          navigate(currentAccessToken ? `/resultado?token=${currentAccessToken}` : "/resultado");
+          // Redirect to PaymentSuccess for confirmation flow
+          navigate(`/payment-success?token=${currentAccessToken}&test_type=spiritual_gifts`);
           return;
         }
       }
       
-      // Fallback: check by access token directly
+      // Fallback: check by access token directly in DB
       if (currentAccessToken) {
         const { data: payment } = await supabase
           .from("payments")
@@ -213,9 +198,13 @@ const PagamentoPage = () => {
           .eq("access_token", currentAccessToken)
           .maybeSingle();
         
-        if (payment?.status === "paid") {
-          toast.success("Pagamento confirmado!");
-          navigate(`/resultado?token=${currentAccessToken}`);
+        // Normalize status
+        const normalizedStatus = payment?.status === "paid" ? "approved" : payment?.status;
+        
+        if (normalizedStatus === "approved") {
+          toast.success("Pagamento aprovado!");
+          // Redirect to PaymentSuccess for confirmation flow
+          navigate(`/payment-success?token=${currentAccessToken}&test_type=spiritual_gifts`);
           return;
         }
       }
