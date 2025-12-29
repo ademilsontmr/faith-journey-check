@@ -36,6 +36,11 @@ import GuiaIndulgenciaPlenaria from "./pages/blog/GuiaIndulgenciaPlenaria";
 import MudancasIgrejaPos2025 from "./pages/blog/MudancasIgrejaPos2025";
 import OracoesEsperanca2026 from "./pages/blog/OracoesEsperanca2026";
 import PeregrinacaoLocal from "./pages/blog/PeregrinacaoLocal";
+import FeSaudeMental from "./pages/blog/FeSaudeMental";
+import PoderDoSilencio from "./pages/blog/PoderDoSilencio";
+import SantosEDepressao from "./pages/blog/SantosEDepressao";
+import OracaoEMindfulness from "./pages/blog/OracaoEMindfulness";
+import LidandoComLuto from "./pages/blog/LidandoComLuto";
 import TermsOfUse from "./pages/TermsOfUse";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Contact from "./pages/Contact";
@@ -86,6 +91,11 @@ const App = () => (
             <Route path="/blog/mudancas-igreja-pos-2025" element={<MudancasIgrejaPos2025 />} />
             <Route path="/blog/oracoes-esperanca-2026" element={<OracoesEsperanca2026 />} />
             <Route path="/blog/peregrinacao-local" element={<PeregrinacaoLocal />} />
+            <Route path="/blog/fe-e-saude-mental-ansiedade" element={<FeSaudeMental />} />
+            <Route path="/blog/poder-do-silencio-burnout" element={<PoderDoSilencio />} />
+            <Route path="/blog/santos-depressao-noite-escura" element={<SantosEDepressao />} />
+            <Route path="/blog/oracao-vs-mindfulness-cristao" element={<OracaoEMindfulness />} />
+            <Route path="/blog/como-lidar-com-luto-fe-crista" element={<LidandoComLuto />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>

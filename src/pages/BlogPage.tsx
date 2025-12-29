@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
-import { Cross, Calendar, Clock, ArrowRight, Heart, BookOpen, Church, Users, Flame, Sun, MapPin, ChevronLeft, ChevronRight, type LucideIcon } from "lucide-react";
+import { Cross, Calendar, Clock, ArrowRight, Heart, BookOpen, Church, Users, Flame, Sun, MapPin, HeartPulse, Wind, Cloud, Brain, Anchor, ChevronLeft, ChevronRight, type LucideIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Footer } from "@/components/landing/Footer";
 
@@ -19,6 +19,66 @@ interface BlogPost {
 }
 
 const blogPosts: BlogPost[] = [
+  {
+    id: 27,
+    slug: "fe-e-saude-mental-ansiedade",
+    title: "Fé e Saúde Mental: Como a Espiritualidade Católica Ajuda a Vencer a Ansiedade?",
+    excerpt: "Em um mundo hiperconectado e ansioso, a tradição católica oferece tesouros milenares para o equilíbrio da mente e da alma.",
+    date: "2026-01-20",
+    readTime: "12 min",
+    category: "Saúde Mental",
+    icon: HeartPulse,
+    bgColor: "bg-rose-50",
+    iconColor: "text-rose-400"
+  },
+  {
+    id: 28,
+    slug: "poder-do-silencio-burnout",
+    title: "O Poder do Silêncio: Retiros Espirituais para Curar o Burnout",
+    excerpt: "No ruído ensurdecedor do século XXI, o silêncio não é um luxo, mas uma necessidade vital para a sobrevivência da alma.",
+    date: "2026-01-25",
+    readTime: "8 min",
+    category: "Espiritualidade",
+    icon: Wind,
+    bgColor: "bg-slate-100",
+    iconColor: "text-slate-400"
+  },
+  {
+    id: 29,
+    slug: "santos-depressao-noite-escura",
+    title: "Santos que Enfrentaram a Depressão e a Noite Escura da Alma",
+    excerpt: "A santidade não é ausência de sofrimento psíquico, mas a capacidade de amar a Deus mesmo em meio à escuridão da mente.",
+    date: "2026-01-30",
+    readTime: "10 min",
+    category: "Hagiografia",
+    icon: Cloud,
+    bgColor: "bg-indigo-50",
+    iconColor: "text-indigo-400"
+  },
+  {
+    id: 30,
+    slug: "oracao-vs-mindfulness-cristao",
+    title: "Oração e Mindfulness: A Diferença entre Meditação Cristã e Práticas Seculares",
+    excerpt: "Atenção plena ou presença de Deus? Entenda por que a meditação católica vai muito além do relaxamento mental.",
+    date: "2026-02-05",
+    readTime: "9 min",
+    category: "Formação",
+    icon: Brain,
+    bgColor: "bg-emerald-50",
+    iconColor: "text-emerald-400"
+  },
+  {
+    id: 31,
+    slug: "como-lidar-com-luto-fe-crista",
+    title: "Como Lidar com o Luto: O Consolo da Fé na Vida Eterna",
+    excerpt: "A morte não é o fim, mas uma passagem. Aprenda como a esperança cristã transforma a dor da saudade em oração e confiança.",
+    date: "2026-02-10",
+    readTime: "11 min",
+    category: "Espiritualidade",
+    icon: Anchor,
+    bgColor: "bg-cyan-50",
+    iconColor: "text-cyan-400"
+  },
   {
     id: 22,
     slug: "legado-jubileu-2025",
