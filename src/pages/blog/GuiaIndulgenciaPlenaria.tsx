@@ -4,6 +4,7 @@ import { Cross, Calendar, Clock, ArrowLeft, BookOpen } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Footer } from "@/components/landing/Footer";
 import { RelatedArticles } from "@/components/blog/RelatedArticles";
+import { QuizCTA } from "@/components/blog/QuizCTA";
 
 export default function GuiaIndulgenciaPlenaria() {
     return (
@@ -83,6 +84,8 @@ export default function GuiaIndulgenciaPlenaria() {
                             <p className="text-text leading-relaxed mb-6">
                                 Muitos católicos confundem Indulgência com Confissão. Enquanto a Confissão perdoa a culpa do pecado, a Indulgência plenária apaga a "pena temporal" — a marca ou desordem que o pecado deixa em nossa alma. No Jubileu 2025, o Papa Francisco facilitou o acesso a essa graça imensa.
                             </p>
+
+                            <QuizCTA />
 
                             <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                                 As 4 Condições Habituais

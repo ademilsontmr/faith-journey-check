@@ -4,6 +4,7 @@ import { Cross, Calendar, Clock, ArrowLeft, Sun } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Footer } from "@/components/landing/Footer";
 import { RelatedArticles } from "@/components/blog/RelatedArticles";
+import { QuizCTA } from "@/components/blog/QuizCTA";
 
 export default function AdoracaoEucaristica() {
     return (
@@ -90,6 +91,8 @@ export default function AdoracaoEucaristica() {
                             <p className="text-text leading-relaxed mb-6">
                                 Jesus está realmente presente na Hóstia Consagrada. Ele nos espera no sacrário ou no ostensório com o desejo de nos consolar, nos fortalecer e nos curar. Adorar é um ato de fé pura: cremos no que não vemos, confiando apenas na Palavra do Senhor que disse: "Isto é o meu corpo".
                             </p>
+
+                            <QuizCTA />
 
                             <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                                 Benefícios da Hora Santa

@@ -4,6 +4,7 @@ import { Cross, Calendar, Clock, ArrowLeft, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Footer } from "@/components/landing/Footer";
 import { RelatedArticles } from "@/components/blog/RelatedArticles";
+import { QuizCTA } from "@/components/blog/QuizCTA";
 
 export default function DoutrinaSocial() {
     return (
@@ -90,6 +91,8 @@ export default function DoutrinaSocial() {
                             <p className="text-text leading-relaxed mb-6">
                                 Toda a Doutrina Social se sustenta sobre quatro pilares essenciais:
                             </p>
+
+                            <QuizCTA />
 
                             <h3 className="font-display text-xl font-semibold text-text mt-8 mb-3">
                                 1. Dignidade da Pessoa Humana

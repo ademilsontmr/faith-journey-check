@@ -4,6 +4,7 @@ import { Cross, Calendar, Clock, ArrowLeft, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Footer } from "@/components/landing/Footer";
 import { RelatedArticles } from "@/components/blog/RelatedArticles";
+import { QuizCTA } from "@/components/blog/QuizCTA";
 
 export default function AnjosDaGuarda() {
     return (
@@ -81,8 +82,10 @@ export default function AnjosDaGuarda() {
 
                         <div className="prose prose-lg max-w-none">
                             <p className="text-text leading-relaxed mb-6">
-                                A existência dos anjos é uma verdade de fé. O Catecismo da Igreja Católica ensina que, desde o início da vida até a morte, a vida humana é cercada pela proteção e intercessão dos anjos. Cada fiel tem ao seu lado um anjo como protetor e pastor para o conduzir à vida eterna.
+                                O Catecismo da Igreja Católica ensina que "desde o seu começo até à morte, a vida humana é acompanhada pela assistência e intercessão dos anjos". Isso significa que você nunca está sozinho. Existe um ser espiritual, dotado de inteligência e vontade, cuja única missão é ajudar você a chegar ao Céu.
                             </p>
+
+                            <QuizCTA />
 
                             <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                                 Quem são os Anjos da Guarda?

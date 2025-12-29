@@ -4,6 +4,7 @@ import { Cross, Calendar, Clock, ArrowLeft, Flame } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Footer } from "@/components/landing/Footer";
 import { RelatedArticles } from "@/components/blog/RelatedArticles";
+import { QuizCTA } from "@/components/blog/QuizCTA";
 
 export default function DonsEspiritoSanto() {
     return (
@@ -94,6 +95,8 @@ export default function DonsEspiritoSanto() {
                             <p className="text-text leading-relaxed mb-6">
                                 Não é o acúmulo de conhecimento, mas o "gosto" pelas coisas de Deus. O dom da Sabedoria nos permite ver o mundo, as pessoas e os acontecimentos através do olhar de Deus.
                             </p>
+
+                            <QuizCTA />
 
                             <h3 className="font-display text-xl font-semibold text-text mt-8 mb-3">
                                 2. Entendimento (ou Inteligência)

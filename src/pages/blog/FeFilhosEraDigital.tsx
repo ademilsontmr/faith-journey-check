@@ -4,6 +4,7 @@ import { Cross, Calendar, Clock, ArrowLeft, Smartphone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Footer } from "@/components/landing/Footer";
 import { RelatedArticles } from "@/components/blog/RelatedArticles";
+import { QuizCTA } from "@/components/blog/QuizCTA";
 
 export default function FeFilhosEraDigital() {
     return (
@@ -86,6 +87,8 @@ export default function FeFilhosEraDigital() {
                             <p className="text-text leading-relaxed mb-6">
                                 Em 2026, as crianças e jovens estão imersos em um fluxo constante de informações que, muitas vezes, contradizem os valores cristãos. O desafio dos pais não é apenas proibir, mas oferecer algo mais atraente: a beleza da Verdade. A transmissão da fé não pode ser apenas teórica; ela deve ser uma experiência de vida.
                             </p>
+
+                            <QuizCTA />
 
                             <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                                 O Exemplo é o Primeiro Catecismo

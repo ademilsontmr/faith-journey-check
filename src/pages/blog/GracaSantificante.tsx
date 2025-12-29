@@ -4,6 +4,7 @@ import { Cross, Calendar, Clock, ArrowLeft, Flame } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Footer } from "@/components/landing/Footer";
 import { RelatedArticles } from "@/components/blog/RelatedArticles";
+import { QuizCTA } from "@/components/blog/QuizCTA";
 
 export default function GracaSantificante() {
     return (
@@ -86,6 +87,8 @@ export default function GracaSantificante() {
                             <p className="text-text leading-relaxed mb-6">
                                 Para a teologia católica, a **Graça Santificante** é um dom gratuito e sobrenatural pelo qual Deus nos comunica Sua própria vida. No Batismo, nossa alma é purificada e elevada a uma nova dignidade: tornamo-nos filhos de Deus e templos do Espírito Santo. É o que chamamos de estar em "estado de graça".
                             </p>
+
+                            <QuizCTA />
 
                             <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                                 Graça Santificante vs. Graça Atual

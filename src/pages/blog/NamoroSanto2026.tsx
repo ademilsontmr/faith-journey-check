@@ -4,6 +4,7 @@ import { Cross, Calendar, Clock, ArrowLeft, Heart } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Footer } from "@/components/landing/Footer";
 import { RelatedArticles } from "@/components/blog/RelatedArticles";
+import { QuizCTA } from "@/components/blog/QuizCTA";
 
 export default function NamoroSanto2026() {
     return (
@@ -83,6 +84,8 @@ export default function NamoroSanto2026() {
                             <p className="text-text leading-relaxed mb-6">
                                 O namoro cristão tem um objetivo claro: o discernimento para o matrimônio. Em 2026, com a onipresença de aplicativos de "fast-dating" e a hipersexualização da cultura, o namoro santo tornou-se um ato de rebeldia espiritual.
                             </p>
+
+                            <QuizCTA />
 
                             <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                                 A Castidade como Liberdade

@@ -4,6 +4,7 @@ import { Cross, Calendar, Clock, ArrowLeft, Book } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Footer } from "@/components/landing/Footer";
 import { RelatedArticles } from "@/components/blog/RelatedArticles";
+import { QuizCTA } from "@/components/blog/QuizCTA";
 
 export default function OsQuatroEvangelhos() {
     return (
@@ -83,6 +84,8 @@ export default function OsQuatroEvangelhos() {
                             <p className="text-text leading-relaxed mb-6">
                                 Os Evangelhos são o coração de toda a Escritura. Embora narrem a mesma vida de Jesus, cada um foi escrito para um público diferente e com uma ênfase teológica específica. Juntos, eles formam uma visão completa do mistério de Cristo.
                             </p>
+
+                            <QuizCTA />
 
                             <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                                 1. Mateus: Jesus, o Novo Moisés

@@ -4,6 +4,7 @@ import { Cross, Calendar, Clock, ArrowLeft, Cloud } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Footer } from "@/components/landing/Footer";
 import { RelatedArticles } from "@/components/blog/RelatedArticles";
+import { QuizCTA } from "@/components/blog/QuizCTA";
 
 export default function OQueAconteceDepoisMorte() {
     return (
@@ -83,6 +84,8 @@ export default function OQueAconteceDepoisMorte() {
                             <p className="text-text leading-relaxed mb-6">
                                 A morte é a separação da alma e do corpo. No instante da morte, a alma comparece diante de Deus para o Juízo Particular. O destino eterno — Céu, Inferno ou Purgatório — é decidido com base na nossa resposta ao amor de Deus durante a vida terrena.
                             </p>
+
+                            <QuizCTA />
 
                             <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                                 O Céu: A Felicidade Eterna

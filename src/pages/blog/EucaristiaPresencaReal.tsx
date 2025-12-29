@@ -4,6 +4,7 @@ import { Cross, Calendar, Clock, ArrowLeft, Church } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Footer } from "@/components/landing/Footer";
 import { RelatedArticles } from "@/components/blog/RelatedArticles";
+import { QuizCTA } from "@/components/blog/QuizCTA";
 
 export default function EucaristiaPresencaReal() {
     return (
@@ -90,6 +91,8 @@ export default function EucaristiaPresencaReal() {
                             <p className="text-text leading-relaxed mb-6">
                                 Este termo teológico explica o que ocorre na consagração: a mudança de toda a substância do pão na substância do Corpo de Cristo e de toda a substância do vinho na substância do Seu Sangue. As "aparências" (gosto, cor, cheiro, forma) permanecem as mesmas, mas a realidade profunda mudou completamente. É um milagre que exige os olhos da fé.
                             </p>
+
+                            <QuizCTA />
 
                             <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                                 Instituição e Fundamento Bíblico

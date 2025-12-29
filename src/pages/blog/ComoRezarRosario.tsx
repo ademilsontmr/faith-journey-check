@@ -4,6 +4,7 @@ import { Cross, Calendar, Clock, ArrowLeft, Heart } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Footer } from "@/components/landing/Footer";
 import { RelatedArticles } from "@/components/blog/RelatedArticles";
+import { QuizCTA } from "@/components/blog/QuizCTA";
 
 export default function ComoRezarRosario() {
   return (
@@ -98,6 +99,8 @@ export default function ComoRezarRosario() {
               <p className="text-text leading-relaxed mb-6">
                 O Rosário é uma oração meditativa que combina orações vocais com a contemplação dos mistérios da vida de Cristo e da Virgem Maria. O nome "Rosário" vem do latim "rosarium", que significa "coroa de rosas" – cada Ave-Maria é como uma rosa espiritual oferecida a Nossa Senhora. A oração completa consiste em 20 mistérios divididos em quatro grupos: Gozosos, Luminosos, Dolorosos e Gloriosos.
               </p>
+
+              <QuizCTA />
 
               <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                 Os Mistérios do Santo Rosário

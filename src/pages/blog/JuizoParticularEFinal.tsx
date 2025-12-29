@@ -4,6 +4,7 @@ import { Cross, Calendar, Clock, ArrowLeft, Shield } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Footer } from "@/components/landing/Footer";
 import { RelatedArticles } from "@/components/blog/RelatedArticles";
+import { QuizCTA } from "@/components/blog/QuizCTA";
 
 export default function JuizoParticularEFinal() {
     return (
@@ -83,6 +84,8 @@ export default function JuizoParticularEFinal() {
                             <p className="text-text leading-relaxed mb-6">
                                 A doutrina católica fala de dois juízos. Embora o veredito sobre nossa salvação ou condenação seja decidido no primeiro, o segundo tem um significado profundo para toda a criação.
                             </p>
+
+                            <QuizCTA />
 
                             <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                                 1. O Juízo Particular

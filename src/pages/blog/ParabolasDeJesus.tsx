@@ -4,6 +4,7 @@ import { Cross, Calendar, Clock, ArrowLeft, Lightbulb } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Footer } from "@/components/landing/Footer";
 import { RelatedArticles } from "@/components/blog/RelatedArticles";
+import { QuizCTA } from "@/components/blog/QuizCTA";
 
 export default function ParabolasDeJesus() {
     return (
@@ -83,6 +84,8 @@ export default function ParabolasDeJesus() {
                             <p className="text-text leading-relaxed mb-6">
                                 Uma parábola é uma comparação que usa elementos do dia a dia (sementes, ovelhas, moedas, festas) para revelar verdades profundas sobre o Reino de Deus. Elas não são apenas "historinhas", mas espelhos que nos obrigam a olhar para nossa própria vida.
                             </p>
+
+                            <QuizCTA />
 
                             <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                                 O Bom Samaritano: Quem é o meu próximo?

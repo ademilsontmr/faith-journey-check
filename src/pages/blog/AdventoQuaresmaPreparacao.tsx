@@ -4,6 +4,7 @@ import { Cross, Calendar, Clock, ArrowLeft, Wind } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Footer } from "@/components/landing/Footer";
 import { RelatedArticles } from "@/components/blog/RelatedArticles";
+import { QuizCTA } from "@/components/blog/QuizCTA";
 
 export default function AdventoQuaresmaPreparacao() {
     return (
@@ -81,8 +82,10 @@ export default function AdventoQuaresmaPreparacao() {
 
                         <div className="prose prose-lg max-w-none">
                             <p className="text-text leading-relaxed mb-6">
-                                Na vida cristã, a festa é precedida pela preparação. O Advento nos prepara para o Natal, e a Quaresma para a Páscoa. São tempos de "treinamento" espiritual para que possamos saborear a alegria da ressurreição e do nascimento do Salvador.
+                                O Advento e a Quaresma são os dois grandes tempos de "deserto" e "espera" na Igreja. Enquanto o Advento nos prepara para a alegria do Natal, a Quaresma nos conduz à sobriedade da Paixão e à glória da Ressurreição. Ambos exigem de nós uma atitude de conversão e vigilância.
                             </p>
+
+                            <QuizCTA />
 
                             <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                                 Advento: O Tempo da Esperança

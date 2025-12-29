@@ -4,6 +4,7 @@ import { Cross, Calendar, Clock, ArrowLeft, Sun } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Footer } from "@/components/landing/Footer";
 import { RelatedArticles } from "@/components/blog/RelatedArticles";
+import { QuizCTA } from "@/components/blog/QuizCTA";
 
 export default function CorpusChristiPresencaReal() {
     return (
@@ -90,6 +91,8 @@ export default function CorpusChristiPresencaReal() {
                             <p className="text-text leading-relaxed mb-6">
                                 A Igreja ensina que, pelas palavras da consagração e pela força do Espírito Santo, ocorre a mudança de toda a substância do pão na substância do Corpo de Cristo e de toda a substância do vinho na substância do Seu Sangue. As aparências (gosto, cor, forma) permanecem, mas a realidade profunda mudou. Jesus está ali, vivo e inteiro.
                             </p>
+
+                            <QuizCTA />
 
                             <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                                 Por que a Procissão?

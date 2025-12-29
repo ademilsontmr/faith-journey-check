@@ -4,6 +4,7 @@ import { Cross, Calendar, Clock, ArrowLeft, Flame } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Footer } from "@/components/landing/Footer";
 import { RelatedArticles } from "@/components/blog/RelatedArticles";
+import { QuizCTA } from "@/components/blog/QuizCTA";
 
 export default function RessurreicaoDaCarneEsperanca() {
     return (
@@ -83,6 +84,8 @@ export default function RessurreicaoDaCarneEsperanca() {
                             <p className="text-text leading-relaxed mb-6">
                                 Diferente de algumas religiões que pregam a reencarnação ou a libertação definitiva do corpo, o cristianismo valoriza a matéria. Deus criou o homem como unidade de corpo e alma. Por isso, a salvação plena inclui a ressurreição do nosso corpo.
                             </p>
+
+                            <QuizCTA />
 
                             <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                                 Como será o corpo ressuscitado?

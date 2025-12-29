@@ -4,6 +4,7 @@ import { Cross, Calendar, Clock, ArrowLeft, Heart } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Footer } from "@/components/landing/Footer";
 import { RelatedArticles } from "@/components/blog/RelatedArticles";
+import { QuizCTA } from "@/components/blog/QuizCTA";
 
 export default function SantaDulcePobres() {
     return (
@@ -83,6 +84,8 @@ export default function SantaDulcePobres() {
                             <p className="text-text leading-relaxed mb-6">
                                 Maria Rita de Souza Brito Lopes Pontes, a Irmã Dulce, é uma das figuras mais amadas do Brasil. Sua vida foi um hino à caridade cristã, vivida nas ruas de Salvador, entre os doentes, os famintos e os abandonados.
                             </p>
+
+                            <QuizCTA />
 
                             <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                                 O Anjo Bom da Bahia

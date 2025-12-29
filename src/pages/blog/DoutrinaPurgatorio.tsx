@@ -4,6 +4,7 @@ import { Cross, Calendar, Clock, ArrowLeft, BookOpen } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Footer } from "@/components/landing/Footer";
 import { RelatedArticles } from "@/components/blog/RelatedArticles";
+import { QuizCTA } from "@/components/blog/QuizCTA";
 
 export default function DoutrinaPurgatorio() {
     return (
@@ -90,6 +91,8 @@ export default function DoutrinaPurgatorio() {
                             <p className="text-text leading-relaxed mb-6">
                                 O Catecismo da Igreja Católica ensina que "os que morrem na graça e na amizade de Deus, mas não perfeitamente purificados, embora tenham garantida a sua salvação eterna, sofrem após a morte uma purificação, a fim de obterem a santidade necessária para entrar na alegria do céu" (CIC 1030).
                             </p>
+
+                            <QuizCTA />
 
                             <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                                 Por que a purificação é necessária?

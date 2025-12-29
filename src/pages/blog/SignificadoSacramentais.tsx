@@ -4,6 +4,7 @@ import { Cross, Calendar, Clock, ArrowLeft, ShieldCheck } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Footer } from "@/components/landing/Footer";
 import { RelatedArticles } from "@/components/blog/RelatedArticles";
+import { QuizCTA } from "@/components/blog/QuizCTA";
 
 export default function SignificadoSacramentais() {
     return (
@@ -83,6 +84,8 @@ export default function SignificadoSacramentais() {
                             <p className="text-text leading-relaxed mb-6">
                                 Muitos católicos usam o Escapulário do Carmo, a Medalha de São Bento ou têm água benta em casa, mas nem todos sabem o real significado desses objetos. A Igreja os chama de **sacramentais**.
                             </p>
+
+                            <QuizCTA />
 
                             <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                                 O que são Sacramentais?

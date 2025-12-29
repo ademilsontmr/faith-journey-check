@@ -4,6 +4,7 @@ import { Cross, Calendar, Clock, ArrowLeft, BookOpen } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Footer } from "@/components/landing/Footer";
 import { RelatedArticles } from "@/components/blog/RelatedArticles";
+import { QuizCTA } from "@/components/blog/QuizCTA";
 
 export default function SignificadoMissa() {
     return (
@@ -83,6 +84,8 @@ export default function SignificadoMissa() {
                             <p className="text-text leading-relaxed mb-6">
                                 Muitos católicos frequentam a Missa dominical por hábito ou preceito, mas poucos compreendem a riqueza teológica e espiritual contida em cada gesto, palavra e silêncio da liturgia. A Santa Missa não é uma encenação da Última Ceia, mas a atualização do sacrifício do Calvário. É o céu que toca a terra.
                             </p>
+
+                            <QuizCTA />
 
                             <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                                 Ritos Iniciais: Preparando o Coração

@@ -4,6 +4,7 @@ import { Cross, Calendar, Clock, ArrowLeft, Sun } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Footer } from "@/components/landing/Footer";
 import { RelatedArticles } from "@/components/blog/RelatedArticles";
+import { QuizCTA } from "@/components/blog/QuizCTA";
 
 export default function DiscernimentoVocacional() {
     return (
@@ -90,6 +91,8 @@ export default function DiscernimentoVocacional() {
                             <p className="text-text leading-relaxed mb-6">
                                 Santo Inácio de Loyola, mestre do discernimento, ensina que devemos olhar para três direções:
                             </p>
+
+                            <QuizCTA />
 
                             <h3 className="font-display text-xl font-semibold text-text mt-8 mb-3">
                                 1. A Oração (O Diálogo)

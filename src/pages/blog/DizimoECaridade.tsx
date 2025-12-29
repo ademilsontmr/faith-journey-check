@@ -4,6 +4,7 @@ import { Cross, Calendar, Clock, ArrowLeft, Coins } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Footer } from "@/components/landing/Footer";
 import { RelatedArticles } from "@/components/blog/RelatedArticles";
+import { QuizCTA } from "@/components/blog/QuizCTA";
 
 export default function DizimoECaridade() {
     return (
@@ -90,6 +91,8 @@ export default function DizimoECaridade() {
                             <p className="text-text leading-relaxed mb-6">
                                 O dízimo é uma contribuição sistemática e periódica dos fiéis, por meio da qual eles assumem a corresponsabilidade pela manutenção da Igreja. Ele possui quatro dimensões:
                             </p>
+
+                            <QuizCTA />
                             <ul className="list-disc list-inside text-text space-y-2 mb-6">
                                 <li><strong>Religiosa:</strong> Gratidão a Deus por tudo o que recebemos.</li>
                                 <li><strong>Eclesial:</strong> Manutenção da paróquia, clero e funcionários.</li>

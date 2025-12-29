@@ -4,6 +4,7 @@ import { Cross, Calendar, Clock, ArrowLeft, Smartphone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Footer } from "@/components/landing/Footer";
 import { RelatedArticles } from "@/components/blog/RelatedArticles";
+import { QuizCTA } from "@/components/blog/QuizCTA";
 
 export default function CarloAcutisInternet() {
     return (
@@ -102,8 +103,10 @@ export default function CarloAcutisInternet() {
                                 "Todos nascem originais, mas muitos morrem como fotocópias"
                             </h2>
                             <p className="text-text leading-relaxed mb-6">
-                                Esta frase de Carlo resume seu pensamento. Ele acreditava que cada pessoa tem um chamado único de Deus e que o pecado nos torna medíocres, meras cópias do que o mundo espera de nós. A santidade é o que nos devolve a nossa originalidade.
+                                Carlo não era um jovem "fora do mundo". Ele gostava de computadores, videogames e futebol. Mas ele entendeu algo profundo: a internet e a tecnologia não são fins em si mesmas, mas ferramentas que podem ser usadas para a glória de Deus ou para a perdição das almas. Ele escolheu a primeira opção.
                             </p>
+
+                            <QuizCTA />
 
                             <div className="bg-accent/5 border border-accent/20 rounded-xl p-6 mt-10">
                                 <p className="text-text italic text-center">

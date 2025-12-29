@@ -4,6 +4,7 @@ import { Cross, Calendar, Clock, ArrowLeft, Sun } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Footer } from "@/components/landing/Footer";
 import { RelatedArticles } from "@/components/blog/RelatedArticles";
+import { QuizCTA } from "@/components/blog/QuizCTA";
 
 export default function EucaristiaDiaADia() {
     return (
@@ -90,6 +91,8 @@ export default function EucaristiaDiaADia() {
                             <p className="text-text leading-relaxed mb-6">
                                 Assim como nosso corpo precisa de alimento físico todos os dias, nossa alma precisa do alimento espiritual. A Missa diária nos dá a força necessária para enfrentar as tentações, as dificuldades no trabalho e os desafios familiares com paciência e caridade. É o momento de "reabastecer" a alma na fonte da Graça.
                             </p>
+
+                            <QuizCTA />
 
                             <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                                 Benefícios da Missa Diária

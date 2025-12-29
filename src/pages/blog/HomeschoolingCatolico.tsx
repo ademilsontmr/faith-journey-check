@@ -4,6 +4,7 @@ import { Cross, Calendar, Clock, ArrowLeft, GraduationCap } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Footer } from "@/components/landing/Footer";
 import { RelatedArticles } from "@/components/blog/RelatedArticles";
+import { QuizCTA } from "@/components/blog/QuizCTA";
 
 export default function HomeschoolingCatolico() {
     return (
@@ -83,6 +84,8 @@ export default function HomeschoolingCatolico() {
                             <p className="text-text leading-relaxed mb-6">
                                 Nos últimos anos, o Brasil tem visto um crescimento exponencial de famílias que optam pela educação domiciliar (homeschooling). Entre os católicos, esse movimento é impulsionado pelo desejo de oferecer uma formação que integre fé, razão e virtude, muitas vezes utilizando o modelo da Educação Clássica.
                             </p>
+
+                            <QuizCTA />
 
                             <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                                 O Resgate da Educação Clássica

@@ -4,6 +4,7 @@ import { Cross, Calendar, Clock, ArrowLeft, Heart } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Footer } from "@/components/landing/Footer";
 import { RelatedArticles } from "@/components/blog/RelatedArticles";
+import { QuizCTA } from "@/components/blog/QuizCTA";
 
 export default function PorQueHonrarMaria() {
     return (
@@ -83,6 +84,8 @@ export default function PorQueHonrarMaria() {
                             <p className="text-text leading-relaxed mb-6">
                                 Uma das perguntas mais frequentes feitas aos católicos é sobre a devoção a Maria. Muitos confundem veneração com adoração. Mas a Igreja é muito clara: adoramos somente a Deus (Latria) e veneramos os santos e, de modo especial, Maria (Hiperdulia).
                             </p>
+
+                            <QuizCTA />
 
                             <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                                 A Base Bíblica

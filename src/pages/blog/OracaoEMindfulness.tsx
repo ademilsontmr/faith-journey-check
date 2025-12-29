@@ -4,6 +4,7 @@ import { Cross, Calendar, Clock, ArrowLeft, Brain } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Footer } from "@/components/landing/Footer";
 import { RelatedArticles } from "@/components/blog/RelatedArticles";
+import { QuizCTA } from "@/components/blog/QuizCTA";
 
 export default function OracaoEMindfulness() {
     return (
@@ -83,6 +84,8 @@ export default function OracaoEMindfulness() {
                             <p className="text-text leading-relaxed mb-6">
                                 O *Mindfulness* (atenção plena) tornou-se uma ferramenta popular para reduzir o estresse. Embora suas técnicas de respiração e foco no presente possam ser úteis, o cristão deve estar atento: a meditação católica tem um objetivo e uma dinâmica fundamentalmente diferentes.
                             </p>
+
+                            <QuizCTA />
 
                             <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                                 Mindfulness: O Foco no "Eu"

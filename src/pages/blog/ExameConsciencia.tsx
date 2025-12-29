@@ -4,6 +4,7 @@ import { Cross, Calendar, Clock, ArrowLeft, Church } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Footer } from "@/components/landing/Footer";
 import { RelatedArticles } from "@/components/blog/RelatedArticles";
+import { QuizCTA } from "@/components/blog/QuizCTA";
 
 export default function ExameConsciencia() {
     return (
@@ -90,6 +91,8 @@ export default function ExameConsciencia() {
                             <p className="text-text leading-relaxed mb-6">
                                 É o esforço de recordar os pecados cometidos por pensamentos, palavras, atos e omissões desde a última confissão bem feita. É colocar-se sob a luz do Espírito Santo para enxergar as feridas que o pecado causou em nossa relação com Deus, com o próximo e conosco mesmos.
                             </p>
+
+                            <QuizCTA />
 
                             <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                                 Passo a Passo para um Bom Exame

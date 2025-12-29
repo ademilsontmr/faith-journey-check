@@ -4,6 +4,7 @@ import { Cross, Calendar, Clock, ArrowLeft, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Footer } from "@/components/landing/Footer";
 import { RelatedArticles } from "@/components/blog/RelatedArticles";
+import { QuizCTA } from "@/components/blog/QuizCTA";
 
 export default function SantosPaisEMaes() {
     return (
@@ -86,6 +87,8 @@ export default function SantosPaisEMaes() {
                             <p className="text-text leading-relaxed mb-6">
                                 Durante muito tempo, pensou-se que para ser santo era preciso fugir do mundo. No entanto, a Igreja sempre ensinou que todos são chamados à santidade, cada um no seu estado de vida. O matrimônio é um sacramento que confere as graças necessárias para que o casal se santifique mutuamente e na missão de pais.
                             </p>
+
+                            <QuizCTA />
 
                             <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                                 Exemplos que nos Inspiram

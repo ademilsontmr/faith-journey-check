@@ -4,6 +4,7 @@ import { Cross, Calendar, Clock, ArrowLeft, ShieldCheck } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Footer } from "@/components/landing/Footer";
 import { RelatedArticles } from "@/components/blog/RelatedArticles";
+import { QuizCTA } from "@/components/blog/QuizCTA";
 
 export default function SaoBentoProtecao() {
     return (
@@ -83,6 +84,8 @@ export default function SaoBentoProtecao() {
                             <p className="text-text leading-relaxed mb-6">
                                 São Bento de Núrsia, nascido no século V, é o Padroeiro da Europa e o fundador da Ordem dos Beneditinos. Sua famosa máxima, *Ora et Labora* (Reza e Trabalha), moldou a civilização ocidental e continua sendo um guia seguro para a nossa vida hoje.
                             </p>
+
+                            <QuizCTA />
 
                             <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                                 O Combate Espiritual

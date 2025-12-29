@@ -4,6 +4,7 @@ import { Cross, Calendar, Clock, ArrowLeft, BookOpen } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Footer } from "@/components/landing/Footer";
 import { RelatedArticles } from "@/components/blog/RelatedArticles";
+import { QuizCTA } from "@/components/blog/QuizCTA";
 
 export default function OQueEPurgatorio() {
     return (
@@ -83,6 +84,8 @@ export default function OQueEPurgatorio() {
                             <p className="text-text leading-relaxed mb-6">
                                 O Purgatório é o estado daqueles que morrem na graça e na amizade de Deus, mas ainda não estão perfeitamente purificados. Embora tenham a certeza de sua salvação eterna, eles precisam passar por uma purificação para obter a santidade necessária para entrar na alegria do céu.
                             </p>
+
+                            <QuizCTA />
 
                             <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                                 Um Dogma de Misericórdia

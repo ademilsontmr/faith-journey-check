@@ -4,6 +4,7 @@ import { Cross, Calendar, Clock, ArrowLeft, Sun } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Footer } from "@/components/landing/Footer";
 import { RelatedArticles } from "@/components/blog/RelatedArticles";
+import { QuizCTA } from "@/components/blog/QuizCTA";
 
 export default function SegundaVindaCristoFimTempos() {
     return (
@@ -83,6 +84,8 @@ export default function SegundaVindaCristoFimTempos() {
                             <p className="text-text leading-relaxed mb-6">
                                 No Credo, professamos que Jesus "de novo há de vir, em sua glória, para julgar os vivos e os mortos". Este evento é conhecido como Parusia. Não é motivo de medo, mas de esperança para o cristão, pois marca a vitória definitiva de Deus sobre o mal e a morte.
                             </p>
+
+                            <QuizCTA />
 
                             <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                                 O que acontecerá na Parusia?

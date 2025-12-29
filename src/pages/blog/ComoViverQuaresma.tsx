@@ -4,6 +4,7 @@ import { Cross, Calendar, Clock, ArrowLeft, Flame } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Footer } from "@/components/landing/Footer";
 import { RelatedArticles } from "@/components/blog/RelatedArticles";
+import { QuizCTA } from "@/components/blog/QuizCTA";
 
 export default function ComoViverQuaresma() {
     return (
@@ -90,6 +91,8 @@ export default function ComoViverQuaresma() {
                             <p className="text-text leading-relaxed mb-6">
                                 Na Quaresma, somos chamados a intensificar nossa vida de oração. Não se trata apenas de rezar mais, mas de rezar melhor. É o momento de silenciar as vozes do mundo para ouvir a voz de Deus. Experimente a Lectio Divina, a Via-Sacra ou o Rosário diário.
                             </p>
+
+                            <QuizCTA />
 
                             <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                                 2. Jejum: O Domínio de Si

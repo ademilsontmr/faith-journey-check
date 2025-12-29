@@ -4,6 +4,7 @@ import { Cross, Calendar, Clock, ArrowLeft, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Footer } from "@/components/landing/Footer";
 import { RelatedArticles } from "@/components/blog/RelatedArticles";
+import { QuizCTA } from "@/components/blog/QuizCTA";
 
 export default function PeregrinacaoLocal() {
     return (
@@ -83,6 +84,8 @@ export default function PeregrinacaoLocal() {
                             <p className="text-text leading-relaxed mb-6">
                                 A peregrinação é uma metáfora da vida cristã: estamos a caminho da Pátria Celeste. Organizar uma peregrinação local é uma excelente forma de unir a comunidade, redescobrir a história da fé em sua região e obter as graças jubilares sem grandes custos.
                             </p>
+
+                            <QuizCTA />
 
                             <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                                 1. Defina o Objetivo e o Destino

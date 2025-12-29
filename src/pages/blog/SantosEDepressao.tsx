@@ -4,6 +4,7 @@ import { Cross, Calendar, Clock, ArrowLeft, Cloud } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Footer } from "@/components/landing/Footer";
 import { RelatedArticles } from "@/components/blog/RelatedArticles";
+import { QuizCTA } from "@/components/blog/QuizCTA";
 
 export default function SantosEDepressao() {
     return (
@@ -83,6 +84,8 @@ export default function SantosEDepressao() {
                             <p className="text-text leading-relaxed mb-6">
                                 Existe um mito perigoso de que o cristão deve estar sempre sorrindo e que a tristeza é sinal de falta de fé. A vida dos santos prova o contrário. Muitos deles enfrentaram o que hoje chamaríamos de depressão clínica ou o que a tradição mística chama de "Noite Escura da Alma".
                             </p>
+
+                            <QuizCTA />
 
                             <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                                 São João da Cruz e a Noite Escura

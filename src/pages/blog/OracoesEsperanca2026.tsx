@@ -4,6 +4,7 @@ import { Cross, Calendar, Clock, ArrowLeft, Heart } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Footer } from "@/components/landing/Footer";
 import { RelatedArticles } from "@/components/blog/RelatedArticles";
+import { QuizCTA } from "@/components/blog/QuizCTA";
 
 export default function OracoesEsperanca2026() {
     return (
@@ -83,6 +84,8 @@ export default function OracoesEsperanca2026() {
                             <p className="text-text leading-relaxed mb-6">
                                 A esperança é uma virtude teologal, o que significa que ela é um dom de Deus. Em momentos de crise pessoal, familiar ou social, a esperança nos impede de cair no desespero. Rezar não muda necessariamente a situação externa imediatamente, mas muda o nosso coração para enfrentar a tempestade com serenidade.
                             </p>
+
+                            <QuizCTA />
 
                             <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                                 Oração de Abandono (São Charles de Foucauld)

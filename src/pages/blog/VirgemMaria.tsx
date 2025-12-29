@@ -4,6 +4,7 @@ import { Cross, Calendar, Clock, ArrowLeft, Heart } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Footer } from "@/components/landing/Footer";
 import { RelatedArticles } from "@/components/blog/RelatedArticles";
+import { QuizCTA } from "@/components/blog/QuizCTA";
 
 export default function VirgemMaria() {
     return (
@@ -83,6 +84,8 @@ export default function VirgemMaria() {
                             <p className="text-text leading-relaxed mb-6">
                                 A devoção à Santíssima Virgem Maria não é um "acessório" da fé católica, mas uma consequência lógica da Encarnação. Ao escolher Maria para ser a Mãe de Seu Filho, Deus a colocou no coração da história da salvação. Honrar Maria é, em última análise, glorificar a Deus pelas maravilhas que Ele realizou nela.
                             </p>
+
+                            <QuizCTA />
 
                             <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                                 Os Quatro Dogmas Marianos

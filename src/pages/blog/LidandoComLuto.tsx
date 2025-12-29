@@ -4,6 +4,7 @@ import { Cross, Calendar, Clock, ArrowLeft, Anchor } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Footer } from "@/components/landing/Footer";
 import { RelatedArticles } from "@/components/blog/RelatedArticles";
+import { QuizCTA } from "@/components/blog/QuizCTA";
 
 export default function LidandoComLuto() {
     return (
@@ -83,6 +84,8 @@ export default function LidandoComLuto() {
                             <p className="text-text leading-relaxed mb-6">
                                 O luto é uma das experiências mais universais e, ao mesmo tempo, mais solitárias do ser humano. A perda de um ente querido rasga o tecido da nossa realidade. No entanto, para o católico, o luto é vivido sob a luz da Páscoa. Nós não choramos como aqueles que não têm esperança.
                             </p>
+
+                            <QuizCTA />
 
                             <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                                 Jesus Também Chorou

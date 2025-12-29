@@ -4,6 +4,7 @@ import { Cross, Calendar, Clock, ArrowLeft, Wind } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Footer } from "@/components/landing/Footer";
 import { RelatedArticles } from "@/components/blog/RelatedArticles";
+import { QuizCTA } from "@/components/blog/QuizCTA";
 
 export default function PoderDoSilencio() {
     return (
@@ -83,6 +84,8 @@ export default function PoderDoSilencio() {
                             <p className="text-text leading-relaxed mb-6">
                                 O termo *burnout* tornou-se comum em nossos dias. Ele descreve o estado de exaustão física, mental e emocional causado pelo estresse crônico. Para o cristão, o burnout muitas vezes se manifesta como uma "aridez espiritual", onde a oração parece vazia e a vida perde o brilho.
                             </p>
+
+                            <QuizCTA />
 
                             <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                                 Por que o Silêncio Assusta?

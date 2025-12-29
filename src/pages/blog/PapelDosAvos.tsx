@@ -4,6 +4,7 @@ import { Cross, Calendar, Clock, ArrowLeft, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Footer } from "@/components/landing/Footer";
 import { RelatedArticles } from "@/components/blog/RelatedArticles";
+import { QuizCTA } from "@/components/blog/QuizCTA";
 
 export default function PapelDosAvos() {
     return (
@@ -83,6 +84,8 @@ export default function PapelDosAvos() {
                             <p className="text-text leading-relaxed mb-6">
                                 O Papa Francisco tem sido um grande defensor da dignidade dos idosos, chamando-os de "o tesouro da Igreja". Em uma sociedade que muitas vezes descarta o que é antigo, os avós católicos têm a missão profética de manter viva a chama da tradição e da fé.
                             </p>
+
+                            <QuizCTA />
 
                             <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                                 Guardiões da Memória

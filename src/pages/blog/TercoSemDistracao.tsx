@@ -4,6 +4,7 @@ import { Cross, Calendar, Clock, ArrowLeft, Heart } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Footer } from "@/components/landing/Footer";
 import { RelatedArticles } from "@/components/blog/RelatedArticles";
+import { QuizCTA } from "@/components/blog/QuizCTA";
 
 export default function TercoSemDistracao() {
     return (
@@ -83,6 +84,8 @@ export default function TercoSemDistracao() {
                             <p className="text-text leading-relaxed mb-6">
                                 Quem nunca começou um Terço e, de repente, se viu pensando na lista de compras ou no problema do trabalho? As distrações são normais, mas existem formas de minimizá-las e tornar nossa oração mais profunda e proveitosa.
                             </p>
+
+                            <QuizCTA />
 
                             <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                                 1. Prepare o Ambiente e o Coração

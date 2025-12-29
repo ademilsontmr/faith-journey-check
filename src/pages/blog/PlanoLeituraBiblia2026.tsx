@@ -4,6 +4,7 @@ import { Cross, Calendar, Clock, ArrowLeft, BookOpen } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Footer } from "@/components/landing/Footer";
 import { RelatedArticles } from "@/components/blog/RelatedArticles";
+import { QuizCTA } from "@/components/blog/QuizCTA";
 
 export default function PlanoLeituraBiblia2026() {
     return (
@@ -86,6 +87,8 @@ export default function PlanoLeituraBiblia2026() {
                             <p className="text-text leading-relaxed mb-6">
                                 A Bíblia é a história da nossa salvação. Conhecer apenas trechos isolados é como ler apenas algumas páginas de uma grande carta de amor. Ao ler o texto completo, entendemos a unidade entre o Antigo e o Novo Testamento e como cada promessa de Deus se cumpre em Jesus Cristo.
                             </p>
+
+                            <QuizCTA />
 
                             <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                                 Métodos de Leitura

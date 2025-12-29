@@ -4,6 +4,7 @@ import { Cross, Calendar, Clock, ArrowLeft, HeartPulse } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Footer } from "@/components/landing/Footer";
 import { RelatedArticles } from "@/components/blog/RelatedArticles";
+import { QuizCTA } from "@/components/blog/QuizCTA";
 
 export default function FeSaudeMental() {
     return (
@@ -92,6 +93,8 @@ export default function FeSaudeMental() {
                             <p className="text-text leading-relaxed mb-6">
                                 Jesus foi claro: "Não vos inquieteis pelo dia de amanhã" (Mt 6, 34). No entanto, Ele não ignora nossas dores. O convite bíblico não é para uma negação dos problemas, mas para uma mudança de foco: do problema para o Provedor.
                             </p>
+
+                            <QuizCTA />
 
                             <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                                 O Poder do Abandono na Providência Divina

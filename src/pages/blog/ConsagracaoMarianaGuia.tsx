@@ -4,6 +4,7 @@ import { Cross, Calendar, Clock, ArrowLeft, Anchor } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Footer } from "@/components/landing/Footer";
 import { RelatedArticles } from "@/components/blog/RelatedArticles";
+import { QuizCTA } from "@/components/blog/QuizCTA";
 
 export default function ConsagracaoMarianaGuia() {
     return (
@@ -90,6 +91,8 @@ export default function ConsagracaoMarianaGuia() {
                             <p className="text-text leading-relaxed mb-6">
                                 Não é apenas uma oração bonita. É uma entrega de tudo o que somos e temos: nosso corpo, nossa alma, nossos bens materiais e até o valor espiritual de nossas boas obras. Entregamos tudo a Maria para que ela disponha de nós para a maior glória de Deus.
                             </p>
+
+                            <QuizCTA />
 
                             <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                                 Por que "por Maria"?

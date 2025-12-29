@@ -4,6 +4,7 @@ import { Cross, Calendar, Clock, ArrowLeft, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Footer } from "@/components/landing/Footer";
 import { RelatedArticles } from "@/components/blog/RelatedArticles";
+import { QuizCTA } from "@/components/blog/QuizCTA";
 
 export default function EscolherSantoPadroeiro() {
     return (
@@ -90,6 +91,8 @@ export default function EscolherSantoPadroeiro() {
                             <p className="text-text leading-relaxed mb-6">
                                 Existem várias formas de identificar um santo que tenha uma conexão especial com você:
                             </p>
+
+                            <QuizCTA />
                             <ul className="list-disc list-inside text-text space-y-4 mb-6">
                                 <li><strong>Pelo Nome:</strong> Muitos santos levam o nosso nome de batismo. Conhecer a vida do seu onomástico é o primeiro passo.</li>
                                 <li><strong>Pela Profissão:</strong> Quase toda profissão tem um padroeiro (ex: São Lucas para médicos, São José para trabalhadores).</li>

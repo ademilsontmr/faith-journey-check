@@ -4,6 +4,7 @@ import { Cross, Calendar, Clock, ArrowLeft, BookOpen } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Footer } from "@/components/landing/Footer";
 import { RelatedArticles } from "@/components/blog/RelatedArticles";
+import { QuizCTA } from "@/components/blog/QuizCTA";
 
 export default function LectioDivinaGuia() {
     return (
@@ -83,6 +84,8 @@ export default function LectioDivinaGuia() {
                             <p className="text-text leading-relaxed mb-6">
                                 A *Lectio Divina* é uma prática monástica milenar que permite que a Palavra de Deus desça da cabeça para o coração. Ela é composta por quatro degraus simples, mas profundos.
                             </p>
+
+                            <QuizCTA />
 
                             <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                                 Os 4 Degraus da Lectio Divina

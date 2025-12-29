@@ -4,6 +4,7 @@ import { Cross, Calendar, Clock, ArrowLeft, BookOpen } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Footer } from "@/components/landing/Footer";
 import { RelatedArticles } from "@/components/blog/RelatedArticles";
+import { QuizCTA } from "@/components/blog/QuizCTA";
 
 export default function SeteSacramentos() {
   return (
@@ -87,6 +88,8 @@ export default function SeteSacramentos() {
               <p className="text-text leading-relaxed mb-6">
                 Os sacramentos são sinais eficazes da graça, instituídos por Cristo e confiados à Igreja, pelos quais nos é dispensada a vida divina. Os sete sacramentos tocam todas as etapas e todos os momentos importantes da vida cristã: nascimento, crescimento, cura e missão. Através deles, recebemos as graças necessárias para nossa santificação e salvação.
               </p>
+
+              <QuizCTA />
 
               <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                 Sacramentos de Iniciação Cristã

@@ -4,6 +4,7 @@ import { Cross, Calendar, Clock, ArrowLeft, Sun } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Footer } from "@/components/landing/Footer";
 import { RelatedArticles } from "@/components/blog/RelatedArticles";
+import { QuizCTA } from "@/components/blog/QuizCTA";
 
 export default function NossaSenhoraFatimaMensagem() {
     return (
@@ -83,6 +84,8 @@ export default function NossaSenhoraFatimaMensagem() {
                             <p className="text-text leading-relaxed mb-6">
                                 Em 1917, em plena Primeira Guerra Mundial, Nossa Senhora apareceu a três crianças em Portugal: Lúcia, Francisco e Jacinta. Sua mensagem não era apenas para aquele tempo, mas um roteiro espiritual para toda a humanidade que se afasta de Deus.
                             </p>
+
+                            <QuizCTA />
 
                             <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                                 Os Três Pilares da Mensagem

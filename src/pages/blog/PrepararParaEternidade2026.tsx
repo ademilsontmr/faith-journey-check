@@ -4,6 +4,7 @@ import { Cross, Calendar, Clock, ArrowLeft, Anchor } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Footer } from "@/components/landing/Footer";
 import { RelatedArticles } from "@/components/blog/RelatedArticles";
+import { QuizCTA } from "@/components/blog/QuizCTA";
 
 export default function PrepararParaEternidade2026() {
     return (
@@ -83,6 +84,8 @@ export default function PrepararParaEternidade2026() {
                             <p className="text-text leading-relaxed mb-6">
                                 Muitas vezes pensamos na eternidade como algo muito distante, que só nos dirá respeito no fim da vida. Mas a eternidade começa hoje. Cada decisão, cada palavra e cada gesto de amor são "tijolos" que estamos assentando em nossa morada eterna.
                             </p>
+
+                            <QuizCTA />
 
                             <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                                 O Perigo do Imediatismo

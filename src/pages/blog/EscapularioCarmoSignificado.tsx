@@ -4,6 +4,7 @@ import { Cross, Calendar, Clock, ArrowLeft, ShieldCheck } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Footer } from "@/components/landing/Footer";
 import { RelatedArticles } from "@/components/blog/RelatedArticles";
+import { QuizCTA } from "@/components/blog/QuizCTA";
 
 export default function EscapularioCarmoSignificado() {
     return (
@@ -90,6 +91,8 @@ export default function EscapularioCarmoSignificado() {
                             <p className="text-text leading-relaxed mb-6">
                                 Originalmente parte do hábito dos carmelitas, o escapulário foi adaptado para os leigos como duas pequenas peças de lã marrom unidas por cordões. Ele representa o "manto" de Maria, sob o qual nos refugiamos.
                             </p>
+
+                            <QuizCTA />
 
                             <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                                 As Promessas de Maria

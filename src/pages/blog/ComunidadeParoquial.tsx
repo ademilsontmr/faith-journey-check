@@ -4,6 +4,7 @@ import { Cross, Calendar, Clock, ArrowLeft, Church } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Footer } from "@/components/landing/Footer";
 import { RelatedArticles } from "@/components/blog/RelatedArticles";
+import { QuizCTA } from "@/components/blog/QuizCTA";
 
 export default function ComunidadeParoquial() {
     return (
@@ -93,6 +94,8 @@ export default function ComunidadeParoquial() {
                                 <li><strong>Oportunidade de Serviço:</strong> Através das pastorais e movimentos, podemos colocar nossos talentos à disposição de Deus e dos irmãos.</li>
                                 <li><strong>Sentido de Pertencimento:</strong> Saber que fazemos parte de algo maior nos dá identidade e propósito.</li>
                             </ul>
+
+                            <QuizCTA />
 
                             <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                                 A Paróquia como "Casa entre as casas"

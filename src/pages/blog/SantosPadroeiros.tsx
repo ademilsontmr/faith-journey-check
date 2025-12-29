@@ -4,6 +4,7 @@ import { Cross, Calendar, Clock, ArrowLeft, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Footer } from "@/components/landing/Footer";
 import { RelatedArticles } from "@/components/blog/RelatedArticles";
+import { QuizCTA } from "@/components/blog/QuizCTA";
 
 export default function SantosPadroeiros() {
   return (
@@ -84,6 +85,8 @@ export default function SantosPadroeiros() {
               <p className="text-text leading-relaxed mb-6">
                 A devoção aos santos é uma das mais belas tradições da Igreja Católica. Desde os primeiros séculos, os cristãos veneravam aqueles que deram testemunho heroico de fé, muitas vezes com o próprio sangue. Os santos padroeiros são intercessores especiais que nos acompanham em nossa jornada terrena, protegendo-nos e inspirando-nos com seu exemplo de santidade.
               </p>
+
+              <QuizCTA />
 
               <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                 O Que é um Santo Padroeiro?

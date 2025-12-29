@@ -4,6 +4,7 @@ import { Cross, Calendar, Clock, ArrowLeft, Flame } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Footer } from "@/components/landing/Footer";
 import { RelatedArticles } from "@/components/blog/RelatedArticles";
+import { QuizCTA } from "@/components/blog/QuizCTA";
 
 export default function VigiliaPascalSignificado() {
     return (
@@ -83,6 +84,8 @@ export default function VigiliaPascalSignificado() {
                             <p className="text-text leading-relaxed mb-6">
                                 Na noite do Sábado Santo, a Igreja permanece em vigília, à espera da Ressurreição do Senhor. É uma celebração rica em símbolos que nos transportam das trevas para a luz, da morte para a vida.
                             </p>
+
+                            <QuizCTA />
 
                             <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                                 Os Quatro Momentos da Vigília

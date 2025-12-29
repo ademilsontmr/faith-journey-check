@@ -4,6 +4,7 @@ import { Cross, Calendar, Clock, ArrowLeft, Church } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Footer } from "@/components/landing/Footer";
 import { RelatedArticles } from "@/components/blog/RelatedArticles";
+import { QuizCTA } from "@/components/blog/QuizCTA";
 
 export default function SignificadoCrucifixo() {
     return (
@@ -83,6 +84,8 @@ export default function SignificadoCrucifixo() {
                             <p className="text-text leading-relaxed mb-6">
                                 Para o mundo, a cruz é loucura ou escândalo; para nós, católicos, ela é o sinal da vitória e a prova suprema do amor de Deus. O crucifixo (a cruz com a imagem de Jesus) nos lembra constantemente o preço que foi pago pela nossa salvação e o convite de Jesus: "Quem quiser me seguir, tome sua cruz e siga-me".
                             </p>
+
+                            <QuizCTA />
 
                             <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                                 A Diferença entre Cruz e Crucifixo

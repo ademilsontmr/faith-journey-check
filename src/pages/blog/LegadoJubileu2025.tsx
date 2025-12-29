@@ -4,6 +4,7 @@ import { Cross, Calendar, Clock, ArrowLeft, Sun } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Footer } from "@/components/landing/Footer";
 import { RelatedArticles } from "@/components/blog/RelatedArticles";
+import { QuizCTA } from "@/components/blog/QuizCTA";
 
 export default function LegadoJubileu2025() {
     return (
@@ -83,6 +84,8 @@ export default function LegadoJubileu2025() {
                             <p className="text-text leading-relaxed mb-6">
                                 O Jubileu de 2025, sob o tema "Peregrinos da Esperança", foi um tempo de graça extraordinária para a Igreja universal. Milhões de fiéis cruzaram as Portas Santas, buscaram a reconciliação e renovaram sua fé. No entanto, o fim do ano litúrgico jubilar não marca o fim da nossa jornada, mas o início de uma nova etapa de testemunho.
                             </p>
+
+                            <QuizCTA />
 
                             <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                                 O Que Significa Ser um Peregrino em 2026?

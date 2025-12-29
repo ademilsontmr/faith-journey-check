@@ -4,6 +4,7 @@ import { Cross, Calendar, Clock, ArrowLeft, Sun } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Footer } from "@/components/landing/Footer";
 import { RelatedArticles } from "@/components/blog/RelatedArticles";
+import { QuizCTA } from "@/components/blog/QuizCTA";
 
 export default function AnoLiturgicoGuia() {
     return (
@@ -81,8 +82,10 @@ export default function AnoLiturgicoGuia() {
 
                         <div className="prose prose-lg max-w-none">
                             <p className="text-text leading-relaxed mb-6">
-                                Enquanto o mundo segue o calendário civil, a Igreja vive o Ano Litúrgico. Ele começa no primeiro domingo do Advento e termina na solenidade de Cristo Rei. Ao longo desse ciclo, celebramos todo o mistério de Cristo, desde Sua encarnação até Sua vinda gloriosa.
+                                O Ano Litúrgico não coincide com o ano civil. Ele começa no primeiro domingo do Advento e termina na solenidade de Cristo Rei. Ao longo desse ciclo, a Igreja celebra todo o mistério de Cristo, da Encarnação e Natal até a Ascensão, ao dia de Pentecostes e à expectativa da ditosa esperança e da vinda do Senhor.
                             </p>
+
+                            <QuizCTA />
 
                             <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                                 As Cores Litúrgicas e seus Significados

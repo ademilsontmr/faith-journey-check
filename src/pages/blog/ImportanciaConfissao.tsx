@@ -4,6 +4,7 @@ import { Cross, Calendar, Clock, ArrowLeft, Church } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Footer } from "@/components/landing/Footer";
 import { RelatedArticles } from "@/components/blog/RelatedArticles";
+import { QuizCTA } from "@/components/blog/QuizCTA";
 
 export default function ImportanciaConfissao() {
   return (
@@ -84,6 +85,8 @@ export default function ImportanciaConfissao() {
               <p className="text-text leading-relaxed mb-6">
                 O Sacramento da Confissão, também chamado de Penitência ou Reconciliação, é um encontro pessoal com a misericórdia de Deus. Instituído por Cristo ressuscitado quando disse aos Apóstolos: "Recebei o Espírito Santo. Àqueles a quem perdoardes os pecados, serão perdoados" (Jo 20,22-23), este sacramento continua sendo fonte inesgotável de graça para milhões de católicos. Infelizmente, muitos negligenciam este presente divino, privando-se de graças extraordinárias.
               </p>
+
+              <QuizCTA />
 
               <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                 O Que Acontece na Confissão?

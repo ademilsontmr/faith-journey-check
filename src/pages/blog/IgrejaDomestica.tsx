@@ -4,6 +4,7 @@ import { Cross, Calendar, Clock, ArrowLeft, Home } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Footer } from "@/components/landing/Footer";
 import { RelatedArticles } from "@/components/blog/RelatedArticles";
+import { QuizCTA } from "@/components/blog/QuizCTA";
 
 export default function IgrejaDomestica() {
     return (
@@ -83,6 +84,8 @@ export default function IgrejaDomestica() {
                             <p className="text-text leading-relaxed mb-6">
                                 O Concílio Vaticano II resgatou a expressão "Igreja Doméstica" para descrever a família cristã. O lar é o primeiro lugar onde se anuncia a fé e onde se aprende a amar a Deus. Mas, na prática, como transformar uma rotina corrida em um espaço de oração?
                             </p>
+
+                            <QuizCTA />
 
                             <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                                 1. Crie um "Canto de Oração" (Oratório)

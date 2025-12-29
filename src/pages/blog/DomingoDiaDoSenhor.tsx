@@ -4,6 +4,7 @@ import { Cross, Calendar, Clock, ArrowLeft, Home } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Footer } from "@/components/landing/Footer";
 import { RelatedArticles } from "@/components/blog/RelatedArticles";
+import { QuizCTA } from "@/components/blog/QuizCTA";
 
 export default function DomingoDiaDoSenhor() {
     return (
@@ -90,6 +91,8 @@ export default function DomingoDiaDoSenhor() {
                             <p className="text-text leading-relaxed mb-6">
                                 Participar da Eucaristia dominical não é uma "obrigação pesada", mas uma necessidade da alma. É onde nos reunimos como corpo de Cristo para sermos alimentados por Sua Palavra e Seu Corpo. Sem o domingo, não podemos viver.
                             </p>
+
+                            <QuizCTA />
 
                             <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                                 O Descanso que Santifica

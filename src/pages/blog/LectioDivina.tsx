@@ -4,6 +4,7 @@ import { Cross, Calendar, Clock, ArrowLeft, BookOpen } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Footer } from "@/components/landing/Footer";
 import { RelatedArticles } from "@/components/blog/RelatedArticles";
+import { QuizCTA } from "@/components/blog/QuizCTA";
 
 export default function LectioDivina() {
     return (
@@ -83,6 +84,8 @@ export default function LectioDivina() {
                             <p className="text-text leading-relaxed mb-6">
                                 Muitos católicos sentem dificuldade em ler a Bíblia. Começam com entusiasmo, mas logo se perdem em genealogias ou leis antigas. A Lectio Divina, ou "Leitura Divina", é um método monástico milenar que nos ensina a ler as Escrituras não apenas com a inteligência, mas com o coração, transformando a leitura em oração.
                             </p>
+
+                            <QuizCTA />
 
                             <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                                 Os Quatro Degraus da Lectio Divina

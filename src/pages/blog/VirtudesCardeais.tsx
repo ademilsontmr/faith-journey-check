@@ -4,6 +4,7 @@ import { Cross, Calendar, Clock, ArrowLeft, Shield } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Footer } from "@/components/landing/Footer";
 import { RelatedArticles } from "@/components/blog/RelatedArticles";
+import { QuizCTA } from "@/components/blog/QuizCTA";
 
 export default function VirtudesCardeais() {
     return (
@@ -83,6 +84,8 @@ export default function VirtudesCardeais() {
                             <p className="text-text leading-relaxed mb-6">
                                 A palavra "virtude" vem do latim *virtus*, que significa força ou excelência. As virtudes cardeais são chamadas assim porque são os "eixos" (do latim *cardo*, gonzos de uma porta) sobre os quais gira toda a vida moral do homem.
                             </p>
+
+                            <QuizCTA />
 
                             <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                                 1. Prudência: O Farol da Razão

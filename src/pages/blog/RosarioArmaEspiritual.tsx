@@ -4,6 +4,7 @@ import { Cross, Calendar, Clock, ArrowLeft, Shield } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Footer } from "@/components/landing/Footer";
 import { RelatedArticles } from "@/components/blog/RelatedArticles";
+import { QuizCTA } from "@/components/blog/QuizCTA";
 
 export default function RosarioArmaEspiritual() {
     return (
@@ -83,6 +84,8 @@ export default function RosarioArmaEspiritual() {
                             <p className="text-text leading-relaxed mb-6">
                                 O Santo Rosário foi chamado por São Padre Pio de "a arma". Não uma arma de destruição, mas de combate espiritual contra o mal, o desânimo e o pecado. É uma oração contemplativa que nos faz percorrer a vida de Jesus com os olhos de Sua mãe.
                             </p>
+
+                            <QuizCTA />
 
                             <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                                 Por que rezar o Rosário hoje?

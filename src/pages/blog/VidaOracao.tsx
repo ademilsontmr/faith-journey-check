@@ -4,6 +4,7 @@ import { Cross, Calendar, Clock, ArrowLeft, Heart } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Footer } from "@/components/landing/Footer";
 import { RelatedArticles } from "@/components/blog/RelatedArticles";
+import { QuizCTA } from "@/components/blog/QuizCTA";
 
 export default function VidaOracao() {
   return (
@@ -83,6 +84,8 @@ export default function VidaOracao() {
               <p className="text-text leading-relaxed mb-6">
                 Santa Teresa d'Ávila definia a oração como "um trato de amizade, estando muitas vezes a sós com Quem sabemos que nos ama". Para o católico, a oração é o oxigênio da alma. Sem ela, a fé enfraquece, a esperança vacila e a caridade esfria. No entanto, muitos encontram dificuldades em manter uma rotina constante de diálogo com o Criador.
               </p>
+
+              <QuizCTA />
 
               <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                 Por que a Oração é Essencial?
