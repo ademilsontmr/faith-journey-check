@@ -26,6 +26,9 @@ import CastidadeMundoModerno from "./pages/blog/CastidadeMundoModerno";
 import DoutrinaSocial from "./pages/blog/DoutrinaSocial";
 import DiscernimentoVocacional from "./pages/blog/DiscernimentoVocacional";
 import EucaristiaPresencaReal from "./pages/blog/EucaristiaPresencaReal";
+import TermsOfUse from "./pages/TermsOfUse";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -44,6 +47,9 @@ const App = () => (
             <Route path="/payment-success" element={<PaymentSuccessPage />} />
             <Route path="/resultado" element={<ResultadoPage />} />
             <Route path="/blog" element={<BlogPage />} />
+            <Route path="/termos" element={<TermsOfUse />} />
+            <Route path="/privacidade" element={<PrivacyPolicy />} />
+            <Route path="/contato" element={<Contact />} />
             <Route path="/blog/como-rezar-rosario" element={<ComoRezarRosario />} />
             <Route path="/blog/sete-sacramentos" element={<SeteSacramentos />} />
             <Route path="/blog/importancia-confissao" element={<ImportanciaConfissao />} />

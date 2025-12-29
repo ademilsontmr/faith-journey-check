@@ -15,7 +15,7 @@ export function Footer() {
               <span className="font-display text-2xl font-bold">Bom Católico</span>
             </div>
             <p className="text-button-text/70 max-w-md mb-6">
-              Ajudando católicos a viverem sua fé de forma mais profunda e consciente. 
+              Ajudando católicos a viverem sua fé de forma mais profunda e consciente.
               Conteúdos, orações e ferramentas para sua caminhada espiritual.
             </p>
             <div className="flex gap-4">
@@ -72,19 +72,19 @@ export function Footer() {
             <h4 className="font-semibold mb-4">Legal</h4>
             <ul className="space-y-2 text-button-text/70">
               <li>
-                <a href="#" className="hover:text-button-text transition-colors">
+                <Link to="/termos" className="hover:text-button-text transition-colors">
                   Termos de Uso
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-button-text transition-colors">
+                <Link to="/privacidade" className="hover:text-button-text transition-colors">
                   Política de Privacidade
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-button-text transition-colors">
+                <Link to="/contato" className="hover:text-button-text transition-colors">
                   Contato
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
