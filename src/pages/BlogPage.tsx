@@ -967,27 +967,28 @@ export default function BlogPage() {
             </div>
 
             {/* Pagination */}
+            {/* Pagination */}
             {totalPages > 1 && (
-              <div className="mt-12 flex items-center justify-center gap-2">
+              <div className="mt-16 flex items-center justify-center gap-4">
                 <Button
                   variant="outline"
-                  size="icon"
                   onClick={() => setCurrentPage(prev => Math.max(1, prev - 1))}
                   disabled={currentPage === 1}
-                  className="rounded-full"
+                  className="rounded-full gap-2 px-4 hover:bg-accent/5 transition-all duration-300"
                 >
                   <ChevronLeft className="w-4 h-4" />
+                  <span className="hidden sm:inline">Anterior</span>
                 </Button>
 
-                <div className="flex items-center gap-2 mx-4">
+                <div className="flex items-center gap-2">
                   {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
                     <button
                       key={page}
                       onClick={() => setCurrentPage(page)}
-                      className={`w - 10 h - 10 rounded - full text - sm font - medium transition - colors ${currentPage === page
-                        ? "bg-accent text-button-text"
-                        : "text-text-muted hover:bg-accent/10 hover:text-accent"
-                        } `}
+                      className={`w-10 h-10 rounded-full text-sm font-medium transition-all duration-300 ${currentPage === page
+                          ? "bg-accent text-button-text shadow-lg shadow-accent/20 scale-110"
+                          : "text-text-muted hover:bg-accent/10 hover:text-accent"
+                        }`}
                     >
                       {page}
                     </button>
@@ -996,11 +997,11 @@ export default function BlogPage() {
 
                 <Button
                   variant="outline"
-                  size="icon"
                   onClick={() => setCurrentPage(prev => Math.min(totalPages, prev + 1))}
                   disabled={currentPage === totalPages}
-                  className="rounded-full"
+                  className="rounded-full gap-2 px-4 hover:bg-accent/5 transition-all duration-300"
                 >
+                  <span className="hidden sm:inline">Próximo</span>
                   <ChevronRight className="w-4 h-4" />
                 </Button>
               </div>
