@@ -75,6 +75,11 @@ import RosarioArmaEspiritual from "./pages/blog/RosarioArmaEspiritual";
 import NossaSenhoraFatimaMensagem from "./pages/blog/NossaSenhoraFatimaMensagem";
 import EscapularioCarmoSignificado from "./pages/blog/EscapularioCarmoSignificado";
 import ConsagracaoMarianaGuia from "./pages/blog/ConsagracaoMarianaGuia";
+import OQueAconteceDepoisMorte from "./pages/blog/OQueAconteceDepoisMorte";
+import SegundaVindaCristoFimTempos from "./pages/blog/SegundaVindaCristoFimTempos";
+import JuizoParticularEFinal from "./pages/blog/JuizoParticularEFinal";
+import RessurreicaoDaCarneEsperanca from "./pages/blog/RessurreicaoDaCarneEsperanca";
+import PrepararParaEternidade2026 from "./pages/blog/PrepararParaEternidade2026";
 import TermsOfUse from "./pages/TermsOfUse";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Contact from "./pages/Contact";
@@ -165,6 +170,11 @@ const App = () => (
             <Route path="/blog/nossa-senhora-fatima-mensagem-oracao-penitencia" element={<NossaSenhoraFatimaMensagem />} />
             <Route path="/blog/escapulario-carmo-significado-promessas" element={<EscapularioCarmoSignificado />} />
             <Route path="/blog/consagracao-nossa-senhora-guia-pratico" element={<ConsagracaoMarianaGuia />} />
+            <Route path="/blog/o-que-acontece-depois-da-morte-ceu-inferno-purgatorio" element={<OQueAconteceDepoisMorte />} />
+            <Route path="/blog/segunda-vinda-cristo-fim-dos-tempos-parusia" element={<SegundaVindaCristoFimTempos />} />
+            <Route path="/blog/juizo-particular-e-juizo-final-diferencas" element={<JuizoParticularEFinal />} />
+            <Route path="/blog/ressurreicao-da-carne-nossa-esperanca-vida-eterna" element={<RessurreicaoDaCarneEsperanca />} />
+            <Route path="/blog/como-se-preparar-para-eternidade-dia-a-dia" element={<PrepararParaEternidade2026 />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>

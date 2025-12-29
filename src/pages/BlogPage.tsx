@@ -20,6 +20,66 @@ interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 67,
+    slug: "o-que-acontece-depois-da-morte-ceu-inferno-purgatorio",
+    title: "O que Acontece Depois da Morte? Céu, Inferno e Purgatório",
+    excerpt: "A morte não é o fim, mas o nascimento para a eternidade. Descubra o que a Igreja ensina sobre o destino final de cada alma.",
+    date: "2026-09-05",
+    readTime: "12 min",
+    category: "Doutrina",
+    icon: Cloud,
+    bgColor: "bg-blue-50",
+    iconColor: "text-blue-400"
+  },
+  {
+    id: 68,
+    slug: "segunda-vinda-cristo-fim-dos-tempos-parusia",
+    title: "A Segunda Vinda de Cristo: Como a Igreja Entende o Fim dos Tempos",
+    excerpt: "\"Maranathá! Vem, Senhor Jesus!\" Descubra o que a Igreja ensina sobre a Parusia e a consumação da história.",
+    date: "2026-09-10",
+    readTime: "11 min",
+    category: "Doutrina",
+    icon: Sun,
+    bgColor: "bg-yellow-50",
+    iconColor: "text-yellow-400"
+  },
+  {
+    id: 69,
+    slug: "juizo-particular-e-juizo-final-diferencas",
+    title: "O Juízo Particular e o Juízo Final: Qual a Diferença?",
+    excerpt: "Seremos julgados uma ou duas vezes? Entenda como a Igreja explica os momentos em que prestaremos contas de nossa vida a Deus.",
+    date: "2026-09-15",
+    readTime: "10 min",
+    category: "Doutrina",
+    icon: Shield,
+    bgColor: "bg-blue-50",
+    iconColor: "text-blue-400"
+  },
+  {
+    id: 70,
+    slug: "ressurreicao-da-carne-nossa-esperanca-vida-eterna",
+    title: "A Ressurreição da Carne: Nossa Esperança na Vida Eterna",
+    excerpt: "\"Creio na ressurreição da carne\". O que essa frase do Credo realmente significa para o nosso futuro?",
+    date: "2026-09-20",
+    readTime: "9 min",
+    category: "Doutrina",
+    icon: Flame,
+    bgColor: "bg-orange-50",
+    iconColor: "text-orange-400"
+  },
+  {
+    id: 71,
+    slug: "como-se-preparar-para-eternidade-dia-a-dia",
+    title: "Como se Preparar para a Eternidade no Dia a Dia de 2026",
+    excerpt: "Viver com o \"olhar no Céu e os pés na terra\". Saiba como manter a perspectiva eterna em um mundo que só pensa no agora.",
+    date: "2026-09-25",
+    readTime: "8 min",
+    category: "Vida Cristã",
+    icon: Anchor,
+    bgColor: "bg-blue-50",
+    iconColor: "text-blue-400"
+  },
+  {
     id: 62,
     slug: "por-que-catolicos-honram-maria-dogma-devocao",
     title: "Por que os Católicos Honram Maria? Entenda o Dogma e a Devoção",
