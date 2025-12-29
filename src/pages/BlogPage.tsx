@@ -89,6 +89,126 @@ const blogPosts: BlogPost[] = [
     icon: Sun,
     bgColor: "bg-yellow-100",
     iconColor: "text-yellow-400"
+  },
+  {
+    id: 7,
+    slug: "vida-oracao",
+    title: "A Vida de Oração: Como Cultivar uma Intimidade com Deus",
+    excerpt: "Aprenda como transformar seu diálogo com Deus em uma fonte de vida e paz através da oração constante.",
+    date: "2024-12-29",
+    readTime: "7 min",
+    category: "Espiritualidade",
+    icon: Heart,
+    bgColor: "bg-rose-100",
+    iconColor: "text-rose-400"
+  },
+  {
+    id: 8,
+    slug: "significado-missa",
+    title: "O Significado da Santa Missa: Entenda Cada Parte da Liturgia",
+    excerpt: "Descubra a riqueza teológica e espiritual contida em cada gesto e palavra da celebração eucarística.",
+    date: "2024-12-29",
+    readTime: "10 min",
+    category: "Liturgia",
+    icon: BookOpen,
+    bgColor: "bg-blue-100",
+    iconColor: "text-blue-400"
+  },
+  {
+    id: 9,
+    slug: "exame-consciencia",
+    title: "Como Fazer um Bom Exame de Consciência para a Confissão",
+    excerpt: "Um guia prático e espiritual para preparar seu coração para o sacramento da Reconciliação.",
+    date: "2024-12-29",
+    readTime: "8 min",
+    category: "Sacramentos",
+    icon: Church,
+    bgColor: "bg-violet-100",
+    iconColor: "text-violet-400"
+  },
+  {
+    id: 10,
+    slug: "virgem-maria",
+    title: "A Virgem Maria na Doutrina Católica: Dogmas e Devoção",
+    excerpt: "Entenda o papel fundamental de Nossa Senhora no plano de salvação e os pilares da fé mariana.",
+    date: "2024-12-29",
+    readTime: "9 min",
+    category: "Devoções",
+    icon: Heart,
+    bgColor: "bg-rose-100",
+    iconColor: "text-rose-400"
+  },
+  {
+    id: 11,
+    slug: "dons-espirito-santo",
+    title: "Os Dons do Espírito Santo e Como Eles Atuam em Nossa Vida",
+    excerpt: "Descubra como os sete dons do Espírito Santo fortalecem a alma e nos conduzem à santidade.",
+    date: "2024-12-29",
+    readTime: "10 min",
+    category: "Formação",
+    icon: Flame,
+    bgColor: "bg-orange-100",
+    iconColor: "text-orange-400"
+  },
+  {
+    id: 12,
+    slug: "lectio-divina",
+    title: "A Importância da Leitura Orante da Bíblia (Lectio Divina)",
+    excerpt: "Aprenda o método milenar de leitura orante das Escrituras para um encontro pessoal com Deus.",
+    date: "2024-12-29",
+    readTime: "7 min",
+    category: "Espiritualidade",
+    icon: BookOpen,
+    bgColor: "bg-blue-100",
+    iconColor: "text-blue-400"
+  },
+  {
+    id: 13,
+    slug: "castidade-mundo-moderno",
+    title: "Viver a Castidade no Mundo Moderno: Desafios e Graças",
+    excerpt: "A castidade como um caminho de liberdade e amor autêntico em meio aos desafios da cultura atual.",
+    date: "2024-12-29",
+    readTime: "9 min",
+    category: "Formação",
+    icon: Users,
+    bgColor: "bg-amber-100",
+    iconColor: "text-amber-400"
+  },
+  {
+    id: 14,
+    slug: "doutrina-social",
+    title: "A Doutrina Social da Igreja: O Olhar Católico sobre a Sociedade",
+    excerpt: "Conheça os princípios católicos para a construção de uma sociedade mais justa e solidária.",
+    date: "2024-12-29",
+    readTime: "10 min",
+    category: "Formação",
+    icon: Users,
+    bgColor: "bg-amber-100",
+    iconColor: "text-amber-400"
+  },
+  {
+    id: 15,
+    slug: "discernimento-vocacional",
+    title: "Como Discernir a Vontade de Deus em Sua Vida",
+    excerpt: "Dicas práticas e espirituais para descobrir o plano de amor que Deus tem para você.",
+    date: "2024-12-29",
+    readTime: "8 min",
+    category: "Espiritualidade",
+    icon: Sun,
+    bgColor: "bg-yellow-100",
+    iconColor: "text-yellow-400"
+  },
+  {
+    id: 16,
+    slug: "eucaristia-presenca-real",
+    title: "A Eucaristia: Presença Real de Jesus no Pão e no Vinho",
+    excerpt: "Entenda o mistério da Transubstanciação e a importância da Eucaristia na vida do cristão.",
+    date: "2024-12-29",
+    readTime: "10 min",
+    category: "Sacramentos",
+    icon: Church,
+    bgColor: "bg-violet-100",
+    iconColor: "text-violet-400"
   }
 ];
 
@@ -125,7 +245,7 @@ export default function BlogPage() {
               Blog Bom Católico
             </h1>
             <p className="text-lg text-text-muted max-w-2xl mx-auto">
-              Artigos, reflexões e ensinamentos para fortalecer sua fé e 
+              Artigos, reflexões e ensinamentos para fortalecer sua fé e
               aprofundar seu conhecimento da doutrina católica.
             </p>
           </div>

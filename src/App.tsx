@@ -16,6 +16,16 @@ import ImportanciaConfissao from "./pages/blog/ImportanciaConfissao";
 import SantosPadroeiros from "./pages/blog/SantosPadroeiros";
 import JejumAbstinencia from "./pages/blog/JejumAbstinencia";
 import MissaDominical from "./pages/blog/MissaDominical";
+import VidaOracao from "./pages/blog/VidaOracao";
+import SignificadoMissa from "./pages/blog/SignificadoMissa";
+import ExameConsciencia from "./pages/blog/ExameConsciencia";
+import VirgemMaria from "./pages/blog/VirgemMaria";
+import DonsEspiritoSanto from "./pages/blog/DonsEspiritoSanto";
+import LectioDivina from "./pages/blog/LectioDivina";
+import CastidadeMundoModerno from "./pages/blog/CastidadeMundoModerno";
+import DoutrinaSocial from "./pages/blog/DoutrinaSocial";
+import DiscernimentoVocacional from "./pages/blog/DiscernimentoVocacional";
+import EucaristiaPresencaReal from "./pages/blog/EucaristiaPresencaReal";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -40,6 +50,16 @@ const App = () => (
             <Route path="/blog/santos-padroeiros" element={<SantosPadroeiros />} />
             <Route path="/blog/jejum-abstinencia" element={<JejumAbstinencia />} />
             <Route path="/blog/missa-dominical" element={<MissaDominical />} />
+            <Route path="/blog/vida-oracao" element={<VidaOracao />} />
+            <Route path="/blog/significado-missa" element={<SignificadoMissa />} />
+            <Route path="/blog/exame-consciencia" element={<ExameConsciencia />} />
+            <Route path="/blog/virgem-maria" element={<VirgemMaria />} />
+            <Route path="/blog/dons-espirito-santo" element={<DonsEspiritoSanto />} />
+            <Route path="/blog/lectio-divina" element={<LectioDivina />} />
+            <Route path="/blog/castidade-mundo-moderno" element={<CastidadeMundoModerno />} />
+            <Route path="/blog/doutrina-social" element={<DoutrinaSocial />} />
+            <Route path="/blog/discernimento-vocacional" element={<DiscernimentoVocacional />} />
+            <Route path="/blog/eucaristia-presenca-real" element={<EucaristiaPresencaReal />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
