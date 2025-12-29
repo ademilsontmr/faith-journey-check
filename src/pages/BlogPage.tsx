@@ -1,6 +1,7 @@
+import { useState, useEffect } from "react";
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
-import { Cross, Calendar, Clock, ArrowRight, Heart, BookOpen, Church, Users, Flame, Sun, type LucideIcon } from "lucide-react";
+import { Cross, Calendar, Clock, ArrowRight, Heart, BookOpen, Church, Users, Flame, Sun, ChevronLeft, ChevronRight, type LucideIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Footer } from "@/components/landing/Footer";
 
@@ -212,7 +213,24 @@ const blogPosts: BlogPost[] = [
   }
 ];
 
+// Sort posts by date (most recent first)
+const sortedPosts = [...blogPosts].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+
+const POSTS_PER_PAGE = 9;
+
 export default function BlogPage() {
+  const [currentPage, setCurrentPage] = useState(1);
+
+  // Calculate pagination
+  const totalPages = Math.ceil(sortedPosts.length / POSTS_PER_PAGE);
+  const startIndex = (currentPage - 1) * POSTS_PER_PAGE;
+  const currentPosts = sortedPosts.slice(startIndex, startIndex + POSTS_PER_PAGE);
+
+  // Scroll to top when page changes
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, [currentPage]);
+
   return (
     <>
       <Helmet>
@@ -255,7 +273,7 @@ export default function BlogPage() {
         <section className="py-16">
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {blogPosts.map((post) => (
+              {currentPosts.map((post) => (
                 <Link to={`/blog/${post.slug}`} key={post.id}>
                   <article className="bg-surface rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow group h-full">
                     <div className={`aspect-video flex items-center justify-center ${post.bgColor}`}>
@@ -289,6 +307,46 @@ export default function BlogPage() {
                 </Link>
               ))}
             </div>
+
+            {/* Pagination */}
+            {totalPages > 1 && (
+              <div className="mt-12 flex items-center justify-center gap-2">
+                <Button
+                  variant="outline"
+                  size="icon"
+                  onClick={() => setCurrentPage(prev => Math.max(1, prev - 1))}
+                  disabled={currentPage === 1}
+                  className="rounded-full"
+                >
+                  <ChevronLeft className="w-4 h-4" />
+                </Button>
+
+                <div className="flex items-center gap-2 mx-4">
+                  {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
+                    <button
+                      key={page}
+                      onClick={() => setCurrentPage(page)}
+                      className={`w-10 h-10 rounded-full text-sm font-medium transition-colors ${currentPage === page
+                          ? "bg-accent text-button-text"
+                          : "text-text-muted hover:bg-accent/10 hover:text-accent"
+                        }`}
+                    >
+                      {page}
+                    </button>
+                  ))}
+                </div>
+
+                <Button
+                  variant="outline"
+                  size="icon"
+                  onClick={() => setCurrentPage(prev => Math.min(totalPages, prev + 1))}
+                  disabled={currentPage === totalPages}
+                  className="rounded-full"
+                >
+                  <ChevronRight className="w-4 h-4" />
+                </Button>
+              </div>
+            )}
           </div>
         </section>
 
