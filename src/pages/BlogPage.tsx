@@ -20,6 +20,66 @@ interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 62,
+    slug: "por-que-catolicos-honram-maria-dogma-devocao",
+    title: "Por que os Católicos Honram Maria? Entenda o Dogma e a Devoção",
+    excerpt: "Maria não afasta de Jesus; ela é o caminho mais curto para chegar a Ele. Entenda por que a \"Cheia de Graça\" ocupa um lugar central em nossa fé.",
+    date: "2026-08-05",
+    readTime: "11 min",
+    category: "Doutrina",
+    icon: Heart,
+    bgColor: "bg-blue-50",
+    iconColor: "text-blue-400"
+  },
+  {
+    id: 63,
+    slug: "rosario-arma-espiritual-desafios-2026",
+    title: "O Rosário: Uma Arma Espiritual para os Desafios de 2026",
+    excerpt: "Em um mundo agitado e cheio de incertezas, o Rosário é a âncora que nos mantém unidos a Deus através das mãos de Maria.",
+    date: "2026-08-10",
+    readTime: "10 min",
+    category: "Oração",
+    icon: Shield,
+    bgColor: "bg-blue-50",
+    iconColor: "text-blue-400"
+  },
+  {
+    id: 64,
+    slug: "nossa-senhora-fatima-mensagem-oracao-penitencia",
+    title: "Nossa Senhora de Fátima: A Mensagem de Oração e Penitência",
+    excerpt: "Mais do que profecias sobre o futuro, Fátima é um apelo urgente à conversão do coração. Descubra o que a Virgem tem a nos dizer hoje.",
+    date: "2026-08-15",
+    readTime: "9 min",
+    category: "Devoção",
+    icon: Sun,
+    bgColor: "bg-yellow-50",
+    iconColor: "text-yellow-400"
+  },
+  {
+    id: 65,
+    slug: "escapulario-carmo-significado-promessas",
+    title: "O Escapulário do Carmo: Significado e Promessas de Proteção",
+    excerpt: "O Escapulário não é um amuleto mágico, mas um sinal de pertença a Maria e um compromisso de seguir a Jesus.",
+    date: "2026-08-20",
+    readTime: "8 min",
+    category: "Devoção",
+    icon: ShieldCheck,
+    bgColor: "bg-emerald-50",
+    iconColor: "text-emerald-400"
+  },
+  {
+    id: 66,
+    slug: "consagracao-nossa-senhora-guia-pratico",
+    title: "Consagração a Nossa Senhora: O que é e Como Fazer",
+    excerpt: "Consagrar-se a Maria é entregar as chaves da sua vida para aquela que melhor soube dizer \"Sim\" a Deus.",
+    date: "2026-08-25",
+    readTime: "10 min",
+    category: "Espiritualidade",
+    icon: Anchor,
+    bgColor: "bg-blue-50",
+    iconColor: "text-blue-400"
+  },
+  {
     id: 57,
     slug: "ano-liturgico-guia-cores-tempos",
     title: "O Ano Litúrgico: Entenda as Cores e os Tempos da Igreja",

@@ -70,6 +70,11 @@ import AdventoQuaresmaPreparacao from "./pages/blog/AdventoQuaresmaPreparacao";
 import VigiliaPascalSignificado from "./pages/blog/VigiliaPascalSignificado";
 import CorpusChristiPresencaReal from "./pages/blog/CorpusChristiPresencaReal";
 import DomingoDiaDoSenhor from "./pages/blog/DomingoDiaDoSenhor";
+import PorQueHonrarMaria from "./pages/blog/PorQueHonrarMaria";
+import RosarioArmaEspiritual from "./pages/blog/RosarioArmaEspiritual";
+import NossaSenhoraFatimaMensagem from "./pages/blog/NossaSenhoraFatimaMensagem";
+import EscapularioCarmoSignificado from "./pages/blog/EscapularioCarmoSignificado";
+import ConsagracaoMarianaGuia from "./pages/blog/ConsagracaoMarianaGuia";
 import TermsOfUse from "./pages/TermsOfUse";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Contact from "./pages/Contact";
@@ -155,6 +160,11 @@ const App = () => (
             <Route path="/blog/significado-vigilia-pascal-noite-santa" element={<VigiliaPascalSignificado />} />
             <Route path="/blog/corpus-christi-presenca-real-jesus-eucaristia" element={<CorpusChristiPresencaReal />} />
             <Route path="/blog/como-viver-domingo-dia-do-senhor" element={<DomingoDiaDoSenhor />} />
+            <Route path="/blog/por-que-catolicos-honram-maria-dogma-devocao" element={<PorQueHonrarMaria />} />
+            <Route path="/blog/rosario-arma-espiritual-desafios-2026" element={<RosarioArmaEspiritual />} />
+            <Route path="/blog/nossa-senhora-fatima-mensagem-oracao-penitencia" element={<NossaSenhoraFatimaMensagem />} />
+            <Route path="/blog/escapulario-carmo-significado-promessas" element={<EscapularioCarmoSignificado />} />
+            <Route path="/blog/consagracao-nossa-senhora-guia-pratico" element={<ConsagracaoMarianaGuia />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
