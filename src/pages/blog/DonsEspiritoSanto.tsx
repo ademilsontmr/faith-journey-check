@@ -9,10 +9,10 @@ export default function DonsEspiritoSanto() {
     return (
         <>
             <Helmet>
-                <title>Os Dons do Espírito Santo e Como Eles Atuam em Nossa Vida | Bom Católico</title>
-                <meta name="description" content="Conheça os sete dons do Espírito Santo e como eles fortalecem a alma cristã. Aprenda a identificar e cultivar os presentes de Deus em sua jornada." />
-                <meta name="keywords" content="dons do espírito santo, crisma, vida espiritual, sabedoria, entendimento, conselho, fortaleza, ciência, piedade, temor de deus" />
-                <link rel="canonical" href="https://bomcatolico.com.br/blog/dons-espirito-santo" />
+                <title>Os Dons do Espírito Santo: Como Identificá-los e Usá-los | Bom Católico</title>
+                <meta name="description" content="Conheça os sete dons do Espírito Santo e saiba como eles atuam em sua vida para guiá-lo no caminho da santidade e do serviço ao próximo." />
+                <meta name="keywords" content="dons do espírito santo, sabedoria, entendimento, conselho, fortaleza, ciência, piedade, temor de deus" />
+                <link rel="canonical" href="https://bomcatolico.com.br/blog/sete-dons-espirito-santo-como-usar" />
             </Helmet>
 
             <div className="min-h-screen bg-background">
@@ -58,7 +58,7 @@ export default function DonsEspiritoSanto() {
                                 </span>
                                 <span className="flex items-center gap-1">
                                     <Calendar className="w-4 h-4" />
-                                    29 de Dezembro, 2024
+                                    15 de Abril, 2026
                                 </span>
                                 <span className="flex items-center gap-1">
                                     <Clock className="w-4 h-4" />
@@ -154,7 +154,7 @@ export default function DonsEspiritoSanto() {
                             </div>
                         </div>
 
-                        <RelatedArticles currentSlug="dons-espirito-santo" />
+                        <RelatedArticles currentSlug="sete-dons-espirito-santo-como-usar" />
 
                         <div className="mt-12 p-8 bg-gradient-to-r from-accent/10 to-primary/10 rounded-2xl text-center">
                             <h3 className="font-display text-2xl font-bold text-text mb-4">

@@ -51,6 +51,10 @@ import EucaristiaDiaADia from "./pages/blog/EucaristiaDiaADia";
 import TercoSemDistracao from "./pages/blog/TercoSemDistracao";
 import SignificadoSacramentais from "./pages/blog/SignificadoSacramentais";
 import LectioDivinaGuia from "./pages/blog/LectioDivinaGuia";
+import GracaSantificante from "./pages/blog/GracaSantificante";
+import VirtudesCardeais from "./pages/blog/VirtudesCardeais";
+import DoutrinaPurgatorio from "./pages/blog/DoutrinaPurgatorio";
+import DizimoECaridade from "./pages/blog/DizimoECaridade";
 import TermsOfUse from "./pages/TermsOfUse";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Contact from "./pages/Contact";
@@ -116,6 +120,11 @@ const App = () => (
             <Route path="/blog/como-rezar-terco-sem-distracoes" element={<TercoSemDistracao />} />
             <Route path="/blog/significado-sacramentais-catolicos" element={<SignificadoSacramentais />} />
             <Route path="/blog/lectio-divina-guia-passo-a-passo" element={<LectioDivinaGuia />} />
+            <Route path="/blog/o-que-e-graca-santificante-amizade-deus" element={<GracaSantificante />} />
+            <Route path="/blog/virtudes-cardeais-guia-pratico-cotidiano" element={<VirtudesCardeais />} />
+            <Route path="/blog/sete-dons-espirito-santo-como-usar" element={<DonsEspiritoSanto />} />
+            <Route path="/blog/doutrina-purgatorio-purificacao-final" element={<DoutrinaPurgatorio />} />
+            <Route path="/blog/importancia-dizimo-caridade-crista" element={<DizimoECaridade />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>

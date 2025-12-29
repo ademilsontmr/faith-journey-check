@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
-import { Cross, Calendar, Clock, ArrowRight, Heart, BookOpen, Church, Users, Flame, Sun, MapPin, HeartPulse, Wind, Cloud, Brain, Anchor, Smartphone, GraduationCap, Home, ShieldCheck, ChevronLeft, ChevronRight, type LucideIcon } from "lucide-react";
+import { Cross, Calendar, Clock, ArrowRight, Heart, BookOpen, Church, Users, Flame, Sun, MapPin, HeartPulse, Wind, Cloud, Brain, Anchor, Smartphone, GraduationCap, Home, ShieldCheck, Shield, Coins, ChevronLeft, ChevronRight, type LucideIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Footer } from "@/components/landing/Footer";
 
@@ -19,6 +19,66 @@ interface BlogPost {
 }
 
 export const blogPosts: BlogPost[] = [
+  {
+    id: 42,
+    slug: "o-que-e-graca-santificante-amizade-deus",
+    title: "O Que é a Graça Santificante? Como Viver em Estado de Amizade com Deus",
+    excerpt: "A graça não é apenas uma ajuda externa, mas a própria vida de Deus habitando em nossa alma. Descubra como preservar esse tesouro infinito.",
+    date: "2026-04-05",
+    readTime: "11 min",
+    category: "Doutrina",
+    icon: Flame,
+    bgColor: "bg-orange-50",
+    iconColor: "text-orange-400"
+  },
+  {
+    id: 43,
+    slug: "virtudes-cardeais-guia-pratico-cotidiano",
+    title: "As Virtudes Cardeais: Justiça, Prudência, Fortaleza e Temperança no Cotidiano",
+    excerpt: "As virtudes são os \"músculos\" da alma. Descubra como exercitá-las para viver com integridade e equilíbrio no mundo moderno.",
+    date: "2026-04-10",
+    readTime: "10 min",
+    category: "Formação",
+    icon: Shield,
+    bgColor: "bg-blue-50",
+    iconColor: "text-blue-400"
+  },
+  {
+    id: 44,
+    slug: "sete-dons-espirito-santo-como-usar",
+    title: "Os Dons do Espírito Santo: Como Identificá-los e Usá-los",
+    excerpt: "O Espírito Santo é o \"Doce Hóspede da Alma\". Conheça as sete ferramentas divinas que Ele nos dá para vivermos como verdadeiros cristãos.",
+    date: "2026-04-15",
+    readTime: "9 min",
+    category: "Doutrina",
+    icon: Flame,
+    bgColor: "bg-orange-50",
+    iconColor: "text-orange-400"
+  },
+  {
+    id: 45,
+    slug: "doutrina-purgatorio-purificacao-final",
+    title: "O Purgatório: O que a Igreja Realmente Ensina sobre a Purificação Final",
+    excerpt: "O Purgatório não é um \"segundo inferno\", mas a ante-sala do Céu. Descubra por que este dogma é uma das maiores provas do amor de Deus.",
+    date: "2026-04-20",
+    readTime: "10 min",
+    category: "Doutrina",
+    icon: BookOpen,
+    bgColor: "bg-blue-50",
+    iconColor: "text-blue-400"
+  },
+  {
+    id: 46,
+    slug: "importancia-dizimo-caridade-crista",
+    title: "A Importância do Dízimo e da Caridade: O Cristão e o Uso do Dinheiro",
+    excerpt: "O dízimo não é uma taxa, mas um ato de gratidão. Entenda como a generosidade liberta o coração do apego material e nos aproxima de Deus.",
+    date: "2026-04-25",
+    readTime: "9 min",
+    category: "Vida Cristã",
+    icon: Coins,
+    bgColor: "bg-emerald-50",
+    iconColor: "text-emerald-400"
+  },
   {
     id: 37,
     slug: "poder-da-confissao-guia-preparacao",
