@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
-import { Cross, Calendar, Clock, ArrowRight, Heart, BookOpen, Church, Users, Flame, Sun, MapPin, HeartPulse, Wind, Cloud, Brain, Anchor, Smartphone, GraduationCap, Home, ChevronLeft, ChevronRight, type LucideIcon } from "lucide-react";
+import { Cross, Calendar, Clock, ArrowRight, Heart, BookOpen, Church, Users, Flame, Sun, MapPin, HeartPulse, Wind, Cloud, Brain, Anchor, Smartphone, GraduationCap, Home, ShieldCheck, ChevronLeft, ChevronRight, type LucideIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Footer } from "@/components/landing/Footer";
 
@@ -19,6 +19,66 @@ interface BlogPost {
 }
 
 export const blogPosts: BlogPost[] = [
+  {
+    id: 37,
+    slug: "poder-da-confissao-guia-preparacao",
+    title: "O Poder da Confissão: Como se Preparar para uma Confissão que Muda a Vida",
+    excerpt: "A Confissão não é um tribunal de condenação, mas um hospital de cura. Aprenda a abrir o coração para a misericórdia que renova todas as coisas.",
+    date: "2026-03-10",
+    readTime: "12 min",
+    category: "Sacramentos",
+    icon: Flame,
+    bgColor: "bg-orange-50",
+    iconColor: "text-orange-400"
+  },
+  {
+    id: 38,
+    slug: "eucaristia-missa-diaria-segredo-santos",
+    title: "A Eucaristia no Dia a Dia: Por que a Missa Diária é o Segredo dos Santos?",
+    excerpt: "Receber o Pão do Céu todos os dias não é um privilégio de poucos, mas um convite de amor para todos os que buscam a santidade.",
+    date: "2026-03-15",
+    readTime: "10 min",
+    category: "Sacramentos",
+    icon: Sun,
+    bgColor: "bg-yellow-50",
+    iconColor: "text-yellow-400"
+  },
+  {
+    id: 39,
+    slug: "como-rezar-terco-sem-distracoes",
+    title: "Como Rezar o Terço sem Distrações: Dicas de Concentração",
+    excerpt: "Rezar o Terço não é apenas repetir palavras, mas contemplar o rosto de Cristo com Maria. Saiba como vencer as batalhas da mente.",
+    date: "2026-03-20",
+    readTime: "9 min",
+    category: "Oração",
+    icon: Heart,
+    bgColor: "bg-rose-50",
+    iconColor: "text-rose-400"
+  },
+  {
+    id: 40,
+    slug: "significado-sacramentais-catolicos",
+    title: "O Significado dos Sacramentais: Água Benta, Escapulário e Medalhas",
+    excerpt: "Sacramentais não são \"amuletos da sorte\", mas sinais sagrados que nos ajudam a viver em estado de graça. Entenda como usá-los.",
+    date: "2026-03-25",
+    readTime: "8 min",
+    category: "Doutrina",
+    icon: ShieldCheck,
+    bgColor: "bg-blue-50",
+    iconColor: "text-blue-400"
+  },
+  {
+    id: 41,
+    slug: "lectio-divina-guia-passo-a-passo",
+    title: "Lectio Divina: Guia Passo a Passo para Ler a Bíblia com o Coração",
+    excerpt: "A Bíblia não é um livro de história, mas uma carta de amor de Deus para você. Aprenda a ouvi-Lo através da Leitura Orante.",
+    date: "2026-03-30",
+    readTime: "11 min",
+    category: "Oração",
+    icon: BookOpen,
+    bgColor: "bg-emerald-50",
+    iconColor: "text-emerald-400"
+  },
   {
     id: 32,
     slug: "como-transmitir-fe-filhos-era-digital",

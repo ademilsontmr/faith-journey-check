@@ -46,6 +46,11 @@ import IgrejaDomestica from "./pages/blog/IgrejaDomestica";
 import HomeschoolingCatolico from "./pages/blog/HomeschoolingCatolico";
 import NamoroSanto2026 from "./pages/blog/NamoroSanto2026";
 import PapelDosAvos from "./pages/blog/PapelDosAvos";
+import PoderDaConfissao from "./pages/blog/PoderDaConfissao";
+import EucaristiaDiaADia from "./pages/blog/EucaristiaDiaADia";
+import TercoSemDistracao from "./pages/blog/TercoSemDistracao";
+import SignificadoSacramentais from "./pages/blog/SignificadoSacramentais";
+import LectioDivinaGuia from "./pages/blog/LectioDivinaGuia";
 import TermsOfUse from "./pages/TermsOfUse";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Contact from "./pages/Contact";
@@ -106,6 +111,11 @@ const App = () => (
             <Route path="/blog/homeschooling-catolico-educacao-classica" element={<HomeschoolingCatolico />} />
             <Route path="/blog/namoro-santo-castidade-2026" element={<NamoroSanto2026 />} />
             <Route path="/blog/papel-dos-avos-transmissao-fe" element={<PapelDosAvos />} />
+            <Route path="/blog/poder-da-confissao-guia-preparacao" element={<PoderDaConfissao />} />
+            <Route path="/blog/eucaristia-missa-diaria-segredo-santos" element={<EucaristiaDiaADia />} />
+            <Route path="/blog/como-rezar-terco-sem-distracoes" element={<TercoSemDistracao />} />
+            <Route path="/blog/significado-sacramentais-catolicos" element={<SignificadoSacramentais />} />
+            <Route path="/blog/lectio-divina-guia-passo-a-passo" element={<LectioDivinaGuia />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
