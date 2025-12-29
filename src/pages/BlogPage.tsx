@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
-import { Cross, Calendar, Clock, ArrowRight, Heart, BookOpen, Church, Users, Flame, Sun, MapPin, HeartPulse, Wind, Cloud, Brain, Anchor, Smartphone, GraduationCap, Home, ShieldCheck, Shield, Coins, Star, ChevronLeft, ChevronRight, type LucideIcon } from "lucide-react";
+import { Cross, Calendar, Clock, ArrowRight, Heart, BookOpen, Book, Lightbulb, Church, Users, Flame, Sun, MapPin, HeartPulse, Wind, Cloud, Brain, Anchor, Smartphone, GraduationCap, Home, ShieldCheck, Shield, Coins, Star, MessageCircle, ChevronLeft, ChevronRight, type LucideIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Footer } from "@/components/landing/Footer";
 
@@ -19,6 +19,66 @@ interface BlogPost {
 }
 
 export const blogPosts: BlogPost[] = [
+  {
+    id: 52,
+    slug: "como-ler-biblia-em-um-ano-plano-2026",
+    title: "Como Ler a Bíblia em um Ano: Um Plano Prático para 2026",
+    excerpt: "Ler a Bíblia inteira parece uma tarefa impossível? Com o método certo e constância, você pode mergulhar na Palavra de Deus de Gênesis ao Apocalipse.",
+    date: "2026-06-05",
+    readTime: "11 min",
+    category: "Bíblia",
+    icon: BookOpen,
+    bgColor: "bg-emerald-50",
+    iconColor: "text-emerald-400"
+  },
+  {
+    id: 53,
+    slug: "os-quatro-evangelhos-diferencas-riquezas",
+    title: "Os 4 Evangelhos: Diferenças e Riquezas de Cada Relato",
+    excerpt: "Por que temos quatro livros para contar a mesma história? Descubra como cada evangelista pintou um retrato único do Salvador.",
+    date: "2026-06-10",
+    readTime: "10 min",
+    category: "Bíblia",
+    icon: Book,
+    bgColor: "bg-blue-50",
+    iconColor: "text-blue-400"
+  },
+  {
+    id: 54,
+    slug: "parabolas-jesus-licoes-sabedoria-moderna",
+    title: "Parábolas de Jesus: Lições de Sabedoria para o Mundo Moderno",
+    excerpt: "Jesus não falava por conceitos abstratos, mas por histórias que tocavam o coração. Descubra o que Ele tem a nos dizer hoje através das parábolas.",
+    date: "2026-06-15",
+    readTime: "9 min",
+    category: "Bíblia",
+    icon: Lightbulb,
+    bgColor: "bg-yellow-50",
+    iconColor: "text-yellow-400"
+  },
+  {
+    id: 55,
+    slug: "como-falar-de-deus-amigos-nao-crentes",
+    title: "Como Falar de Deus para Amigos Não Crentes sem Ser Chato",
+    excerpt: "Evangelizar não é \"ganhar discussões\", mas compartilhar uma alegria. Saiba como ser uma testemunha autêntica no seu círculo de amizades.",
+    date: "2026-06-20",
+    readTime: "8 min",
+    category: "Missão",
+    icon: MessageCircle,
+    bgColor: "bg-blue-50",
+    iconColor: "text-blue-400"
+  },
+  {
+    id: 56,
+    slug: "importancia-pertencer-comunidade-paroquial",
+    title: "A Importância de Pertencer a uma Comunidade Paroquial",
+    excerpt: "Ninguém se salva sozinho. A paróquia é a nossa família espiritual, o lugar onde a fé se torna concreta e o amor se faz serviço.",
+    date: "2026-06-25",
+    readTime: "9 min",
+    category: "Vida Cristã",
+    icon: Church,
+    bgColor: "bg-emerald-50",
+    iconColor: "text-emerald-400"
+  },
   {
     id: 47,
     slug: "santos-pais-maes-santidade-matrimonio",
@@ -694,10 +754,10 @@ export default function BlogPage() {
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {currentPosts.map((post) => (
-                <Link to={`/blog/${post.slug}`} key={post.id}>
+                <Link to={`/ blog / ${post.slug} `} key={post.id}>
                   <article className="bg-surface rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow group h-full">
-                    <div className={`aspect-video flex items-center justify-center ${post.bgColor}`}>
-                      <post.icon className={`w-16 h-16 ${post.iconColor} group-hover:scale-110 transition-transform duration-300`} strokeWidth={1.5} />
+                    <div className={`aspect - video flex items - center justify - center ${post.bgColor} `}>
+                      <post.icon className={`w - 16 h - 16 ${post.iconColor} group - hover: scale - 110 transition - transform duration - 300`} strokeWidth={1.5} />
                     </div>
                     <div className="p-6">
                       <div className="flex items-center gap-4 text-sm text-text-muted mb-3">
@@ -746,10 +806,10 @@ export default function BlogPage() {
                     <button
                       key={page}
                       onClick={() => setCurrentPage(page)}
-                      className={`w-10 h-10 rounded-full text-sm font-medium transition-colors ${currentPage === page
-                        ? "bg-accent text-button-text"
-                        : "text-text-muted hover:bg-accent/10 hover:text-accent"
-                        }`}
+                      className={`w - 10 h - 10 rounded - full text - sm font - medium transition - colors ${currentPage === page
+                          ? "bg-accent text-button-text"
+                          : "text-text-muted hover:bg-accent/10 hover:text-accent"
+                        } `}
                     >
                       {page}
                     </button>

@@ -60,6 +60,11 @@ import CarloAcutisInternet from "./pages/blog/CarloAcutisInternet";
 import SantaDulcePobres from "./pages/blog/SantaDulcePobres";
 import EscolherSantoPadroeiro from "./pages/blog/EscolherSantoPadroeiro";
 import SaoBentoProtecao from "./pages/blog/SaoBentoProtecao";
+import PlanoLeituraBiblia2026 from "./pages/blog/PlanoLeituraBiblia2026";
+import OsQuatroEvangelhos from "./pages/blog/OsQuatroEvangelhos";
+import ParabolasDeJesus from "./pages/blog/ParabolasDeJesus";
+import EvangelizarAmigos from "./pages/blog/EvangelizarAmigos";
+import ComunidadeParoquial from "./pages/blog/ComunidadeParoquial";
 import TermsOfUse from "./pages/TermsOfUse";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Contact from "./pages/Contact";
@@ -135,6 +140,11 @@ const App = () => (
             <Route path="/blog/santa-dulce-dos-pobres-legado-caridade" element={<SantaDulcePobres />} />
             <Route path="/blog/como-escolher-santo-padroeiro-guia" element={<EscolherSantoPadroeiro />} />
             <Route path="/blog/vida-sao-bento-protecao-contra-mal" element={<SaoBentoProtecao />} />
+            <Route path="/blog/como-ler-biblia-em-um-ano-plano-2026" element={<PlanoLeituraBiblia2026 />} />
+            <Route path="/blog/os-quatro-evangelhos-diferencas-riquezas" element={<OsQuatroEvangelhos />} />
+            <Route path="/blog/parabolas-jesus-licoes-sabedoria-moderna" element={<ParabolasDeJesus />} />
+            <Route path="/blog/como-falar-de-deus-amigos-nao-crentes" element={<EvangelizarAmigos />} />
+            <Route path="/blog/importancia-pertencer-comunidade-paroquial" element={<ComunidadeParoquial />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
