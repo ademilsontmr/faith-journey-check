@@ -95,7 +95,10 @@ export default function ComunidadeParoquial() {
                                 <li><strong>Sentido de Pertencimento:</strong> Saber que fazemos parte de algo maior nos dá identidade e propósito.</li>
                             </ul>
 
-                            <QuizCTA />
+                            <QuizCTA
+                                title="Você se sente parte da família de Deus?"
+                                description="A paróquia é o lugar onde a fé se torna comunidade. Faça nosso quiz e descubra qual serviço ou pastoral mais combina com seus dons para você se integrar melhor em sua igreja local."
+                            />
 
                             <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                                 A Paróquia como "Casa entre as casas"

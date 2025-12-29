@@ -85,7 +85,10 @@ export default function SantosEDepressao() {
                                 Existe um mito perigoso de que o cristão deve estar sempre sorrindo e que a tristeza é sinal de falta de fé. A vida dos santos prova o contrário. Muitos deles enfrentaram o que hoje chamaríamos de depressão clínica ou o que a tradição mística chama de "Noite Escura da Alma".
                             </p>
 
-                            <QuizCTA />
+                            <QuizCTA
+                                title="Você se sente sozinho em sua dor?"
+                                description="Muitos santos enfrentaram a escuridão da alma e encontraram a luz. Faça nosso quiz e descubra qual santo pode ser seu intercessor especial nos momentos de aflição."
+                            />
 
                             <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                                 São João da Cruz e a Noite Escura

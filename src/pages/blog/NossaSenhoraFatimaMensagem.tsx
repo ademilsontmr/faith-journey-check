@@ -85,7 +85,10 @@ export default function NossaSenhoraFatimaMensagem() {
                                 Em 1917, em plena Primeira Guerra Mundial, Nossa Senhora apareceu a três crianças em Portugal: Lúcia, Francisco e Jacinta. Sua mensagem não era apenas para aquele tempo, mas um roteiro espiritual para toda a humanidade que se afasta de Deus.
                             </p>
 
-                            <QuizCTA />
+                            <QuizCTA
+                                title="Você atende aos pedidos da Virgem?"
+                                description="A mensagem de Fátima é um convite urgente à oração e conversão. Faça nosso quiz e veja como você pode viver os pedidos de Nossa Senhora em seu dia a dia."
+                            />
 
                             <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                                 Os Três Pilares da Mensagem

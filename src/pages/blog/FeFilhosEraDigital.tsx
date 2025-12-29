@@ -88,7 +88,10 @@ export default function FeFilhosEraDigital() {
                                 Em 2026, as crianças e jovens estão imersos em um fluxo constante de informações que, muitas vezes, contradizem os valores cristãos. O desafio dos pais não é apenas proibir, mas oferecer algo mais atraente: a beleza da Verdade. A transmissão da fé não pode ser apenas teórica; ela deve ser uma experiência de vida.
                             </p>
 
-                            <QuizCTA />
+                            <QuizCTA
+                                title="Como está a vida espiritual da sua família?"
+                                description="Educar para o céu na era digital exige sabedoria. Faça nosso quiz para pais e descubra como fortalecer a transmissão da fé no seu lar, competindo com o algoritmo através do amor."
+                            />
 
                             <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                                 O Exemplo é o Primeiro Catecismo

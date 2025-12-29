@@ -85,7 +85,10 @@ export default function AnoLiturgicoGuia() {
                                 O Ano Litúrgico não coincide com o ano civil. Ele começa no primeiro domingo do Advento e termina na solenidade de Cristo Rei. Ao longo desse ciclo, a Igreja celebra todo o mistério de Cristo, da Encarnação e Natal até a Ascensão, ao dia de Pentecostes e à expectativa da ditosa esperança e da vinda do Senhor.
                             </p>
 
-                            <QuizCTA />
+                            <QuizCTA
+                                title="Você vive o tempo de Deus ou o do mundo?"
+                                description="O Ano Litúrgico nos conduz pelos mistérios de Cristo. Faça nosso quiz e descubra como sintonizar sua vida com o calendário da Igreja para crescer em santidade o ano todo."
+                            />
 
                             <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                                 As Cores Litúrgicas e seus Significados

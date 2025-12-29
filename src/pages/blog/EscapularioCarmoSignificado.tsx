@@ -92,7 +92,10 @@ export default function EscapularioCarmoSignificado() {
                                 Originalmente parte do hábito dos carmelitas, o escapulário foi adaptado para os leigos como duas pequenas peças de lã marrom unidas por cordões. Ele representa o "manto" de Maria, sob o qual nos refugiamos.
                             </p>
 
-                            <QuizCTA />
+                            <QuizCTA
+                                title="Você conhece o valor do seu Escapulário?"
+                                description="O Escapulário é um sinal de proteção e pertença a Maria. Faça nosso quiz e descubra como viver com fidelidade esse compromisso mariano e usufruir das promessas da Virgem do Carmo."
+                            />
 
                             <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                                 As Promessas de Maria

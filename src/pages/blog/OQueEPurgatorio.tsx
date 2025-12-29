@@ -85,7 +85,10 @@ export default function OQueEPurgatorio() {
                                 O Purgatório é o estado daqueles que morrem na graça e na amizade de Deus, mas ainda não estão perfeitamente purificados. Embora tenham a certeza de sua salvação eterna, eles precisam passar por uma purificação para obter a santidade necessária para entrar na alegria do céu.
                             </p>
 
-                            <QuizCTA />
+                            <QuizCTA
+                                title="Você conhece a misericórdia do Purgatório?"
+                                description="O Purgatório é um presente de amor para nos preparar para o Céu. Faça nosso quiz e aprofunde seu conhecimento sobre este dogma consolador da nossa fé."
+                            />
 
                             <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                                 Um Dogma de Misericórdia

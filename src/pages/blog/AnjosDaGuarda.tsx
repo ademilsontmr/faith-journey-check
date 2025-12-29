@@ -85,7 +85,10 @@ export default function AnjosDaGuarda() {
                                 O Catecismo da Igreja Católica ensina que "desde o seu começo até à morte, a vida humana é acompanhada pela assistência e intercessão dos anjos". Isso significa que você nunca está sozinho. Existe um ser espiritual, dotado de inteligência e vontade, cuja única missão é ajudar você a chegar ao Céu.
                             </p>
 
-                            <QuizCTA />
+                            <QuizCTA
+                                title="Você ouve a voz do seu Anjo da Guarda?"
+                                description="Deus nos deu companheiros celestiais para nos guiar. Faça nosso quiz e descubra como você pode estar mais atento às inspirações divinas e à proteção dos anjos em seu dia a dia."
+                            />
 
                             <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                                 Quem são os Anjos da Guarda?

@@ -86,7 +86,10 @@ export default function SantosPadroeiros() {
                 A devoção aos santos é uma das mais belas tradições da Igreja Católica. Desde os primeiros séculos, os cristãos veneravam aqueles que deram testemunho heroico de fé, muitas vezes com o próprio sangue. Os santos padroeiros são intercessores especiais que nos acompanham em nossa jornada terrena, protegendo-nos e inspirando-nos com seu exemplo de santidade.
               </p>
 
-              <QuizCTA />
+              <QuizCTA
+                title="Quem é seu amigo no Céu?"
+                description="Os santos padroeiros são nossos protetores e modelos. Faça nosso quiz e descubra qual santo tem uma história que se conecta com a sua caminhada de fé."
+              />
 
               <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                 O Que é um Santo Padroeiro?

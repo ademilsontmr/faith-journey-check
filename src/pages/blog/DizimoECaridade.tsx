@@ -92,7 +92,10 @@ export default function DizimoECaridade() {
                                 O dízimo é uma contribuição sistemática e periódica dos fiéis, por meio da qual eles assumem a corresponsabilidade pela manutenção da Igreja. Ele possui quatro dimensões:
                             </p>
 
-                            <QuizCTA />
+                            <QuizCTA
+                                title="Como está sua generosidade cristã?"
+                                description="O dízimo e a caridade são expressões de gratidão a Deus. Faça nosso quiz e descubra como viver o desapego material e a partilha, fortalecendo sua corresponsabilidade com a Igreja e os pobres."
+                            />
                             <ul className="list-disc list-inside text-text space-y-2 mb-6">
                                 <li><strong>Religiosa:</strong> Gratidão a Deus por tudo o que recebemos.</li>
                                 <li><strong>Eclesial:</strong> Manutenção da paróquia, clero e funcionários.</li>

@@ -85,7 +85,10 @@ export default function RosarioArmaEspiritual() {
                                 O Santo Rosário foi chamado por São Padre Pio de "a arma". Não uma arma de destruição, mas de combate espiritual contra o mal, o desânimo e o pecado. É uma oração contemplativa que nos faz percorrer a vida de Jesus com os olhos de Sua mãe.
                             </p>
 
-                            <QuizCTA />
+                            <QuizCTA
+                                title="Quer aprender a rezar com profundidade?"
+                                description="O Rosário é a arma espiritual para os nossos tempos. Faça nosso quiz e receba um guia prático para transformar o Terço em um encontro diário com o Senhor."
+                            />
 
                             <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                                 Por que rezar o Rosário hoje?

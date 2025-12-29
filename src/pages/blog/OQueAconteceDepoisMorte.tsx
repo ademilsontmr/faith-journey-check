@@ -85,7 +85,10 @@ export default function OQueAconteceDepoisMorte() {
                                 A morte é a separação da alma e do corpo. No instante da morte, a alma comparece diante de Deus para o Juízo Particular. O destino eterno — Céu, Inferno ou Purgatório — é decidido com base na nossa resposta ao amor de Deus durante a vida terrena.
                             </p>
 
-                            <QuizCTA />
+                            <QuizCTA
+                                title="Você está preparado para a eternidade?"
+                                description="A morte é o início de uma nova vida. Faça nosso quiz sobre os Novíssimos e descubra como sua caminhada atual está moldando seu destino eterno."
+                            />
 
                             <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                                 O Céu: A Felicidade Eterna

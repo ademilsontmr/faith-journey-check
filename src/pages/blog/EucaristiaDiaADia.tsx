@@ -92,7 +92,10 @@ export default function EucaristiaDiaADia() {
                                 Assim como nosso corpo precisa de alimento físico todos os dias, nossa alma precisa do alimento espiritual. A Missa diária nos dá a força necessária para enfrentar as tentações, as dificuldades no trabalho e os desafios familiares com paciência e caridade. É o momento de "reabastecer" a alma na fonte da Graça.
                             </p>
 
-                            <QuizCTA />
+                            <QuizCTA
+                                title="Como está sua fome de Deus?"
+                                description="A Missa diária é o segredo da força dos santos. Faça nosso quiz e descubra como a Eucaristia cotidiana pode transformar sua rotina e te dar a graça necessária para cada desafio."
+                            />
 
                             <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                                 Benefícios da Missa Diária

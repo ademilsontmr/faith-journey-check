@@ -96,7 +96,10 @@ export default function DonsEspiritoSanto() {
                                 Não é o acúmulo de conhecimento, mas o "gosto" pelas coisas de Deus. O dom da Sabedoria nos permite ver o mundo, as pessoas e os acontecimentos através do olhar de Deus.
                             </p>
 
-                            <QuizCTA />
+                            <QuizCTA
+                                title="Você conhece os dons que recebeu no Crisma?"
+                                description="O Espírito Santo nos capacita com Seus sete dons. Faça nosso quiz e descubra qual desses dons você mais precisa cultivar neste momento para crescer em santidade e serviço."
+                            />
 
                             <h3 className="font-display text-xl font-semibold text-text mt-8 mb-3">
                                 2. Entendimento (ou Inteligência)

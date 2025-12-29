@@ -85,7 +85,10 @@ export default function OracaoEMindfulness() {
                                 O *Mindfulness* (atenção plena) tornou-se uma ferramenta popular para reduzir o estresse. Embora suas técnicas de respiração e foco no presente possam ser úteis, o cristão deve estar atento: a meditação católica tem um objetivo e uma dinâmica fundamentalmente diferentes.
                             </p>
 
-                            <QuizCTA />
+                            <QuizCTA
+                                title="Sua oração é um encontro real?"
+                                description="A meditação cristã vai além do relaxamento; ela nos une a Deus. Faça nosso quiz e descubra como transformar seus momentos de silêncio em um diálogo de amor com Cristo."
+                            />
 
                             <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                                 Mindfulness: O Foco no "Eu"

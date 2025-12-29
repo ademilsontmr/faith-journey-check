@@ -85,7 +85,10 @@ export default function GuiaIndulgenciaPlenaria() {
                                 Muitos católicos confundem Indulgência com Confissão. Enquanto a Confissão perdoa a culpa do pecado, a Indulgência plenária apaga a "pena temporal" — a marca ou desordem que o pecado deixa em nossa alma. No Jubileu 2025, o Papa Francisco facilitou o acesso a essa graça imensa.
                             </p>
 
-                            <QuizCTA />
+                            <QuizCTA
+                                title="Você quer começar vida nova hoje?"
+                                description="A Igreja abre seus tesouros de misericórdia para você. Faça nosso quiz e entenda como obter a indulgência plenária, limpando as marcas do pecado e renovando sua caminhada espiritual."
+                            />
 
                             <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                                 As 4 Condições Habituais

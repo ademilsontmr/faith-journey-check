@@ -86,7 +86,10 @@ export default function MissaDominical() {
                 A Missa dominical é o coração pulsante da vida católica. Desde os primeiros tempos da Igreja, os cristãos se reuniam no "Dia do Senhor" para celebrar a Ressurreição de Cristo e participar do banquete eucarístico. Esta tradição apostólica permanece como mandamento da Igreja: todo católico deve participar da Missa aos domingos e festas de guarda, a menos que esteja legitimamente impedido. Mas a Missa é muito mais do que uma obrigação – é um privilégio inestimável e fonte inesgotável de graças.
               </p>
 
-              <QuizCTA />
+              <QuizCTA
+                title="A Missa é o centro da sua semana?"
+                description="Participar da Eucaristia é o maior privilégio de um católico. Faça nosso quiz e descubra como viver a Santa Missa com mais profundidade, recebendo todas as graças do altar."
+              />
 
               <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                 O Que Acontece na Santa Missa?

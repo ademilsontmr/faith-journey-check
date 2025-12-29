@@ -85,7 +85,10 @@ export default function HomeschoolingCatolico() {
                                 Nos últimos anos, o Brasil tem visto um crescimento exponencial de famílias que optam pela educação domiciliar (homeschooling). Entre os católicos, esse movimento é impulsionado pelo desejo de oferecer uma formação que integre fé, razão e virtude, muitas vezes utilizando o modelo da Educação Clássica.
                             </p>
 
-                            <QuizCTA />
+                            <QuizCTA
+                                title="Você busca uma educação com alma?"
+                                description="O homeschooling é uma vocação de amor e sabedoria. Faça nosso quiz e descubra se o perfil da sua família se alinha com a educação clássica e católica, e quais os primeiros passos nessa jornada."
+                            />
 
                             <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                                 O Resgate da Educação Clássica

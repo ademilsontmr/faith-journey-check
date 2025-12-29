@@ -92,7 +92,10 @@ export default function DoutrinaSocial() {
                                 Toda a Doutrina Social se sustenta sobre quatro pilares essenciais:
                             </p>
 
-                            <QuizCTA />
+                            <QuizCTA
+                                title="Você vive a fé na vida pública?"
+                                description="A Doutrina Social da Igreja ilumina os desafios do mundo. Faça nosso quiz e descubra como aplicar os princípios de justiça e solidariedade em seu trabalho, família e sociedade."
+                            />
 
                             <h3 className="font-display text-xl font-semibold text-text mt-8 mb-3">
                                 1. Dignidade da Pessoa Humana

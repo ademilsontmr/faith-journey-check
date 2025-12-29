@@ -85,7 +85,10 @@ export default function PrepararParaEternidade2026() {
                                 Muitas vezes pensamos na eternidade como algo muito distante, que só nos dirá respeito no fim da vida. Mas a eternidade começa hoje. Cada decisão, cada palavra e cada gesto de amor são "tijolos" que estamos assentando em nossa morada eterna.
                             </p>
 
-                            <QuizCTA />
+                            <QuizCTA
+                                title="Qual é o seu propósito de vida?"
+                                description="A eternidade começa hoje em cada pequena escolha. Faça nosso quiz e descubra como alinhar seus objetivos terrenos com sua vocação eterna para o Céu."
+                            />
 
                             <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                                 O Perigo do Imediatismo

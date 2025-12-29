@@ -92,7 +92,10 @@ export default function DomingoDiaDoSenhor() {
                                 Participar da Eucaristia dominical não é uma "obrigação pesada", mas uma necessidade da alma. É onde nos reunimos como corpo de Cristo para sermos alimentados por Sua Palavra e Seu Corpo. Sem o domingo, não podemos viver.
                             </p>
 
-                            <QuizCTA />
+                            <QuizCTA
+                                title="Seu domingo é realmente o Dia do Senhor?"
+                                description="O domingo é o oitavo dia, o dia da Ressurreição. Faça nosso quiz e descubra como resgatar a sacralidade do seu descanso e da sua participação na Missa, vivendo o domingo com mais propósito."
+                            />
 
                             <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                                 O Descanso que Santifica

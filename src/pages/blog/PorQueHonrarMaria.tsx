@@ -85,7 +85,10 @@ export default function PorQueHonrarMaria() {
                                 Uma das perguntas mais frequentes feitas aos católicos é sobre a devoção a Maria. Muitos confundem veneração com adoração. Mas a Igreja é muito clara: adoramos somente a Deus (Latria) e veneramos os santos e, de modo especial, Maria (Hiperdulia).
                             </p>
 
-                            <QuizCTA />
+                            <QuizCTA
+                                title="Como está sua relação com a Mãe do Céu?"
+                                description="Maria é o caminho mais curto para chegar a Jesus. Faça nosso quiz mariano e descubra como fortalecer sua devoção àquela que é a Cheia de Graça."
+                            />
 
                             <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                                 A Base Bíblica

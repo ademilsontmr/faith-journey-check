@@ -92,7 +92,10 @@ export default function CastidadeMundoModerno() {
                                 O Catecismo da Igreja Católica ensina que a castidade significa a integração bem-sucedida da sexualidade na pessoa. Ela não é a negação da sexualidade, mas o seu domínio de si. Um coração casto é um coração livre, que não usa o outro como objeto de prazer, mas o respeita como imagem e semelhança de Deus.
                             </p>
 
-                            <QuizCTA />
+                            <QuizCTA
+                                title="Como está sua busca pela pureza de coração?"
+                                description="A castidade é a liberdade para amar de verdade. Faça nosso quiz e receba uma orientação sobre como fortalecer suas virtudes e viver o amor cristão com integridade no mundo atual."
+                            />
 
                             <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                                 Castidade para Todos os Estados de Vida

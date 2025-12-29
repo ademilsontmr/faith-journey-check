@@ -85,7 +85,10 @@ export default function PeregrinacaoLocal() {
                                 A peregrinação é uma metáfora da vida cristã: estamos a caminho da Pátria Celeste. Organizar uma peregrinação local é uma excelente forma de unir a comunidade, redescobrir a história da fé em sua região e obter as graças jubilares sem grandes custos.
                             </p>
 
-                            <QuizCTA />
+                            <QuizCTA
+                                title="Você está pronto para caminhar com fé?"
+                                description="Peregrinar é desinstalar-se para encontrar Deus. Faça nosso quiz e descubra qual tipo de jornada espiritual mais combina com seu momento de vida atual."
+                            />
 
                             <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                                 1. Defina o Objetivo e o Destino

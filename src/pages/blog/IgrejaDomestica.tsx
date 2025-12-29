@@ -85,7 +85,10 @@ export default function IgrejaDomestica() {
                                 O Concílio Vaticano II resgatou a expressão "Igreja Doméstica" para descrever a família cristã. O lar é o primeiro lugar onde se anuncia a fé e onde se aprende a amar a Deus. Mas, na prática, como transformar uma rotina corrida em um espaço de oração?
                             </p>
 
-                            <QuizCTA />
+                            <QuizCTA
+                                title="Seu lar é um lugar de oração?"
+                                description="Família que reza unida permanece unida. Faça nosso quiz e receba sugestões práticas para transformar sua casa em uma verdadeira Igreja Doméstica, onde Deus é o centro de tudo."
+                            />
 
                             <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                                 1. Crie um "Canto de Oração" (Oratório)

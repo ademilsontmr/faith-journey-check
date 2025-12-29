@@ -85,7 +85,10 @@ export default function LidandoComLuto() {
                                 O luto é uma das experiências mais universais e, ao mesmo tempo, mais solitárias do ser humano. A perda de um ente querido rasga o tecido da nossa realidade. No entanto, para o católico, o luto é vivido sob a luz da Páscoa. Nós não choramos como aqueles que não têm esperança.
                             </p>
 
-                            <QuizCTA />
+                            <QuizCTA
+                                title="Busca consolo na esperança cristã?"
+                                description="A fé na vida eterna é o bálsamo para a dor da perda. Faça nosso quiz e descubra como a certeza da ressurreição pode trazer paz e sentido ao seu coração no luto."
+                            />
 
                             <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                                 Jesus Também Chorou

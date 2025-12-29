@@ -85,7 +85,10 @@ export default function VigiliaPascalSignificado() {
                                 Na noite do Sábado Santo, a Igreja permanece em vigília, à espera da Ressurreição do Senhor. É uma celebração rica em símbolos que nos transportam das trevas para a luz, da morte para a vida.
                             </p>
 
-                            <QuizCTA />
+                            <QuizCTA
+                                title="Você entende os símbolos da Páscoa?"
+                                description="A Vigília Pascal é a noite mais santa do ano. Faça nosso quiz sobre a Semana Santa e aprofunde seu conhecimento sobre os ritos que celebram a vitória de Cristo sobre a morte."
+                            />
 
                             <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                                 Os Quatro Momentos da Vigília

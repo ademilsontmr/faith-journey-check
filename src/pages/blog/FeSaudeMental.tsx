@@ -94,7 +94,10 @@ export default function FeSaudeMental() {
                                 Jesus foi claro: "Não vos inquieteis pelo dia de amanhã" (Mt 6, 34). No entanto, Ele não ignora nossas dores. O convite bíblico não é para uma negação dos problemas, mas para uma mudança de foco: do problema para o Provedor.
                             </p>
 
-                            <QuizCTA />
+                            <QuizCTA
+                                title="Como está sua paz interior hoje?"
+                                description="A fé é um bálsamo para a mente cansada. Faça nosso quiz e descubra como a espiritualidade católica e o abandono na Providência podem te ajudar a vencer a ansiedade e encontrar o equilíbrio."
+                            />
 
                             <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                                 O Poder do Abandono na Providência Divina

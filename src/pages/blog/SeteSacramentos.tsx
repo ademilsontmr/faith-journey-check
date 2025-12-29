@@ -89,7 +89,10 @@ export default function SeteSacramentos() {
                 Os sacramentos são sinais eficazes da graça, instituídos por Cristo e confiados à Igreja, pelos quais nos é dispensada a vida divina. Os sete sacramentos tocam todas as etapas e todos os momentos importantes da vida cristã: nascimento, crescimento, cura e missão. Através deles, recebemos as graças necessárias para nossa santificação e salvação.
               </p>
 
-              <QuizCTA />
+              <QuizCTA
+                title="Você vive a graça dos sacramentos?"
+                description="Os sacramentos são canais de vida divina em nossa alma. Faça nosso quiz gratuito e receba um diagnóstico personalizado da sua caminhada sacramental e de fé."
+              />
 
               <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                 Sacramentos de Iniciação Cristã

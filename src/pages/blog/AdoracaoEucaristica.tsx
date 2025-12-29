@@ -89,10 +89,13 @@ export default function AdoracaoEucaristica() {
                                 Por que Adorar?
                             </h2>
                             <p className="text-text leading-relaxed mb-6">
-                                Jesus está realmente presente na Hóstia Consagrada. Ele nos espera no sacrário ou no ostensório com o desejo de nos consolar, nos fortalecer e nos curar. Adorar é um ato de fé pura: cremos no que não vemos, confiando apenas na Palavra do Senhor que disse: "Isto é o meu corpo".
+                                Jesus está realmente presente na Hóstia Consagrada. Ele nos espera no sacrário ou no ostensório com o desejo de nos consolar, nos fortalecer e nos curar. Adorar é um ato de fé pura: cremos no que não vemos, confiando apenas na Palavra do Senhor que disse: "Istos é o meu corpo".
                             </p>
 
-                            <QuizCTA />
+                            <QuizCTA
+                                title="Como está sua vida de adoração?"
+                                description="Estar diante do Santíssimo é transformador. Faça nosso quiz e descubra como você pode aprofundar sua intimidade com Jesus Sacramentado e fortalecer sua caminhada espiritual."
+                            />
 
                             <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                                 Benefícios da Hora Santa

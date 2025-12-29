@@ -88,7 +88,10 @@ export default function PlanoLeituraBiblia2026() {
                                 A Bíblia é a história da nossa salvação. Conhecer apenas trechos isolados é como ler apenas algumas páginas de uma grande carta de amor. Ao ler o texto completo, entendemos a unidade entre o Antigo e o Novo Testamento e como cada promessa de Deus se cumpre em Jesus Cristo.
                             </p>
 
-                            <QuizCTA />
+                            <QuizCTA
+                                title="Quer um plano de leitura para 2026?"
+                                description="Ler a Bíblia inteira é possível com o método certo. Faça nosso quiz e receba um roteiro personalizado para mergulhar na Palavra de Deus este ano."
+                            />
 
                             <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                                 Métodos de Leitura

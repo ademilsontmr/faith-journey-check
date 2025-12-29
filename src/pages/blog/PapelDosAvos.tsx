@@ -85,7 +85,10 @@ export default function PapelDosAvos() {
                                 O Papa Francisco tem sido um grande defensor da dignidade dos idosos, chamando-os de "o tesouro da Igreja". Em uma sociedade que muitas vezes descarta o que é antigo, os avós católicos têm a missão profética de manter viva a chama da tradição e da fé.
                             </p>
 
-                            <QuizCTA />
+                            <QuizCTA
+                                title="Qual legado você está deixando?"
+                                description="A transmissão da fé é uma missão de todas as gerações. Faça nosso quiz e descubra como fortalecer os laços cristãos em sua família e honrar suas raízes."
+                            />
 
                             <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                                 Guardiões da Memória

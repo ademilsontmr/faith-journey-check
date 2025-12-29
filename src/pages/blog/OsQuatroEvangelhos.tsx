@@ -85,7 +85,10 @@ export default function OsQuatroEvangelhos() {
                                 Os Evangelhos são o coração de toda a Escritura. Embora narrem a mesma vida de Jesus, cada um foi escrito para um público diferente e com uma ênfase teológica específica. Juntos, eles formam uma visão completa do mistério de Cristo.
                             </p>
 
-                            <QuizCTA />
+                            <QuizCTA
+                                title="Qual Evangelho fala mais ao seu coração?"
+                                description="Cada evangelista apresenta uma face única de Jesus. Faça nosso quiz bíblico e descubra qual dos quatro relatos ressoa mais com sua forma de viver e entender a fé."
+                            />
 
                             <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                                 1. Mateus: Jesus, o Novo Moisés

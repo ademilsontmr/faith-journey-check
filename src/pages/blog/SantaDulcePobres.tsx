@@ -85,7 +85,10 @@ export default function SantaDulcePobres() {
                                 Maria Rita de Souza Brito Lopes Pontes, a Irmã Dulce, é uma das figuras mais amadas do Brasil. Sua vida foi um hino à caridade cristã, vivida nas ruas de Salvador, entre os doentes, os famintos e os abandonados.
                             </p>
 
-                            <QuizCTA />
+                            <QuizCTA
+                                title="Como você pode amar mais hoje?"
+                                description="Santa Dulce nos ensinou que a caridade não pode esperar. Faça nosso quiz e descubra como seus dons podem ser colocados a serviço dos que mais precisam."
+                            />
 
                             <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                                 O Anjo Bom da Bahia

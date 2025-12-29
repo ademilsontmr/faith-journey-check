@@ -85,7 +85,10 @@ export default function VidaOracao() {
                 Santa Teresa d'Ávila definia a oração como "um trato de amizade, estando muitas vezes a sós com Quem sabemos que nos ama". Para o católico, a oração é o oxigênio da alma. Sem ela, a fé enfraquece, a esperança vacila e a caridade esfria. No entanto, muitos encontram dificuldades em manter uma rotina constante de diálogo com o Criador.
               </p>
 
-              <QuizCTA />
+              <QuizCTA
+                title="Como está sua conexão com Deus?"
+                description="A oração é o oxigênio da alma e o trato de amizade com o Criador. Faça nosso quiz e descubra em que nível está sua jornada espiritual e como crescer na intimidade com o Senhor."
+              />
 
               <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                 Por que a Oração é Essencial?

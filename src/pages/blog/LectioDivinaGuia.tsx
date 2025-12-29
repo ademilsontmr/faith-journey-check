@@ -85,7 +85,10 @@ export default function LectioDivinaGuia() {
                                 A *Lectio Divina* é uma prática monástica milenar que permite que a Palavra de Deus desça da cabeça para o coração. Ela é composta por quatro degraus simples, mas profundos.
                             </p>
 
-                            <QuizCTA />
+                            <QuizCTA
+                                title="A Bíblia é sua bússola diária?"
+                                description="Aprender a rezar com as Escrituras é o caminho para a santidade. Faça nosso quiz e descubra como a Lectio Divina pode iluminar suas decisões e fortalecer sua fé."
+                            />
 
                             <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                                 Os 4 Degraus da Lectio Divina

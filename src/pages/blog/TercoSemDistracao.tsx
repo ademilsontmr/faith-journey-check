@@ -85,7 +85,10 @@ export default function TercoSemDistracao() {
                                 Quem nunca começou um Terço e, de repente, se viu pensando na lista de compras ou no problema do trabalho? As distrações são normais, mas existem formas de minimizá-las e tornar nossa oração mais profunda e proveitosa.
                             </p>
 
-                            <QuizCTA />
+                            <QuizCTA
+                                title="Como está sua vida de oração mariana?"
+                                description="Rezar o Terço é contemplar o rosto de Cristo com Maria. Faça nosso quiz e receba dicas personalizadas para vencer as distrações e rezar com mais foco e profundidade."
+                            />
 
                             <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                                 1. Prepare o Ambiente e o Coração

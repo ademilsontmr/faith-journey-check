@@ -85,7 +85,10 @@ export default function AdventoQuaresmaPreparacao() {
                                 O Advento e a Quaresma são os dois grandes tempos de "deserto" e "espera" na Igreja. Enquanto o Advento nos prepara para a alegria do Natal, a Quaresma nos conduz à sobriedade da Paixão e à glória da Ressurreição. Ambos exigem de nós uma atitude de conversão e vigilância.
                             </p>
 
-                            <QuizCTA />
+                            <QuizCTA
+                                title="Você sabe se preparar para os tempos fortes?"
+                                description="Advento e Quaresma são oportunidades únicas de conversão. Faça nosso quiz e descubra qual prática espiritual é a mais indicada para você viver intensamente o próximo tempo litúrgico."
+                            />
 
                             <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                                 Advento: O Tempo da Esperança

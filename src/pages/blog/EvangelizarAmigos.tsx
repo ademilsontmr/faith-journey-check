@@ -92,7 +92,10 @@ export default function EvangelizarAmigos() {
                                 "O homem contemporâneo escuta com melhor vontade as testemunhas do que os mestres", dizia São Paulo VI. Antes de falar, viva. Sua alegria, sua honestidade no trabalho e sua paz diante das dificuldades falarão muito mais alto do que qualquer argumento teológico.
                             </p>
 
-                            <QuizCTA />
+                            <QuizCTA
+                                title="Você se sente preparado para evangelizar?"
+                                description="Evangelizar é partilhar uma alegria. Faça nosso quiz e descubra qual é o seu estilo missionário, recebendo dicas práticas para falar de Deus aos seus amigos de forma natural e autêntica."
+                            />
 
                             <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                                 2. Escute antes de falar

@@ -85,7 +85,10 @@ export default function VirtudesCardeais() {
                                 A palavra "virtude" vem do latim *virtus*, que significa força ou excelência. As virtudes cardeais são chamadas assim porque são os "eixos" (do latim *cardo*, gonzos de uma porta) sobre os quais gira toda a vida moral do homem.
                             </p>
 
-                            <QuizCTA />
+                            <QuizCTA
+                                title="Qual virtude você mais precisa desenvolver?"
+                                description="As virtudes são os músculos da alma para uma vida santa. Faça nosso quiz de virtudes e receba dicas práticas para fortalecer seu caráter cristão no dia a dia."
+                            />
 
                             <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                                 1. Prudência: O Farol da Razão

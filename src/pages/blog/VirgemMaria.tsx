@@ -85,7 +85,10 @@ export default function VirgemMaria() {
                                 A devoção à Santíssima Virgem Maria não é um "acessório" da fé católica, mas uma consequência lógica da Encarnação. Ao escolher Maria para ser a Mãe de Seu Filho, Deus a colocou no coração da história da salvação. Honrar Maria é, em última análise, glorificar a Deus pelas maravilhas que Ele realizou nela.
                             </p>
 
-                            <QuizCTA />
+                            <QuizCTA
+                                title="Como está sua devoção mariana?"
+                                description="Maria é a Mãe de Deus e nossa intercessora no Céu. Faça nosso quiz espiritual e descubra como a presença de Nossa Senhora pode transformar sua caminhada de fé e amor a Jesus."
+                            />
 
                             <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                                 Os Quatro Dogmas Marianos

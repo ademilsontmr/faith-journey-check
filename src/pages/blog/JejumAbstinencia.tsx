@@ -86,7 +86,10 @@ export default function JejumAbstinencia() {
                 O jejum e a abstinência são práticas espirituais fundamentais na vida cristã, recomendadas pelo próprio Jesus Cristo e praticadas pelos fiéis desde os primórdios da Igreja. Longe de serem meras obrigações legais, estas penitências são meios poderosos de crescimento espiritual, fortalecimento da vontade e união com Cristo em sua Paixão. Compreender seu significado profundo transforma estas práticas em fontes de graça abundante.
               </p>
 
-              <QuizCTA />
+              <QuizCTA
+                title="Como está sua vida de penitência?"
+                description="O jejum e a abstinência são armas poderosas para o crescimento espiritual. Faça nosso quiz e descubra como essas práticas podem fortalecer sua vontade e aproximar você de Deus."
+              />
 
               <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                 Diferença Entre Jejum e Abstinência

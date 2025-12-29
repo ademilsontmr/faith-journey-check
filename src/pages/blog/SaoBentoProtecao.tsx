@@ -85,7 +85,10 @@ export default function SaoBentoProtecao() {
                                 São Bento de Núrsia, nascido no século V, é o Padroeiro da Europa e o fundador da Ordem dos Beneditinos. Sua famosa máxima, *Ora et Labora* (Reza e Trabalha), moldou a civilização ocidental e continua sendo um guia seguro para a nossa vida hoje.
                             </p>
 
-                            <QuizCTA />
+                            <QuizCTA
+                                title="Você busca proteção em sua caminhada?"
+                                description="São Bento nos ensina a vencer o mal com a oração e o trabalho. Faça nosso quiz e descubra como a espiritualidade beneditina pode trazer mais ordem e paz para sua vida."
+                            />
 
                             <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                                 O Combate Espiritual

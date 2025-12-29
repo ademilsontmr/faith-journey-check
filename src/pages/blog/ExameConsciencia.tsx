@@ -92,7 +92,10 @@ export default function ExameConsciencia() {
                                 É o esforço de recordar os pecados cometidos por pensamentos, palavras, atos e omissões desde a última confissão bem feita. É colocar-se sob a luz do Espírito Santo para enxergar as feridas que o pecado causou em nossa relação com Deus, com o próximo e conosco mesmos.
                             </p>
 
-                            <QuizCTA />
+                            <QuizCTA
+                                title="Como está a saúde da sua alma?"
+                                description="Um bom exame de consciência é o primeiro passo para a cura. Faça nosso quiz e receba um roteiro prático para preparar sua próxima confissão, mergulhando na misericórdia de Deus."
+                            />
 
                             <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                                 Passo a Passo para um Bom Exame

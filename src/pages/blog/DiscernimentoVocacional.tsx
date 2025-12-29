@@ -92,7 +92,10 @@ export default function DiscernimentoVocacional() {
                                 Santo Inácio de Loyola, mestre do discernimento, ensina que devemos olhar para três direções:
                             </p>
 
-                            <QuizCTA />
+                            <QuizCTA
+                                title="Você sabe qual é o chamado de Deus para você?"
+                                description="O discernimento é um caminho de escuta e paz. Faça nosso quiz e receba uma luz sobre como identificar os sinais da vontade divina em sua vida e tomar decisões com mais segurança espiritual."
+                            />
 
                             <h3 className="font-display text-xl font-semibold text-text mt-8 mb-3">
                                 1. A Oração (O Diálogo)

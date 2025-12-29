@@ -92,7 +92,10 @@ export default function ComoViverQuaresma() {
                                 Na Quaresma, somos chamados a intensificar nossa vida de oração. Não se trata apenas de rezar mais, mas de rezar melhor. É o momento de silenciar as vozes do mundo para ouvir a voz de Deus. Experimente a Lectio Divina, a Via-Sacra ou o Rosário diário.
                             </p>
 
-                            <QuizCTA />
+                            <QuizCTA
+                                title="Sua Quaresma está dando frutos?"
+                                description="A conversão é um caminho contínuo. Faça nosso quiz e receba um direcionamento sobre como viver os pilares da oração, jejum e caridade de forma mais profunda e transformadora."
+                            />
 
                             <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                                 2. Jejum: O Domínio de Si

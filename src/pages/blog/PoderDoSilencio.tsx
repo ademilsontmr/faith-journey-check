@@ -85,7 +85,10 @@ export default function PoderDoSilencio() {
                                 O termo *burnout* tornou-se comum em nossos dias. Ele descreve o estado de exaustão física, mental e emocional causado pelo estresse crônico. Para o cristão, o burnout muitas vezes se manifesta como uma "aridez espiritual", onde a oração parece vazia e a vida perde o brilho.
                             </p>
 
-                            <QuizCTA />
+                            <QuizCTA
+                                title="Você está precisando de uma pausa?"
+                                description="O silêncio é o lugar onde Deus fala ao coração. Faça nosso quiz e descubra como o silêncio e os retiros espirituais podem ser o remédio para o seu cansaço e estresse."
+                            />
 
                             <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                                 Por que o Silêncio Assusta?

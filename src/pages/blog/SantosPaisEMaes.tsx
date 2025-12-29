@@ -88,7 +88,10 @@ export default function SantosPaisEMaes() {
                                 Durante muito tempo, pensou-se que para ser santo era preciso fugir do mundo. No entanto, a Igreja sempre ensinou que todos são chamados à santidade, cada um no seu estado de vida. O matrimônio é um sacramento que confere as graças necessárias para que o casal se santifique mutuamente e na missão de pais.
                             </p>
 
-                            <QuizCTA />
+                            <QuizCTA
+                                title="Sua família busca a santidade?"
+                                description="O matrimônio é um caminho real para o Céu. Faça nosso quiz e descubra como transformar seu lar em uma verdadeira Igreja Doméstica, seguindo o exemplo dos santos pais."
+                            />
 
                             <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                                 Exemplos que nos Inspiram

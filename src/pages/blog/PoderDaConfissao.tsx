@@ -88,7 +88,10 @@ export default function PoderDaConfissao() {
                                 O pecado é uma ferida que nos afasta de Deus e dos irmãos. O sacramento da Confissão (ou Reconciliação) é o meio que Jesus nos deixou para restaurar a graça batismal. É o encontro do filho pródigo com o Pai que sempre espera com os braços abertos.
                             </p>
 
-                            <QuizCTA />
+                            <QuizCTA
+                                title="Sua alma precisa de cura?"
+                                description="A Confissão é o hospital da alma. Faça nosso quiz e receba um roteiro de exame de consciência personalizado para ajudar você a se preparar para este sacramento de amor."
+                            />
 
                             <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                                 Os 5 Passos para uma Boa Confissão

@@ -85,7 +85,10 @@ export default function RessurreicaoDaCarneEsperanca() {
                                 Diferente de algumas religiões que pregam a reencarnação ou a libertação definitiva do corpo, o cristianismo valoriza a matéria. Deus criou o homem como unidade de corpo e alma. Por isso, a salvação plena inclui a ressurreição do nosso corpo.
                             </p>
 
-                            <QuizCTA />
+                            <QuizCTA
+                                title="Você acredita na vida eterna?"
+                                description="A ressurreição da carne é a promessa final de Cristo. Faça nosso quiz e aprofunde sua compreensão sobre o destino glorioso que Deus preparou para você."
+                            />
 
                             <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                                 Como será o corpo ressuscitado?

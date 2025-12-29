@@ -85,7 +85,10 @@ export default function NamoroSanto2026() {
                                 O namoro cristão tem um objetivo claro: o discernimento para o matrimônio. Em 2026, com a onipresença de aplicativos de "fast-dating" e a hipersexualização da cultura, o namoro santo tornou-se um ato de rebeldia espiritual.
                             </p>
 
-                            <QuizCTA />
+                            <QuizCTA
+                                title="Você busca um amor que vale a pena?"
+                                description="Viver um namoro santo é o melhor caminho para um casamento feliz. Faça nosso quiz e descubra como cultivar a castidade e o respeito em seus relacionamentos."
+                            />
 
                             <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                                 A Castidade como Liberdade

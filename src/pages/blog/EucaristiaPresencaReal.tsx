@@ -92,7 +92,10 @@ export default function EucaristiaPresencaReal() {
                                 Este termo teológico explica o que ocorre na consagração: a mudança de toda a substância do pão na substância do Corpo de Cristo e de toda a substância do vinho na substância do Seu Sangue. As "aparências" (gosto, cor, cheiro, forma) permanecem as mesmas, mas a realidade profunda mudou completamente. É um milagre que exige os olhos da fé.
                             </p>
 
-                            <QuizCTA />
+                            <QuizCTA
+                                title="Você crê na Presença Real?"
+                                description="A Eucaristia é o coração da nossa fé. Faça nosso quiz e descubra como aprofundar sua adoração e amor por Jesus Sacramentado, vivendo o mistério da Transubstanciação com mais fé."
+                            />
 
                             <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                                 Instituição e Fundamento Bíblico

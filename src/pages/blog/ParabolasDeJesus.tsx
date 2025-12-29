@@ -85,7 +85,10 @@ export default function ParabolasDeJesus() {
                                 Uma parábola é uma comparação que usa elementos do dia a dia (sementes, ovelhas, moedas, festas) para revelar verdades profundas sobre o Reino de Deus. Elas não são apenas "historinhas", mas espelhos que nos obrigam a olhar para nossa própria vida.
                             </p>
 
-                            <QuizCTA />
+                            <QuizCTA
+                                title="O que Jesus quer lhe dizer hoje?"
+                                description="As parábolas são espelhos da nossa alma. Faça nosso quiz e descubra qual ensinamento de Cristo tem uma mensagem especial para os desafios que você enfrenta agora."
+                            />
 
                             <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                                 O Bom Samaritano: Quem é o meu próximo?

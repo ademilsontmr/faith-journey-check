@@ -92,7 +92,10 @@ export default function DoutrinaPurgatorio() {
                                 O Catecismo da Igreja Católica ensina que "os que morrem na graça e na amizade de Deus, mas não perfeitamente purificados, embora tenham garantida a sua salvação eterna, sofrem após a morte uma purificação, a fim de obterem a santidade necessária para entrar na alegria do céu" (CIC 1030).
                             </p>
 
-                            <QuizCTA />
+                            <QuizCTA
+                                title="Você compreende a misericórdia do Purgatório?"
+                                description="O Purgatório é a ante-sala do Céu. Faça nosso quiz e aprofunde seu conhecimento sobre a purificação final e como nossas orações podem ajudar as almas que esperam pela glória eterna."
+                            />
 
                             <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                                 Por que a purificação é necessária?

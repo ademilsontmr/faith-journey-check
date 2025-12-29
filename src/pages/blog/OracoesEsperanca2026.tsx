@@ -85,7 +85,10 @@ export default function OracoesEsperanca2026() {
                                 A esperança é uma virtude teologal, o que significa que ela é um dom de Deus. Em momentos de crise pessoal, familiar ou social, a esperança nos impede de cair no desespero. Rezar não muda necessariamente a situação externa imediatamente, mas muda o nosso coração para enfrentar a tempestade com serenidade.
                             </p>
 
-                            <QuizCTA />
+                            <QuizCTA
+                                title="Como está sua confiança em Deus?"
+                                description="A esperança é a âncora da alma em meio às tempestades. Faça nosso quiz e descubra qual método de oração pode fortalecer sua fé nos momentos de dificuldade."
+                            />
 
                             <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                                 Oração de Abandono (São Charles de Foucauld)

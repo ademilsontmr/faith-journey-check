@@ -85,7 +85,10 @@ export default function SignificadoMissa() {
                                 Muitos católicos frequentam a Missa dominical por hábito ou preceito, mas poucos compreendem a riqueza teológica e espiritual contida em cada gesto, palavra e silêncio da liturgia. A Santa Missa não é uma encenação da Última Ceia, mas a atualização do sacrifício do Calvário. É o céu que toca a terra.
                             </p>
 
-                            <QuizCTA />
+                            <QuizCTA
+                                title="Você participa da Missa com profundidade?"
+                                description="A Santa Missa é o céu que toca a terra. Faça nosso quiz e descubra como participar de cada rito com mais consciência, amor e devoção ao mistério eucarístico."
+                            />
 
                             <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                                 Ritos Iniciais: Preparando o Coração

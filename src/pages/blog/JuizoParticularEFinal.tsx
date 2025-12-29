@@ -85,7 +85,10 @@ export default function JuizoParticularEFinal() {
                                 A doutrina católica fala de dois juízos. Embora o veredito sobre nossa salvação ou condenação seja decidido no primeiro, o segundo tem um significado profundo para toda a criação.
                             </p>
 
-                            <QuizCTA />
+                            <QuizCTA
+                                title="Você está preparado para o encontro com Deus?"
+                                description="O Juízo Particular é um momento de verdade e misericórdia. Faça nosso quiz e descubra como viver cada dia com o olhar na eternidade, crescendo na amizade com Cristo."
+                            />
 
                             <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                                 1. O Juízo Particular

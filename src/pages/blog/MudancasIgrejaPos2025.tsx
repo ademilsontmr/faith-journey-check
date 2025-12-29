@@ -85,7 +85,10 @@ export default function MudancasIgrejaPos2025() {
                                 Com o fechamento das Portas Santas em janeiro de 2026, a Igreja Católica entra em um novo ciclo. O Jubileu de 2025 deixou uma marca profunda na espiritualidade global, mas agora o desafio é a "pastoral da esperança" — como transformar o entusiasmo das peregrinações em compromisso cristão duradouro.
                             </p>
 
-                            <QuizCTA />
+                            <QuizCTA
+                                title="Qual o seu lugar na Igreja?"
+                                description="A Igreja está sempre se renovando e você faz parte dessa missão. Faça nosso quiz e descubra como seus dons podem ajudar a construir uma comunidade mais viva e missionária."
+                            />
 
                             <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                                 A Consolidação da Sinodalidade

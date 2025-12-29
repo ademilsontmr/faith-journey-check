@@ -106,7 +106,10 @@ export default function CarloAcutisInternet() {
                                 Carlo não era um jovem "fora do mundo". Ele gostava de computadores, videogames e futebol. Mas ele entendeu algo profundo: a internet e a tecnologia não são fins em si mesmas, mas ferramentas que podem ser usadas para a glória de Deus ou para a perdição das almas. Ele escolheu a primeira opção.
                             </p>
 
-                            <QuizCTA />
+                            <QuizCTA
+                                title="Sua vida digital te aproxima de Deus?"
+                                description="Carlo Acutis usou a tecnologia para o Céu. Faça nosso quiz e descubra como equilibrar seu uso da internet com uma vida de oração profunda e autêntica, seguindo o exemplo do beato."
+                            />
 
                             <div className="bg-accent/5 border border-accent/20 rounded-xl p-6 mt-10">
                                 <p className="text-text italic text-center">

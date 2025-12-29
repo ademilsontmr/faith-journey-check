@@ -92,7 +92,10 @@ export default function CorpusChristiPresencaReal() {
                                 A Igreja ensina que, pelas palavras da consagração e pela força do Espírito Santo, ocorre a mudança de toda a substância do pão na substância do Corpo de Cristo e de toda a substância do vinho na substância do Seu Sangue. As aparências (gosto, cor, forma) permanecem, mas a realidade profunda mudou. Jesus está ali, vivo e inteiro.
                             </p>
 
-                            <QuizCTA />
+                            <QuizCTA
+                                title="Você crê na Presença Real?"
+                                description="A Eucaristia é o coração da nossa fé. Faça nosso quiz e descubra como aprofundar sua adoração e amor por Jesus Sacramentado, vivendo o mistério de Corpus Christi todos os dias."
+                            />
 
                             <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                                 Por que a Procissão?

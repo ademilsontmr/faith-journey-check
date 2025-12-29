@@ -88,7 +88,10 @@ export default function GracaSantificante() {
                                 Para a teologia católica, a **Graça Santificante** é um dom gratuito e sobrenatural pelo qual Deus nos comunica Sua própria vida. No Batismo, nossa alma é purificada e elevada a uma nova dignidade: tornamo-nos filhos de Deus e templos do Espírito Santo. É o que chamamos de estar em "estado de graça".
                             </p>
 
-                            <QuizCTA />
+                            <QuizCTA
+                                title="Você vive em amizade com Deus?"
+                                description="A graça santificante é a vida divina em nós. Faça nosso quiz doutrinário e descubra como preservar e aumentar esse tesouro infinito em sua alma através dos sacramentos e da oração."
+                            />
 
                             <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                                 Graça Santificante vs. Graça Atual

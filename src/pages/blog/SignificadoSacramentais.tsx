@@ -85,7 +85,10 @@ export default function SignificadoSacramentais() {
                                 Muitos católicos usam o Escapulário do Carmo, a Medalha de São Bento ou têm água benta em casa, mas nem todos sabem o real significado desses objetos. A Igreja os chama de **sacramentais**.
                             </p>
 
-                            <QuizCTA />
+                            <QuizCTA
+                                title="Você sabe usar seus sacramentais?"
+                                description="Água benta, medalhas e escapulários são sinais da proteção de Deus. Faça nosso quiz e descubra o significado profundo desses objetos sagrados em sua vida diária."
+                            />
 
                             <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                                 O que são Sacramentais?

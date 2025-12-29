@@ -92,7 +92,10 @@ export default function EscolherSantoPadroeiro() {
                                 Existem várias formas de identificar um santo que tenha uma conexão especial com você:
                             </p>
 
-                            <QuizCTA />
+                            <QuizCTA
+                                title="Qual santo quer ser seu amigo este ano?"
+                                description="Ter um padroeiro é ter um intercessor fiel no Céu. Faça nosso quiz e descubra qual santo mais combina com seu momento de vida e como cultivar uma amizade espiritual com ele."
+                            />
                             <ul className="list-disc list-inside text-text space-y-4 mb-6">
                                 <li><strong>Pelo Nome:</strong> Muitos santos levam o nosso nome de batismo. Conhecer a vida do seu onomástico é o primeiro passo.</li>
                                 <li><strong>Pela Profissão:</strong> Quase toda profissão tem um padroeiro (ex: São Lucas para médicos, São José para trabalhadores).</li>
