@@ -210,6 +210,66 @@ const blogPosts: BlogPost[] = [
     icon: Church,
     bgColor: "bg-violet-100",
     iconColor: "text-violet-400"
+  },
+  {
+    id: 17,
+    slug: "adoracao-eucaristica",
+    title: "A Importância da Adoração Eucarística",
+    excerpt: "Descubra os benefícios espirituais de passar um tempo diante do Santíssimo Sacramento. Um guia sobre como fazer uma boa hora santa.",
+    date: "2024-12-29",
+    readTime: "8 min",
+    category: "Espiritualidade",
+    icon: Sun,
+    bgColor: "bg-yellow-100",
+    iconColor: "text-yellow-400"
+  },
+  {
+    id: 18,
+    slug: "o-que-e-purgatorio",
+    title: "O Que é o Purgatório? Verdades de Fé",
+    excerpt: "Entenda o dogma do Purgatório, por que ele existe e qual a importância de rezarmos pelas almas que lá estão.",
+    date: "2024-12-29",
+    readTime: "10 min",
+    category: "Formação",
+    icon: BookOpen,
+    bgColor: "bg-blue-100",
+    iconColor: "text-blue-400"
+  },
+  {
+    id: 19,
+    slug: "como-viver-quaresma",
+    title: "Como Viver a Quaresma com Frutos Espirituais",
+    excerpt: "Prepare-se para a Páscoa com este guia prático sobre como viver bem a Quaresma através da oração, jejum e caridade.",
+    date: "2024-12-29",
+    readTime: "9 min",
+    category: "Espiritualidade",
+    icon: Flame,
+    bgColor: "bg-orange-100",
+    iconColor: "text-orange-400"
+  },
+  {
+    id: 20,
+    slug: "anjos-da-guarda",
+    title: "O Papel dos Anjos da Guarda em Nossa Vida",
+    excerpt: "Conheça a doutrina católica sobre os Anjos da Guarda. Saiba como eles nos protegem, guiam e intercedem por nós.",
+    date: "2024-12-29",
+    readTime: "7 min",
+    category: "Devoções",
+    icon: Users,
+    bgColor: "bg-amber-100",
+    iconColor: "text-amber-400"
+  },
+  {
+    id: 21,
+    slug: "significado-crucifixo",
+    title: "A História e o Significado do Crucifixo",
+    excerpt: "Entenda por que o crucifixo é o símbolo central da fé católica. Conheça sua história, simbolismo e importância.",
+    date: "2024-12-29",
+    readTime: "6 min",
+    category: "Devoções",
+    icon: Church,
+    bgColor: "bg-violet-100",
+    iconColor: "text-violet-400"
   }
 ];
 
@@ -327,8 +387,8 @@ export default function BlogPage() {
                       key={page}
                       onClick={() => setCurrentPage(page)}
                       className={`w-10 h-10 rounded-full text-sm font-medium transition-colors ${currentPage === page
-                          ? "bg-accent text-button-text"
-                          : "text-text-muted hover:bg-accent/10 hover:text-accent"
+                        ? "bg-accent text-button-text"
+                        : "text-text-muted hover:bg-accent/10 hover:text-accent"
                         }`}
                     >
                       {page}

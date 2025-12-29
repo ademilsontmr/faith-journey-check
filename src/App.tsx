@@ -26,6 +26,11 @@ import CastidadeMundoModerno from "./pages/blog/CastidadeMundoModerno";
 import DoutrinaSocial from "./pages/blog/DoutrinaSocial";
 import DiscernimentoVocacional from "./pages/blog/DiscernimentoVocacional";
 import EucaristiaPresencaReal from "./pages/blog/EucaristiaPresencaReal";
+import AdoracaoEucaristica from "./pages/blog/AdoracaoEucaristica";
+import OQueEPurgatorio from "./pages/blog/OQueEPurgatorio";
+import ComoViverQuaresma from "./pages/blog/ComoViverQuaresma";
+import AnjosDaGuarda from "./pages/blog/AnjosDaGuarda";
+import SignificadoCrucifixo from "./pages/blog/SignificadoCrucifixo";
 import TermsOfUse from "./pages/TermsOfUse";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Contact from "./pages/Contact";
@@ -66,6 +71,11 @@ const App = () => (
             <Route path="/blog/doutrina-social" element={<DoutrinaSocial />} />
             <Route path="/blog/discernimento-vocacional" element={<DiscernimentoVocacional />} />
             <Route path="/blog/eucaristia-presenca-real" element={<EucaristiaPresencaReal />} />
+            <Route path="/blog/adoracao-eucaristica" element={<AdoracaoEucaristica />} />
+            <Route path="/blog/o-que-e-purgatorio" element={<OQueEPurgatorio />} />
+            <Route path="/blog/como-viver-quaresma" element={<ComoViverQuaresma />} />
+            <Route path="/blog/anjos-da-guarda" element={<AnjosDaGuarda />} />
+            <Route path="/blog/significado-crucifixo" element={<SignificadoCrucifixo />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
