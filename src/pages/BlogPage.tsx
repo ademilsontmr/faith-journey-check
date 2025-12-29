@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
-import { Cross, Calendar, Clock, ArrowRight, Heart, BookOpen, Book, Lightbulb, Church, Users, Flame, Sun, MapPin, HeartPulse, Wind, Cloud, Brain, Anchor, Smartphone, GraduationCap, Home, ShieldCheck, Shield, Coins, Star, MessageCircle, ChevronLeft, ChevronRight, type LucideIcon } from "lucide-react";
+import { Cross, Calendar, Clock, ArrowRight, Heart, BookOpen, Book, Lightbulb, Church, Users, Flame, Sun, MapPin, HeartPulse, Wind, Cloud, Brain, Anchor, Smartphone, GraduationCap, Home, ShieldCheck, Shield, Coins, Star, MessageCircle, ChevronLeft, ChevronRight, Leaf, type LucideIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Footer } from "@/components/landing/Footer";
 
@@ -19,6 +19,126 @@ interface BlogPost {
 }
 
 export const blogPosts: BlogPost[] = [
+  {
+    id: 72,
+    slug: "sao-francisco-ecologia-integral",
+    title: "São Francisco de Assis e a Ecologia Integral: Cuidar da Casa Comum",
+    excerpt: "O \"Pobrezinho de Assis\" não amava a natureza por um vago sentimentalismo, mas porque via nela a assinatura do Criador.",
+    date: "2025-12-29",
+    readTime: "9 min",
+    category: "Espiritualidade",
+    icon: Leaf,
+    bgColor: "bg-emerald-50",
+    iconColor: "text-emerald-400"
+  },
+  {
+    id: 73,
+    slug: "como-fazer-retiro-espiritual-em-casa",
+    title: "Guia Prático: Como Fazer um Retiro Espiritual em Casa",
+    excerpt: "Nem sempre podemos ir a um mosteiro, mas podemos transformar nosso lar em um deserto fértil para ouvir a voz de Deus.",
+    date: "2025-12-29",
+    readTime: "10 min",
+    category: "Oração",
+    icon: Home,
+    bgColor: "bg-amber-50",
+    iconColor: "text-amber-400"
+  },
+  {
+    id: 74,
+    slug: "importancia-direcao-espiritual-caminhada-fe",
+    title: "A Importância da Direção Espiritual na Caminhada de Fé",
+    excerpt: "Ninguém chega ao Céu sozinho. Ter um guia para a alma é uma das tradições mais sábias e frutuosas da Igreja Católica.",
+    date: "2025-12-29",
+    readTime: "8 min",
+    category: "Formação",
+    icon: Users,
+    bgColor: "bg-blue-50",
+    iconColor: "text-blue-400"
+  },
+  {
+    id: 75,
+    slug: "santa-teresinha-pequena-via-santidade",
+    title: "Santa Teresinha do Menino Jesus e a Pequena Via da Santidade",
+    excerpt: "A santidade não consiste em fazer coisas extraordinárias, mas em fazer as coisas comuns com um amor extraordinário.",
+    date: "2025-12-29",
+    readTime: "9 min",
+    category: "Santos",
+    icon: Heart,
+    bgColor: "bg-rose-50",
+    iconColor: "text-rose-400"
+  },
+  {
+    id: 76,
+    slug: "protagonismo-leigos-missao-igreja-hoje",
+    title: "O Protagonismo dos Leigos na Missão da Igreja Hoje",
+    excerpt: "A Igreja não é feita apenas de clérigos. Os leigos são a linha de frente da fé no mundo, chamados a santificar o trabalho, a família e a sociedade.",
+    date: "2025-12-29",
+    readTime: "10 min",
+    category: "Missão",
+    icon: Users,
+    bgColor: "bg-emerald-50",
+    iconColor: "text-emerald-400"
+  },
+  {
+    id: 77,
+    slug: "beleza-liturgia-simbolos-ritos-importancia",
+    title: "A Beleza da Liturgia: Por que os Símbolos e Ritos são Importantes?",
+    excerpt: "A liturgia não é um teatro, mas a oração oficial da Igreja que nos transporta para a eternidade através dos sentidos.",
+    date: "2025-12-29",
+    readTime: "9 min",
+    category: "Liturgia",
+    icon: Sun,
+    bgColor: "bg-yellow-50",
+    iconColor: "text-yellow-400"
+  },
+  {
+    id: 78,
+    slug: "biblia-ciencia-dialogo-fe-razao-igreja",
+    title: "Bíblia e Ciência: O Diálogo entre a Fé e a Razão na Igreja Católica",
+    excerpt: "A verdade não pode contradizer a verdade. Descubra por que a Igreja nunca viu a ciência como uma inimiga, mas como uma aliada na busca pelo conhecimento.",
+    date: "2025-12-29",
+    readTime: "11 min",
+    category: "Formação",
+    icon: Lightbulb,
+    bgColor: "bg-yellow-50",
+    iconColor: "text-yellow-400"
+  },
+  {
+    id: 79,
+    slug: "combate-espiritual-vencer-vicios-graca-deus",
+    title: "Combate Espiritual: Como Vencer os Vícios com a Graça de Deus",
+    excerpt: "A vida cristã é uma guerra invisível. Para vencer, precisamos conhecer nossas fraquezas e usar as armas que a Igreja nos oferece.",
+    date: "2025-12-29",
+    readTime: "10 min",
+    category: "Formação",
+    icon: Shield,
+    bgColor: "bg-slate-50",
+    iconColor: "text-slate-400"
+  },
+  {
+    id: 80,
+    slug: "santa-faustina-divina-misericordia-apelo-jesus",
+    title: "Santa Faustina e a Divina Misericórdia: O Apelo de Jesus para o Mundo",
+    excerpt: "\"A humanidade não encontrará a paz enquanto não se voltar com confiança para a Minha misericórdia.\"",
+    date: "2025-12-29",
+    readTime: "10 min",
+    category: "Santos",
+    icon: Flame,
+    bgColor: "bg-orange-50",
+    iconColor: "text-orange-400"
+  },
+  {
+    id: 81,
+    slug: "sao-jose-modelo-pai-protetor",
+    title: "São José: O Modelo de Pai e Protetor para a Família Moderna",
+    excerpt: "No silêncio de Nazaré, São José nos ensina que a verdadeira grandeza de um pai está no serviço humilde e na obediência a Deus.",
+    date: "2025-12-29",
+    readTime: "8 min",
+    category: "Família",
+    icon: Users,
+    bgColor: "bg-blue-50",
+    iconColor: "text-blue-400"
+  },
   {
     id: 22,
     slug: "legado-jubileu-2025",

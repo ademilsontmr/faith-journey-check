@@ -80,6 +80,16 @@ import SegundaVindaCristoFimTempos from "./pages/blog/SegundaVindaCristoFimTempo
 import JuizoParticularEFinal from "./pages/blog/JuizoParticularEFinal";
 import RessurreicaoDaCarneEsperanca from "./pages/blog/RessurreicaoDaCarneEsperanca";
 import PrepararParaEternidade2026 from "./pages/blog/PrepararParaEternidade2026";
+import SaoFranciscoEcologia from "./pages/blog/SaoFranciscoEcologia";
+import RetiroEspiritualEmCasa from "./pages/blog/RetiroEspiritualEmCasa";
+import DirecaoEspiritualImportancia from "./pages/blog/DirecaoEspiritualImportancia";
+import SantaTeresinhaPequenaVia from "./pages/blog/SantaTeresinhaPequenaVia";
+import PapelDosLeigosNaIgreja from "./pages/blog/PapelDosLeigosNaIgreja";
+import BelezaDaLiturgia from "./pages/blog/BelezaDaLiturgia";
+import BibliaECiencia from "./pages/blog/BibliaECiencia";
+import CombateEspiritualVicios from "./pages/blog/CombateEspiritualVicios";
+import SantaFaustinaMisericordia from "./pages/blog/SantaFaustinaMisericordia";
+import SaoJoseModeloPai from "./pages/blog/SaoJoseModeloPai";
 import TermsOfUse from "./pages/TermsOfUse";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Contact from "./pages/Contact";
@@ -175,6 +185,16 @@ const App = () => (
             <Route path="/blog/juizo-particular-e-juizo-final-diferencas" element={<JuizoParticularEFinal />} />
             <Route path="/blog/ressurreicao-da-carne-nossa-esperanca-vida-eterna" element={<RessurreicaoDaCarneEsperanca />} />
             <Route path="/blog/como-se-preparar-para-eternidade-dia-a-dia" element={<PrepararParaEternidade2026 />} />
+            <Route path="/blog/sao-francisco-ecologia-integral" element={<SaoFranciscoEcologia />} />
+            <Route path="/blog/como-fazer-retiro-espiritual-em-casa" element={<RetiroEspiritualEmCasa />} />
+            <Route path="/blog/importancia-direcao-espiritual-caminhada-fe" element={<DirecaoEspiritualImportancia />} />
+            <Route path="/blog/santa-teresinha-pequena-via-santidade" element={<SantaTeresinhaPequenaVia />} />
+            <Route path="/blog/protagonismo-leigos-missao-igreja-hoje" element={<PapelDosLeigosNaIgreja />} />
+            <Route path="/blog/beleza-liturgia-simbolos-ritos-importancia" element={<BelezaDaLiturgia />} />
+            <Route path="/blog/biblia-ciencia-dialogo-fe-razao-igreja" element={<BibliaECiencia />} />
+            <Route path="/blog/combate-espiritual-vencer-vicios-graca-deus" element={<CombateEspiritualVicios />} />
+            <Route path="/blog/santa-faustina-divina-misericordia-apelo-jesus" element={<SantaFaustinaMisericordia />} />
+            <Route path="/blog/sao-jose-modelo-pai-protetor" element={<SaoJoseModeloPai />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
