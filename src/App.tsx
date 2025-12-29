@@ -55,6 +55,11 @@ import GracaSantificante from "./pages/blog/GracaSantificante";
 import VirtudesCardeais from "./pages/blog/VirtudesCardeais";
 import DoutrinaPurgatorio from "./pages/blog/DoutrinaPurgatorio";
 import DizimoECaridade from "./pages/blog/DizimoECaridade";
+import SantosPaisEMaes from "./pages/blog/SantosPaisEMaes";
+import CarloAcutisInternet from "./pages/blog/CarloAcutisInternet";
+import SantaDulcePobres from "./pages/blog/SantaDulcePobres";
+import EscolherSantoPadroeiro from "./pages/blog/EscolherSantoPadroeiro";
+import SaoBentoProtecao from "./pages/blog/SaoBentoProtecao";
 import TermsOfUse from "./pages/TermsOfUse";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Contact from "./pages/Contact";
@@ -125,6 +130,11 @@ const App = () => (
             <Route path="/blog/sete-dons-espirito-santo-como-usar" element={<DonsEspiritoSanto />} />
             <Route path="/blog/doutrina-purgatorio-purificacao-final" element={<DoutrinaPurgatorio />} />
             <Route path="/blog/importancia-dizimo-caridade-crista" element={<DizimoECaridade />} />
+            <Route path="/blog/santos-pais-maes-santidade-matrimonio" element={<SantosPaisEMaes />} />
+            <Route path="/blog/carlo-acutis-padroeiro-internet-eucaristia" element={<CarloAcutisInternet />} />
+            <Route path="/blog/santa-dulce-dos-pobres-legado-caridade" element={<SantaDulcePobres />} />
+            <Route path="/blog/como-escolher-santo-padroeiro-guia" element={<EscolherSantoPadroeiro />} />
+            <Route path="/blog/vida-sao-bento-protecao-contra-mal" element={<SaoBentoProtecao />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>

@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
-import { Cross, Calendar, Clock, ArrowRight, Heart, BookOpen, Church, Users, Flame, Sun, MapPin, HeartPulse, Wind, Cloud, Brain, Anchor, Smartphone, GraduationCap, Home, ShieldCheck, Shield, Coins, ChevronLeft, ChevronRight, type LucideIcon } from "lucide-react";
+import { Cross, Calendar, Clock, ArrowRight, Heart, BookOpen, Church, Users, Flame, Sun, MapPin, HeartPulse, Wind, Cloud, Brain, Anchor, Smartphone, GraduationCap, Home, ShieldCheck, Shield, Coins, Star, ChevronLeft, ChevronRight, type LucideIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Footer } from "@/components/landing/Footer";
 
@@ -19,6 +19,66 @@ interface BlogPost {
 }
 
 export const blogPosts: BlogPost[] = [
+  {
+    id: 47,
+    slug: "santos-pais-maes-santidade-matrimonio",
+    title: "Santos que Foram Pais e Mães: A Santidade no Matrimônio",
+    excerpt: "A santidade não é exclusividade de padres e freiras. Descubra como homens e mulheres alcançaram o céu através do amor conjugal e da educação dos filhos.",
+    date: "2026-05-05",
+    readTime: "12 min",
+    category: "Santos",
+    icon: Users,
+    bgColor: "bg-blue-50",
+    iconColor: "text-blue-400"
+  },
+  {
+    id: 48,
+    slug: "carlo-acutis-padroeiro-internet-eucaristia",
+    title: "Carlo Acutis: O Padroeiro da Internet e a Eucaristia",
+    excerpt: "Carlo Acutis nos mostrou que é possível ser um jovem moderno, gostar de videogames e computadores, e ser profundamente apaixonado por Deus.",
+    date: "2026-05-10",
+    readTime: "10 min",
+    category: "Santos",
+    icon: Smartphone,
+    bgColor: "bg-blue-50",
+    iconColor: "text-blue-400"
+  },
+  {
+    id: 49,
+    slug: "santa-dulce-dos-pobres-legado-caridade",
+    title: "Santa Dulce dos Pobres: O Legado de Caridade no Brasil",
+    excerpt: "Irmã Dulce não esperava as condições ideais para ajudar; ela transformava galinheiros em hospitais e a indiferença em amor.",
+    date: "2026-05-15",
+    readTime: "9 min",
+    category: "Santos",
+    icon: Heart,
+    bgColor: "bg-rose-50",
+    iconColor: "text-rose-400"
+  },
+  {
+    id: 50,
+    slug: "como-escolher-santo-padroeiro-guia",
+    title: "Como Escolher um Santo Padroeiro para 2026: Um Guia Espiritual",
+    excerpt: "Ter um santo padroeiro não é apenas uma tradição, mas uma amizade espiritual que nos ajuda a caminhar seguros em direção ao Céu.",
+    date: "2026-05-20",
+    readTime: "8 min",
+    category: "Espiritualidade",
+    icon: Star,
+    bgColor: "bg-yellow-50",
+    iconColor: "text-yellow-400"
+  },
+  {
+    id: 51,
+    slug: "vida-sao-bento-protecao-contra-mal",
+    title: "A Vida de São Bento e a Proteção contra o Mal",
+    excerpt: "São Bento não é apenas o santo da medalha, mas o mestre da vida espiritual que nos ensina a vencer as ciladas do inimigo com a oração e o trabalho.",
+    date: "2026-05-25",
+    readTime: "11 min",
+    category: "Santos",
+    icon: ShieldCheck,
+    bgColor: "bg-blue-50",
+    iconColor: "text-blue-400"
+  },
   {
     id: 42,
     slug: "o-que-e-graca-santificante-amizade-deus",
