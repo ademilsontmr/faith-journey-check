@@ -932,10 +932,10 @@ export default function BlogPage() {
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {currentPosts.map((post) => (
-                <Link to={`/ blog / ${post.slug} `} key={post.id}>
+                <Link to={`/blog/${post.slug}`} key={post.id}>
                   <article className="bg-surface rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow group h-full">
-                    <div className={`aspect - video flex items - center justify - center ${post.bgColor} `}>
-                      <post.icon className={`w - 16 h - 16 ${post.iconColor} group - hover: scale - 110 transition - transform duration - 300`} strokeWidth={1.5} />
+                    <div className={`aspect-video flex items-center justify-center ${post.bgColor}`}>
+                      <post.icon className={`w-16 h-16 ${post.iconColor} group-hover:scale-110 transition-transform duration-300`} strokeWidth={1.5} />
                     </div>
                     <div className="p-6">
                       <div className="flex items-center gap-4 text-sm text-text-muted mb-3">
@@ -986,8 +986,8 @@ export default function BlogPage() {
                       key={page}
                       onClick={() => setCurrentPage(page)}
                       className={`w-10 h-10 rounded-full text-sm font-medium transition-all duration-300 ${currentPage === page
-                          ? "bg-accent text-button-text shadow-lg shadow-accent/20 scale-110"
-                          : "text-text-muted hover:bg-accent/10 hover:text-accent"
+                        ? "bg-accent text-button-text shadow-lg shadow-accent/20 scale-110"
+                        : "text-text-muted hover:bg-accent/10 hover:text-accent"
                         }`}
                     >
                       {page}
