@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
-import { Cross, Calendar, Clock, ArrowRight, Heart, BookOpen, Church, Users, Flame, Sun, MapPin, HeartPulse, Wind, Cloud, Brain, Anchor, ChevronLeft, ChevronRight, type LucideIcon } from "lucide-react";
+import { Cross, Calendar, Clock, ArrowRight, Heart, BookOpen, Church, Users, Flame, Sun, MapPin, HeartPulse, Wind, Cloud, Brain, Anchor, Smartphone, GraduationCap, Home, ChevronLeft, ChevronRight, type LucideIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Footer } from "@/components/landing/Footer";
 
@@ -18,7 +18,67 @@ interface BlogPost {
   iconColor: string;
 }
 
-const blogPosts: BlogPost[] = [
+export const blogPosts: BlogPost[] = [
+  {
+    id: 32,
+    slug: "como-transmitir-fe-filhos-era-digital",
+    title: "Como Transmitir a Fé Católica aos Filhos na Era das Telas?",
+    excerpt: "Educar para o céu nunca foi tão desafiador. Descubra como competir com o algoritmo e plantar sementes de eternidade no coração dos seus filhos.",
+    date: "2026-02-15",
+    readTime: "11 min",
+    category: "Família",
+    icon: Smartphone,
+    bgColor: "bg-indigo-50",
+    iconColor: "text-indigo-400"
+  },
+  {
+    id: 33,
+    slug: "igreja-domestica-oracao-familia",
+    title: "Igreja Doméstica: Passos Práticos para Rezar em Família",
+    excerpt: "\"Família que reza unida, permanece unida\". Descubra como criar um ambiente de fé e oração dentro da sua própria casa.",
+    date: "2026-02-20",
+    readTime: "9 min",
+    category: "Família",
+    icon: Home,
+    bgColor: "bg-amber-50",
+    iconColor: "text-amber-400"
+  },
+  {
+    id: 34,
+    slug: "homeschooling-catolico-educacao-classica",
+    title: "Educação Clássica e Católica: Por que o Homeschooling Cresce no Brasil?",
+    excerpt: "Mais do que uma alternativa escolar, o homeschooling católico é um resgate da missão dos pais como primeiros educadores.",
+    date: "2026-02-25",
+    readTime: "12 min",
+    category: "Educação",
+    icon: GraduationCap,
+    bgColor: "bg-blue-50",
+    iconColor: "text-blue-400"
+  },
+  {
+    id: 35,
+    slug: "namoro-santo-castidade-2026",
+    title: "Namoro Santo em 2026: Desafios da Castidade no Mundo Digital",
+    excerpt: "É possível viver a castidade em um mundo que a ridiculariza? Descubra como construir um relacionamento baseado no amor real e não apenas na atração passageira.",
+    date: "2026-03-01",
+    readTime: "10 min",
+    category: "Juventude",
+    icon: Heart,
+    bgColor: "bg-rose-50",
+    iconColor: "text-rose-400"
+  },
+  {
+    id: 36,
+    slug: "papel-dos-avos-transmissao-fe",
+    title: "O Papel dos Avós na Transmissão da Tradição Cristã",
+    excerpt: "Os avós são os guardiões da memória e as raízes que sustentam a árvore da família. Saiba como sua influência é insubstituível na vida dos netos.",
+    date: "2026-03-05",
+    readTime: "8 min",
+    category: "Família",
+    icon: Users,
+    bgColor: "bg-orange-50",
+    iconColor: "text-orange-400"
+  },
   {
     id: 27,
     slug: "fe-e-saude-mental-ansiedade",

@@ -41,6 +41,11 @@ import PoderDoSilencio from "./pages/blog/PoderDoSilencio";
 import SantosEDepressao from "./pages/blog/SantosEDepressao";
 import OracaoEMindfulness from "./pages/blog/OracaoEMindfulness";
 import LidandoComLuto from "./pages/blog/LidandoComLuto";
+import FeFilhosEraDigital from "./pages/blog/FeFilhosEraDigital";
+import IgrejaDomestica from "./pages/blog/IgrejaDomestica";
+import HomeschoolingCatolico from "./pages/blog/HomeschoolingCatolico";
+import NamoroSanto2026 from "./pages/blog/NamoroSanto2026";
+import PapelDosAvos from "./pages/blog/PapelDosAvos";
 import TermsOfUse from "./pages/TermsOfUse";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Contact from "./pages/Contact";
@@ -96,6 +101,11 @@ const App = () => (
             <Route path="/blog/santos-depressao-noite-escura" element={<SantosEDepressao />} />
             <Route path="/blog/oracao-vs-mindfulness-cristao" element={<OracaoEMindfulness />} />
             <Route path="/blog/como-lidar-com-luto-fe-crista" element={<LidandoComLuto />} />
+            <Route path="/blog/como-transmitir-fe-filhos-era-digital" element={<FeFilhosEraDigital />} />
+            <Route path="/blog/igreja-domestica-oracao-familia" element={<IgrejaDomestica />} />
+            <Route path="/blog/homeschooling-catolico-educacao-classica" element={<HomeschoolingCatolico />} />
+            <Route path="/blog/namoro-santo-castidade-2026" element={<NamoroSanto2026 />} />
+            <Route path="/blog/papel-dos-avos-transmissao-fe" element={<PapelDosAvos />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
