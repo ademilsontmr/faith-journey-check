@@ -65,6 +65,11 @@ import OsQuatroEvangelhos from "./pages/blog/OsQuatroEvangelhos";
 import ParabolasDeJesus from "./pages/blog/ParabolasDeJesus";
 import EvangelizarAmigos from "./pages/blog/EvangelizarAmigos";
 import ComunidadeParoquial from "./pages/blog/ComunidadeParoquial";
+import AnoLiturgicoGuia from "./pages/blog/AnoLiturgicoGuia";
+import AdventoQuaresmaPreparacao from "./pages/blog/AdventoQuaresmaPreparacao";
+import VigiliaPascalSignificado from "./pages/blog/VigiliaPascalSignificado";
+import CorpusChristiPresencaReal from "./pages/blog/CorpusChristiPresencaReal";
+import DomingoDiaDoSenhor from "./pages/blog/DomingoDiaDoSenhor";
 import TermsOfUse from "./pages/TermsOfUse";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Contact from "./pages/Contact";
@@ -145,6 +150,11 @@ const App = () => (
             <Route path="/blog/parabolas-jesus-licoes-sabedoria-moderna" element={<ParabolasDeJesus />} />
             <Route path="/blog/como-falar-de-deus-amigos-nao-crentes" element={<EvangelizarAmigos />} />
             <Route path="/blog/importancia-pertencer-comunidade-paroquial" element={<ComunidadeParoquial />} />
+            <Route path="/blog/ano-liturgico-guia-cores-tempos" element={<AnoLiturgicoGuia />} />
+            <Route path="/blog/advento-quaresma-como-se-preparar" element={<AdventoQuaresmaPreparacao />} />
+            <Route path="/blog/significado-vigilia-pascal-noite-santa" element={<VigiliaPascalSignificado />} />
+            <Route path="/blog/corpus-christi-presenca-real-jesus-eucaristia" element={<CorpusChristiPresencaReal />} />
+            <Route path="/blog/como-viver-domingo-dia-do-senhor" element={<DomingoDiaDoSenhor />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>

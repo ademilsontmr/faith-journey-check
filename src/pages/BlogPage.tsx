@@ -20,6 +20,66 @@ interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 57,
+    slug: "ano-liturgico-guia-cores-tempos",
+    title: "O Ano Litúrgico: Entenda as Cores e os Tempos da Igreja",
+    excerpt: "Para o cristão, o tempo não é apenas um relógio que corre, mas um caminho de santificação. Descubra como a Igreja nos conduz através da vida de Cristo.",
+    date: "2026-07-05",
+    readTime: "12 min",
+    category: "Liturgia",
+    icon: Sun,
+    bgColor: "bg-purple-50",
+    iconColor: "text-purple-400"
+  },
+  {
+    id: 58,
+    slug: "advento-quaresma-como-se-preparar",
+    title: "Advento e Quaresma: Como se Preparar para as Grandes Festas",
+    excerpt: "Não deixe que as festas passem em branco. Descubra como os tempos de preparação podem transformar seu coração para receber o Senhor.",
+    date: "2026-07-10",
+    readTime: "10 min",
+    category: "Liturgia",
+    icon: Wind,
+    bgColor: "bg-purple-50",
+    iconColor: "text-purple-400"
+  },
+  {
+    id: 59,
+    slug: "significado-vigilia-pascal-noite-santa",
+    title: "O Significado da Vigília Pascal: A Noite mais Santa do Ano",
+    excerpt: "A Vigília Pascal é a \"mãe de todas as vigílias\". Descubra a beleza dos ritos que celebram a vitória definitiva da vida sobre a morte.",
+    date: "2026-07-15",
+    readTime: "11 min",
+    category: "Liturgia",
+    icon: Flame,
+    bgColor: "bg-orange-50",
+    iconColor: "text-orange-400"
+  },
+  {
+    id: 60,
+    slug: "corpus-christi-presenca-real-jesus-eucaristia",
+    title: "Corpus Christi: A Fé na Presença Real de Jesus na Eucaristia",
+    excerpt: "Corpus Christi não é apenas um feriado ou uma tradição de tapetes coloridos. É a proclamação pública de que Deus caminha conosco.",
+    date: "2026-07-20",
+    readTime: "9 min",
+    category: "Doutrina",
+    icon: Sun,
+    bgColor: "bg-yellow-50",
+    iconColor: "text-yellow-400"
+  },
+  {
+    id: 61,
+    slug: "como-viver-domingo-dia-do-senhor",
+    title: "Como Viver o Domingo como o Dia do Senhor em 2026",
+    excerpt: "O domingo não é apenas o fim de semana, mas o \"oitavo dia\", o dia da Ressurreição. Saiba como resgatar a sacralidade deste dia em sua rotina.",
+    date: "2026-07-25",
+    readTime: "8 min",
+    category: "Vida Cristã",
+    icon: Home,
+    bgColor: "bg-emerald-50",
+    iconColor: "text-emerald-400"
+  },
+  {
     id: 52,
     slug: "como-ler-biblia-em-um-ano-plano-2026",
     title: "Como Ler a Bíblia em um Ano: Um Plano Prático para 2026",
@@ -807,8 +867,8 @@ export default function BlogPage() {
                       key={page}
                       onClick={() => setCurrentPage(page)}
                       className={`w - 10 h - 10 rounded - full text - sm font - medium transition - colors ${currentPage === page
-                          ? "bg-accent text-button-text"
-                          : "text-text-muted hover:bg-accent/10 hover:text-accent"
+                        ? "bg-accent text-button-text"
+                        : "text-text-muted hover:bg-accent/10 hover:text-accent"
                         } `}
                     >
                       {page}
