@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { Cross, Calendar, Clock, ArrowLeft, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Footer } from "@/components/landing/Footer";
+import { RelatedArticles } from "@/components/blog/RelatedArticles";
 
 export default function SantosPadroeiros() {
   return (
@@ -64,13 +65,13 @@ export default function SantosPadroeiros() {
                   7 min de leitura
                 </span>
               </div>
-              
+
               <h1 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-text mb-6">
                 Santos Padroeiros: Como Escolher e Honrar o Seu
               </h1>
-              
+
               <p className="text-xl text-text-muted leading-relaxed">
-                Os santos são nossos irmãos mais velhos na fé, que já alcançaram a glória celeste e 
+                Os santos são nossos irmãos mais velhos na fé, que já alcançaram a glória celeste e
                 continuam intercedendo por nós junto a Deus.
               </p>
             </header>
@@ -97,7 +98,7 @@ export default function SantosPadroeiros() {
               <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                 Como Recebemos um Santo Padroeiro?
               </h2>
-              
+
               <h3 className="font-display text-xl font-semibold text-text mt-8 mb-3">
                 No Batismo
               </h3>
@@ -137,7 +138,7 @@ export default function SantosPadroeiros() {
               <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                 Santos Padroeiros Populares e Suas Causas
               </h2>
-              
+
               <h3 className="font-display text-xl font-semibold text-text mt-8 mb-3">
                 São José
               </h3>
@@ -197,6 +198,9 @@ export default function SantosPadroeiros() {
               </div>
             </div>
 
+            <RelatedArticles currentSlug="santos-padroeiros" />
+
+            {/* CTA */}
             <div className="mt-12 p-8 bg-gradient-to-r from-accent/10 to-primary/10 rounded-2xl text-center">
               <h3 className="font-display text-2xl font-bold text-text mb-4">
                 Descubra Como Está Sua Vida de Fé

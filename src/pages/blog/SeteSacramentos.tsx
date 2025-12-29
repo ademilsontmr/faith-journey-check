@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { Cross, Calendar, Clock, ArrowLeft, BookOpen } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Footer } from "@/components/landing/Footer";
+import { RelatedArticles } from "@/components/blog/RelatedArticles";
 
 export default function SeteSacramentos() {
   return (
@@ -67,13 +68,13 @@ export default function SeteSacramentos() {
                   12 min de leitura
                 </span>
               </div>
-              
+
               <h1 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-text mb-6">
                 Os 7 Sacramentos da Igreja Católica Explicados
               </h1>
-              
+
               <p className="text-xl text-text-muted leading-relaxed">
-                Conheça os sinais sagrados instituídos por Cristo que comunicam a graça divina 
+                Conheça os sinais sagrados instituídos por Cristo que comunicam a graça divina
                 e nos santificam em cada etapa da vida cristã.
               </p>
             </header>
@@ -90,7 +91,7 @@ export default function SeteSacramentos() {
               <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                 Sacramentos de Iniciação Cristã
               </h2>
-              
+
               <h3 className="font-display text-xl font-semibold text-text mt-8 mb-3">
                 1. Batismo: A Porta da Vida Cristã
               </h3>
@@ -124,7 +125,7 @@ export default function SeteSacramentos() {
               <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                 Sacramentos de Cura
               </h2>
-              
+
               <h3 className="font-display text-xl font-semibold text-text mt-8 mb-3">
                 4. Penitência e Reconciliação: O Sacramento do Perdão
               </h3>
@@ -148,7 +149,7 @@ export default function SeteSacramentos() {
               <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                 Sacramentos a Serviço da Comunhão
               </h2>
-              
+
               <h3 className="font-display text-xl font-semibold text-text mt-8 mb-3">
                 6. Ordem: O Sacramento do Ministério Apostólico
               </h3>
@@ -186,6 +187,9 @@ export default function SeteSacramentos() {
               </div>
             </div>
 
+            <RelatedArticles currentSlug="sete-sacramentos" />
+
+            {/* CTA */}
             <div className="mt-12 p-8 bg-gradient-to-r from-accent/10 to-primary/10 rounded-2xl text-center">
               <h3 className="font-display text-2xl font-bold text-text mb-4">
                 Descubra Como Está Sua Vida de Fé

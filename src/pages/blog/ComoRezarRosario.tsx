@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { Cross, Calendar, Clock, ArrowLeft, Heart } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Footer } from "@/components/landing/Footer";
+import { RelatedArticles } from "@/components/blog/RelatedArticles";
 
 export default function ComoRezarRosario() {
   return (
@@ -69,13 +70,13 @@ export default function ComoRezarRosario() {
                   8 min de leitura
                 </span>
               </div>
-              
+
               <h1 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-text mb-6">
                 Como Rezar o Santo Rosário: Guia Completo para Iniciantes
               </h1>
-              
+
               <p className="text-xl text-text-muted leading-relaxed">
-                O Santo Rosário é uma das orações mais poderosas e amadas da Igreja Católica. 
+                O Santo Rosário é uma das orações mais poderosas e amadas da Igreja Católica.
                 Aprenda passo a passo como rezar esta devoção mariana e fortaleça sua vida espiritual.
               </p>
             </header>
@@ -101,7 +102,7 @@ export default function ComoRezarRosario() {
               <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                 Os Mistérios do Santo Rosário
               </h2>
-              
+
               <h3 className="font-display text-xl font-semibold text-text mt-8 mb-3">
                 Mistérios Gozosos (Segunda-feira e Sábado)
               </h3>
@@ -161,7 +162,7 @@ export default function ComoRezarRosario() {
               <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                 Passo a Passo: Como Rezar o Rosário
               </h2>
-              
+
               <h3 className="font-display text-xl font-semibold text-text mt-8 mb-3">
                 1. Faça o Sinal da Cruz
               </h3>
@@ -225,6 +226,8 @@ export default function ComoRezarRosario() {
                 </p>
               </div>
             </div>
+
+            <RelatedArticles currentSlug="como-rezar-rosario" />
 
             {/* CTA */}
             <div className="mt-12 p-8 bg-gradient-to-r from-accent/10 to-primary/10 rounded-2xl text-center">

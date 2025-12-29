@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { Cross, Calendar, Clock, ArrowLeft, Church } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Footer } from "@/components/landing/Footer";
+import { RelatedArticles } from "@/components/blog/RelatedArticles";
 
 export default function ImportanciaConfissao() {
   return (
@@ -64,13 +65,13 @@ export default function ImportanciaConfissao() {
                   6 min de leitura
                 </span>
               </div>
-              
+
               <h1 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-text mb-6">
                 A Importância da Confissão: Por Que Confessar Regularmente?
               </h1>
-              
+
               <p className="text-xl text-text-muted leading-relaxed">
-                A confissão é um dos maiores tesouros da Igreja Católica. Descubra como este sacramento 
+                A confissão é um dos maiores tesouros da Igreja Católica. Descubra como este sacramento
                 pode transformar sua vida espiritual e aproximá-lo de Deus.
               </p>
             </header>
@@ -97,7 +98,7 @@ export default function ImportanciaConfissao() {
               <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                 Benefícios Espirituais da Confissão Frequente
               </h2>
-              
+
               <h3 className="font-display text-xl font-semibold text-text mt-8 mb-3">
                 Crescimento no Autoconhecimento
               </h3>
@@ -129,7 +130,7 @@ export default function ImportanciaConfissao() {
               <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                 Como Fazer uma Boa Confissão
               </h2>
-              
+
               <h3 className="font-display text-xl font-semibold text-text mt-8 mb-3">
                 1. Exame de Consciência
               </h3>
@@ -185,6 +186,9 @@ export default function ImportanciaConfissao() {
               </div>
             </div>
 
+            <RelatedArticles currentSlug="importancia-confissao" />
+
+            {/* CTA */}
             <div className="mt-12 p-8 bg-gradient-to-r from-accent/10 to-primary/10 rounded-2xl text-center">
               <h3 className="font-display text-2xl font-bold text-text mb-4">
                 Descubra Como Está Sua Vida de Fé

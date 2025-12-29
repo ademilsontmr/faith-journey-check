@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { Cross, Calendar, Clock, ArrowLeft, Heart } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Footer } from "@/components/landing/Footer";
+import { RelatedArticles } from "@/components/blog/RelatedArticles";
 
 export default function VidaOracao() {
   return (
@@ -64,11 +65,11 @@ export default function VidaOracao() {
                   7 min de leitura
                 </span>
               </div>
-              
+
               <h1 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-text mb-6">
                 A Vida de Oração: Como Cultivar uma Intimidade com Deus
               </h1>
-              
+
               <p className="text-xl text-text-muted leading-relaxed">
                 A oração não é apenas um dever, mas uma necessidade da alma. Aprenda como transformar seu diálogo com Deus em uma fonte de vida e paz.
               </p>
@@ -93,7 +94,7 @@ export default function VidaOracao() {
               <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                 Dicas Práticas para Começar
               </h2>
-              
+
               <h3 className="font-display text-xl font-semibold text-text mt-8 mb-3">
                 1. Reserve um Tempo e um Lugar
               </h3>
@@ -124,6 +125,8 @@ export default function VidaOracao() {
                 </p>
               </div>
             </div>
+
+            <RelatedArticles currentSlug="vida-oracao" />
 
             <div className="mt-12 p-8 bg-gradient-to-r from-accent/10 to-primary/10 rounded-2xl text-center">
               <h3 className="font-display text-2xl font-bold text-text mb-4">

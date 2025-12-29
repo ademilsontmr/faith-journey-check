@@ -46,6 +46,12 @@ export function Navbar() {
             >
               Depoimentos
             </button>
+            <Link
+              to="/blog"
+              className="text-text-muted hover:text-text transition-colors"
+            >
+              Blog
+            </Link>
             <Link to="/quiz">
               <Button className="bg-gradient-accent hover:opacity-90 text-button-text font-semibold">
                 Fazer o Quiz
@@ -88,6 +94,13 @@ export function Navbar() {
               >
                 Depoimentos
               </button>
+              <Link
+                to="/blog"
+                className="text-left py-2 text-text-muted hover:text-text transition-colors"
+                onClick={() => setIsOpen(false)}
+              >
+                Blog
+              </Link>
               <Link to="/quiz" onClick={() => setIsOpen(false)}>
                 <Button className="w-full bg-gradient-accent hover:opacity-90 text-button-text font-semibold">
                   Fazer o Quiz

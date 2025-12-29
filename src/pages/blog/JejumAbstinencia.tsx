@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { Cross, Calendar, Clock, ArrowLeft, Flame } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Footer } from "@/components/landing/Footer";
+import { RelatedArticles } from "@/components/blog/RelatedArticles";
 
 export default function JejumAbstinencia() {
   return (
@@ -64,13 +65,13 @@ export default function JejumAbstinencia() {
                   5 min de leitura
                 </span>
               </div>
-              
+
               <h1 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-text mb-6">
                 Jejum e Abstinência: Práticas Que Fortalecem a Alma
               </h1>
-              
+
               <p className="text-xl text-text-muted leading-relaxed">
-                O jejum e a abstinência são práticas penitenciais milenares que nos ajudam a dominar 
+                O jejum e a abstinência são práticas penitenciais milenares que nos ajudam a dominar
                 as paixões e nos aproximar de Deus.
               </p>
             </header>
@@ -87,7 +88,7 @@ export default function JejumAbstinencia() {
               <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                 Diferença Entre Jejum e Abstinência
               </h2>
-              
+
               <h3 className="font-display text-xl font-semibold text-text mt-8 mb-3">
                 O Que é Jejum?
               </h3>
@@ -105,7 +106,7 @@ export default function JejumAbstinencia() {
               <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                 Quando Jejuar e Abster-se?
               </h2>
-              
+
               <h3 className="font-display text-xl font-semibold text-text mt-8 mb-3">
                 Dias de Jejum Obrigatório
               </h3>
@@ -130,7 +131,7 @@ export default function JejumAbstinencia() {
               <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                 Benefícios Espirituais do Jejum
               </h2>
-              
+
               <h3 className="font-display text-xl font-semibold text-text mt-8 mb-3">
                 Domínio das Paixões
               </h3>
@@ -193,6 +194,9 @@ export default function JejumAbstinencia() {
               </div>
             </div>
 
+            <RelatedArticles currentSlug="jejum-abstinencia" />
+
+            {/* CTA */}
             <div className="mt-12 p-8 bg-gradient-to-r from-accent/10 to-primary/10 rounded-2xl text-center">
               <h3 className="font-display text-2xl font-bold text-text mb-4">
                 Descubra Como Está Sua Vida de Fé

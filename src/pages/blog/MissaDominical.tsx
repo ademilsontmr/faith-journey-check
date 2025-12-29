@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { Cross, Calendar, Clock, ArrowLeft, Sun } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Footer } from "@/components/landing/Footer";
+import { RelatedArticles } from "@/components/blog/RelatedArticles";
 
 export default function MissaDominical() {
   return (
@@ -64,13 +65,13 @@ export default function MissaDominical() {
                   9 min de leitura
                 </span>
               </div>
-              
+
               <h1 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-text mb-6">
                 A Missa Dominical: Centro da Vida Cristã
               </h1>
-              
+
               <p className="text-xl text-text-muted leading-relaxed">
-                A Santa Missa é o tesouro mais precioso da Igreja Católica, onde o sacrifício de 
+                A Santa Missa é o tesouro mais precioso da Igreja Católica, onde o sacrifício de
                 Cristo se torna presente e nos alimentamos do Pão da Vida.
               </p>
             </header>
@@ -97,7 +98,7 @@ export default function MissaDominical() {
               <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                 A Estrutura da Santa Missa
               </h2>
-              
+
               <h3 className="font-display text-xl font-semibold text-text mt-8 mb-3">
                 Ritos Iniciais
               </h3>
@@ -153,7 +154,7 @@ export default function MissaDominical() {
               <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                 Como Participar Melhor da Missa
               </h2>
-              
+
               <h3 className="font-display text-xl font-semibold text-text mt-8 mb-3">
                 Preparação Antes da Missa
               </h3>
@@ -204,6 +205,9 @@ export default function MissaDominical() {
               </div>
             </div>
 
+            <RelatedArticles currentSlug="missa-dominical" />
+
+            {/* CTA */}
             <div className="mt-12 p-8 bg-gradient-to-r from-accent/10 to-primary/10 rounded-2xl text-center">
               <h3 className="font-display text-2xl font-bold text-text mb-4">
                 Descubra Como Está Sua Vida de Fé
