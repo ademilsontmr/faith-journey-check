@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
-import { Cross, Calendar, Clock, ArrowRight, Heart, BookOpen, Church, Users, Flame, Sun, ChevronLeft, ChevronRight, type LucideIcon } from "lucide-react";
+import { Cross, Calendar, Clock, ArrowRight, Heart, BookOpen, Church, Users, Flame, Sun, MapPin, ChevronLeft, ChevronRight, type LucideIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Footer } from "@/components/landing/Footer";
 
@@ -19,6 +19,66 @@ interface BlogPost {
 }
 
 const blogPosts: BlogPost[] = [
+  {
+    id: 22,
+    slug: "legado-jubileu-2025",
+    title: "O Legado do Jubileu 2025: Como Continuar Sendo um Peregrino da Esperança?",
+    excerpt: "As Portas Santas se fecharam, mas o coração do cristão deve permanecer aberto. Descubra como levar os frutos do Ano Santo para o seu dia a dia em 2026.",
+    date: "2026-01-01",
+    readTime: "8 min",
+    category: "Jubileu 2025",
+    icon: Sun,
+    bgColor: "bg-yellow-100",
+    iconColor: "text-yellow-400"
+  },
+  {
+    id: 23,
+    slug: "guia-indulgencia-plenaria",
+    title: "Indulgência Plenária: Guia Completo para os Últimos Dias do Jubileu",
+    excerpt: "A Igreja abre seus tesouros de graça de forma especial no Jubileu. Entenda como receber a remissão total das penas devidas aos seus pecados.",
+    date: "2025-12-28",
+    readTime: "10 min",
+    category: "Formação",
+    icon: BookOpen,
+    bgColor: "bg-blue-100",
+    iconColor: "text-blue-400"
+  },
+  {
+    id: 24,
+    slug: "mudancas-igreja-pos-2025",
+    title: "O Que Muda na Igreja Após o Ano Santo de 2025?",
+    excerpt: "O encerramento do Jubileu não é um ponto final, mas um novo fôlego para a missão. Entenda as tendências e desafios da Igreja para 2026.",
+    date: "2026-01-05",
+    readTime: "9 min",
+    category: "Atualidades",
+    icon: Church,
+    bgColor: "bg-violet-100",
+    iconColor: "text-violet-400"
+  },
+  {
+    id: 25,
+    slug: "oracoes-esperanca-2026",
+    title: "Orações de Esperança para Momentos de Crise em 2026",
+    excerpt: "Quando as forças parecem esgotar, a oração é o nosso refúgio. Conheça preces poderosas para renovar sua confiança em Deus.",
+    date: "2026-01-10",
+    readTime: "6 min",
+    category: "Orações",
+    icon: Heart,
+    bgColor: "bg-rose-100",
+    iconColor: "text-rose-400"
+  },
+  {
+    id: 26,
+    slug: "peregrinacao-local",
+    title: "Como Organizar uma Peregrinação Local em Sua Diocese",
+    excerpt: "Você não precisa ir a Roma para ser um peregrino. Descubra como organizar uma jornada de fé para os santuários da sua região.",
+    date: "2026-01-15",
+    readTime: "8 min",
+    category: "Devoções",
+    icon: MapPin,
+    bgColor: "bg-emerald-100",
+    iconColor: "text-emerald-400"
+  },
   {
     id: 1,
     slug: "como-rezar-rosario",

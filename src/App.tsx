@@ -31,6 +31,11 @@ import OQueEPurgatorio from "./pages/blog/OQueEPurgatorio";
 import ComoViverQuaresma from "./pages/blog/ComoViverQuaresma";
 import AnjosDaGuarda from "./pages/blog/AnjosDaGuarda";
 import SignificadoCrucifixo from "./pages/blog/SignificadoCrucifixo";
+import LegadoJubileu2025 from "./pages/blog/LegadoJubileu2025";
+import GuiaIndulgenciaPlenaria from "./pages/blog/GuiaIndulgenciaPlenaria";
+import MudancasIgrejaPos2025 from "./pages/blog/MudancasIgrejaPos2025";
+import OracoesEsperanca2026 from "./pages/blog/OracoesEsperanca2026";
+import PeregrinacaoLocal from "./pages/blog/PeregrinacaoLocal";
 import TermsOfUse from "./pages/TermsOfUse";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Contact from "./pages/Contact";
@@ -76,6 +81,11 @@ const App = () => (
             <Route path="/blog/como-viver-quaresma" element={<ComoViverQuaresma />} />
             <Route path="/blog/anjos-da-guarda" element={<AnjosDaGuarda />} />
             <Route path="/blog/significado-crucifixo" element={<SignificadoCrucifixo />} />
+            <Route path="/blog/legado-jubileu-2025" element={<LegadoJubileu2025 />} />
+            <Route path="/blog/guia-indulgencia-plenaria" element={<GuiaIndulgenciaPlenaria />} />
+            <Route path="/blog/mudancas-igreja-pos-2025" element={<MudancasIgrejaPos2025 />} />
+            <Route path="/blog/oracoes-esperanca-2026" element={<OracoesEsperanca2026 />} />
+            <Route path="/blog/peregrinacao-local" element={<PeregrinacaoLocal />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
