@@ -151,6 +151,17 @@ import OracaoAlmaDeCristo from "./pages/blog/OracaoAlmaDeCristo";
 import OracaoVindeEspiritoCriador from "./pages/blog/OracaoVindeEspiritoCriador";
 import OracaoTeDeum from "./pages/blog/OracaoTeDeum";
 import OracaoAnjoGuarda from "./pages/blog/OracaoAnjoGuarda";
+// Novena Articles
+import NovenaNossaSenhoraAparecida from "./pages/blog/NovenaNossaSenhoraAparecida";
+import NovenaSagradoCoracao from "./pages/blog/NovenaSagradoCoracao";
+import NovenaSaoJose from "./pages/blog/NovenaSaoJose";
+import NovenaNossaSenhoraGracas from "./pages/blog/NovenaNossaSenhoraGracas";
+import NovenaSantoAntonio from "./pages/blog/NovenaSantoAntonio";
+import NovenaSaoJudasTadeu from "./pages/blog/NovenaSaoJudasTadeu";
+import NovenaNossaSenhoraPerpetuoSocorro from "./pages/blog/NovenaNossaSenhoraPerpetuoSocorro";
+import NovenaDivinoEspiritoSanto from "./pages/blog/NovenaDivinoEspiritoSanto";
+import NovenaNossaSenhoraRosario from "./pages/blog/NovenaNossaSenhoraRosario";
+import NovenaNatal from "./pages/blog/NovenaNatal";
 import TermsOfUse from "./pages/TermsOfUse";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Contact from "./pages/Contact";
@@ -317,6 +328,17 @@ const App = () => (
             <Route path="/blog/oracao-vinde-espirito-criador" element={<OracaoVindeEspiritoCriador />} />
             <Route path="/blog/oracao-te-deum" element={<OracaoTeDeum />} />
             <Route path="/blog/oracao-anjo-da-guarda" element={<OracaoAnjoGuarda />} />
+            {/* Novena Articles */}
+            <Route path="/blog/novena-nossa-senhora-aparecida" element={<NovenaNossaSenhoraAparecida />} />
+            <Route path="/blog/novena-sagrado-coracao-jesus" element={<NovenaSagradoCoracao />} />
+            <Route path="/blog/novena-sao-jose" element={<NovenaSaoJose />} />
+            <Route path="/blog/novena-nossa-senhora-gracas" element={<NovenaNossaSenhoraGracas />} />
+            <Route path="/blog/novena-santo-antonio" element={<NovenaSantoAntonio />} />
+            <Route path="/blog/novena-sao-judas-tadeu" element={<NovenaSaoJudasTadeu />} />
+            <Route path="/blog/novena-nossa-senhora-perpetuo-socorro" element={<NovenaNossaSenhoraPerpetuoSocorro />} />
+            <Route path="/blog/novena-divino-espirito-santo" element={<NovenaDivinoEspiritoSanto />} />
+            <Route path="/blog/novena-nossa-senhora-rosario" element={<NovenaNossaSenhoraRosario />} />
+            <Route path="/blog/novena-natal" element={<NovenaNatal />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
