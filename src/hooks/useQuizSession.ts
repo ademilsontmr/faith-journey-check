@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback, useRef } from "react";
 import { supabase } from "@/integrations/supabase/client";
 
 const SESSION_KEY = "quiz_session_id";
@@ -16,19 +16,24 @@ interface QuizSession {
 }
 
 export function useQuizSession() {
-  const [sessionId, setSessionId] = useState<string | null>(null);
+  const [sessionId, setSessionId] = useState<string | null>(() => {
+    // Initialize from localStorage synchronously to avoid delay
+    return localStorage.getItem(SESSION_KEY);
+  });
   const [session, setSession] = useState<QuizSession | null>(null);
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false); // Start as false to show UI immediately
   const [error, setError] = useState<string | null>(null);
+  const loadedRef = useRef(false);
 
-  // Initialize or restore session
+  // Initialize or restore session - non-blocking
   useEffect(() => {
+    if (loadedRef.current) return;
+    loadedRef.current = true;
+    
     const storedSessionId = localStorage.getItem(SESSION_KEY);
     if (storedSessionId) {
-      setSessionId(storedSessionId);
+      // Load session in background without blocking UI
       loadSession(storedSessionId);
-    } else {
-      setLoading(false);
     }
   }, []);
 

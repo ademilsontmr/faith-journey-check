@@ -4,79 +4,60 @@ import { QuizHeader } from "@/components/quiz/QuizHeader";
 import { ProgressBar } from "@/components/quiz/ProgressBar";
 import { QuestionCard } from "@/components/quiz/QuestionCard";
 import { questions } from "@/data/quizQuestions";
-import { ArrowLeft, Loader2 } from "lucide-react";
+import { ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useQuizSession } from "@/hooks/useQuizSession";
 import { toast } from "sonner";
 
 const QuizPage = () => {
   const navigate = useNavigate();
-  const { sessionId, session, loading, createSession, updateAnswers, clearSession } = useQuizSession();
+  const { sessionId, session, createSession, updateAnswers, clearSession } = useQuizSession();
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [answers, setAnswers] = useState<number[]>([]);
-  const [isInitializing, setIsInitializing] = useState(true);
   const initRef = useRef(false);
 
-  // Initialize session on mount - only once
+  // Initialize session in background - don't block UI
   useEffect(() => {
     const initSession = async () => {
       if (initRef.current) return;
       initRef.current = true;
 
-      console.log("Initializing quiz session...", { sessionId, hasSession: !!session, loading });
-
       if (!sessionId) {
-        console.log("No session ID, creating new session...");
-        const newSession = await createSession();
-        console.log("New session created:", newSession?.id);
+        // Create session in background
+        createSession();
       } else if (session) {
-        console.log("Existing session found:", session.id, "answers:", session.answers);
         // Restore progress from existing session
         if (session.answers && session.answers.length > 0) {
-          // If quiz was completed, restart fresh
           if (session.completed_at) {
-            console.log("Session was completed, starting fresh...");
+            // Session was completed, start fresh
             clearSession();
-            const newSession = await createSession();
-            console.log("Fresh session created:", newSession?.id);
+            createSession();
           } else {
-            console.log("Restoring progress, question:", session.answers.length);
             setAnswers(session.answers);
             setCurrentQuestion(session.answers.length);
           }
         }
       }
-      setIsInitializing(false);
     };
 
-    if (!loading) {
-      initSession();
-    }
-  }, [loading]); // Only depend on loading to prevent re-runs
+    initSession();
+  }, [session]); // React to session changes
 
   const handleSelectAnswer = useCallback(async (points: number) => {
-    console.log("Answer selected:", points, "for question:", currentQuestion);
-    
     const newAnswers = [...answers];
     newAnswers[currentQuestion] = points;
     setAnswers(newAnswers);
 
-    // Save to Supabase (don't await to not block UI)
-    updateAnswers(newAnswers).then(success => {
-      console.log("Answers saved:", success);
-    }).catch(err => {
+    // Save to Supabase in background (don't await)
+    updateAnswers(newAnswers).catch(err => {
       console.error("Error saving answers:", err);
-      toast.error("Erro ao salvar resposta");
     });
 
     // Navigate after short delay for visual feedback
     setTimeout(() => {
       if (currentQuestion < questions.length - 1) {
-        console.log("Moving to next question:", currentQuestion + 1);
         setCurrentQuestion((prev) => prev + 1);
       } else {
-        console.log("Quiz completed! Navigating to /checkout");
-        // Navigate to checkout with test data via state
         navigate("/checkout", {
           state: {
             testType: "spiritual_gifts",
@@ -88,17 +69,6 @@ const QuizPage = () => {
       }
     }, 300);
   }, [answers, currentQuestion, navigate, updateAnswers]);
-
-  if (loading || isInitializing) {
-    return (
-      <div className="min-h-screen bg-background flex items-center justify-center">
-        <div className="text-center">
-          <Loader2 className="w-8 h-8 animate-spin text-accent mx-auto mb-4" />
-          <p className="text-text-muted">Carregando quiz...</p>
-        </div>
-      </div>
-    );
-  }
 
   return (
     <div className="min-h-screen bg-background">
