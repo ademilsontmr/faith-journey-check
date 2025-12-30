@@ -162,6 +162,7 @@ import NovenaNossaSenhoraPerpetuoSocorro from "./pages/blog/NovenaNossaSenhoraPe
 import NovenaDivinoEspiritoSanto from "./pages/blog/NovenaDivinoEspiritoSanto";
 import NovenaNossaSenhoraRosario from "./pages/blog/NovenaNossaSenhoraRosario";
 import NovenaNatal from "./pages/blog/NovenaNatal";
+import QuaresmaSaoMiguelArcanjo from "./pages/blog/QuaresmaSaoMiguelArcanjo";
 import TermsOfUse from "./pages/TermsOfUse";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Contact from "./pages/Contact";
@@ -339,6 +340,7 @@ const App = () => (
             <Route path="/blog/novena-divino-espirito-santo" element={<NovenaDivinoEspiritoSanto />} />
             <Route path="/blog/novena-nossa-senhora-rosario" element={<NovenaNossaSenhoraRosario />} />
             <Route path="/blog/novena-natal" element={<NovenaNatal />} />
+            <Route path="/blog/quaresma-sao-miguel-arcanjo" element={<QuaresmaSaoMiguelArcanjo />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
