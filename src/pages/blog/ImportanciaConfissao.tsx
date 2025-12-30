@@ -83,7 +83,10 @@ export default function ImportanciaConfissao() {
 
             <div className="prose prose-lg max-w-none">
               <p className="text-text leading-relaxed mb-6">
-                O Sacramento da Confissão, também chamado de Penitência ou Reconciliação, é um encontro pessoal com a misericórdia de Deus. Instituído por Cristo ressuscitado quando disse aos Apóstolos: "Recebei o Espírito Santo. Àqueles a quem perdoardes os pecados, serão perdoados" (Jo 20,22-23), este sacramento continua sendo fonte inesgotável de graça para milhões de católicos. Infelizmente, muitos negligenciam este presente divino, privando-se de graças extraordinárias.
+                Se existe um sacramento que revela de modo especial o coração misericordioso de Deus, é a Confissão. Imagine: o Criador do universo, o Deus três vezes Santo, inclina-se sobre a miséria humana não para condenar, mas para curar. Não para humilhar, mas para restaurar. O confessionário não é um tribunal de condenação – é um hospital de almas, onde o Médico divino aplica o bálsamo de Sua misericórdia sobre as feridas do pecado.
+              </p>
+              <p className="text-text leading-relaxed mb-6">
+                Jesus instituiu este sacramento na noite da Ressurreição, quando soprou sobre os Apóstolos e disse: "Recebei o Espírito Santo. Àqueles a quem perdoardes os pecados, serão perdoados" (Jo 20,22-23). Que presente extraordinário! O mesmo poder que ressuscitou Cristo dos mortos está disponível para nos ressuscitar da morte espiritual do pecado. Cada confissão sincera é uma pequena Páscoa, uma passagem da morte para a vida.
               </p>
 
               <QuizCTA
@@ -95,10 +98,13 @@ export default function ImportanciaConfissao() {
                 O Que Acontece na Confissão?
               </h2>
               <p className="text-text leading-relaxed mb-6">
-                Na confissão, não estamos simplesmente conversando com um padre – estamos diante do próprio Cristo, que age através do sacerdote. Quando o confessor pronuncia as palavras de absolvição, é Jesus quem perdoa nossos pecados. Este encontro restaura nossa amizade com Deus, devolvendo-nos a graça santificante se a perdemos por pecado mortal, ou aumentando-a se confessamos pecados veniais.
+                Quando você entra no confessionário, não está simplesmente conversando com um padre – está diante do próprio Cristo, que age através do sacerdote. O padre é apenas o instrumento; quem perdoa é Jesus. Quando o confessor pronuncia as palavras de absolvição – "Eu te absolvo dos teus pecados, em nome do Pai, do Filho e do Espírito Santo" – acontece um milagre maior do que a criação do mundo: uma alma morta pelo pecado volta à vida.
               </p>
               <p className="text-text leading-relaxed mb-6">
-                O sacramento opera uma verdadeira "ressurreição espiritual", como ensina o Catecismo. A pessoa que se confessa com sinceridade sai do confessionário como uma nova criatura, libertada do peso do pecado e fortalecida para resistir às tentações futuras. Esta transformação interior é um dos maiores milagres que acontecem diariamente na Igreja.
+                Este encontro restaura nossa amizade com Deus, devolvendo-nos a graça santificante se a perdemos por pecado mortal, ou aumentando-a se confessamos pecados veniais. O Catecismo chama a confissão de "segunda tábua de salvação após o naufrágio da graça perdida". Se o Batismo é a primeira tábua, a Confissão é a segunda chance que Deus nos dá – e Ele a oferece quantas vezes precisarmos.
+              </p>
+              <p className="text-text leading-relaxed mb-6">
+                Santa Faustina Kowalska, a apóstola da Divina Misericórdia, registrou em seu diário as palavras de Jesus: "Quando te aproximas da confissão, saiba que Eu mesmo te espero no confessionário; apenas Me oculto no sacerdote, mas sou Eu mesmo que atuo na tua alma." Que consolação saber que não enfrentamos nossos pecados sozinhos, mas nas mãos do Amor infinito!
               </p>
 
               <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
@@ -176,10 +182,23 @@ export default function ImportanciaConfissao() {
                 Com Que Frequência se Confessar?
               </h2>
               <p className="text-text leading-relaxed mb-6">
-                A Igreja obriga a confissão pelo menos uma vez por ano, especialmente antes da Páscoa, se houver pecado grave. Contudo, os mestres espirituais recomendam a confissão mensal para quem deseja progredir na vida espiritual. Os santos frequentemente se confessavam semanalmente, reconhecendo os imensos benefícios desta prática.
+                A Igreja obriga a confissão pelo menos uma vez por ano, especialmente antes da Páscoa, se houver pecado grave. Contudo, este é o mínimo absoluto – como quem diz que é obrigado a comer pelo menos uma vez por semana para não morrer de fome. Os mestres espirituais recomendam a confissão mensal para quem deseja progredir na vida espiritual, e muitos santos se confessavam semanalmente.
               </p>
               <p className="text-text leading-relaxed mb-6">
-                São Josemaría Escrivá ensinava: "A confissão frequente é uma das maiores ajudas para a vida interior." Não espere cometer um pecado grave para procurar o sacramento – confesse também os pecados veniais e imperfeições, buscando sempre maior pureza de coração.
+                São Josemaría Escrivá ensinava: "A confissão frequente é uma das maiores ajudas para a vida interior." São João Paulo II se confessava semanalmente, mesmo sendo Papa. Santa Teresa de Calcutá também. Eles entendiam que a confissão não é apenas para "limpar" pecados graves, mas para polir a alma, remover as imperfeições, crescer em santidade.
+              </p>
+              <p className="text-text leading-relaxed mb-6">
+                Não espere cometer um pecado grave para procurar o sacramento. Confesse também os pecados veniais, as imperfeições, as tendências desordenadas. Cada confissão é uma oportunidade de receber graças especiais para vencer aquele defeito que tanto o incomoda, aquela tentação que sempre volta, aquele vício que parece invencível. Com a graça de Deus, nada é impossível.
+              </p>
+
+              <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
+                Vencendo o Medo do Confessionário
+              </h2>
+              <p className="text-text leading-relaxed mb-6">
+                Muitos católicos evitam a confissão por vergonha ou medo. Mas pense: o padre já ouviu de tudo. Seu pecado não vai escandalizá-lo nem diminuir o respeito que ele tem por você. Pelo contrário, ele se alegrará com sua humildade e coragem. Além disso, o sigilo sacramental é absoluto – o padre preferiria morrer a revelar o que ouviu em confissão.
+              </p>
+              <p className="text-text leading-relaxed mb-6">
+                O demônio faz de tudo para nos afastar do confessionário. Antes da confissão, ele minimiza nossos pecados: "Isso não é nada, todo mundo faz." Depois, ele os maximiza: "Você é imperdoável, nem adianta confessar." Não dê ouvidos a essas mentiras. A misericórdia de Deus é maior que qualquer pecado. Como disse Jesus a Santa Faustina: "Mesmo que os pecados das almas fossem negros como a noite, quando o pecador se volta para a Minha misericórdia, ele Me presta a maior glória."
               </p>
 
               <div className="bg-accent/5 border border-accent/20 rounded-xl p-6 mt-10">
@@ -188,6 +207,15 @@ export default function ImportanciaConfissao() {
                 </p>
                 <p className="text-text-muted text-center mt-2">
                   — Catecismo da Igreja Católica, 982
+                </p>
+              </div>
+
+              <div className="bg-primary/5 border border-primary/20 rounded-xl p-6 mt-6">
+                <p className="text-text italic text-center">
+                  "A confissão é o sacramento da alegria. Não tenham medo de se confessar!"
+                </p>
+                <p className="text-text-muted text-center mt-2">
+                  — Papa Francisco
                 </p>
               </div>
             </div>

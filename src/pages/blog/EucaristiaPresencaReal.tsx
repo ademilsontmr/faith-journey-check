@@ -82,14 +82,23 @@ export default function EucaristiaPresencaReal() {
 
                         <div className="prose prose-lg max-w-none">
                             <p className="text-text leading-relaxed mb-6">
-                                A Eucaristia é o "tesouro da Igreja". Enquanto nos outros sacramentos recebemos a graça de Deus, na Eucaristia recebemos o próprio Autor da graça. É o mistério da fé por excelência, onde o pão e o vinho deixam de ser o que eram para se tornarem, em substância, o Corpo, o Sangue, a Alma e a Divindade de Nosso Senhor Jesus Cristo.
+                                A Eucaristia é o coração pulsante da Igreja Católica, o "sol" ao redor do qual gira toda a vida cristã. Enquanto nos outros sacramentos recebemos a graça de Deus, na Eucaristia recebemos o próprio Autor da graça – Jesus Cristo em Pessoa, com Seu Corpo, Sangue, Alma e Divindade. É o mistério da fé por excelência, tão sublime que os anjos se prostram em adoração diante do altar.
+                            </p>
+                            <p className="text-text leading-relaxed mb-6">
+                                Pense na grandeza deste dom: o mesmo Jesus que caminhava pelas estradas da Galileia, que curava os doentes, que acalmava as tempestades, que morreu na Cruz e ressuscitou glorioso – este mesmo Jesus se faz presente em cada hóstia consagrada, em cada tabernáculo do mundo. Ele, o Rei dos reis, escolheu permanecer conosco sob as humildes aparências do pão, acessível a todos, esperando pacientemente nossa visita, nosso amor, nossa adoração.
                             </p>
 
                             <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                                 O Que é a Transubstanciação?
                             </h2>
                             <p className="text-text leading-relaxed mb-6">
-                                Este termo teológico explica o que ocorre na consagração: a mudança de toda a substância do pão na substância do Corpo de Cristo e de toda a substância do vinho na substância do Seu Sangue. As "aparências" (gosto, cor, cheiro, forma) permanecem as mesmas, mas a realidade profunda mudou completamente. É um milagre que exige os olhos da fé.
+                                Este termo teológico, definido pelo Concílio de Trento, explica o milagre que ocorre em cada Missa: a mudança de toda a substância do pão na substância do Corpo de Cristo e de toda a substância do vinho na substância do Seu Sangue. As "aparências" ou "acidentes" (gosto, cor, cheiro, forma) permanecem as mesmas, mas a realidade profunda – a substância – mudou completamente.
+                            </p>
+                            <p className="text-text leading-relaxed mb-6">
+                                Não é uma mudança simbólica ou metafórica. É real, verdadeira, substancial. Quando o sacerdote pronuncia as palavras da consagração – "Isto é o meu Corpo... Este é o meu Sangue" – acontece o maior milagre do universo. O pão deixa de ser pão; o vinho deixa de ser vinho. Permanecem apenas as aparências, mas sob elas está o Cristo vivo e glorioso, o mesmo que está à direita do Pai no Céu.
+                            </p>
+                            <p className="text-text leading-relaxed mb-6">
+                                Este milagre exige os olhos da fé. Os sentidos nos dizem que é pão; a fé nos revela que é Deus. Por isso Jesus disse: "Bem-aventurados os que não viram e creram" (Jo 20,29). Crer na Presença Real é um ato de fé heroica que agrada imensamente ao Coração de Jesus.
                             </p>
 
                             <QuizCTA
@@ -101,25 +110,51 @@ export default function EucaristiaPresencaReal() {
                                 Instituição e Fundamento Bíblico
                             </h2>
                             <p className="text-text leading-relaxed mb-6">
-                                Jesus instituiu a Eucaristia na Última Ceia, na noite em que foi entregue. Ao dizer "Isto é o meu corpo" e "Isto é o meu sangue", Ele não usou uma metáfora. No capítulo 6 do Evangelho de São João, Jesus é enfático: "Quem come a minha carne e bebe o meu sangue tem a vida eterna". Muitos O abandonaram por causa desse ensinamento, mas Ele não voltou atrás.
+                                Jesus instituiu a Eucaristia na Última Ceia, na noite em que foi entregue. Ao dizer "Isto é o meu corpo" e "Isto é o meu sangue", Ele não usou uma metáfora ou figura de linguagem. Jesus, que é a Verdade, não poderia enganar Seus discípulos em algo tão importante.
+                            </p>
+                            <p className="text-text leading-relaxed mb-6">
+                                No capítulo 6 do Evangelho de São João, Jesus é absolutamente enfático: "Em verdade, em verdade vos digo: se não comerdes a carne do Filho do Homem e não beberdes o seu sangue, não tereis a vida em vós. Quem come a minha carne e bebe o meu sangue tem a vida eterna, e eu o ressuscitarei no último dia. Pois a minha carne é verdadeira comida e o meu sangue é verdadeira bebida" (Jo 6,53-55).
+                            </p>
+                            <p className="text-text leading-relaxed mb-6">
+                                Muitos discípulos O abandonaram por causa desse ensinamento, achando-o "duro demais". Mas Jesus não voltou atrás, não disse "vocês me entenderam mal, era só uma metáfora". Pelo contrário, perguntou aos Doze: "Quereis também vós ir embora?" (Jo 6,67). Pedro respondeu com fé: "Senhor, a quem iremos? Tu tens palavras de vida eterna" (Jo 6,68).
                             </p>
 
                             <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                                 Efeitos da Sagrada Comunhão
                             </h2>
-                            <ul className="list-disc list-inside text-text space-y-2 mb-6">
-                                <li><strong>União com Cristo:</strong> A comunhão nos incorpora intimamente a Jesus.</li>
-                                <li><strong>Aumento da Graça:</strong> Fortalece a vida espiritual recebida no Batismo.</li>
-                                <li><strong>Remissão de Pecados Veniais:</strong> O fogo do amor de Cristo purifica nossas faltas leves.</li>
-                                <li><strong>União com a Igreja:</strong> Faz de nós um só corpo em Cristo.</li>
-                                <li><strong>Antídoto contra o Pecado:</strong> Dá-nos força para vencer as tentações.</li>
+                            <p className="text-text leading-relaxed mb-6">
+                                Quando recebemos a Eucaristia dignamente, acontecem maravilhas em nossa alma:
+                            </p>
+                            <ul className="list-disc list-inside text-text space-y-3 mb-6">
+                                <li><strong>União íntima com Cristo:</strong> A comunhão nos incorpora a Jesus de modo real. "Quem come a minha carne e bebe o meu sangue permanece em mim e eu nele" (Jo 6,56). Tornamo-nos um com Ele.</li>
+                                <li><strong>Aumento da Graça Santificante:</strong> A Eucaristia fortalece e aumenta a vida divina em nós, recebida no Batismo.</li>
+                                <li><strong>Remissão dos Pecados Veniais:</strong> O fogo do amor de Cristo purifica nossas faltas leves e imperfeições cotidianas.</li>
+                                <li><strong>Preservação contra Pecados Mortais:</strong> A comunhão frequente nos dá força para resistir às tentações graves.</li>
+                                <li><strong>União com a Igreja:</strong> A Eucaristia faz de nós um só corpo em Cristo, fortalecendo os laços com todos os fiéis.</li>
+                                <li><strong>Penhor da Glória Futura:</strong> Cada comunhão é uma antecipação do banquete celestial, garantia da ressurreição.</li>
                             </ul>
 
                             <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                                 Como Receber Dignamente?
                             </h2>
                             <p className="text-text leading-relaxed mb-6">
-                                Para comungar, o católico deve estar em estado de graça (sem pecados graves não confessados), observar o jejum eucarístico de uma hora e ter consciência de Quem está recebendo. Receber a Eucaristia em pecado grave é cometer um sacrilégio, como ensina São Paulo.
+                                São Paulo adverte: "Quem come o pão ou bebe o cálice do Senhor indignamente será réu do corpo e do sangue do Senhor" (1Cor 11,27). Receber a Eucaristia em pecado mortal é cometer um sacrilégio – um pecado gravíssimo contra o próprio Cristo.
+                            </p>
+                            <p className="text-text leading-relaxed mb-6">
+                                Para comungar dignamente, o católico deve: estar em estado de graça (sem pecados graves não confessados), observar o jejum eucarístico de uma hora antes da comunhão, e ter consciência de Quem está recebendo. Não se trata de "merecimento" – ninguém merece receber Deus – mas de disposição interior, de preparar a morada para o Rei.
+                            </p>
+                            <p className="text-text leading-relaxed mb-6">
+                                Se você está em pecado grave, não comungue antes de se confessar. Isso não é vergonha; é reverência. É reconhecer a grandeza de Quem você vai receber. E depois da confissão, aproxime-se do altar com confiança e alegria, pois o Senhor o espera com amor infinito.
+                            </p>
+
+                            <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
+                                A Adoração Eucarística
+                            </h2>
+                            <p className="text-text leading-relaxed mb-6">
+                                Se Jesus está realmente presente na Eucaristia, faz todo sentido adorá-Lo também fora da Missa. A Adoração Eucarística é um tesouro da Igreja Católica: ficar em silêncio diante do Santíssimo Sacramento, contemplando Aquele que nos contempla com amor, deixando-se transformar por Sua presença.
+                            </p>
+                            <p className="text-text leading-relaxed mb-6">
+                                Santa Teresa de Calcutá atribuía toda a força de sua missão à hora diária de adoração. São João Paulo II passava horas diante do Santíssimo. O Beato Carlo Acutis, jovem do nosso tempo, dizia que a Eucaristia era sua "autoestrada para o Céu". Experimente: visite Jesus no sacrário, mesmo que por alguns minutos. Ele espera por você.
                             </p>
 
                             <div className="bg-accent/5 border border-accent/20 rounded-xl p-6 mt-10">
@@ -128,6 +163,15 @@ export default function EucaristiaPresencaReal() {
                                 </p>
                                 <p className="text-text-muted text-center mt-2">
                                     — São Pio X
+                                </p>
+                            </div>
+
+                            <div className="bg-primary/5 border border-primary/20 rounded-xl p-6 mt-6">
+                                <p className="text-text italic text-center">
+                                    "Se os anjos pudessem ter inveja, nos invejariam pela Sagrada Comunhão."
+                                </p>
+                                <p className="text-text-muted text-center mt-2">
+                                    — São Maximiliano Kolbe
                                 </p>
                             </div>
                         </div>

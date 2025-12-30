@@ -83,7 +83,10 @@ export default function MissaDominical() {
 
             <div className="prose prose-lg max-w-none">
               <p className="text-text leading-relaxed mb-6">
-                A Missa dominical é o coração pulsante da vida católica. Desde os primeiros tempos da Igreja, os cristãos se reuniam no "Dia do Senhor" para celebrar a Ressurreição de Cristo e participar do banquete eucarístico. Esta tradição apostólica permanece como mandamento da Igreja: todo católico deve participar da Missa aos domingos e festas de guarda, a menos que esteja legitimamente impedido. Mas a Missa é muito mais do que uma obrigação – é um privilégio inestimável e fonte inesgotável de graças.
+                A Missa dominical é o coração pulsante da vida católica, o encontro mais importante da semana, o momento em que o Céu toca a terra. Desde os primeiros tempos da Igreja, os cristãos se reuniam no "Dia do Senhor" – o domingo, dia da Ressurreição – para celebrar a Eucaristia, mesmo sob risco de perseguição e morte. Os mártires de Abitina, no século IV, declararam diante do tribunal romano: "Sem o domingo não podemos viver."
+              </p>
+              <p className="text-text leading-relaxed mb-6">
+                Esta tradição apostólica permanece como mandamento da Igreja: todo católico deve participar da Missa aos domingos e festas de guarda, a menos que esteja legitimamente impedido. Mas a Missa é infinitamente mais do que uma obrigação – é um privilégio inestimável, uma fonte inesgotável de graças, o maior tesouro que possuímos nesta terra. Se conhecêssemos verdadeiramente o valor de uma única Missa, morreríamos de alegria, como disse São Padre Pio.
               </p>
 
               <QuizCTA
@@ -95,10 +98,13 @@ export default function MissaDominical() {
                 O Que Acontece na Santa Missa?
               </h2>
               <p className="text-text leading-relaxed mb-6">
-                A Missa não é uma simples recordação da Última Ceia ou uma representação simbólica do Calvário. É a renovação incruenta do único Sacrifício de Cristo na Cruz. O mesmo Cristo que se ofereceu uma vez por todas no Calvário continua oferecendo-se ao Pai através das mãos do sacerdote. O sacrifício é o mesmo, a vítima é a mesma, apenas o modo de oferecimento é diferente: no Calvário foi cruento (com derramamento de sangue), na Missa é incruento (sem derramamento de sangue).
+                A Missa não é uma simples recordação da Última Ceia ou uma representação teatral do Calvário. É a renovação incruenta do único Sacrifício de Cristo na Cruz. O mesmo Cristo que se ofereceu uma vez por todas no Calvário continua oferecendo-se ao Pai através das mãos do sacerdote. O sacrifício é o mesmo, a vítima é a mesma, o sacerdote principal é o mesmo (Cristo); apenas o modo de oferecimento é diferente: no Calvário foi cruento (com derramamento de sangue), na Missa é incruento (sem derramamento de sangue).
               </p>
               <p className="text-text leading-relaxed mb-6">
-                Além disso, na Missa recebemos o próprio Cristo na Sagrada Comunhão. O pão e o vinho são verdadeiramente transformados no Corpo, Sangue, Alma e Divindade de Nosso Senhor Jesus Cristo. Esta transformação, chamada transubstanciação, é o maior milagre que acontece diariamente em todo o mundo.
+                Isso significa que, em cada Missa, estamos verdadeiramente presentes ao pé da Cruz. O véu do tempo se rasga, e participamos do mesmo sacrifício que salvou o mundo. As graças do Calvário jorram sobre nós com a mesma intensidade de dois mil anos atrás. Por isso os santos amavam tanto a Missa – eles sabiam que ali estava a fonte de toda santidade.
+              </p>
+              <p className="text-text leading-relaxed mb-6">
+                Além disso, na Missa recebemos o próprio Cristo na Sagrada Comunhão. O pão e o vinho são verdadeiramente transformados no Corpo, Sangue, Alma e Divindade de Nosso Senhor Jesus Cristo. Esta transformação, chamada transubstanciação, é o maior milagre que acontece diariamente em todo o mundo. Deus se faz alimento para nós!
               </p>
 
               <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
@@ -198,7 +204,23 @@ export default function MissaDominical() {
                 Missa Durante a Semana
               </h2>
               <p className="text-text leading-relaxed mb-6">
-                Embora a obrigação seja apenas dominical, participar da Missa durante a semana é altamente recomendado. Muitos santos participavam da Missa diariamente, reconhecendo nela a fonte de todas as graças. Mesmo que só possamos ir uma vez além do domingo, os frutos espirituais são imensos. Santa Teresa de Calcutá dizia: "Quando você olha para o Crucifixo, você entende quanto Jesus o amou então. Quando você olha para a Hóstia Sagrada, você entende quanto Jesus o ama agora."
+                Embora a obrigação seja apenas dominical, participar da Missa durante a semana é altamente recomendado pelos mestres espirituais. Muitos santos participavam da Missa diariamente, reconhecendo nela a fonte de todas as graças. Santa Teresa de Calcutá dizia: "Quando você olha para o Crucifixo, você entende quanto Jesus o amou então. Quando você olha para a Hóstia Sagrada, você entende quanto Jesus o ama agora."
+              </p>
+              <p className="text-text leading-relaxed mb-6">
+                Se você não pode ir à Missa todos os dias, tente ir pelo menos uma vez além do domingo. Os frutos espirituais são imensos. Cada Missa assistida com devoção é um tesouro depositado no Céu, graças que você receberá nesta vida e na eternidade. São Bernardo dizia que uma única Missa oferecida em vida vale mais do que mil Missas oferecidas após a morte.
+              </p>
+              <p className="text-text leading-relaxed mb-6">
+                E se não puder ir à Missa? Faça a "comunhão espiritual" – um ato de desejo ardente de receber Jesus, que também traz graças. Reze: "Jesus, creio que estais presente no Santíssimo Sacramento. Amo-Vos sobre todas as coisas e desejo receber-Vos em minha alma. Já que não posso receber-Vos sacramentalmente, vinde ao menos espiritualmente ao meu coração. Abraço-Vos como se já estivésseis comigo e uno-me inteiramente a Vós. Não permitais que jamais me separe de Vós."
+              </p>
+
+              <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
+                A Missa e a Vida Eterna
+              </h2>
+              <p className="text-text leading-relaxed mb-6">
+                A Missa é a antecipação do banquete celestial. Quando participamos da Eucaristia, já experimentamos um gostinho do Céu. O Apocalipse descreve a liturgia celeste com elementos que reconhecemos na Missa: o altar, o incenso, os cantos de louvor, o Cordeiro imolado. A Missa terrestre é um reflexo da Missa eterna que os anjos e santos celebram diante do trono de Deus.
+              </p>
+              <p className="text-text leading-relaxed mb-6">
+                Por isso, não vá à Missa apenas por obrigação. Vá por amor. Vá porque ali está Jesus. Vá porque ali você encontra a fonte da vida eterna. Vá porque, como disseram os mártires de Abitina, "sem o domingo não podemos viver". E quando estiver na Missa, esteja inteiramente presente – de corpo, mente e coração. O Rei dos reis está ali, esperando por você.
               </p>
 
               <div className="bg-accent/5 border border-accent/20 rounded-xl p-6 mt-10">
@@ -207,6 +229,15 @@ export default function MissaDominical() {
                 </p>
                 <p className="text-text-muted text-center mt-2">
                   — São Padre Pio de Pietrelcina
+                </p>
+              </div>
+
+              <div className="bg-primary/5 border border-primary/20 rounded-xl p-6 mt-6">
+                <p className="text-text italic text-center">
+                  "A Missa é a coisa mais sagrada que existe. Nela, Deus nos dá tudo o que tem: Seu próprio Filho."
+                </p>
+                <p className="text-text-muted text-center mt-2">
+                  — São João Maria Vianney
                 </p>
               </div>
             </div>
