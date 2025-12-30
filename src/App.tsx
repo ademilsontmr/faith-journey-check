@@ -81,6 +81,9 @@ import ConsagracaoMarianaGuia from "./pages/blog/ConsagracaoMarianaGuia";
 import ProsperidadeEspiritualVsMaterial from "./pages/blog/ProsperidadeEspiritualVsMaterial";
 import TrabalhoDignoVocacao from "./pages/blog/TrabalhoDignoVocacao";
 import GenerosidadeDesprendimento from "./pages/blog/GenerosidadeDesprendimento";
+import PorQueRezarParaSantos from "./pages/blog/PorQueRezarParaSantos";
+import DiferencaCatolicosEvangelicos from "./pages/blog/DiferencaCatolicosEvangelicos";
+import ComoSeConfessarGuia from "./pages/blog/ComoSeConfessarGuia";
 import OQueAconteceDepoisMorte from "./pages/blog/OQueAconteceDepoisMorte";
 import SegundaVindaCristoFimTempos from "./pages/blog/SegundaVindaCristoFimTempos";
 import JuizoParticularEFinal from "./pages/blog/JuizoParticularEFinal";
@@ -207,6 +210,9 @@ const App = () => (
             <Route path="/blog/prosperidade-espiritual-vs-material" element={<ProsperidadeEspiritualVsMaterial />} />
             <Route path="/blog/trabalho-digno-vocacao" element={<TrabalhoDignoVocacao />} />
             <Route path="/blog/generosidade-desprendimento" element={<GenerosidadeDesprendimento />} />
+            <Route path="/blog/por-que-catolicos-rezam-santos" element={<PorQueRezarParaSantos />} />
+            <Route path="/blog/diferenca-catolicos-evangelicos" element={<DiferencaCatolicosEvangelicos />} />
+            <Route path="/blog/como-se-confessar-guia-completo" element={<ComoSeConfessarGuia />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
