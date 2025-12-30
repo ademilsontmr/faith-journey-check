@@ -49,6 +49,9 @@ import PapelDosAvos from "./pages/blog/PapelDosAvos";
 import PoderDaConfissao from "./pages/blog/PoderDaConfissao";
 import EucaristiaDiaADia from "./pages/blog/EucaristiaDiaADia";
 import TercoSemDistracao from "./pages/blog/TercoSemDistracao";
+import OPecadoOriginalRedencao from "./pages/blog/OPecadoOriginalRedencao";
+import OInfernoCeuPurgatorio from "./pages/blog/OInfernoCeuPurgatorio";
+import AIgrejaCorpoDeCristo from "./pages/blog/AIgrejaCorpoDeCristo";
 import SignificadoSacramentais from "./pages/blog/SignificadoSacramentais";
 import LectioDivinaGuia from "./pages/blog/LectioDivinaGuia";
 import GracaSantificante from "./pages/blog/GracaSantificante";
@@ -195,6 +198,9 @@ const App = () => (
             <Route path="/blog/combate-espiritual-vencer-vicios-graca-deus" element={<CombateEspiritualVicios />} />
             <Route path="/blog/santa-faustina-divina-misericordia-apelo-jesus" element={<SantaFaustinaMisericordia />} />
             <Route path="/blog/sao-jose-modelo-pai-protetor" element={<SaoJoseModeloPai />} />
+            <Route path="/blog/pecado-original-redencao" element={<OPecadoOriginalRedencao />} />
+            <Route path="/blog/ceu-inferno-purgatorio" element={<OInfernoCeuPurgatorio />} />
+            <Route path="/blog/igreja-corpo-cristo" element={<AIgrejaCorpoDeCristo />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
