@@ -361,6 +361,25 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <!-- New Deep Articles (Batch 3) -->
+  <url>
+    <loc>https://bomcatolico.com.br/blog/pecado-original-redencao</loc>
+    <lastmod>2025-12-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://bomcatolico.com.br/blog/ceu-inferno-purgatorio</loc>
+    <lastmod>2025-12-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://bomcatolico.com.br/blog/igreja-corpo-cristo</loc>
+    <lastmod>2025-12-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
   <!-- Original Articles (id 1-21) -->
   <url>
     <loc>https://bomcatolico.com.br/blog/como-rezar-rosario</loc>
