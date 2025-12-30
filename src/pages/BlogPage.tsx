@@ -1168,7 +1168,6 @@ export default function BlogPage() {
             </div>
 
             {/* Pagination */}
-            {/* Pagination */}
             {totalPages > 1 && (
               <div className="mt-16 flex items-center justify-center gap-4">
                 <Button
@@ -1182,18 +1181,52 @@ export default function BlogPage() {
                 </Button>
 
                 <div className="flex items-center gap-2">
-                  {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
-                    <button
-                      key={page}
-                      onClick={() => setCurrentPage(page)}
-                      className={`w-10 h-10 rounded-full text-sm font-medium transition-all duration-300 ${currentPage === page
-                        ? "bg-accent text-button-text shadow-lg shadow-accent/20 scale-110"
-                        : "text-text-muted hover:bg-accent/10 hover:text-accent"
-                        }`}
-                    >
-                      {page}
-                    </button>
-                  ))}
+                  {(() => {
+                    const maxVisible = 5;
+                    let startPage = Math.max(1, currentPage - Math.floor(maxVisible / 2));
+                    let endPage = Math.min(totalPages, startPage + maxVisible - 1);
+                    
+                    if (endPage - startPage + 1 < maxVisible) {
+                      startPage = Math.max(1, endPage - maxVisible + 1);
+                    }
+                    
+                    const pages = [];
+                    
+                    if (startPage > 1) {
+                      pages.push(
+                        <button key={1} onClick={() => setCurrentPage(1)} className="w-10 h-10 rounded-full text-sm font-medium text-text-muted hover:bg-accent/10 hover:text-accent transition-all duration-300">1</button>
+                      );
+                      if (startPage > 2) {
+                        pages.push(<span key="dots1" className="text-text-muted">...</span>);
+                      }
+                    }
+                    
+                    for (let page = startPage; page <= endPage; page++) {
+                      pages.push(
+                        <button
+                          key={page}
+                          onClick={() => setCurrentPage(page)}
+                          className={`w-10 h-10 rounded-full text-sm font-medium transition-all duration-300 ${currentPage === page
+                            ? "bg-accent text-button-text shadow-lg shadow-accent/20 scale-110"
+                            : "text-text-muted hover:bg-accent/10 hover:text-accent"
+                          }`}
+                        >
+                          {page}
+                        </button>
+                      );
+                    }
+                    
+                    if (endPage < totalPages) {
+                      if (endPage < totalPages - 1) {
+                        pages.push(<span key="dots2" className="text-text-muted">...</span>);
+                      }
+                      pages.push(
+                        <button key={totalPages} onClick={() => setCurrentPage(totalPages)} className="w-10 h-10 rounded-full text-sm font-medium text-text-muted hover:bg-accent/10 hover:text-accent transition-all duration-300">{totalPages}</button>
+                      );
+                    }
+                    
+                    return pages;
+                  })()}
                 </div>
 
                 <Button
