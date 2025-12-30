@@ -12,7 +12,7 @@ export default function PecadoPreguica() {
       <Helmet>
         <title>Preguiça: A Acídia Espiritual | Bom Católico</title>
         <meta name="description" content="Entenda a Preguiça (Acídia), o pecado capital da negligência espiritual. Como reconhecê-la e combatê-la com a diligência e o fervor." />
-        <meta name="keywords" content="preguiça, acídia, pecado capital, negligência espiritual, fervor, diligência" />
+        <meta name="keywords" content="preguiça pecado capital, o que é acídia, preguiça espiritual, como vencer a preguiça, tibieza na fé, fervor espiritual, negligência na oração, sete pecados capitais" />
         <link rel="canonical" href="https://bomcatolico.com.br/blog/pecado-preguica" />
       </Helmet>
 

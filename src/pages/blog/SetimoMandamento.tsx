@@ -12,7 +12,7 @@ export default function SetimoMandamento() {
       <Helmet>
         <title>7º Mandamento: Não Roubarás | Bom Católico</title>
         <meta name="description" content="Entenda o Sétimo Mandamento da Lei de Deus. A justiça nas relações, respeito à propriedade alheia, restituição e a doutrina social da Igreja." />
-        <meta name="keywords" content="sétimo mandamento, não roubar, justiça, propriedade, restituição, doutrina social" />
+        <meta name="keywords" content="sétimo mandamento, não roubarás, roubar é pecado, justiça social católica, restituição, respeito à propriedade, doutrina social da igreja, mandamentos da lei de deus" />
         <link rel="canonical" href="https://bomcatolico.com.br/blog/setimo-mandamento-nao-roubaras" />
       </Helmet>
 

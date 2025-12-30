@@ -12,7 +12,7 @@ export default function DomEntendimento() {
       <Helmet>
         <title>Dom do Entendimento: Penetrar os Mistérios de Deus | Bom Católico</title>
         <meta name="description" content="Descubra o Dom do Entendimento, que nos permite penetrar profundamente nas verdades da fé. Como este dom ilumina nossa inteligência para compreender os mistérios divinos." />
-        <meta name="keywords" content="dom entendimento, espírito santo, dons espírito santo, compreensão fé, mistérios divinos, inteligência espiritual" />
+        <meta name="keywords" content="dom do entendimento, sete dons do espírito santo, compreender a fé católica, penetrar mistérios de deus, inteligência espiritual, iluminação divina" />
         <link rel="canonical" href="https://bomcatolico.com.br/blog/dom-entendimento-espirito-santo" />
       </Helmet>
 

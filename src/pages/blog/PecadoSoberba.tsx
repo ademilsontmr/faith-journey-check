@@ -12,7 +12,7 @@ export default function PecadoSoberba() {
       <Helmet>
         <title>Soberba: A Raiz de Todos os Pecados | Bom Católico</title>
         <meta name="description" content="Entenda a Soberba, o primeiro e mais grave dos pecados capitais. Como reconhecê-la, seus efeitos na alma e como combatê-la com a humildade." />
-        <meta name="keywords" content="soberba, pecado capital, orgulho, humildade, vaidade, arrogância, pecados capitais" />
+        <meta name="keywords" content="soberba pecado capital, o que é soberba, orgulho é pecado, vaidade, arrogância, como vencer a soberba, humildade cristã, sete pecados capitais" />
         <link rel="canonical" href="https://bomcatolico.com.br/blog/pecado-soberba" />
       </Helmet>
 

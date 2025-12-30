@@ -12,7 +12,7 @@ export default function DomSabedoria() {
       <Helmet>
         <title>Dom da Sabedoria: O Primeiro Dom do Espírito Santo | Bom Católico</title>
         <meta name="description" content="Descubra o Dom da Sabedoria, o mais excelente dos dons do Espírito Santo. Como ele nos faz ver tudo com os olhos de Deus e saborear as coisas divinas." />
-        <meta name="keywords" content="dom sabedoria, espírito santo, dons espírito santo, sabedoria divina, contemplação, vida espiritual" />
+        <meta name="keywords" content="dom da sabedoria, sete dons do espírito santo, o que é sabedoria divina, como ter sabedoria de deus, contemplação, vida espiritual católica" />
         <link rel="canonical" href="https://bomcatolico.com.br/blog/dom-sabedoria-espirito-santo" />
       </Helmet>
 

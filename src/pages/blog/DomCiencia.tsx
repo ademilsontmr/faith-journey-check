@@ -12,7 +12,7 @@ export default function DomCiencia() {
       <Helmet>
         <title>Dom da Ciência: Conhecer as Criaturas à Luz de Deus | Bom Católico</title>
         <meta name="description" content="Descubra o Dom da Ciência, que nos faz ver as criaturas como sinais de Deus. Como este dom nos ajuda a usar corretamente os bens criados." />
-        <meta name="keywords" content="dom ciência, espírito santo, dons espírito santo, criaturas, criação, desapego" />
+        <meta name="keywords" content="dom da ciência, sete dons do espírito santo, ver deus nas criaturas, conhecer a criação, desapego dos bens, encontrar deus em todas as coisas" />
         <link rel="canonical" href="https://bomcatolico.com.br/blog/dom-ciencia-espirito-santo" />
       </Helmet>
 

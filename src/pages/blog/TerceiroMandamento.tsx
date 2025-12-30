@@ -12,7 +12,7 @@ export default function TerceiroMandamento() {
       <Helmet>
         <title>3º Mandamento: Guardar Domingos e Festas de Guarda | Bom Católico</title>
         <meta name="description" content="Entenda o Terceiro Mandamento da Lei de Deus. A importância da Missa dominical, o descanso sagrado e como santificar o Dia do Senhor." />
-        <meta name="keywords" content="terceiro mandamento, domingo, missa dominical, dia do senhor, descanso, festas de guarda" />
+        <meta name="keywords" content="terceiro mandamento, guardar domingos e festas, missa dominical obrigatória, santificar o domingo, descanso dominical, dia do senhor, mandamentos da lei de deus" />
         <link rel="canonical" href="https://bomcatolico.com.br/blog/terceiro-mandamento-guardar-domingos" />
       </Helmet>
 

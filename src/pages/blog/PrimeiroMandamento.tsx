@@ -12,7 +12,7 @@ export default function PrimeiroMandamento() {
       <Helmet>
         <title>1º Mandamento: Amar a Deus Sobre Todas as Coisas | Bom Católico</title>
         <meta name="description" content="Entenda o Primeiro Mandamento da Lei de Deus. O que significa amar a Deus sobre todas as coisas e como viver esse mandamento no dia a dia." />
-        <meta name="keywords" content="primeiro mandamento, amar a deus, lei de deus, mandamentos, fé católica, idolatria" />
+        <meta name="keywords" content="primeiro mandamento, amar a deus sobre todas as coisas, não terás outros deuses, idolatria é pecado, superstição, ateísmo, mandamentos da lei de deus" />
         <link rel="canonical" href="https://bomcatolico.com.br/blog/primeiro-mandamento-amar-deus" />
       </Helmet>
 

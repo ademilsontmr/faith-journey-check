@@ -12,7 +12,7 @@ export default function DomConselho() {
       <Helmet>
         <title>Dom do Conselho: Discernir a Vontade de Deus | Bom Católico</title>
         <meta name="description" content="Descubra o Dom do Conselho, que nos guia nas decisões da vida. Como este dom nos ajuda a discernir a vontade de Deus em cada situação." />
-        <meta name="keywords" content="dom conselho, espírito santo, dons espírito santo, discernimento, vontade de deus, decisões" />
+        <meta name="keywords" content="dom do conselho, sete dons do espírito santo, discernimento da vontade de deus, como saber a vontade de deus, tomar decisões cristãs, orientação divina" />
         <link rel="canonical" href="https://bomcatolico.com.br/blog/dom-conselho-espirito-santo" />
       </Helmet>
 

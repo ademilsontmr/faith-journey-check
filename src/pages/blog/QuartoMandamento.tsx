@@ -12,7 +12,7 @@ export default function QuartoMandamento() {
       <Helmet>
         <title>4º Mandamento: Honrar Pai e Mãe | Bom Católico</title>
         <meta name="description" content="Entenda o Quarto Mandamento da Lei de Deus. O respeito aos pais, deveres dos filhos e dos pais, e a importância da família cristã." />
-        <meta name="keywords" content="quarto mandamento, honrar pai e mãe, família, respeito aos pais, deveres filhos, autoridade" />
+        <meta name="keywords" content="quarto mandamento, honrar pai e mãe, respeito aos pais, obediência aos pais, deveres dos filhos, família cristã católica, mandamentos da lei de deus" />
         <link rel="canonical" href="https://bomcatolico.com.br/blog/quarto-mandamento-honrar-pai-mae" />
       </Helmet>
 

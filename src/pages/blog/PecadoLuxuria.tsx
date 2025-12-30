@@ -12,7 +12,7 @@ export default function PecadoLuxuria() {
       <Helmet>
         <title>Luxúria: O Desejo Desordenado do Prazer | Bom Católico</title>
         <meta name="description" content="Entenda a Luxúria, o pecado capital contra a castidade. Como reconhecê-la, seus efeitos na alma e como combatê-la com a pureza." />
-        <meta name="keywords" content="luxúria, pecado capital, castidade, pureza, impureza, pecados sexuais" />
+        <meta name="keywords" content="luxúria pecado capital, o que é luxúria, impureza é pecado, como vencer a luxúria, castidade, pureza sexual, pornografia é pecado, sete pecados capitais" />
         <link rel="canonical" href="https://bomcatolico.com.br/blog/pecado-luxuria" />
       </Helmet>
 

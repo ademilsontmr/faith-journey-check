@@ -12,7 +12,7 @@ export default function DomFortaleza() {
       <Helmet>
         <title>Dom da Fortaleza: Coragem para Viver a Fé | Bom Católico</title>
         <meta name="description" content="Descubra o Dom da Fortaleza, que nos dá coragem para enfrentar dificuldades e perseverar na fé. Como este dom nos fortalece nas provações." />
-        <meta name="keywords" content="dom fortaleza, espírito santo, dons espírito santo, coragem cristã, perseverança, martírio" />
+        <meta name="keywords" content="dom da fortaleza, sete dons do espírito santo, coragem cristã, perseverança na fé, força para vencer tentações, martírio, resistir ao mal" />
         <link rel="canonical" href="https://bomcatolico.com.br/blog/dom-fortaleza-espirito-santo" />
       </Helmet>
 

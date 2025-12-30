@@ -12,7 +12,7 @@ export default function SegundoMandamento() {
       <Helmet>
         <title>2º Mandamento: Não Tomar o Nome de Deus em Vão | Bom Católico</title>
         <meta name="description" content="Entenda o Segundo Mandamento da Lei de Deus. O respeito ao nome santo de Deus, blasfêmia, juramentos e como honrar o nome do Senhor." />
-        <meta name="keywords" content="segundo mandamento, nome de deus, blasfêmia, juramento, lei de deus, mandamentos" />
+        <meta name="keywords" content="segundo mandamento, não tomar o nome de deus em vão, blasfêmia é pecado, juramento falso, respeito ao nome de deus, mandamentos da lei de deus" />
         <link rel="canonical" href="https://bomcatolico.com.br/blog/segundo-mandamento-nome-deus" />
       </Helmet>
 

@@ -12,7 +12,7 @@ export default function OitavoMandamento() {
       <Helmet>
         <title>8º Mandamento: Não Levantar Falso Testemunho | Bom Católico</title>
         <meta name="description" content="Entenda o Oitavo Mandamento da Lei de Deus. A verdade, mentira, fofoca, calúnia, difamação e como viver na verdade que liberta." />
-        <meta name="keywords" content="oitavo mandamento, falso testemunho, mentira, verdade, fofoca, calúnia, difamação" />
+        <meta name="keywords" content="oitavo mandamento, não levantar falso testemunho, mentir é pecado, fofoca é pecado, calúnia, difamação, falar a verdade, mandamentos da lei de deus" />
         <link rel="canonical" href="https://bomcatolico.com.br/blog/oitavo-mandamento-falso-testemunho" />
       </Helmet>
 

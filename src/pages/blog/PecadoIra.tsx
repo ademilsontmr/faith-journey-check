@@ -12,7 +12,7 @@ export default function PecadoIra() {
       <Helmet>
         <title>Ira: A Raiva Descontrolada | Bom Católico</title>
         <meta name="description" content="Entenda a Ira, o pecado capital da raiva descontrolada. Como reconhecê-la e combatê-la com a mansidão e a paciência cristã." />
-        <meta name="keywords" content="ira, pecado capital, raiva, mansidão, paciência, perdão, controle emocional" />
+        <meta name="keywords" content="ira pecado capital, o que é ira, raiva é pecado, como controlar a raiva, mansidão cristã, perdão, paciência, sete pecados capitais" />
         <link rel="canonical" href="https://bomcatolico.com.br/blog/pecado-ira" />
       </Helmet>
 

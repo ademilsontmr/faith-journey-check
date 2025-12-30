@@ -12,7 +12,7 @@ export default function DecimoMandamento() {
       <Helmet>
         <title>10º Mandamento: Não Cobiçar as Coisas Alheias | Bom Católico</title>
         <meta name="description" content="Entenda o Décimo Mandamento da Lei de Deus. A cobiça dos bens alheios, inveja, avareza e como cultivar o desprendimento e a pobreza de espírito." />
-        <meta name="keywords" content="décimo mandamento, cobiçar, inveja, avareza, desprendimento, pobreza espírito, bens materiais" />
+        <meta name="keywords" content="décimo mandamento, não cobiçar as coisas alheias, inveja é pecado, avareza, pobreza de espírito, desapego dos bens, mandamentos da lei de deus" />
         <link rel="canonical" href="https://bomcatolico.com.br/blog/decimo-mandamento-nao-cobicar-bens" />
       </Helmet>
 
