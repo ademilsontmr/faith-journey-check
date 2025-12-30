@@ -84,6 +84,13 @@ import GenerosidadeDesprendimento from "./pages/blog/GenerosidadeDesprendimento"
 import PorQueRezarParaSantos from "./pages/blog/PorQueRezarParaSantos";
 import DiferencaCatolicosEvangelicos from "./pages/blog/DiferencaCatolicosEvangelicos";
 import ComoSeConfessarGuia from "./pages/blog/ComoSeConfessarGuia";
+import SacramentoBatismo from "./pages/blog/SacramentoBatismo";
+import SacramentoCrisma from "./pages/blog/SacramentoCrisma";
+import SacramentoEucaristia from "./pages/blog/SacramentoEucaristia";
+import SacramentoConfissao from "./pages/blog/SacramentoConfissao";
+import SacramentoUncaoEnfermos from "./pages/blog/SacramentoUncaoEnfermos";
+import SacramentoOrdem from "./pages/blog/SacramentoOrdem";
+import SacramentoMatrimonio from "./pages/blog/SacramentoMatrimonio";
 import OQueAconteceDepoisMorte from "./pages/blog/OQueAconteceDepoisMorte";
 import SegundaVindaCristoFimTempos from "./pages/blog/SegundaVindaCristoFimTempos";
 import JuizoParticularEFinal from "./pages/blog/JuizoParticularEFinal";
@@ -213,6 +220,13 @@ const App = () => (
             <Route path="/blog/por-que-catolicos-rezam-santos" element={<PorQueRezarParaSantos />} />
             <Route path="/blog/diferenca-catolicos-evangelicos" element={<DiferencaCatolicosEvangelicos />} />
             <Route path="/blog/como-se-confessar-guia-completo" element={<ComoSeConfessarGuia />} />
+            <Route path="/blog/sacramento-batismo" element={<SacramentoBatismo />} />
+            <Route path="/blog/sacramento-crisma" element={<SacramentoCrisma />} />
+            <Route path="/blog/sacramento-eucaristia" element={<SacramentoEucaristia />} />
+            <Route path="/blog/sacramento-confissao" element={<SacramentoConfissao />} />
+            <Route path="/blog/sacramento-uncao-enfermos" element={<SacramentoUncaoEnfermos />} />
+            <Route path="/blog/sacramento-ordem" element={<SacramentoOrdem />} />
+            <Route path="/blog/sacramento-matrimonio" element={<SacramentoMatrimonio />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
