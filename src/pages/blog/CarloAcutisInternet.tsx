@@ -12,7 +12,7 @@ export default function CarloAcutisInternet() {
             <Helmet>
                 <title>Carlo Acutis: O Padroeiro da Internet e a Eucaristia | Bom Católico</title>
                 <meta name="description" content="Conheça a vida do Beato Carlo Acutis, o jovem que usou a tecnologia para evangelizar e nos ensinou que a Eucaristia é a nossa 'autoestrada para o Céu'." />
-                <meta name="keywords" content="carlo acutis, padroeiro da internet, eucaristia, santidade jovem, evangelização digital" />
+                <meta name="keywords" content="quem é carlo acutis, carlo acutis santo, padroeiro da internet, milagres eucarísticos, jovem santo, carlo acutis história, autoestrada para o céu, como usar internet para deus, evangelização digital, carlo acutis beatificação" />
                 <link rel="canonical" href="https://bomcatolico.com.br/blog/carlo-acutis-padroeiro-internet-eucaristia" />
             </Helmet>
 

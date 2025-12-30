@@ -12,7 +12,7 @@ export default function ImportanciaConfissao() {
       <Helmet>
         <title>A Importância da Confissão: Por Que Confessar Regularmente? | Bom Católico</title>
         <meta name="description" content="Descubra os benefícios espirituais da confissão frequente. Aprenda como se confessar bem e por que este sacramento transforma nossa vida cristã." />
-        <meta name="keywords" content="confissão católica, sacramento da penitência, reconciliação, como se confessar, exame de consciência" />
+        <meta name="keywords" content="por que confessar ao padre, importância da confissão, confissão frequente, benefícios da confissão, como fazer boa confissão, exame de consciência" />
         <link rel="canonical" href="https://bomcatolico.com.br/blog/importancia-confissao" />
       </Helmet>
 

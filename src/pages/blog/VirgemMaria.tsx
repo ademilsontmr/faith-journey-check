@@ -12,7 +12,7 @@ export default function VirgemMaria() {
             <Helmet>
                 <title>A Virgem Maria na Doutrina Católica: Dogmas e Devoção | Bom Católico</title>
                 <meta name="description" content="Conheça os quatro dogmas marianos e a importância de Nossa Senhora na história da salvação. Entenda por que os católicos honram a Mãe de Deus." />
-                <meta name="keywords" content="Virgem Maria, dogmas marianos, Nossa Senhora, devoção mariana, Mãe de Deus" />
+                <meta name="keywords" content="virgem maria na igreja católica, dogmas marianos, por que católicos veneram maria, nossa senhora mãe de deus, imaculada conceição, assunção de maria" />
                 <link rel="canonical" href="https://bomcatolico.com.br/blog/virgem-maria" />
             </Helmet>
 

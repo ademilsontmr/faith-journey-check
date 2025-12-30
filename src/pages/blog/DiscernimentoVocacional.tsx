@@ -12,7 +12,7 @@ export default function DiscernimentoVocacional() {
             <Helmet>
                 <title>Como Discernir a Vontade de Deus em Sua Vida | Bom Católico</title>
                 <meta name="description" content="Aprenda os princípios do discernimento espiritual para descobrir o plano de Deus para você. Dicas práticas para tomar decisões à luz da fé." />
-                <meta name="keywords" content="discernimento vocacional, vontade de Deus, vocação, vida espiritual, decisões, oração" />
+                <meta name="keywords" content="como saber minha vocação, discernimento vocacional católico, vontade de deus para minha vida, como discernir, vocação sacerdotal religiosa matrimônio" />
                 <link rel="canonical" href="https://bomcatolico.com.br/blog/discernimento-vocacional" />
             </Helmet>
 

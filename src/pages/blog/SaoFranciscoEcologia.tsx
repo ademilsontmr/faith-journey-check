@@ -12,7 +12,7 @@ export default function SaoFranciscoEcologia() {
             <Helmet>
                 <title>São Francisco de Assis e a Ecologia Integral | Bom Católico</title>
                 <meta name="description" content="Descubra como o exemplo de São Francisco de Assis nos inspira a cuidar da nossa casa comum através da ecologia integral e do respeito à criação." />
-                <meta name="keywords" content="são francisco de assis, ecologia integral, laudato si, cuidado com a criação, casa comum" />
+                <meta name="keywords" content="são francisco de assis, ecologia integral, laudato si, cântico das criaturas, cuidado com a criação, meio ambiente e fé, padroeiro da ecologia, espiritualidade franciscana, conversão ecológica, casa comum" />
                 <link rel="canonical" href="https://bomcatolico.com.br/blog/sao-francisco-ecologia-integral" />
             </Helmet>
 

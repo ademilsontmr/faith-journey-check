@@ -12,7 +12,7 @@ export default function AdventoQuaresmaPreparacao() {
             <Helmet>
                 <title>Advento e Quaresma: Como se Preparar para as Grandes Festas | Bom Católico</title>
                 <meta name="description" content="Saiba como viver intensamente os tempos de preparação da Igreja. Dicas práticas de oração, jejum e caridade para o Advento e a Quaresma em 2026." />
-                <meta name="keywords" content="advento, quaresma, preparação litúrgica, natal, páscoa, vida espiritual" />
+                <meta name="keywords" content="o que é advento, o que é quaresma, como se preparar para o natal, como viver a quaresma, coroa do advento, jejum na quaresma, oração jejum e esmola, preparação para páscoa, tempo de penitência, conversão quaresmal" />
                 <link rel="canonical" href="https://bomcatolico.com.br/blog/advento-quaresma-como-se-preparar" />
             </Helmet>
 

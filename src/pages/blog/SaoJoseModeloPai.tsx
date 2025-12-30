@@ -12,7 +12,7 @@ export default function SaoJoseModeloPai() {
             <Helmet>
                 <title>São José: O Modelo de Pai e Protetor | Bom Católico</title>
                 <meta name="description" content="Descubra por que São José é o modelo perfeito de paternidade, silêncio e proteção para as famílias católicas no mundo moderno." />
-                <meta name="keywords" content="são josé, paternidade cristã, sagrada família, protetor da igreja, castíssimo esposo" />
+                <meta name="keywords" content="são josé, paternidade cristã, sagrada família, são josé padroeiro, terror dos demônios, castíssimo esposo de maria, oração a são josé, dia de são josé, são josé trabalhador, devoção a são josé" />
                 <link rel="canonical" href="https://bomcatolico.com.br/blog/sao-jose-modelo-pai-protetor" />
             </Helmet>
 

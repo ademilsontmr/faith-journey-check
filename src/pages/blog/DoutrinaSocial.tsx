@@ -12,7 +12,7 @@ export default function DoutrinaSocial() {
             <Helmet>
                 <title>A Doutrina Social da Igreja: O Olhar Católico sobre a Sociedade | Bom Católico</title>
                 <meta name="description" content="Conheça os princípios fundamentais da Doutrina Social da Igreja. Entenda como a fé católica propõe soluções para os desafios sociais, políticos e econômicos." />
-                <meta name="keywords" content="doutrina social da igreja, bem comum, solidariedade, subsidiariedade, dignidade humana, ética católica" />
+                <meta name="keywords" content="o que é doutrina social da igreja, princípios da doutrina social, bem comum, solidariedade, subsidiariedade, dignidade humana, igreja e política" />
                 <link rel="canonical" href="https://bomcatolico.com.br/blog/doutrina-social" />
             </Helmet>
 

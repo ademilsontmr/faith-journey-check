@@ -12,7 +12,7 @@ export default function DirecaoEspiritualImportancia() {
             <Helmet>
                 <title>A Importância da Direção Espiritual | Bom Católico</title>
                 <meta name="description" content="Entenda por que ter um diretor espiritual é fundamental para o crescimento na fé e como encontrar a pessoa certa para guiar sua alma." />
-                <meta name="keywords" content="direção espiritual, diretor espiritual, crescimento na fé, santidade, discernimento, vida espiritual" />
+                <meta name="keywords" content="o que é direção espiritual, como encontrar um diretor espiritual, para que serve direção espiritual, padre diretor espiritual, discernimento vocacional, crescimento espiritual, acompanhamento espiritual católico, como escolher diretor espiritual, são felipe néri" />
                 <link rel="canonical" href="https://bomcatolico.com.br/blog/importancia-direcao-espiritual-caminhada-fe" />
             </Helmet>
 

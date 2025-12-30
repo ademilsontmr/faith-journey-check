@@ -12,7 +12,7 @@ export default function MudancasIgrejaPos2025() {
             <Helmet>
                 <title>O Que Muda na Igreja Após o Ano Santo de 2025? | Bom Católico</title>
                 <meta name="description" content="Análise das perspectivas e mudanças na Igreja Católica para 2026 após o encerramento do Jubileu. O que esperar do pontificado e das dioceses." />
-                <meta name="keywords" content="igreja católica 2026, pós-jubileu, papa francisco, mudanças na igreja, futuro do catolicismo" />
+                <meta name="keywords" content="igreja católica 2026, mudanças na igreja, papa francisco, sinodalidade, futuro da igreja católica, sínodo, laudato si, fratelli tutti, novos bispos brasil, evangelização digital católica" />
                 <link rel="canonical" href="https://bomcatolico.com.br/blog/mudancas-igreja-pos-2025" />
             </Helmet>
 

@@ -12,7 +12,7 @@ export default function SaoBentoProtecao() {
             <Helmet>
                 <title>A Vida de São Bento e a Proteção contra o Mal | Bom Católico</title>
                 <meta name="description" content="Descubra a história de São Bento, o pai do monaquismo ocidental, e o significado espiritual da sua medalha como instrumento de fé e proteção." />
-                <meta name="keywords" content="são bento, medalha de são bento, proteção espiritual, regra de são bento, combate espiritual" />
+                <meta name="keywords" content="são bento, medalha de são bento significado, oração de são bento, proteção contra o mal, regra de são bento, exorcismo, cruz de são bento" />
                 <link rel="canonical" href="https://bomcatolico.com.br/blog/vida-sao-bento-protecao-contra-mal" />
             </Helmet>
 

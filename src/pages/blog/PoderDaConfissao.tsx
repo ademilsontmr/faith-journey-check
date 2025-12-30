@@ -12,7 +12,7 @@ export default function PoderDaConfissao() {
             <Helmet>
                 <title>O Poder da Confissão: Como se Preparar para uma Confissão que Muda a Vida | Bom Católico</title>
                 <meta name="description" content="Descubra como realizar um bom exame de consciência e se preparar para o sacramento da Reconciliação, experimentando a misericórdia infinita de Deus." />
-                <meta name="keywords" content="confissão, sacramento da penitência, exame de consciência, misericórdia de Deus, perdão dos pecados" />
+                <meta name="keywords" content="poder da confissão, como fazer boa confissão, exame de consciência completo, misericórdia de deus, perdão dos pecados, preparação para confissão" />
                 <link rel="canonical" href="https://bomcatolico.com.br/blog/poder-da-confissao-guia-preparacao" />
             </Helmet>
 

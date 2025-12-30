@@ -12,7 +12,7 @@ export default function EucaristiaDiaADia() {
             <Helmet>
                 <title>A Eucaristia no Dia a Dia: Por que a Missa Diária é o Segredo dos Santos? | Bom Católico</title>
                 <meta name="description" content="Descubra os benefícios espirituais de participar da Santa Missa diariamente e como a Eucaristia pode transformar sua rotina e fortalecer sua fé em 2026." />
-                <meta name="keywords" content="missa diária, eucaristia, comunhão, vida espiritual, santidade, pão da vida" />
+                <meta name="keywords" content="missa diária benefícios, por que ir à missa todo dia, comunhão diária, eucaristia todos os dias, como participar da missa diária, santos e missa diária, padre pio missa, pão da vida, força espiritual, rotina de oração católica" />
                 <link rel="canonical" href="https://bomcatolico.com.br/blog/eucaristia-missa-diaria-segredo-santos" />
             </Helmet>
 

@@ -12,7 +12,7 @@ export default function HomeschoolingCatolico() {
             <Helmet>
                 <title>Educação Clássica e Católica: Por que o Homeschooling Cresce no Brasil? | Bom Católico</title>
                 <meta name="description" content="Entenda o movimento de educação domiciliar católica no Brasil, seus fundamentos na educação clássica e como ele busca a formação integral da pessoa humana." />
-                <meta name="keywords" content="homeschooling católico, educação clássica, educação domiciliar, formação cristã, trivium, quadrivium" />
+                <meta name="keywords" content="homeschooling católico no brasil, educação domiciliar cristã, educação clássica católica, como educar filhos em casa, formação cristã, trivium quadrivium" />
                 <link rel="canonical" href="https://bomcatolico.com.br/blog/homeschooling-catolico-educacao-classica" />
             </Helmet>
 

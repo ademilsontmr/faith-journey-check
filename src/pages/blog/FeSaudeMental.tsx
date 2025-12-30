@@ -12,7 +12,7 @@ export default function FeSaudeMental() {
             <Helmet>
                 <title>Fé e Saúde Mental: Como a Espiritualidade Católica Ajuda a Vencer a Ansiedade? | Bom Católico</title>
                 <meta name="description" content="Descubra como a fé católica e a vida de oração podem ser aliadas poderosas no combate à ansiedade e na busca pelo equilíbrio emocional." />
-                <meta name="keywords" content="fé e saúde mental, ansiedade, espiritualidade católica, equilíbrio emocional, oração e paz" />
+                <meta name="keywords" content="fé e ansiedade, oração para ansiedade, católico com ansiedade, espiritualidade e saúde mental, como ter paz interior, fé ajuda na depressão" />
                 <link rel="canonical" href="https://bomcatolico.com.br/blog/fe-e-saude-mental-ansiedade" />
             </Helmet>
 

@@ -12,7 +12,7 @@ export default function PapelDosLeigosNaIgreja() {
             <Helmet>
                 <title>O Protagonismo dos Leigos na Missão da Igreja | Bom Católico</title>
                 <meta name="description" content="Descubra a importância vital dos leigos na evangelização do mundo moderno. Entenda sua missão de santificar as realidades temporais e ser sal da terra." />
-                <meta name="keywords" content="leigos, missão da igreja, apostolado leigo, concílio vaticano II, evangelização, sal da terra" />
+                <meta name="keywords" content="papel dos leigos na igreja, o que é leigo católico, missão do leigo, apostolado leigo, concílio vaticano II leigos, lumen gentium, sal da terra luz do mundo, como servir na igreja, vocação do leigo, santificar o trabalho" />
                 <link rel="canonical" href="https://bomcatolico.com.br/blog/protagonismo-leigos-missao-igreja-hoje" />
             </Helmet>
 

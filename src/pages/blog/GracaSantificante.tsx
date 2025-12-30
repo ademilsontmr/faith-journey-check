@@ -12,7 +12,7 @@ export default function GracaSantificante() {
             <Helmet>
                 <title>O Que é a Graça Santificante? Como Viver em Estado de Amizade com Deus | Bom Católico</title>
                 <meta name="description" content="Entenda o conceito fundamental da graça santificante na teologia católica e como manter a alma em estado de amizade com Deus através dos sacramentos e da oração." />
-                <meta name="keywords" content="graça santificante, amizade com deus, estado de graça, teologia católica, vida espiritual" />
+                <meta name="keywords" content="o que é graça santificante, estado de graça, como viver em graça, amizade com deus, pecado mortal perde graça, teologia católica" />
                 <link rel="canonical" href="https://bomcatolico.com.br/blog/o-que-e-graca-santificante-amizade-deus" />
             </Helmet>
 

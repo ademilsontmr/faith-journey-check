@@ -12,7 +12,7 @@ export default function PeregrinacaoLocal() {
             <Helmet>
                 <title>Como Organizar uma Peregrinação Local em Sua Diocese | Bom Católico</title>
                 <meta name="description" content="Guia prático e espiritual para organizar peregrinações a santuários locais e igrejas jubilares, fortalecendo a fé comunitária em 2026." />
-                <meta name="keywords" content="peregrinação, santuários locais, turismo religioso, fé comunitária, jubileu 2025" />
+                <meta name="keywords" content="como organizar peregrinação, peregrinação católica, santuários do brasil, turismo religioso católico, romaria, como fazer peregrinação, igrejas jubilares, peregrinação a pé, roteiro de peregrinação, santuários marianos brasil" />
                 <link rel="canonical" href="https://bomcatolico.com.br/blog/peregrinacao-local" />
             </Helmet>
 

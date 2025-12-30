@@ -12,7 +12,7 @@ export default function AdoracaoEucaristica() {
             <Helmet>
                 <title>A Importância da Adoração Eucarística | Bom Católico</title>
                 <meta name="description" content="Descubra os benefícios espirituais de passar um tempo diante do Santíssimo Sacramento. Um guia sobre como fazer uma boa hora santa." />
-                <meta name="keywords" content="adoração eucarística, santíssimo sacramento, hora santa, presença real, espiritualidade católica" />
+                <meta name="keywords" content="o que é adoração eucarística, como fazer hora santa, santíssimo sacramento, presença real de jesus, adoração ao santíssimo, capela de adoração" />
                 <link rel="canonical" href="https://bomcatolico.com.br/blog/adoracao-eucaristica" />
             </Helmet>
 

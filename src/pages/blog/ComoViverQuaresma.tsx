@@ -12,7 +12,7 @@ export default function ComoViverQuaresma() {
             <Helmet>
                 <title>Como Viver a Quaresma com Frutos Espirituais | Bom Católico</title>
                 <meta name="description" content="Prepare-se para a Páscoa com este guia prático sobre como viver bem a Quaresma através da oração, jejum e caridade." />
-                <meta name="keywords" content="quaresma, jejum, esmola, oração, conversão, páscoa, espiritualidade católica" />
+                <meta name="keywords" content="como viver a quaresma, o que fazer na quaresma, oração jejum e esmola, quaresma católica, penitência quaresmal, via sacra, quarta-feira de cinzas, preparação para páscoa, conversão quaresma, jejum na quaresma o que comer" />
                 <link rel="canonical" href="https://bomcatolico.com.br/blog/como-viver-quaresma" />
             </Helmet>
 

@@ -12,7 +12,7 @@ export default function SeteSacramentos() {
       <Helmet>
         <title>Os 7 Sacramentos da Igreja Católica Explicados | Bom Católico</title>
         <meta name="description" content="Entenda a importância e o significado de cada um dos sete sacramentos instituídos por Cristo: Batismo, Eucaristia, Confirmação, Confissão, Unção, Ordem e Matrimônio." />
-        <meta name="keywords" content="sacramentos católicos, sete sacramentos, batismo, eucaristia, confirmação, confissão, matrimônio católico" />
+        <meta name="keywords" content="quais são os 7 sacramentos, sete sacramentos da igreja católica, batismo eucaristia crisma confissão, sacramentos explicados, o que são sacramentos" />
         <link rel="canonical" href="https://bomcatolico.com.br/blog/sete-sacramentos" />
       </Helmet>
 

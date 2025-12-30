@@ -12,7 +12,7 @@ export default function JejumAbstinencia() {
       <Helmet>
         <title>Jejum e Abstinência: Práticas Que Fortalecem a Alma | Bom Católico</title>
         <meta name="description" content="Aprenda sobre as práticas de jejum e abstinência na Igreja Católica. Descubra quando e como jejuar corretamente para crescer na vida espiritual." />
-        <meta name="keywords" content="jejum católico, abstinência de carne, quaresma, sexta-feira, penitência, mortificação" />
+        <meta name="keywords" content="jejum católico como fazer, abstinência de carne sexta feira, quando jejuar, quaresma jejum, dias de jejum e abstinência, penitência católica" />
         <link rel="canonical" href="https://bomcatolico.com.br/blog/jejum-abstinencia" />
       </Helmet>
 

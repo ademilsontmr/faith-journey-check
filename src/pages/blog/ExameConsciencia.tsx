@@ -12,7 +12,7 @@ export default function ExameConsciencia() {
             <Helmet>
                 <title>Como Fazer um Bom Exame de Consciência para a Confissão | Bom Católico</title>
                 <meta name="description" content="Guia prático para realizar um exame de consciência profundo e sincero. Prepare-se para o sacramento da Reconciliação com este roteiro espiritual." />
-                <meta name="keywords" content="exame de consciência, confissão, sacramento da penitência, pecados, vida cristã" />
+                <meta name="keywords" content="exame de consciência completo, como fazer exame de consciência, lista de pecados para confissão, preparação para confissão, pecados mortais e veniais" />
                 <link rel="canonical" href="https://bomcatolico.com.br/blog/exame-consciencia" />
             </Helmet>
 

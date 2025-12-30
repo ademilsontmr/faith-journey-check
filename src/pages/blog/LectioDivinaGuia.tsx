@@ -12,7 +12,7 @@ export default function LectioDivinaGuia() {
             <Helmet>
                 <title>Lectio Divina: Guia Passo a Passo para Ler a Bíblia com o Coração | Bom Católico</title>
                 <meta name="description" content="Aprenda a praticar a Lectio Divina, o método milenar da Igreja para ler, meditar e rezar com a Palavra de Deus todos os dias." />
-                <meta name="keywords" content="lectio divina, leitura orante da bíblia, meditação bíblica, palavra de deus, oração católica" />
+                <meta name="keywords" content="o que é lectio divina, como fazer lectio divina, leitura orante da bíblia, meditação bíblica católica, como rezar com a bíblia, são jerônimo bíblia, passos da lectio divina, oração com as escrituras, evangelho do dia meditação, contemplação católica" />
                 <link rel="canonical" href="https://bomcatolico.com.br/blog/lectio-divina-guia-passo-a-passo" />
             </Helmet>
 

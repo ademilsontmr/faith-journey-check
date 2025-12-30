@@ -12,7 +12,7 @@ export default function SantaTeresinhaPequenaVia() {
             <Helmet>
                 <title>Santa Teresinha e a Pequena Via da Santidade | Bom Católico</title>
                 <meta name="description" content="Conheça a espiritualidade de Santa Teresinha do Menino Jesus. Descubra como a Pequena Via pode transformar seus atos cotidianos em grandes gestos de amor a Deus." />
-                <meta name="keywords" content="santa teresinha, pequena via, santidade, infância espiritual, carmelo, doutora da igreja" />
+                <meta name="keywords" content="santa teresinha do menino jesus, pequena via de santidade, infância espiritual, como ser santo, carmelo, doutora da igreja, florzinha de jesus" />
                 <link rel="canonical" href="https://bomcatolico.com.br/blog/santa-teresinha-pequena-via-santidade" />
             </Helmet>
 

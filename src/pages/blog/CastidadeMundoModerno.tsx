@@ -12,7 +12,7 @@ export default function CastidadeMundoModerno() {
             <Helmet>
                 <title>Viver a Castidade no Mundo Moderno: Desafios e Graças | Bom Católico</title>
                 <meta name="description" content="Entenda o verdadeiro significado da castidade cristã e como vivê-la no mundo atual. Um convite à liberdade e ao amor autêntico segundo o Evangelho." />
-                <meta name="keywords" content="castidade, pureza, moral católica, amor autêntico, vida cristã, mundo moderno" />
+                <meta name="keywords" content="como viver a castidade, castidade no mundo moderno, pureza sexual católica, por que ser casto, castidade antes do casamento, amor verdadeiro" />
                 <link rel="canonical" href="https://bomcatolico.com.br/blog/castidade-mundo-moderno" />
             </Helmet>
 

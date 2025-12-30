@@ -12,7 +12,7 @@ export default function EvangelizarAmigos() {
             <Helmet>
                 <title>Como Falar de Deus para Amigos Não Crentes sem Ser Chato | Bom Católico</title>
                 <meta name="description" content="Aprenda estratégias de evangelização baseadas na amizade, no testemunho e no respeito, levando a luz do Evangelho para aqueles que ainda não conhecem a Deus." />
-                <meta name="keywords" content="evangelização, falar de deus, testemunho cristão, amizade e fé, como evangelizar" />
+                <meta name="keywords" content="como evangelizar amigos, falar de deus sem ser chato, testemunho cristão, como converter alguém, evangelização pelo exemplo, como falar de fé, amigo ateu como ajudar, nova evangelização, missão do leigo, como ser testemunha de cristo" />
                 <link rel="canonical" href="https://bomcatolico.com.br/blog/como-falar-de-deus-amigos-nao-crentes" />
             </Helmet>
 

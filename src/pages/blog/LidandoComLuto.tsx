@@ -12,7 +12,7 @@ export default function LidandoComLuto() {
             <Helmet>
                 <title>Como Lidar com o Luto: O Consolo da Fé na Vida Eterna | Bom Católico</title>
                 <meta name="description" content="Encontre esperança e sentido cristão em meio à dor da perda. Como a fé católica nos ajuda a atravessar o luto com a certeza da ressurreição." />
-                <meta name="keywords" content="luto, perda, vida eterna, consolo cristão, ressurreição, esperança católica" />
+                <meta name="keywords" content="como superar o luto, luto e fé católica, perda de ente querido, consolo cristão na morte, esperança na ressurreição, vida eterna católica" />
                 <link rel="canonical" href="https://bomcatolico.com.br/blog/como-lidar-com-luto-fe-crista" />
             </Helmet>
 

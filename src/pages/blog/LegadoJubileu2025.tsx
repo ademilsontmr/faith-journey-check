@@ -12,7 +12,7 @@ export default function LegadoJubileu2025() {
             <Helmet>
                 <title>O Legado do Jubileu 2025: Como Continuar Sendo um Peregrino da Esperança? | Bom Católico</title>
                 <meta name="description" content="O Ano Santo de 2025 chegou ao fim, mas sua missão continua. Descubra como manter viva a chama da esperança em sua vida cristã em 2026." />
-                <meta name="keywords" content="jubileu 2025, peregrinos da esperança, ano santo, papa francisco, esperança cristã" />
+                <meta name="keywords" content="jubileu 2025 o que foi, peregrinos da esperança, ano santo 2025, porta santa, papa francisco jubileu, indulgência jubileu, como viver após o jubileu, frutos do ano santo, esperança cristã, igreja católica 2026" />
                 <link rel="canonical" href="https://bomcatolico.com.br/blog/legado-jubileu-2025" />
             </Helmet>
 

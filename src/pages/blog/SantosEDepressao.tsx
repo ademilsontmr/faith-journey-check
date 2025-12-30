@@ -12,7 +12,7 @@ export default function SantosEDepressao() {
             <Helmet>
                 <title>Santos que Enfrentaram a Depressão e a Noite Escura da Alma | Bom Católico</title>
                 <meta name="description" content="Conheça a história de santos que lutaram contra a melancolia, a depressão e a aridez espiritual, e como eles encontraram a luz em meio às trevas." />
-                <meta name="keywords" content="santos e depressão, noite escura da alma, saúde mental católica, melancolia, fé e dor" />
+                <meta name="keywords" content="santos com depressão, noite escura da alma, católico com depressão, santa teresa e aridez, são joão da cruz, fé e sofrimento mental" />
                 <link rel="canonical" href="https://bomcatolico.com.br/blog/santos-depressao-noite-escura" />
             </Helmet>
 

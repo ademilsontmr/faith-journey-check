@@ -12,7 +12,7 @@ export default function MissaDominical() {
       <Helmet>
         <title>A Missa Dominical: Centro da Vida Cristã | Bom Católico</title>
         <meta name="description" content="Descubra por que a participação na Missa aos domingos é essencial para todo católico. Aprenda como aproveitar melhor a Santa Missa e crescer na fé." />
-        <meta name="keywords" content="missa dominical, santa missa, eucaristia, preceito dominical, liturgia católica" />
+        <meta name="keywords" content="missa dominical é obrigatória, por que ir à missa, santa missa católica, preceito dominical, não ir à missa é pecado, eucaristia domingo" />
         <link rel="canonical" href="https://bomcatolico.com.br/blog/missa-dominical" />
       </Helmet>
 

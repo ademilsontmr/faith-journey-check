@@ -12,7 +12,7 @@ export default function JuizoParticularEFinal() {
             <Helmet>
                 <title>O Juízo Particular e o Juízo Final: Qual a Diferença? | Bom Católico</title>
                 <meta name="description" content="Entenda os dois momentos de julgamento da alma segundo a doutrina católica. Saiba o que acontece no instante da morte e o que esperar do julgamento universal no fim dos tempos." />
-                <meta name="keywords" content="juízo particular, juízo final, julgamento de deus, escatologia, vida eterna, ressurreição" />
+                <meta name="keywords" content="o que é juízo particular, juízo final católico, diferença juízo particular e final, o que acontece depois da morte, segunda vinda de cristo, ressurreição dos mortos, escatologia católica, julgamento de deus, fim dos tempos, vida eterna" />
                 <link rel="canonical" href="https://bomcatolico.com.br/blog/juizo-particular-e-juizo-final-diferencas" />
             </Helmet>
 

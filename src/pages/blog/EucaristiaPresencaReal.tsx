@@ -12,7 +12,7 @@ export default function EucaristiaPresencaReal() {
             <Helmet>
                 <title>A Eucaristia: Presença Real de Jesus no Pão e no Vinho | Bom Católico</title>
                 <meta name="description" content="Entenda o dogma da Transubstanciação e a importância da Eucaristia como fonte e ápice da vida cristã. Descubra por que Jesus está realmente presente na Hóstia Santa." />
-                <meta name="keywords" content="Eucaristia, presença real, transubstanciação, corpo de Cristo, santíssimo sacramento, comunhão" />
+                <meta name="keywords" content="presença real de jesus na eucaristia, o que é transubstanciação, corpo e sangue de cristo, hóstia é jesus, santíssimo sacramento, comunhão católica" />
                 <link rel="canonical" href="https://bomcatolico.com.br/blog/eucaristia-presenca-real" />
             </Helmet>
 

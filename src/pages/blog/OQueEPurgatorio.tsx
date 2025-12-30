@@ -12,7 +12,7 @@ export default function OQueEPurgatorio() {
             <Helmet>
                 <title>O Que é o Purgatório? Verdades de Fé | Bom Católico</title>
                 <meta name="description" content="Entenda o dogma do Purgatório, por que ele existe e qual a importância de rezarmos pelas almas que lá estão." />
-                <meta name="keywords" content="purgatório, dogma católico, almas do purgatório, oração pelos mortos, escatologia" />
+                <meta name="keywords" content="o que é purgatório, existe purgatório na bíblia, almas do purgatório, oração pelos mortos, como ajudar almas do purgatório, escatologia católica" />
                 <link rel="canonical" href="https://bomcatolico.com.br/blog/o-que-e-purgatorio" />
             </Helmet>
 

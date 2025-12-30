@@ -12,7 +12,7 @@ export default function DonsEspiritoSanto() {
             <Helmet>
                 <title>Os Dons do Espírito Santo: Como Identificá-los e Usá-los | Bom Católico</title>
                 <meta name="description" content="Conheça os sete dons do Espírito Santo e saiba como eles atuam em sua vida para guiá-lo no caminho da santidade e do serviço ao próximo." />
-                <meta name="keywords" content="dons do espírito santo, sabedoria, entendimento, conselho, fortaleza, ciência, piedade, temor de deus" />
+                <meta name="keywords" content="quais são os sete dons do espírito santo, dom da sabedoria, dom do entendimento, dom do conselho, dom da fortaleza, dom da ciência, dom da piedade, dom do temor de deus" />
                 <link rel="canonical" href="https://bomcatolico.com.br/blog/sete-dons-espirito-santo-como-usar" />
             </Helmet>
 

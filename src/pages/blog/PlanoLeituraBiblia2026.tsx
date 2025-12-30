@@ -12,7 +12,7 @@ export default function PlanoLeituraBiblia2026() {
             <Helmet>
                 <title>Como Ler a Bíblia em um Ano: Um Plano Prático para 2026 | Bom Católico</title>
                 <meta name="description" content="Aprenda como organizar sua leitura bíblica para ler toda a Sagrada Escritura em um ano, com dicas de métodos, aplicativos e roteiros católicos." />
-                <meta name="keywords" content="ler a bíblia em um ano, plano de leitura bíblica, bíblia católica, estudo bíblico, palavra de deus" />
+                <meta name="keywords" content="como ler a bíblia em um ano, plano de leitura bíblica, bíblia católica, ler a bíblia toda, quantos capítulos por dia, bíblia de jerusalém, bíblia cnbb, são jerônimo bíblia, estudo bíblico católico, leitura diária da bíblia" />
                 <link rel="canonical" href="https://bomcatolico.com.br/blog/como-ler-biblia-em-um-ano-plano-2026" />
             </Helmet>
 

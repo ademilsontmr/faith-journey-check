@@ -12,7 +12,7 @@ export default function SignificadoSacramentais() {
             <Helmet>
                 <title>O Significado dos Sacramentais: Água Benta, Escapulário e Medalhas | Bom Católico</title>
                 <meta name="description" content="Entenda o que são os sacramentais, como eles diferem dos sacramentos e como usá-los corretamente para atrair a proteção e a graça de Deus em sua vida." />
-                <meta name="keywords" content="sacramentais, água benta, escapulário, medalha milagrosa, proteção espiritual, fé católica" />
+                <meta name="keywords" content="o que são sacramentais, água benta para que serve, escapulário significado, medalha de são bento, medalha milagrosa, diferença sacramento e sacramental, como usar água benta, objetos abençoados, proteção espiritual católica, vela benta" />
                 <link rel="canonical" href="https://bomcatolico.com.br/blog/significado-sacramentais-catolicos" />
             </Helmet>
 

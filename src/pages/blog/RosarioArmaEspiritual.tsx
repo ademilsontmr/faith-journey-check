@@ -12,7 +12,7 @@ export default function RosarioArmaEspiritual() {
             <Helmet>
                 <title>O Rosário: Uma Arma Espiritual para os Desafios de 2026 | Bom Católico</title>
                 <meta name="description" content="Descubra o poder da oração do Santo Rosário. Aprenda como meditar os mistérios e por que esta oração é tão recomendada pelos santos e papas para os tempos atuais." />
-                <meta name="keywords" content="rosário, santo rosário, oração, arma espiritual, mistérios do rosário, meditação cristã" />
+                <meta name="keywords" content="poder do rosário, rosário arma espiritual, por que rezar o terço, mistérios do rosário, nossa senhora do rosário, oração poderosa" />
                 <link rel="canonical" href="https://bomcatolico.com.br/blog/rosario-arma-espiritual-desafios-2026" />
             </Helmet>
 

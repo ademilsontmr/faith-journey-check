@@ -12,7 +12,7 @@ export default function VirtudesCardeais() {
             <Helmet>
                 <title>As Virtudes Cardeais: Justiça, Prudência, Fortaleza e Temperança no Cotidiano | Bom Católico</title>
                 <meta name="description" content="Aprenda como praticar as quatro virtudes cardeais para construir um caráter sólido e viver uma vida cristã equilibrada e santa em 2026." />
-                <meta name="keywords" content="virtudes cardeais, justiça, prudência, fortaleza, temperança, ética cristã, santidade" />
+                <meta name="keywords" content="quais são as virtudes cardeais, prudência justiça fortaleza temperança, como praticar virtudes, ética cristã católica, virtudes morais" />
                 <link rel="canonical" href="https://bomcatolico.com.br/blog/virtudes-cardeais-guia-pratico-cotidiano" />
             </Helmet>
 

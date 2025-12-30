@@ -12,7 +12,7 @@ export default function GuiaIndulgenciaPlenaria() {
             <Helmet>
                 <title>Indulgência Plenária: Guia Completo para os Últimos Dias do Jubileu | Bom Católico</title>
                 <meta name="description" content="Ainda dá tempo! Saiba como obter a indulgência plenária no encerramento do Jubileu 2025 e entenda o valor espiritual desta graça." />
-                <meta name="keywords" content="indulgência plenária, jubileu 2025, perdão dos pecados, ano santo, graça divina" />
+                <meta name="keywords" content="o que é indulgência plenária, como ganhar indulgência, jubileu 2025, condições para indulgência, indulgência para almas do purgatório, porta santa, ano santo católico, perdão das penas, indulgência parcial e plenária, obras de misericórdia jubileu" />
                 <link rel="canonical" href="https://bomcatolico.com.br/blog/guia-indulgencia-plenaria" />
             </Helmet>
 

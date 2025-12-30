@@ -12,7 +12,7 @@ export default function PorQueHonrarMaria() {
             <Helmet>
                 <title>Por que os Católicos Honram Maria? Entenda o Dogma e a Devoção | Bom Católico</title>
                 <meta name="description" content="Descubra as bases bíblicas e teológicas da honra a Maria. Entenda a diferença entre adoração e veneração e por que a Virgem Maria é fundamental na vida cristã." />
-                <meta name="keywords" content="maria, virgem maria, dogmas marianos, veneração, catolicismo, mãe de deus" />
+                <meta name="keywords" content="por que católicos honram maria, católicos adoram maria, diferença adoração veneração, dogmas marianos, mãe de deus, devoção mariana" />
                 <link rel="canonical" href="https://bomcatolico.com.br/blog/por-que-catolicos-honram-maria-dogma-devocao" />
             </Helmet>
 

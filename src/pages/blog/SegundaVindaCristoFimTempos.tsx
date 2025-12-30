@@ -12,7 +12,7 @@ export default function SegundaVindaCristoFimTempos() {
             <Helmet>
                 <title>A Segunda Vinda de Cristo: Como a Igreja Entende o Fim dos Tempos | Bom Católico</title>
                 <meta name="description" content="Entenda a doutrina católica sobre a Parusia. Saiba o que esperar da segunda vinda de Jesus, o fim do mundo e a restauração de todas as coisas em Deus." />
-                <meta name="keywords" content="segunda vinda de cristo, parusia, fim dos tempos, apocalipse, juízo final, escatologia" />
+                <meta name="keywords" content="segunda vinda de cristo, o que é parusia, fim dos tempos católico, apocalipse católico, juízo final, quando jesus vai voltar, sinais do fim dos tempos, anticristo, escatologia católica, novos céus e nova terra" />
                 <link rel="canonical" href="https://bomcatolico.com.br/blog/segunda-vinda-cristo-fim-dos-tempos-parusia" />
             </Helmet>
 

@@ -12,7 +12,7 @@ export default function TercoSemDistracao() {
             <Helmet>
                 <title>Como Rezar o Terço sem Distrações: Dicas de Concentração | Bom Católico</title>
                 <meta name="description" content="Aprenda técnicas práticas e espirituais para manter o foco e a profundidade ao rezar o Santo Terço, transformando a repetição em meditação real." />
-                <meta name="keywords" content="rezar o terço, distrações na oração, meditação mariana, rosário, foco na oração" />
+                <meta name="keywords" content="como rezar o terço sem distrações, dicas para rezar o rosário, meditação do terço, como se concentrar na oração, mistérios do rosário, terço meditado, oração mariana, como rezar melhor, foco na oração, são joão paulo II rosário" />
                 <link rel="canonical" href="https://bomcatolico.com.br/blog/como-rezar-terco-sem-distracoes" />
             </Helmet>
 

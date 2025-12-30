@@ -12,7 +12,7 @@ export default function SignificadoMissa() {
             <Helmet>
                 <title>O Significado da Santa Missa: Entenda Cada Parte da Liturgia | Bom Católico</title>
                 <meta name="description" content="Aprenda o significado profundo de cada momento da Santa Missa. Um guia completo sobre a liturgia para participar com mais consciência e devoção." />
-                <meta name="keywords" content="significado da missa, liturgia católica, ritos da missa, eucaristia, partes da missa" />
+                <meta name="keywords" content="partes da missa explicadas, significado da missa católica, liturgia da missa, o que acontece na missa, ritos da missa, como participar da missa" />
                 <link rel="canonical" href="https://bomcatolico.com.br/blog/significado-missa" />
             </Helmet>
 

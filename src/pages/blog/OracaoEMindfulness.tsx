@@ -12,7 +12,7 @@ export default function OracaoEMindfulness() {
             <Helmet>
                 <title>Oração e Mindfulness: A Diferença entre Meditação Cristã e Práticas Seculares | Bom Católico</title>
                 <meta name="description" content="Entenda as diferenças fundamentais entre a meditação cristã e o mindfulness secular, e como a oração católica leva a um encontro real com Deus." />
-                <meta name="keywords" content="meditação cristã, mindfulness, oração católica, atenção plena, espiritualidade, saúde mental" />
+                <meta name="keywords" content="meditação cristã vs mindfulness, católico pode fazer mindfulness, oração contemplativa, diferença meditação cristã e oriental, atenção plena católica" />
                 <link rel="canonical" href="https://bomcatolico.com.br/blog/oracao-vs-mindfulness-cristao" />
             </Helmet>
 

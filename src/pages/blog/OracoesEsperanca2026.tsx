@@ -12,7 +12,7 @@ export default function OracoesEsperanca2026() {
             <Helmet>
                 <title>Orações de Esperança para Momentos de Crise em 2026 | Bom Católico</title>
                 <meta name="description" content="Encontre consolo e força nas orações católicas tradicionais e contemporâneas focadas na virtude da esperança para enfrentar os desafios de 2026." />
-                <meta name="keywords" content="orações de esperança, fé em momentos difíceis, oração católica, esperança cristã, 2026" />
+                <meta name="keywords" content="orações de esperança, oração para momentos difíceis, oração de abandono, salmo 23, santa teresa de ávila nada te turbe, oração em tempos de crise, como ter esperança, oração católica, confiança em deus, oração papa francisco" />
                 <link rel="canonical" href="https://bomcatolico.com.br/blog/oracoes-esperanca-2026" />
             </Helmet>
 

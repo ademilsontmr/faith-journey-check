@@ -12,7 +12,7 @@ export default function SantosPadroeiros() {
       <Helmet>
         <title>Santos Padroeiros: Como Escolher e Honrar o Seu | Bom Católico</title>
         <meta name="description" content="Conheça a tradição dos santos padroeiros na Igreja Católica. Aprenda como escolher seu santo protetor e como honrá-lo para receber sua intercessão." />
-        <meta name="keywords" content="santos padroeiros, santo protetor, intercessão dos santos, devoção aos santos, católico" />
+        <meta name="keywords" content="como escolher santo padroeiro, santos padroeiros do brasil, santo protetor, intercessão dos santos, devoção aos santos, santo do meu nome" />
         <link rel="canonical" href="https://bomcatolico.com.br/blog/santos-padroeiros" />
       </Helmet>
 

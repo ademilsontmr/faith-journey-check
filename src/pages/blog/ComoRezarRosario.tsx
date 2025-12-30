@@ -12,7 +12,7 @@ export default function ComoRezarRosario() {
       <Helmet>
         <title>Como Rezar o Santo Rosário: Guia Completo para Iniciantes | Bom Católico</title>
         <meta name="description" content="Aprenda passo a passo como rezar o Santo Rosário corretamente. Guia completo com os mistérios, orações e meditações para fortalecer sua devoção mariana." />
-        <meta name="keywords" content="santo rosário, como rezar rosário, oração mariana, mistérios do rosário, terço católico" />
+        <meta name="keywords" content="como rezar o rosário passo a passo, santo rosário completo, mistérios do rosário, terço católico, oração do rosário, ave maria" />
         <link rel="canonical" href="https://bomcatolico.com.br/blog/como-rezar-rosario" />
       </Helmet>
 

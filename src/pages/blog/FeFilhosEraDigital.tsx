@@ -12,7 +12,7 @@ export default function FeFilhosEraDigital() {
             <Helmet>
                 <title>Como Transmitir a Fé Católica aos Filhos na Era das Telas? | Bom Católico</title>
                 <meta name="description" content="Guia prático para pais católicos sobre como educar os filhos na fé em meio aos desafios do mundo digital e das redes sociais em 2026." />
-                <meta name="keywords" content="educação católica, fé e filhos, era digital, pais católicos, transmissão da fé" />
+                <meta name="keywords" content="como ensinar fé aos filhos, educação católica dos filhos, filhos e tecnologia, pais católicos, transmitir fé na era digital, catequese em casa" />
                 <link rel="canonical" href="https://bomcatolico.com.br/blog/como-transmitir-fe-filhos-era-digital" />
             </Helmet>
 

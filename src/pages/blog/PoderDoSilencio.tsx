@@ -12,7 +12,7 @@ export default function PoderDoSilencio() {
             <Helmet>
                 <title>O Poder do Silêncio: Retiros Espirituais para Curar o Burnout | Bom Católico</title>
                 <meta name="description" content="Descubra como o silêncio e os retiros espirituais católicos podem ser o remédio eficaz contra o esgotamento profissional e o estresse moderno." />
-                <meta name="keywords" content="silêncio, retiro espiritual, burnout, esgotamento, paz interior, espiritualidade" />
+                <meta name="keywords" content="retiro espiritual católico, poder do silêncio, como curar burnout, esgotamento profissional, paz interior, descanso espiritual" />
                 <link rel="canonical" href="https://bomcatolico.com.br/blog/poder-do-silencio-burnout" />
             </Helmet>
 

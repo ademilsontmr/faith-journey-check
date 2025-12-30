@@ -12,7 +12,7 @@ export default function AnjosDaGuarda() {
             <Helmet>
                 <title>O Papel dos Anjos da Guarda em Nossa Vida | Bom Católico</title>
                 <meta name="description" content="Conheça a doutrina católica sobre os Anjos da Guarda. Saiba como eles nos protegem, guiam e intercedem por nós em nossa jornada terrena." />
-                <meta name="keywords" content="anjos da guarda, anjos, proteção divina, espiritualidade católica, intercessão" />
+                <meta name="keywords" content="anjo da guarda, o que é anjo da guarda, oração do anjo da guarda, santo anjo do senhor, como falar com meu anjo da guarda, anjos na bíblia, proteção dos anjos, anjo da guarda existe, como saber o nome do meu anjo" />
                 <link rel="canonical" href="https://bomcatolico.com.br/blog/anjos-da-guarda" />
             </Helmet>
 

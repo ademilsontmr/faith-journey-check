@@ -12,7 +12,7 @@ export default function VidaOracao() {
       <Helmet>
         <title>A Vida de Oração: Como Cultivar uma Intimidade com Deus | Bom Católico</title>
         <meta name="description" content="Descubra como desenvolver uma vida de oração profunda e constante. Dicas práticas e espirituais para fortalecer sua amizade com Deus diariamente." />
-        <meta name="keywords" content="vida de oração, como orar, intimidade com Deus, oração católica, espiritualidade" />
+        <meta name="keywords" content="como ter vida de oração, como orar melhor, intimidade com deus, oração católica diária, tipos de oração, como rezar todos os dias" />
         <link rel="canonical" href="https://bomcatolico.com.br/blog/vida-oracao" />
       </Helmet>
 

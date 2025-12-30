@@ -12,7 +12,7 @@ export default function SignificadoCrucifixo() {
             <Helmet>
                 <title>A História e o Significado do Crucifixo | Bom Católico</title>
                 <meta name="description" content="Entenda por que o crucifixo é o símbolo central da fé católica. Conheça sua história, simbolismo e a importância de tê-lo em nossos lares." />
-                <meta name="keywords" content="crucifixo, cruz, paixão de cristo, símbolo católico, redenção, fé cristã" />
+                <meta name="keywords" content="significado do crucifixo, diferença entre cruz e crucifixo, por que católicos usam crucifixo, crucifixo em casa, símbolo da cruz, paixão de cristo, INRI significado, cruz católica, ter crucifixo no quarto, sinal da cruz" />
                 <link rel="canonical" href="https://bomcatolico.com.br/blog/significado-crucifixo" />
             </Helmet>
 

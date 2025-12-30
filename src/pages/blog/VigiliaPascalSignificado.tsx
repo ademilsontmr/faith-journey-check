@@ -12,7 +12,7 @@ export default function VigiliaPascalSignificado() {
             <Helmet>
                 <title>O Significado da Vigília Pascal: A Noite mais Santa do Ano | Bom Católico</title>
                 <meta name="description" content="Entenda a simbologia da Vigília Pascal, desde a bênção do fogo até a proclamação da Ressurreição. Descubra por que esta celebração é o coração do ano litúrgico." />
-                <meta name="keywords" content="vigília pascal, páscoa, ressurreição de jesus, círio pascal, liturgia da luz" />
+                <meta name="keywords" content="vigília pascal, o que é vigília pascal, círio pascal significado, liturgia da luz, sábado santo, ressurreição de jesus, exsultet, semana santa, batismo na vigília pascal, missa de páscoa, noite santa" />
                 <link rel="canonical" href="https://bomcatolico.com.br/blog/significado-vigilia-pascal-noite-santa" />
             </Helmet>
 
