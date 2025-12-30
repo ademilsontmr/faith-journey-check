@@ -12,7 +12,7 @@ export default function SacramentoConfissao() {
       <Helmet>
         <title>O Sacramento da Confissão (Reconciliação): A Misericórdia de Deus | Bom Católico</title>
         <meta name="description" content="Entenda o Sacramento da Confissão na Igreja Católica. Por que confessar ao padre, como fazer uma boa confissão e experimentar a misericórdia divina." />
-        <meta name="keywords" content="confissão, reconciliação, penitência, sacramento confissão, perdão pecados, misericórdia" />
+        <meta name="keywords" content="sacramento da confissão, como se confessar, o que falar na confissão, reconciliação, penitência, perdão dos pecados, misericórdia de deus, sete sacramentos" />
         <link rel="canonical" href="https://bomcatolico.com.br/blog/sacramento-confissao" />
       </Helmet>
 

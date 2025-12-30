@@ -12,7 +12,7 @@ export default function SacramentoUncaoEnfermos() {
       <Helmet>
         <title>O Sacramento da Unção dos Enfermos: Conforto na Doença | Bom Católico</title>
         <meta name="description" content="Entenda o Sacramento da Unção dos Enfermos na Igreja Católica. Quando pedir, seus efeitos espirituais e físicos, e como preparar-se para recebê-lo." />
-        <meta name="keywords" content="unção dos enfermos, sacramento doentes, extrema unção, doença, morte, conforto espiritual" />
+        <meta name="keywords" content="sacramento da unção dos enfermos, o que é extrema unção, quando pedir unção, sacramento para doentes, conforto na doença, graça na morte, sete sacramentos" />
         <link rel="canonical" href="https://bomcatolico.com.br/blog/sacramento-uncao-enfermos" />
       </Helmet>
 

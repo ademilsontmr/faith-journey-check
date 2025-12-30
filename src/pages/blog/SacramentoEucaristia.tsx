@@ -12,7 +12,7 @@ export default function SacramentoEucaristia() {
       <Helmet>
         <title>O Sacramento da Eucaristia: O Corpo e Sangue de Cristo | Bom Católico</title>
         <meta name="description" content="Entenda o Sacramento da Eucaristia na Igreja Católica. A presença real de Cristo, a transubstanciação, como comungar dignamente e a importância da Missa." />
-        <meta name="keywords" content="eucaristia, comunhão, corpo de cristo, missa, transubstanciação, presença real, sacramento" />
+        <meta name="keywords" content="sacramento da eucaristia, o que é eucaristia, comunhão católica, corpo e sangue de cristo, transubstanciação, presença real de jesus, primeira comunhão, sete sacramentos" />
         <link rel="canonical" href="https://bomcatolico.com.br/blog/sacramento-eucaristia" />
       </Helmet>
 

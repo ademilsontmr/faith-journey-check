@@ -12,7 +12,7 @@ export default function ProsperidadeEspiritualVsMaterial() {
       <Helmet>
         <title>Prosperidade Espiritual vs Material: O Verdadeiro Tesouro | Bom Católico</title>
         <meta name="description" content="Entenda a visão católica sobre prosperidade. A diferença entre riqueza material e riqueza espiritual, e como buscar a verdadeira abundância em Cristo." />
-        <meta name="keywords" content="prosperidade, riqueza espiritual, tesouro no céu, desprendimento, abundância em Cristo, doutrina católica" />
+        <meta name="keywords" content="prosperidade na bíblia, católico pode ser rico, teologia da prosperidade é errada, riqueza espiritual, tesouro no céu, desprendimento cristão" />
         <link rel="canonical" href="https://bomcatolico.com.br/blog/prosperidade-espiritual-vs-material" />
       </Helmet>
 

@@ -12,7 +12,7 @@ export default function TrabalhoDignoVocacao() {
       <Helmet>
         <title>Trabalho Digno e Vocação: Santidade no Dia a Dia | Bom Católico</title>
         <meta name="description" content="Descubra como o trabalho é uma vocação sagrada. A visão católica sobre trabalho digno, realização profissional e santidade através da labuta diária." />
-        <meta name="keywords" content="trabalho, vocação, trabalho digno, santidade, realização profissional, doutrina social católica" />
+        <meta name="keywords" content="trabalho como vocação, santificar o trabalho, dignidade do trabalho humano, trabalho e fé católica, são josé trabalhador, doutrina social da igreja" />
         <link rel="canonical" href="https://bomcatolico.com.br/blog/trabalho-digno-vocacao" />
       </Helmet>
 

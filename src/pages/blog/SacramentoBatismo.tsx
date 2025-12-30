@@ -12,7 +12,7 @@ export default function SacramentoBatismo() {
       <Helmet>
         <title>O Sacramento do Batismo: Porta de Entrada para a Vida Cristã | Bom Católico</title>
         <meta name="description" content="Entenda o Sacramento do Batismo na Igreja Católica. Significado, efeitos espirituais, como batizar seu filho e por que o Batismo é essencial para a salvação." />
-        <meta name="keywords" content="batismo, sacramento batismo, batizar filho, batismo católico, pecado original, vida cristã" />
+        <meta name="keywords" content="sacramento do batismo, o que é batismo católico, como batizar filho, batismo de criança, pecado original, padrinho de batismo, sete sacramentos" />
         <link rel="canonical" href="https://bomcatolico.com.br/blog/sacramento-batismo" />
       </Helmet>
 

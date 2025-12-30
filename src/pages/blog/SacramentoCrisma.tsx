@@ -12,7 +12,7 @@ export default function SacramentoCrisma() {
       <Helmet>
         <title>O Sacramento da Crisma (Confirmação): O Pentecostes Pessoal | Bom Católico</title>
         <meta name="description" content="Entenda o Sacramento da Crisma na Igreja Católica. Os dons do Espírito Santo, preparação para a Confirmação e como viver como soldado de Cristo." />
-        <meta name="keywords" content="crisma, confirmação, sacramento crisma, espírito santo, dons espírito santo, soldado de cristo" />
+        <meta name="keywords" content="sacramento da crisma, o que é confirmação, quando fazer crisma, dons do espírito santo, padrinho de crisma, soldado de cristo, sete sacramentos" />
         <link rel="canonical" href="https://bomcatolico.com.br/blog/sacramento-crisma" />
       </Helmet>
 

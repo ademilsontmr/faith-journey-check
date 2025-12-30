@@ -12,7 +12,7 @@ export default function ComoSeConfessarGuia() {
       <Helmet>
         <title>Como Se Confessar: Guia Completo Passo a Passo | Bom Católico</title>
         <meta name="description" content="Aprenda como se confessar na Igreja Católica. Guia completo com passo a passo, exame de consciência, o que dizer ao padre e como fazer uma boa confissão." />
-        <meta name="keywords" content="como se confessar, confissão católica, sacramento reconciliação, exame de consciência, penitência, perdão dos pecados" />
+        <meta name="keywords" content="como se confessar passo a passo, o que falar na confissão, guia de confissão católica, exame de consciência, primeira confissão, perdão dos pecados" />
         <link rel="canonical" href="https://bomcatolico.com.br/blog/como-se-confessar-guia-completo" />
       </Helmet>
 

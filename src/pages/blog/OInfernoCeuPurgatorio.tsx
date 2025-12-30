@@ -12,7 +12,7 @@ export default function OInfernoCeuPurgatorio() {
       <Helmet>
         <title>Céu, Inferno e Purgatório: O Destino Eterno da Alma | Bom Católico</title>
         <meta name="description" content="Entenda a doutrina católica sobre o Céu, Inferno e Purgatório. O que a Igreja ensina sobre o destino eterno e como viver preparado para a eternidade." />
-        <meta name="keywords" content="céu, inferno, purgatório, vida eterna, julgamento, destino eterno, doutrina católica" />
+        <meta name="keywords" content="céu inferno e purgatório, o que é purgatório, existe inferno, como ir para o céu, vida após a morte católica, destino eterno da alma" />
         <link rel="canonical" href="https://bomcatolico.com.br/blog/ceu-inferno-purgatorio" />
       </Helmet>
 

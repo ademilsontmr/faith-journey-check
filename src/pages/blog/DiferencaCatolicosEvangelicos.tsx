@@ -12,7 +12,7 @@ export default function DiferencaCatolicosEvangelicos() {
       <Helmet>
         <title>Diferença Entre Católicos e Evangélicos: Entenda as Principais Distinções | Bom Católico</title>
         <meta name="description" content="Conheça as principais diferenças entre católicos e evangélicos. Sacramentos, autoridade da Igreja, Maria, santos e outras distinções explicadas com respeito." />
-        <meta name="keywords" content="diferença católicos evangélicos, católico vs protestante, igreja católica, igreja evangélica, sacramentos, Maria" />
+        <meta name="keywords" content="diferença entre católicos e evangélicos, católico ou protestante, por que ser católico, igreja católica vs evangélica, sacramentos, tradição apostólica" />
         <link rel="canonical" href="https://bomcatolico.com.br/blog/diferenca-catolicos-evangelicos" />
       </Helmet>
 
