@@ -108,6 +108,13 @@ import DomFortaleza from "./pages/blog/DomFortaleza";
 import DomCiencia from "./pages/blog/DomCiencia";
 import DomPiedade from "./pages/blog/DomPiedade";
 import DomTemorDeus from "./pages/blog/DomTemorDeus";
+import PecadoSoberba from "./pages/blog/PecadoSoberba";
+import PecadoAvareza from "./pages/blog/PecadoAvareza";
+import PecadoLuxuria from "./pages/blog/PecadoLuxuria";
+import PecadoInveja from "./pages/blog/PecadoInveja";
+import PecadoGula from "./pages/blog/PecadoGula";
+import PecadoIra from "./pages/blog/PecadoIra";
+import PecadoPreguica from "./pages/blog/PecadoPreguica";
 import OQueAconteceDepoisMorte from "./pages/blog/OQueAconteceDepoisMorte";
 import SegundaVindaCristoFimTempos from "./pages/blog/SegundaVindaCristoFimTempos";
 import JuizoParticularEFinal from "./pages/blog/JuizoParticularEFinal";
@@ -261,6 +268,13 @@ const App = () => (
             <Route path="/blog/dom-ciencia-espirito-santo" element={<DomCiencia />} />
             <Route path="/blog/dom-piedade-espirito-santo" element={<DomPiedade />} />
             <Route path="/blog/dom-temor-deus-espirito-santo" element={<DomTemorDeus />} />
+            <Route path="/blog/pecado-soberba" element={<PecadoSoberba />} />
+            <Route path="/blog/pecado-avareza" element={<PecadoAvareza />} />
+            <Route path="/blog/pecado-luxuria" element={<PecadoLuxuria />} />
+            <Route path="/blog/pecado-inveja" element={<PecadoInveja />} />
+            <Route path="/blog/pecado-gula" element={<PecadoGula />} />
+            <Route path="/blog/pecado-ira" element={<PecadoIra />} />
+            <Route path="/blog/pecado-preguica" element={<PecadoPreguica />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
