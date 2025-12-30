@@ -101,6 +101,13 @@ import SetimoMandamento from "./pages/blog/SetimoMandamento";
 import OitavoMandamento from "./pages/blog/OitavoMandamento";
 import NonoMandamento from "./pages/blog/NonoMandamento";
 import DecimoMandamento from "./pages/blog/DecimoMandamento";
+import DomSabedoria from "./pages/blog/DomSabedoria";
+import DomEntendimento from "./pages/blog/DomEntendimento";
+import DomConselho from "./pages/blog/DomConselho";
+import DomFortaleza from "./pages/blog/DomFortaleza";
+import DomCiencia from "./pages/blog/DomCiencia";
+import DomPiedade from "./pages/blog/DomPiedade";
+import DomTemorDeus from "./pages/blog/DomTemorDeus";
 import OQueAconteceDepoisMorte from "./pages/blog/OQueAconteceDepoisMorte";
 import SegundaVindaCristoFimTempos from "./pages/blog/SegundaVindaCristoFimTempos";
 import JuizoParticularEFinal from "./pages/blog/JuizoParticularEFinal";
@@ -247,6 +254,13 @@ const App = () => (
             <Route path="/blog/oitavo-mandamento-verdade" element={<OitavoMandamento />} />
             <Route path="/blog/nono-mandamento-nao-cobicar" element={<NonoMandamento />} />
             <Route path="/blog/decimo-mandamento-nao-cobicar-bens" element={<DecimoMandamento />} />
+            <Route path="/blog/dom-sabedoria-espirito-santo" element={<DomSabedoria />} />
+            <Route path="/blog/dom-entendimento-espirito-santo" element={<DomEntendimento />} />
+            <Route path="/blog/dom-conselho-espirito-santo" element={<DomConselho />} />
+            <Route path="/blog/dom-fortaleza-espirito-santo" element={<DomFortaleza />} />
+            <Route path="/blog/dom-ciencia-espirito-santo" element={<DomCiencia />} />
+            <Route path="/blog/dom-piedade-espirito-santo" element={<DomPiedade />} />
+            <Route path="/blog/dom-temor-deus-espirito-santo" element={<DomTemorDeus />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
