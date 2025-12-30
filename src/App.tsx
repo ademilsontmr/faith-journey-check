@@ -91,6 +91,16 @@ import SacramentoConfissao from "./pages/blog/SacramentoConfissao";
 import SacramentoUncaoEnfermos from "./pages/blog/SacramentoUncaoEnfermos";
 import SacramentoOrdem from "./pages/blog/SacramentoOrdem";
 import SacramentoMatrimonio from "./pages/blog/SacramentoMatrimonio";
+import PrimeiroMandamento from "./pages/blog/PrimeiroMandamento";
+import SegundoMandamento from "./pages/blog/SegundoMandamento";
+import TerceiroMandamento from "./pages/blog/TerceiroMandamento";
+import QuartoMandamento from "./pages/blog/QuartoMandamento";
+import QuintoMandamento from "./pages/blog/QuintoMandamento";
+import SextoMandamento from "./pages/blog/SextoMandamento";
+import SetimoMandamento from "./pages/blog/SetimoMandamento";
+import OitavoMandamento from "./pages/blog/OitavoMandamento";
+import NonoMandamento from "./pages/blog/NonoMandamento";
+import DecimoMandamento from "./pages/blog/DecimoMandamento";
 import OQueAconteceDepoisMorte from "./pages/blog/OQueAconteceDepoisMorte";
 import SegundaVindaCristoFimTempos from "./pages/blog/SegundaVindaCristoFimTempos";
 import JuizoParticularEFinal from "./pages/blog/JuizoParticularEFinal";
@@ -227,6 +237,16 @@ const App = () => (
             <Route path="/blog/sacramento-uncao-enfermos" element={<SacramentoUncaoEnfermos />} />
             <Route path="/blog/sacramento-ordem" element={<SacramentoOrdem />} />
             <Route path="/blog/sacramento-matrimonio" element={<SacramentoMatrimonio />} />
+            <Route path="/blog/primeiro-mandamento-amar-deus" element={<PrimeiroMandamento />} />
+            <Route path="/blog/segundo-mandamento-nome-deus" element={<SegundoMandamento />} />
+            <Route path="/blog/terceiro-mandamento-dia-senhor" element={<TerceiroMandamento />} />
+            <Route path="/blog/quarto-mandamento-honrar-pais" element={<QuartoMandamento />} />
+            <Route path="/blog/quinto-mandamento-nao-matar" element={<QuintoMandamento />} />
+            <Route path="/blog/sexto-mandamento-castidade" element={<SextoMandamento />} />
+            <Route path="/blog/setimo-mandamento-nao-roubar" element={<SetimoMandamento />} />
+            <Route path="/blog/oitavo-mandamento-verdade" element={<OitavoMandamento />} />
+            <Route path="/blog/nono-mandamento-nao-cobicar" element={<NonoMandamento />} />
+            <Route path="/blog/decimo-mandamento-nao-cobicar-bens" element={<DecimoMandamento />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
