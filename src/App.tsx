@@ -150,6 +150,7 @@ import OracaoSaoFrancisco from "./pages/blog/OracaoSaoFrancisco";
 import OracaoAlmaDeCristo from "./pages/blog/OracaoAlmaDeCristo";
 import OracaoVindeEspiritoCriador from "./pages/blog/OracaoVindeEspiritoCriador";
 import OracaoTeDeum from "./pages/blog/OracaoTeDeum";
+import OracaoAnjoGuarda from "./pages/blog/OracaoAnjoGuarda";
 import TermsOfUse from "./pages/TermsOfUse";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Contact from "./pages/Contact";
@@ -315,6 +316,7 @@ const App = () => (
             <Route path="/blog/oracao-alma-de-cristo" element={<OracaoAlmaDeCristo />} />
             <Route path="/blog/oracao-vinde-espirito-criador" element={<OracaoVindeEspiritoCriador />} />
             <Route path="/blog/oracao-te-deum" element={<OracaoTeDeum />} />
+            <Route path="/blog/oracao-anjo-da-guarda" element={<OracaoAnjoGuarda />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
