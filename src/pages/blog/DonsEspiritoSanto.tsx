@@ -82,7 +82,7 @@ export default function DonsEspiritoSanto() {
 
                         <div className="prose prose-lg max-w-none">
                             <p className="text-text leading-relaxed mb-6">
-                                No dia do nosso Batismo, e de forma plena na Confirmação (Crisma), recebemos o Espírito Santo com Seus sete dons. Eles não são talentos naturais, mas disposições sobrenaturais que tornam o homem dócil para seguir as inspirações divinas. São como as velas de um barco que, abertas, permitem que o sopro do Espírito nos conduza ao mar alto da santidade.
+                                No dia do nosso Batismo, e de forma plena na Confirmação (Crisma), recebemos o Espírito Santo com Seus sete dons. Eles não são talentos naturais, mas disposições sobrenaturais que tornam o homem dócil para seguir as inspirações divinas. São como as velas de um barco que, abertas, permitem que o sopro do Espírito nos conduza ao mar alto da santidade. Muitos católicos recebem esses dons e nunca os usam – é como ter um tesouro enterrado no quintal e nunca cavar para encontrá-lo.
                             </p>
 
                             <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
@@ -93,7 +93,7 @@ export default function DonsEspiritoSanto() {
                                 1. Sabedoria
                             </h3>
                             <p className="text-text leading-relaxed mb-6">
-                                Não é o acúmulo de conhecimento, mas o "gosto" pelas coisas de Deus. O dom da Sabedoria nos permite ver o mundo, as pessoas e os acontecimentos através do olhar de Deus.
+                                Não é o acúmulo de conhecimento, mas o "gosto" pelas coisas de Deus. O dom da Sabedoria nos permite ver o mundo, as pessoas e os acontecimentos através do olhar de Deus. Quando você tem sabedoria, entende que as riquezas passam, que a fama é vã, que o que realmente importa é a amizade com Deus.
                             </p>
 
                             <QuizCTA
@@ -105,49 +105,49 @@ export default function DonsEspiritoSanto() {
                                 2. Entendimento (ou Inteligência)
                             </h3>
                             <p className="text-text leading-relaxed mb-6">
-                                Ajuda-nos a penetrar no sentido profundo das verdades reveladas e dos mistérios da fé, indo além das aparências.
+                                Ajuda-nos a penetrar no sentido profundo das verdades reveladas e dos mistérios da fé, indo além das aparências. Quando você tem entendimento, consegue compreender por que a Igreja ensina o que ensina, por que os sacramentos são tão importantes, por que a moral católica leva à verdadeira felicidade.
                             </p>
 
                             <h3 className="font-display text-xl font-semibold text-text mt-8 mb-3">
                                 3. Conselho
                             </h3>
                             <p className="text-text leading-relaxed mb-6">
-                                É a luz que o Espírito nos dá para discernir o que é correto fazer em situações complexas da vida, escolhendo sempre o caminho que mais agrada a Deus.
+                                É a luz que o Espírito nos dá para discernir o que é correto fazer em situações complexas da vida, escolhendo sempre o caminho que mais agrada a Deus. Quando você está em dúvida sobre uma decisão importante, o dom do Conselho o ilumina para escolher bem.
                             </p>
 
                             <h3 className="font-display text-xl font-semibold text-text mt-8 mb-3">
                                 4. Fortaleza
                             </h3>
                             <p className="text-text leading-relaxed mb-6">
-                                Dá-nos a coragem e a perseverança necessárias para enfrentar as dificuldades, perseguições e tentações, mantendo-nos fiéis a Cristo até o fim.
+                                Dá-nos a coragem e a perseverança necessárias para enfrentar as dificuldades, perseguições e tentações, mantendo-nos fiéis a Cristo até o fim. É o dom que permite ao mártir enfrentar a morte com alegria, ao jovem resistir à pressão dos colegas, ao cristão permanecer fiel em tempos de crise.
                             </p>
 
                             <h3 className="font-display text-xl font-semibold text-text mt-8 mb-3">
                                 5. Ciência
                             </h3>
                             <p className="text-text leading-relaxed mb-6">
-                                Permite-nos julgar retamente as coisas criadas, vendo nelas o reflexo do Criador e não as transformando em ídolos.
+                                Permite-nos julgar retamente as coisas criadas, vendo nelas o reflexo do Criador e não as transformando em ídolos. Com o dom da Ciência, você vê a beleza de uma flor e louva o Criador; vê a tecnologia e a usa para o bem, não para o mal.
                             </p>
 
                             <h3 className="font-display text-xl font-semibold text-text mt-8 mb-3">
                                 6. Piedade
                             </h3>
                             <p className="text-text leading-relaxed mb-6">
-                                Cura nosso coração da dureza e nos dá um afeto filial para com Deus e uma fraternidade sincera para com o próximo.
+                                Cura nosso coração da dureza e nos dá um afeto filial para com Deus e uma fraternidade sincera para com o próximo. É o dom que nos faz amar a Deus como um filho ama seu pai, e que nos faz servir o próximo com ternura.
                             </p>
 
                             <h3 className="font-display text-xl font-semibold text-text mt-8 mb-3">
                                 7. Temor de Deus
                             </h3>
                             <p className="text-text leading-relaxed mb-6">
-                                Não é medo de um castigo, mas o receio amoroso de ofender a Deus, que é nosso Pai e nos ama infinitamente. É o início da verdadeira sabedoria.
+                                Não é medo de um castigo, mas o receio amoroso de ofender a Deus, que é nosso Pai e nos ama infinitamente. É o início da verdadeira sabedoria. Quando você tem temor de Deus, evita o pecado não por medo do inferno, mas porque não quer magoar Aquele que o ama.
                             </p>
 
                             <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                                 Como Cultivar a Presença do Espírito?
                             </h2>
                             <p className="text-text leading-relaxed mb-6">
-                                O Espírito Santo é uma pessoa divina com quem podemos e devemos conversar. Peça diariamente: "Vinde, Espírito Santo!". Mantenha-se em estado de graça através da confissão frequente e busque o silêncio interior para ouvir Suas moções.
+                                O Espírito Santo é uma pessoa divina com quem podemos e devemos conversar. Peça diariamente: "Vinde, Espírito Santo!". Mantenha-se em estado de graça através da confissão frequente e busque o silêncio interior para ouvir Suas moções. Quanto mais você se abre aos dons do Espírito, mais Ele age em você, transformando-o em instrumento de Sua vontade.
                             </p>
 
                             <div className="bg-accent/5 border border-accent/20 rounded-xl p-6 mt-10">
@@ -156,6 +156,15 @@ export default function DonsEspiritoSanto() {
                                 </p>
                                 <p className="text-text-muted text-center mt-2">
                                     — São João Paulo II
+                                </p>
+                            </div>
+
+                            <div className="bg-primary/5 border border-primary/20 rounded-xl p-6 mt-6">
+                                <p className="text-text italic text-center">
+                                    "Vinde, Espírito Santo, enchei os corações dos vossos fiéis e acendei neles o fogo do vosso amor."
+                                </p>
+                                <p className="text-text-muted text-center mt-2">
+                                    — Sequência de Pentecostes
                                 </p>
                             </div>
                         </div>

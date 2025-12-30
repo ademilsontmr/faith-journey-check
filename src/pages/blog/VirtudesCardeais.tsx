@@ -82,7 +82,10 @@ export default function VirtudesCardeais() {
 
                         <div className="prose prose-lg max-w-none">
                             <p className="text-text leading-relaxed mb-6">
-                                A palavra "virtude" vem do latim *virtus*, que significa força ou excelência. As virtudes cardeais são chamadas assim porque são os "eixos" (do latim *cardo*, gonzos de uma porta) sobre os quais gira toda a vida moral do homem.
+                                A palavra "virtude" vem do latim *virtus*, que significa força ou excelência. As virtudes cardeais são chamadas assim porque são os "eixos" (do latim *cardo*, gonzos de uma porta) sobre os quais gira toda a vida moral do homem. Sem elas, a vida cristã se torna frágil e inconsistente. Com elas, construímos um caráter sólido, capaz de resistir às tempestades da vida e de refletir a beleza de Cristo.
+                            </p>
+                            <p className="text-text leading-relaxed mb-6">
+                                Os antigos filósofos já reconheciam a importância dessas quatro virtudes. Mas a Igreja Católica as elevou a um nível superior, unindo-as às virtudes teologais (fé, esperança e caridade) para formar um caminho completo de santidade. Quando praticamos as virtudes cardeais, não apenas nos tornamos pessoas melhores – nos tornamos mais semelhantes a Cristo.
                             </p>
 
                             <QuizCTA
@@ -94,28 +97,35 @@ export default function VirtudesCardeais() {
                                 1. Prudência: O Farol da Razão
                             </h2>
                             <p className="text-text leading-relaxed mb-6">
-                                A prudência é a virtude que nos ajuda a discernir o nosso verdadeiro bem em cada circunstância e a escolher os meios adequados para atingi-lo. Ela não é medo ou indecisão, mas a "reta razão no agir". No cotidiano, ela se manifesta quando pensamos antes de falar ou agir, buscando sempre a vontade de Deus.
+                                A prudência é a virtude que nos ajuda a discernir o nosso verdadeiro bem em cada circunstância e a escolher os meios adequados para atingi-lo. Ela não é medo ou indecisão, mas a "reta razão no agir". No cotidiano, ela se manifesta quando pensamos antes de falar ou agir, buscando sempre a vontade de Deus. A prudência nos protege de decisões precipitadas e nos guia para escolhas sábias.
                             </p>
 
                             <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                                 2. Justiça: Dar a cada um o que lhe é devido
                             </h2>
                             <p className="text-text leading-relaxed mb-6">
-                                A justiça consiste na vontade constante e firme de dar a Deus e ao próximo o que lhes é devido. Justiça para com Deus chama-se "virtude da religião". Para com os homens, significa respeitar os direitos de cada um e estabelecer a harmonia nas relações humanas.
+                                A justiça consiste na vontade constante e firme de dar a Deus e ao próximo o que lhes é devido. Justiça para com Deus chama-se "virtude da religião" – é render-Lhe o culto e a obediência que merece. Para com os homens, significa respeitar os direitos de cada um, ser honesto nos negócios, cumprir promessas e estabelecer a harmonia nas relações humanas. A justiça é o fundamento da paz social.
                             </p>
 
                             <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                                 3. Fortaleza: A Coragem Cristã
                             </h2>
                             <p className="text-text leading-relaxed mb-6">
-                                A fortaleza assegura a firmeza nas dificuldades e a constância na procura do bem. Ela nos dá coragem para resistir às tentações e superar os obstáculos na vida moral. É a virtude dos mártires, mas também do pai de família que trabalha com honestidade apesar das pressões.
+                                A fortaleza assegura a firmeza nas dificuldades e a constância na procura do bem. Ela nos dá coragem para resistir às tentações e superar os obstáculos na vida moral. É a virtude dos mártires que enfrentaram a morte por Cristo, mas também do pai de família que trabalha com honestidade apesar das pressões, da mãe que educa seus filhos com paciência, do jovem que resiste à pressão dos colegas para fazer o bem. A fortaleza não é agressividade, mas a capacidade de sofrer pelo que é certo.
                             </p>
 
                             <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                                 4. Temperança: O Domínio de Si
                             </h2>
                             <p className="text-text leading-relaxed mb-6">
-                                A temperança modera a atração dos prazeres e assegura o equilíbrio no uso dos bens criados. Ela garante o domínio da vontade sobre os instintos e mantém os desejos dentro dos limites da honestidade. No mundo do consumo desenfreado, a temperança é um sinal de liberdade real.
+                                A temperança modera a atração dos prazeres e assegura o equilíbrio no uso dos bens criados. Ela garante o domínio da vontade sobre os instintos e mantém os desejos dentro dos limites da honestidade. No mundo do consumo desenfreado, das redes sociais viciantes e dos prazeres fáceis, a temperança é um sinal de liberdade real. Quem é temperante não é escravo de seus desejos, mas senhor de si mesmo.
+                            </p>
+
+                            <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
+                                Como Exercitar as Virtudes Cardeais
+                            </h2>
+                            <p className="text-text leading-relaxed mb-6">
+                                As virtudes não são inatas – precisam ser cultivadas como um atleta treina seus músculos. Comece pequeno: pratique um ato de prudência hoje (pense antes de falar), um ato de justiça amanhã (seja honesto em uma situação difícil), um ato de fortaleza (resista a uma tentação), um ato de temperança (recuse um prazer desordenado). Com o tempo, esses atos se tornam hábitos, e os hábitos se tornam virtudes.
                             </p>
 
                             <div className="bg-accent/5 border border-accent/20 rounded-xl p-6 mt-10">
@@ -124,6 +134,15 @@ export default function VirtudesCardeais() {
                                 </p>
                                 <p className="text-text-muted text-center mt-2">
                                     — São Gregório de Nissa
+                                </p>
+                            </div>
+
+                            <div className="bg-primary/5 border border-primary/20 rounded-xl p-6 mt-6">
+                                <p className="text-text italic text-center">
+                                    "A virtude é a beleza da alma."
+                                </p>
+                                <p className="text-text-muted text-center mt-2">
+                                    — Santo Agostinho
                                 </p>
                             </div>
                         </div>

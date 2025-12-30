@@ -82,7 +82,10 @@ export default function VidaOracao() {
 
             <div className="prose prose-lg max-w-none">
               <p className="text-text leading-relaxed mb-6">
-                Santa Teresa d'Ávila definia a oração como "um trato de amizade, estando muitas vezes a sós com Quem sabemos que nos ama". Para o católico, a oração é o oxigênio da alma. Sem ela, a fé enfraquece, a esperança vacila e a caridade esfria. No entanto, muitos encontram dificuldades em manter uma rotina constante de diálogo com o Criador.
+                Santa Teresa d'Ávila definia a oração como "um trato de amizade, estando muitas vezes a sós com Quem sabemos que nos ama". Para o católico, a oração é o oxigênio da alma. Sem ela, a fé enfraquece, a esperança vacila e a caridade esfria. No entanto, muitos encontram dificuldades em manter uma rotina constante de diálogo com o Criador. A boa notícia é que Deus não exige perfeição – Ele exige apenas sinceridade e perseverança.
+              </p>
+              <p className="text-text leading-relaxed mb-6">
+                A oração não é uma técnica complicada reservada aos monges e santos. É simplesmente conversar com Deus como você conversaria com um amigo querido. Jesus nos ensinou: "Quando orarem, não façam como os hipócritas... Mas você, quando orar, entre em seu quarto, feche a porta e ore a seu Pai em secreto" (Mt 6,5-6). A oração é um encontro íntimo, pessoal, onde Deus nos conhece completamente e nos ama apesar de tudo.
               </p>
 
               <QuizCTA
@@ -94,7 +97,42 @@ export default function VidaOracao() {
                 Por que a Oração é Essencial?
               </h2>
               <p className="text-text leading-relaxed mb-6">
-                A oração nos sintoniza com a vontade de Deus. Ela não serve para convencer Deus a fazer o que queremos, mas para preparar nosso coração para receber o que Ele deseja nos dar. Através da oração, recebemos as graças necessárias para enfrentar as tentações, discernir caminhos e encontrar sentido nos sofrimentos.
+                A oração nos sintoniza com a vontade de Deus. Ela não serve para convencer Deus a fazer o que queremos – Ele já sabe o que precisamos antes mesmo de pedirmos. A oração nos transforma. Ela nos prepara para receber o que Deus deseja nos dar. Através da oração, recebemos as graças necessárias para enfrentar as tentações, discernir caminhos confusos e encontrar sentido nos sofrimentos.
+              </p>
+              <p className="text-text leading-relaxed mb-6">
+                São Paulo nos exorta: "Orai sem cessar" (1Ts 5,17). Não significa estar de joelhos o tempo todo, mas manter o coração voltado para Deus em todas as circunstâncias. Quando você trabalha com a intenção de agradar a Deus, está orando. Quando sofre com paciência, está orando. Quando ama o próximo, está orando. A vida inteira pode se tornar uma oração.
+              </p>
+
+              <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
+                Os Diferentes Tipos de Oração
+              </h2>
+
+              <h3 className="font-display text-xl font-semibold text-text mt-8 mb-3">
+                Oração de Adoração
+              </h3>
+              <p className="text-text leading-relaxed mb-6">
+                Reconhecer a grandeza de Deus e nossa pequenez diante Dele. É simplesmente dizer: "Senhor, Tu és Deus e eu sou nada. Mas que privilégio ser criado por Ti!"
+              </p>
+
+              <h3 className="font-display text-xl font-semibold text-text mt-8 mb-3">
+                Oração de Ação de Graças
+              </h3>
+              <p className="text-text leading-relaxed mb-6">
+                Agradecer a Deus por tudo – pelas alegrias óbvias, mas também pelas dificuldades que nos fazem crescer. São Paulo diz: "Em tudo dai graças" (1Ts 5,18).
+              </p>
+
+              <h3 className="font-display text-xl font-semibold text-text mt-8 mb-3">
+                Oração de Petição
+              </h3>
+              <p className="text-text leading-relaxed mb-6">
+                Pedir a Deus o que precisamos. Jesus nos encorajou: "Pedi e vos será dado" (Mt 7,7). Não tenha medo de pedir – Deus quer nos abençoar.
+              </p>
+
+              <h3 className="font-display text-xl font-semibold text-text mt-8 mb-3">
+                Oração de Intercessão
+              </h3>
+              <p className="text-text leading-relaxed mb-6">
+                Rezar pelos outros. É um ato de caridade poderoso. Quando você reza por alguém, está colocando essa pessoa nos braços de Deus.
               </p>
 
               <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
@@ -105,21 +143,35 @@ export default function VidaOracao() {
                 1. Reserve um Tempo e um Lugar
               </h3>
               <p className="text-text leading-relaxed mb-6">
-                Deus está em todo lugar, mas nossa mente se dispersa facilmente. Ter um "cantinho de oração" com uma imagem, uma vela ou a Bíblia ajuda a focar. Da mesma forma, escolher um horário fixo — seja ao acordar ou antes de dormir — cria o hábito necessário.
+                Deus está em todo lugar, mas nossa mente se dispersa facilmente. Ter um "cantinho de oração" com uma imagem, uma vela ou a Bíblia ajuda a focar. Da mesma forma, escolher um horário fixo — seja ao acordar ou antes de dormir — cria o hábito necessário. Comece com apenas 10 minutos. A consistência é mais importante que a duração.
               </p>
 
               <h3 className="font-display text-xl font-semibold text-text mt-8 mb-3">
                 2. Use Orações Vocais e Silêncio
               </h3>
               <p className="text-text leading-relaxed mb-6">
-                Comece com as orações que a Igreja nos ensinou: Pai-Nosso, Ave-Maria, Glória. Elas são a base. Mas não pare nelas. Reserve momentos de silêncio para ouvir o que Deus fala ao seu coração através das inspirações e da paz interior.
+                Comece com as orações que a Igreja nos ensinou: Pai-Nosso, Ave-Maria, Glória. Elas são a base sólida. Mas não pare nelas. Reserve momentos de silêncio para ouvir o que Deus fala ao seu coração através das inspirações e da paz interior. Muitas vezes, Deus nos fala não em palavras, mas em sentimentos de paz, clareza ou amor.
+              </p>
+
+              <h3 className="font-display text-xl font-semibold text-text mt-8 mb-3">
+                3. Não Desista nas Securas
+              </h3>
+              <p className="text-text leading-relaxed mb-6">
+                Haverá dias em que a oração parecerá árida, sem sabor, como se Deus estivesse longe. Esses são os dias mais preciosos! Quando você ora sem sentir consolação, está amando a Deus por Ele mesmo, não pelos sentimentos que Ele nos dá. São João da Cruz chamava isso de "noite escura" – é quando a fé cresce mais.
               </p>
 
               <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                 A Oração Mental e a Meditação
               </h2>
               <p className="text-text leading-relaxed mb-6">
-                A meditação cristã consiste em refletir sobre as verdades da fé ou passagens da Escritura. Ao meditar sobre a Paixão de Cristo, por exemplo, não apenas recordamos um fato histórico, mas nos unimos ao amor de Jesus por nós, permitindo que esse amor transforme nossas atitudes.
+                A meditação cristã consiste em refletir sobre as verdades da fé ou passagens da Escritura. Ao meditar sobre a Paixão de Cristo, por exemplo, não apenas recordamos um fato histórico, mas nos unimos ao amor de Jesus por nós, permitindo que esse amor transforme nossas atitudes. Você pode meditar sobre um mistério do Rosário, um versículo da Bíblia ou um ensinamento da Igreja. O importante é deixar que a verdade penetre seu coração.
+              </p>
+
+              <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
+                A Oração Contemplativa
+              </h2>
+              <p className="text-text leading-relaxed mb-6">
+                É o pico da vida de oração – simplesmente estar na presença de Deus sem palavras, sem pensamentos, apenas amando. Santa Teresa d'Ávila descrevia como "estar a sós com Quem sabemos que nos ama". Nem todos chegam a esse nível, mas todos podem aspirar a ele. Comece com oração vocal e meditação; a contemplação virá como um presente de Deus.
               </p>
 
               <div className="bg-accent/5 border border-accent/20 rounded-xl p-6 mt-10">
@@ -128,6 +180,15 @@ export default function VidaOracao() {
                 </p>
                 <p className="text-text-muted text-center mt-2">
                   — São Padre Pio de Pietrelcina
+                </p>
+              </div>
+
+              <div className="bg-primary/5 border border-primary/20 rounded-xl p-6 mt-6">
+                <p className="text-text italic text-center">
+                  "Orar é amar. E amar é orar."
+                </p>
+                <p className="text-text-muted text-center mt-2">
+                  — Santa Teresa de Calcutá
                 </p>
               </div>
             </div>

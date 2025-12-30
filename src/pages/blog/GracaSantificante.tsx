@@ -85,7 +85,10 @@ export default function GracaSantificante() {
                                 A Vida Divina em Nós
                             </h2>
                             <p className="text-text leading-relaxed mb-6">
-                                Para a teologia católica, a **Graça Santificante** é um dom gratuito e sobrenatural pelo qual Deus nos comunica Sua própria vida. No Batismo, nossa alma é purificada e elevada a uma nova dignidade: tornamo-nos filhos de Deus e templos do Espírito Santo. É o que chamamos de estar em "estado de graça".
+                                Para a teologia católica, a **Graça Santificante** é um dom gratuito e sobrenatural pelo qual Deus nos comunica Sua própria vida. No Batismo, nossa alma é purificada e elevada a uma nova dignidade: tornamo-nos filhos de Deus e templos do Espírito Santo. É o que chamamos de estar em "estado de graça". Não é apenas um perdão externo – é uma transformação interior, uma participação real na vida divina.
+                            </p>
+                            <p className="text-text leading-relaxed mb-6">
+                                Imagine um galho cortado de uma árvore. Enquanto está separado, murcha e morre. Mas quando enxertado novamente, recebe a seiva da árvore e volta à vida. Assim é a graça santificante – ela nos une a Cristo, a Videira verdadeira, e nos faz participar de Sua vida eterna. Sem ela, nossa alma murcha; com ela, florescemos.
                             </p>
 
                             <QuizCTA
@@ -97,30 +100,41 @@ export default function GracaSantificante() {
                                 Graça Santificante vs. Graça Atual
                             </h2>
                             <p className="text-text leading-relaxed mb-6">
-                                É importante distinguir: a *graça atual* é um auxílio passageiro de Deus para realizarmos uma boa obra ou evitarmos um pecado. Já a *graça santificante* é uma disposição estável e permanente na alma (um hábito sobrenatural) que nos torna santos e agradáveis a Deus.
+                                É importante distinguir: a *graça atual* é um auxílio passageiro de Deus para realizarmos uma boa obra ou evitarmos um pecado. É como uma mão que nos empurra para fazer o bem. Já a *graça santificante* é uma disposição estável e permanente na alma (um hábito sobrenatural) que nos torna santos e agradáveis a Deus. É como uma transformação interior que nos muda para sempre.
+                            </p>
+                            <p className="text-text leading-relaxed mb-6">
+                                Você pode receber uma graça atual para resistir a uma tentação específica, mas se não tiver graça santificante, sua alma permanece morta. Por outro lado, com graça santificante, você tem a vida de Deus em você, mesmo que cometa pecados veniais.
                             </p>
 
                             <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                                 Como se perde a Graça?
                             </h2>
                             <p className="text-text leading-relaxed mb-6">
-                                Infelizmente, a graça santificante pode ser perdida através do **pecado mortal**. O pecado grave rompe a amizade com Deus e expulsa a vida divina da alma. É por isso que a Igreja insiste tanto na gravidade do pecado e na necessidade da vigilância constante.
+                                Infelizmente, a graça santificante pode ser perdida através do **pecado mortal**. O pecado grave rompe a amizade com Deus e expulsa a vida divina da alma. É por isso que a Igreja insiste tanto na gravidade do pecado e na necessidade da vigilância constante. Um pecado mortal é como arrancar o galho da árvore novamente – a seiva divina deixa de fluir.
+                            </p>
+                            <p className="text-text leading-relaxed mb-6">
+                                Mas aqui está a boa notícia: a graça pode ser recuperada! Através da Confissão sincera, Deus nos recoloca em estado de graça. É por isso que este sacramento é tão precioso – é a segunda chance que Deus nos oferece.
                             </p>
 
                             <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                                 Como recuperar e aumentar a Graça?
                             </h2>
                             <ul className="list-disc list-inside text-text space-y-4 mb-6">
-                                <li><strong>Confissão:</strong> É o meio ordinário para recuperar a graça perdida pelo pecado mortal.</li>
-                                <li><strong>Eucaristia:</strong> Receber o Corpo de Cristo aumenta a graça santificante e fortalece a alma contra as tentações.</li>
-                                <li><strong>Oração e Caridade:</strong> Cada ato de amor feito por Deus aumenta nossa capacidade de receber Sua vida.</li>
+                                <li><strong>Confissão:</strong> É o meio ordinário para recuperar a graça perdida pelo pecado mortal. Quando você se confessa com sinceridade, Deus a restaura imediatamente.</li>
+                                <li><strong>Eucaristia:</strong> Receber o Corpo de Cristo aumenta a graça santificante e fortalece a alma contra as tentações. Cada comunhão é como uma transfusão de vida divina.</li>
+                                <li><strong>Oração e Caridade:</strong> Cada ato de amor feito por Deus aumenta nossa capacidade de receber Sua vida. Quanto mais você ama, mais graça recebe.</li>
+                                <li><strong>Observância dos Mandamentos:</strong> Viver segundo a lei de Deus preserva e aumenta a graça. Cada ato de obediência é como regar uma planta.</li>
+                                <li><strong>Devoção a Maria:</strong> Consagrar-se a Nossa Senhora e pedir sua intercessão atrai graças abundantes. Ela é a mãe que nos guia para Jesus.</li>
                             </ul>
 
                             <h2 className="font-display text-2xl font-bold text-text mt-10 mb-4">
                                 Viver em Amizade com Deus
                             </h2>
                             <p className="text-text leading-relaxed mb-6">
-                                Viver em estado de graça é viver em paz. É saber que, se partirmos deste mundo hoje, seremos acolhidos pelo Pai. É a maior felicidade que um ser humano pode experimentar ainda nesta terra.
+                                Viver em estado de graça é viver em paz. É saber que, se partirmos deste mundo hoje, seremos acolhidos pelo Pai. É a maior felicidade que um ser humano pode experimentar ainda nesta terra. Não é uma felicidade baseada em circunstâncias externas – você pode estar sofrendo, mas ter paz interior porque sabe que está em amizade com Deus.
+                            </p>
+                            <p className="text-text leading-relaxed mb-6">
+                                Os santos sempre buscaram preservar a graça santificante acima de tudo. Santa Teresa d'Ávila dizia que preferia sofrer qualquer coisa nesta vida do que perder a amizade com Deus. São João da Cruz escrevia sobre a beleza de uma alma em estado de graça – é como um espelho que reflete a beleza de Deus.
                             </p>
 
                             <div className="bg-accent/5 border border-accent/20 rounded-xl p-6 mt-10">
@@ -129,6 +143,15 @@ export default function GracaSantificante() {
                                 </p>
                                 <p className="text-text-muted text-center mt-2">
                                     — Catecismo da Igreja Católica, 1997
+                                </p>
+                            </div>
+
+                            <div className="bg-primary/5 border border-primary/20 rounded-xl p-6 mt-6">
+                                <p className="text-text italic text-center">
+                                    "Deus não quer nada de você senão que você seja feliz e esteja em paz com Ele."
+                                </p>
+                                <p className="text-text-muted text-center mt-2">
+                                    — Santa Teresa de Calcutá
                                 </p>
                             </div>
                         </div>
