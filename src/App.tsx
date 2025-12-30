@@ -78,6 +78,9 @@ import RosarioArmaEspiritual from "./pages/blog/RosarioArmaEspiritual";
 import NossaSenhoraFatimaMensagem from "./pages/blog/NossaSenhoraFatimaMensagem";
 import EscapularioCarmoSignificado from "./pages/blog/EscapularioCarmoSignificado";
 import ConsagracaoMarianaGuia from "./pages/blog/ConsagracaoMarianaGuia";
+import ProsperidadeEspiritualVsMaterial from "./pages/blog/ProsperidadeEspiritualVsMaterial";
+import TrabalhoDignoVocacao from "./pages/blog/TrabalhoDignoVocacao";
+import GenerosidadeDesprendimento from "./pages/blog/GenerosidadeDesprendimento";
 import OQueAconteceDepoisMorte from "./pages/blog/OQueAconteceDepoisMorte";
 import SegundaVindaCristoFimTempos from "./pages/blog/SegundaVindaCristoFimTempos";
 import JuizoParticularEFinal from "./pages/blog/JuizoParticularEFinal";
@@ -201,6 +204,9 @@ const App = () => (
             <Route path="/blog/pecado-original-redencao" element={<OPecadoOriginalRedencao />} />
             <Route path="/blog/ceu-inferno-purgatorio" element={<OInfernoCeuPurgatorio />} />
             <Route path="/blog/igreja-corpo-cristo" element={<AIgrejaCorpoDeCristo />} />
+            <Route path="/blog/prosperidade-espiritual-vs-material" element={<ProsperidadeEspiritualVsMaterial />} />
+            <Route path="/blog/trabalho-digno-vocacao" element={<TrabalhoDignoVocacao />} />
+            <Route path="/blog/generosidade-desprendimento" element={<GenerosidadeDesprendimento />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
