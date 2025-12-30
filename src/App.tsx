@@ -130,6 +130,26 @@ import BibliaECiencia from "./pages/blog/BibliaECiencia";
 import CombateEspiritualVicios from "./pages/blog/CombateEspiritualVicios";
 import SantaFaustinaMisericordia from "./pages/blog/SantaFaustinaMisericordia";
 import SaoJoseModeloPai from "./pages/blog/SaoJoseModeloPai";
+// Prayer Articles
+import OracaoPaiNosso from "./pages/blog/OracaoPaiNosso";
+import OracaoAveMaria from "./pages/blog/OracaoAveMaria";
+import OracaoCredoApostolico from "./pages/blog/OracaoCredoApostolico";
+import OracaoSinalDaCruz from "./pages/blog/OracaoSinalDaCruz";
+import OracaoGloriaAoPai from "./pages/blog/OracaoGloriaAoPai";
+import OracaoAtoContricao from "./pages/blog/OracaoAtoContricao";
+import OracaoEspiritoSanto from "./pages/blog/OracaoEspiritoSanto";
+import OracaoSalveRainha from "./pages/blog/OracaoSalveRainha";
+import OracaoMagnificat from "./pages/blog/OracaoMagnificat";
+import OracaoFatima from "./pages/blog/OracaoFatima";
+import OracaoConfesso from "./pages/blog/OracaoConfesso";
+import OracaoGloriaMissa from "./pages/blog/OracaoGloriaMissa";
+import OracaoSanto from "./pages/blog/OracaoSanto";
+import OracaoCordeiroDeDeus from "./pages/blog/OracaoCordeiroDeDeus";
+import OracaoComunhaoEspiritual from "./pages/blog/OracaoComunhaoEspiritual";
+import OracaoSaoFrancisco from "./pages/blog/OracaoSaoFrancisco";
+import OracaoAlmaDeCristo from "./pages/blog/OracaoAlmaDeCristo";
+import OracaoVindeEspiritoCriador from "./pages/blog/OracaoVindeEspiritoCriador";
+import OracaoTeDeum from "./pages/blog/OracaoTeDeum";
 import TermsOfUse from "./pages/TermsOfUse";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Contact from "./pages/Contact";
@@ -275,6 +295,26 @@ const App = () => (
             <Route path="/blog/pecado-gula" element={<PecadoGula />} />
             <Route path="/blog/pecado-ira" element={<PecadoIra />} />
             <Route path="/blog/pecado-preguica" element={<PecadoPreguica />} />
+            {/* Prayer Articles */}
+            <Route path="/blog/oracao-pai-nosso" element={<OracaoPaiNosso />} />
+            <Route path="/blog/oracao-ave-maria" element={<OracaoAveMaria />} />
+            <Route path="/blog/oracao-credo-apostolico" element={<OracaoCredoApostolico />} />
+            <Route path="/blog/oracao-sinal-da-cruz" element={<OracaoSinalDaCruz />} />
+            <Route path="/blog/oracao-gloria-ao-pai" element={<OracaoGloriaAoPai />} />
+            <Route path="/blog/oracao-ato-contricao" element={<OracaoAtoContricao />} />
+            <Route path="/blog/oracao-espirito-santo" element={<OracaoEspiritoSanto />} />
+            <Route path="/blog/oracao-salve-rainha" element={<OracaoSalveRainha />} />
+            <Route path="/blog/oracao-magnificat" element={<OracaoMagnificat />} />
+            <Route path="/blog/oracao-fatima" element={<OracaoFatima />} />
+            <Route path="/blog/oracao-confesso" element={<OracaoConfesso />} />
+            <Route path="/blog/oracao-gloria-missa" element={<OracaoGloriaMissa />} />
+            <Route path="/blog/oracao-santo" element={<OracaoSanto />} />
+            <Route path="/blog/oracao-cordeiro-de-deus" element={<OracaoCordeiroDeDeus />} />
+            <Route path="/blog/oracao-comunhao-espiritual" element={<OracaoComunhaoEspiritual />} />
+            <Route path="/blog/oracao-sao-francisco" element={<OracaoSaoFrancisco />} />
+            <Route path="/blog/oracao-alma-de-cristo" element={<OracaoAlmaDeCristo />} />
+            <Route path="/blog/oracao-vinde-espirito-criador" element={<OracaoVindeEspiritoCriador />} />
+            <Route path="/blog/oracao-te-deum" element={<OracaoTeDeum />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
